@@ -1,11 +1,10 @@
-"""Check SimplifyJobs/Summer2026-Internships for new listings and alert via Telegram.
+"""Check SimplifyJobs/Summer2026-Internships for new listings and alert via Discord.
 
 Runs every 30 min on GitHub Actions (see .github/workflows/check.yml).
 State (seen listing IDs + ETag) lives in state/ and is committed back by the workflow.
 
 Env vars:
-  TELEGRAM_BOT_TOKEN   bot token from @BotFather (if missing, runs in dry-run mode)
-  TELEGRAM_CHAT_ID     your chat id (from getUpdates)
+  DISCORD_WEBHOOK_URL  channel webhook URL (if missing, runs in dry-run mode)
   WATCHLIST_CSV_URL    optional: published-to-web CSV URL of a Google Sheet;
                        falls back to watchlist.txt next to this script
 """
@@ -32,7 +31,7 @@ ETAG_FILE = STATE_DIR / "etag.txt"
 WATCHLIST_FILE = ROOT / "watchlist.txt"
 
 BATCH_THRESHOLD = 5          # >5 matches in one run -> single combined message
-TELEGRAM_MSG_LIMIT = 4096    # Telegram hard limit per message
+DISCORD_MSG_LIMIT = 2000     # Discord hard limit per message
 
 
 def load_watchlist() -> list[str]:
@@ -64,34 +63,31 @@ def matches(listing: dict, keywords: list[str]) -> bool:
 
 def format_listing(l: dict) -> str:
     locations = ", ".join(l.get("locations") or [])
+    # <url> suppresses Discord's link preview embed
     return (
-        f"<b>{l.get('company_name', '?')}</b> — {l.get('title', '?')}\n"
+        f"**{l.get('company_name', '?')}** — {l.get('title', '?')}\n"
         f"📍 {locations or 'N/A'}  |  {l.get('category', '')}\n"
-        f"<a href=\"{l.get('url', '')}\">Apply</a>"
+        f"Apply: <{l.get('url', '')}>"
     )
 
 
-def send_telegram(text: str) -> None:
-    token = os.environ.get("TELEGRAM_BOT_TOKEN")
-    chat_id = os.environ.get("TELEGRAM_CHAT_ID")
-    if not token or not chat_id:
+def send_discord(text: str) -> None:
+    webhook_url = os.environ.get("DISCORD_WEBHOOK_URL")
+    if not webhook_url:
         print("[dry-run] would send:\n" + text + "\n" + "-" * 40)
         return
-    # chunk if over Telegram's limit
+    # chunk if over Discord's limit, splitting on listing boundaries where possible
     while text:
-        chunk, text = text[:TELEGRAM_MSG_LIMIT], text[TELEGRAM_MSG_LIMIT:]
-        resp = requests.post(
-            f"https://api.telegram.org/bot{token}/sendMessage",
-            json={
-                "chat_id": chat_id,
-                "text": chunk,
-                "parse_mode": "HTML",
-                "disable_web_page_preview": True,
-            },
-            timeout=30,
-        )
+        if len(text) <= DISCORD_MSG_LIMIT:
+            chunk, text = text, ""
+        else:
+            cut = text.rfind("\n\n", 0, DISCORD_MSG_LIMIT)
+            if cut <= 0:
+                cut = DISCORD_MSG_LIMIT
+            chunk, text = text[:cut], text[cut:].lstrip("\n")
+        resp = requests.post(webhook_url, json={"content": chunk}, timeout=30)
         if not resp.ok:
-            print(f"Telegram error {resp.status_code}: {resp.text}", file=sys.stderr)
+            print(f"Discord error {resp.status_code}: {resp.text}", file=sys.stderr)
             resp.raise_for_status()
 
 
@@ -118,7 +114,7 @@ def main() -> None:
 
     if first_run:
         n_active = sum(1 for l in listings if l.get("active"))
-        send_telegram(f"✅ Internship alert bot is live — watching {n_active} active listings.")
+        send_discord(f"✅ Internship alert bot is live — watching {n_active} active listings.")
     else:
         keywords = load_watchlist()
         if not keywords:
@@ -130,10 +126,10 @@ def main() -> None:
 
         if len(matched) > BATCH_THRESHOLD:
             body = "\n\n".join(format_listing(l) for l in matched)
-            send_telegram(f"🔔 {len(matched)} new matching internships:\n\n{body}")
+            send_discord(f"🔔 {len(matched)} new matching internships:\n\n{body}")
         else:
             for l in matched:
-                send_telegram("🔔 New internship match!\n\n" + format_listing(l))
+                send_discord("🔔 New internship match!\n\n" + format_listing(l))
 
     # persist: every id we've now seen (matched or not), plus the new ETag
     seen.update(l["id"] for l in listings if l.get("id"))
