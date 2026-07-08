@@ -33,6 +33,14 @@ WATCHLIST_FILE = ROOT / "watchlist.txt"
 BATCH_THRESHOLD = 5          # >5 matches in one run -> single combined message
 DISCORD_MSG_LIMIT = 2000     # Discord hard limit per message
 
+# local runs: load KEY=VALUE lines from a git-ignored .env (GitHub Actions uses secrets)
+_env_file = ROOT / ".env"
+if _env_file.exists():
+    for _line in _env_file.read_text(encoding="utf-8-sig").splitlines():
+        if "=" in _line and not _line.lstrip().startswith("#"):
+            _k, _v = _line.split("=", 1)
+            os.environ.setdefault(_k.strip(), _v.strip())
+
 
 def load_watchlist() -> list[str]:
     csv_url = os.environ.get("WATCHLIST_CSV_URL")
