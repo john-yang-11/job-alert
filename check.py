@@ -13,6 +13,7 @@ import csv
 import io
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -42,6 +43,11 @@ if _env_file.exists():
             os.environ.setdefault(_k.strip(), _v.strip())
 
 
+def clean_keyword(raw: str) -> str:
+    # drop parenthetical notes like "(JSIP)jane street" -> "jane street"
+    return re.sub(r"\([^)]*\)", "", raw).strip()
+
+
 def load_watchlist() -> list[str]:
     csv_url = os.environ.get("WATCHLIST_CSV_URL")
     if csv_url:
@@ -53,14 +59,17 @@ def load_watchlist() -> list[str]:
         for i, row in enumerate(rows):
             if not row or not row[0].strip():
                 continue
-            cell = row[0].strip()
-            if i == 0 and cell.lower() in ("company", "companies", "keyword", "keywords", "name"):
+            cell = clean_keyword(row[0])
+            if not cell:
+                continue
+            if i == 0 and any(w in cell.lower() for w in ("company", "keyword", "watchlist", "name")):
                 continue
             keywords.append(cell)
         return keywords
     if WATCHLIST_FILE.exists():
         lines = WATCHLIST_FILE.read_text(encoding="utf-8").splitlines()
-        return [l.strip() for l in lines if l.strip() and not l.strip().startswith("#")]
+        cleaned = (clean_keyword(l) for l in lines if l.strip() and not l.strip().startswith("#"))
+        return [k for k in cleaned if k]
     return []
 
 
