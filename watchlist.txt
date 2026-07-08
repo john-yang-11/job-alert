@@ -1,0 +1,9 @@
+# One company or keyword per line (case-insensitive substring match on company name + role title).
+# Lines starting with # are ignored.
+# This file is the fallback — once you connect your spreadsheet, set the
+# WATCHLIST_CSV_URL secret and this file is ignored.
+#
+# Examples (uncomment / replace with your own):
+# Google
+# Stripe
+# machine learning
