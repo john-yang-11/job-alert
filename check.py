@@ -74,8 +74,9 @@ def load_watchlist() -> list[str]:
 
 
 def matches(listing: dict, keywords: list[str]) -> bool:
+    # whole-word match so "visa" doesn't hit "TelevisaUnivision"
     haystack = f"{listing.get('company_name', '')} {listing.get('title', '')}".lower()
-    return any(kw.lower() in haystack for kw in keywords)
+    return any(re.search(rf"\b{re.escape(kw.lower())}\b", haystack) for kw in keywords)
 
 
 def format_listing(l: dict) -> str:
