@@ -28,6 +28,17 @@ case-insensitively against company name + role title.
 keywords), then add the URL as a `WATCHLIST_CSV_URL` secret. The file is then
 ignored; edit the sheet from your phone and the next run picks it up.
 
+## Junior program watcher
+
+`check_programs.py` runs daily (~9:17 AM ET) and alerts when a junior-program
+page changes (e.g. applications open): Microsoft Explore, Uber University,
+Google STEP, Amazon University/Propel, Jane Street JSIP. Edit `programs.json`
+to add/remove pages. Note some sites (Meta, Bloomberg, Citadel) block
+automated checks and can't be watched this way.
+
+A page "change" is any edit to the page's visible text, so expect occasional
+alerts for cosmetic edits — the message just says which page to go look at.
+
 ## Local test
 
 ```
