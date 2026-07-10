@@ -78,9 +78,27 @@ def matches(listing: dict, keywords: list[str]) -> bool:
     return any(re.search(rf"\b{re.escape(kw.lower())}\b", haystack) for kw in keywords)
 
 
+SEASON_RANK = {"summer": 0, "fall": 1, "winter": 2, "spring": 3}
+
+
+def season(listing: dict) -> tuple[int, str]:
+    """Return (sort_rank, display_label) — summer sorts first. Label prefers the
+    term with its year (e.g. 'Summer 2026'); falls back to the title's season word."""
+    terms = [t for t in (listing.get("terms") or []) if t and t.upper() != "N/A"]
+    text = f"{' '.join(terms)} {listing.get('title', '')}".lower()
+    for key in ("summer", "fall", "autumn", "winter", "spring"):
+        if key in text:
+            k = "fall" if key == "autumn" else key
+            label = next((t for t in terms if k in t.lower()), k.capitalize())
+            return SEASON_RANK[k], label
+    return 9, (terms[0] if terms else "")
+
+
 def format_listing(l: dict) -> str:
-    # one compact line: company, then role as a masked link (masked links don't embed)
-    return f"**{l.get('company_name', '?')}** — [{l.get('title', '?')}]({l.get('url', '')})"
+    # one compact line: company, role as a masked link (no embed), then season
+    line = f"**{l.get('company_name', '?')}** — [{l.get('title', '?')}]({l.get('url', '')})"
+    label = season(l)[1]
+    return f"{line} · {label}" if label else line
 
 
 def send_discord(text: str) -> None:
@@ -138,6 +156,7 @@ def main() -> None:
         print(f"{len(new_active)} new active listings, {len(matched)} match watchlist")
 
         if matched:
+            matched.sort(key=lambda l: season(l)[0])  # summer first
             plural = "es" if len(matched) != 1 else ""
             body = "\n".join(format_listing(l) for l in matched)
             send_discord(f"🔔 {len(matched)} new internship match{plural}:\n{body}")
