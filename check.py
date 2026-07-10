@@ -31,7 +31,6 @@ SEEN_FILE = STATE_DIR / "seen.json"
 ETAG_FILE = STATE_DIR / "etag.txt"
 WATCHLIST_FILE = ROOT / "watchlist.txt"
 
-BATCH_THRESHOLD = 5          # >5 matches in one run -> single combined message
 DISCORD_MSG_LIMIT = 2000     # Discord hard limit per message
 
 # local runs: load KEY=VALUE lines from a git-ignored .env (GitHub Actions uses secrets)
@@ -80,13 +79,8 @@ def matches(listing: dict, keywords: list[str]) -> bool:
 
 
 def format_listing(l: dict) -> str:
-    locations = ", ".join(l.get("locations") or [])
-    # <url> suppresses Discord's link preview embed
-    return (
-        f"**{l.get('company_name', '?')}** — {l.get('title', '?')}\n"
-        f"📍 {locations or 'N/A'}  |  {l.get('category', '')}\n"
-        f"Apply: <{l.get('url', '')}>"
-    )
+    # one compact line: company, then role as a masked link (masked links don't embed)
+    return f"**{l.get('company_name', '?')}** — [{l.get('title', '?')}]({l.get('url', '')})"
 
 
 def send_discord(text: str) -> None:
@@ -99,11 +93,12 @@ def send_discord(text: str) -> None:
         if len(text) <= DISCORD_MSG_LIMIT:
             chunk, text = text, ""
         else:
-            cut = text.rfind("\n\n", 0, DISCORD_MSG_LIMIT)
+            cut = text.rfind("\n", 0, DISCORD_MSG_LIMIT)
             if cut <= 0:
                 cut = DISCORD_MSG_LIMIT
             chunk, text = text[:cut], text[cut:].lstrip("\n")
-        resp = requests.post(webhook_url, json={"content": chunk}, timeout=30)
+        # flags=4 (SUPPRESS_EMBEDS) stops Discord from unfurling each link into a preview card
+        resp = requests.post(webhook_url, json={"content": chunk, "flags": 4}, timeout=30)
         if not resp.ok:
             print(f"Discord error {resp.status_code}: {resp.text}", file=sys.stderr)
             resp.raise_for_status()
@@ -142,12 +137,10 @@ def main() -> None:
             matched = [l for l in new_active if matches(l, keywords)]
         print(f"{len(new_active)} new active listings, {len(matched)} match watchlist")
 
-        if len(matched) > BATCH_THRESHOLD:
-            body = "\n\n".join(format_listing(l) for l in matched)
-            send_discord(f"🔔 {len(matched)} new matching internships:\n\n{body}")
-        else:
-            for l in matched:
-                send_discord("🔔 New internship match!\n\n" + format_listing(l))
+        if matched:
+            plural = "es" if len(matched) != 1 else ""
+            body = "\n".join(format_listing(l) for l in matched)
+            send_discord(f"🔔 {len(matched)} new internship match{plural}:\n{body}")
 
     # persist: every id we've now seen (matched or not), plus the new ETag
     seen.update(l["id"] for l in listings if l.get("id"))
