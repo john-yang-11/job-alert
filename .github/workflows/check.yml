@@ -27,6 +27,7 @@ jobs:
       - name: Run checker
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          POKE_API_KEY: ${{ secrets.POKE_API_KEY }}
           WATCHLIST_CSV_URL: ${{ secrets.WATCHLIST_CSV_URL }}
         run: python check.py
 

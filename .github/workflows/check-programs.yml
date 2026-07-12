@@ -27,6 +27,7 @@ jobs:
       - name: Run program watcher
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          POKE_API_KEY: ${{ secrets.POKE_API_KEY }}
         run: python check_programs.py
 
       - name: Commit state

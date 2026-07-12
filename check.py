@@ -95,8 +95,15 @@ def season(listing: dict) -> tuple[int, str]:
 
 
 def format_listing(l: dict) -> str:
-    # one compact line: company, role as a masked link (no embed), then season
+    # Discord: company, role as a masked link (no embed), then season
     line = f"**{l.get('company_name', '?')}** — [{l.get('title', '?')}]({l.get('url', '')})"
+    label = season(l)[1]
+    return f"{line} · {label}" if label else line
+
+
+def format_listing_plain(l: dict) -> str:
+    # Poke (text message): company, role, season — no URL
+    line = f"{l.get('company_name', '?')} — {l.get('title', '?')}"
     label = season(l)[1]
     return f"{line} · {label}" if label else line
 
@@ -122,6 +129,23 @@ def send_discord(text: str) -> None:
             resp.raise_for_status()
 
 
+def send_poke(text: str) -> None:
+    key = os.environ.get("POKE_API_KEY")
+    if not key:
+        print("[poke dry-run] would send:\n" + text + "\n" + "-" * 40)
+        return
+    # Poke has no documented length limit; iMessage/SMS split long texts on delivery
+    resp = requests.post(
+        "https://poke.com/api/v1/inbound/api-message",
+        headers={"Authorization": f"Bearer {key}"},
+        json={"message": text},
+        timeout=30,
+    )
+    if not resp.ok:
+        print(f"Poke error {resp.status_code}: {resp.text}", file=sys.stderr)
+        resp.raise_for_status()
+
+
 def main() -> None:
     STATE_DIR.mkdir(exist_ok=True)
 
@@ -145,7 +169,9 @@ def main() -> None:
 
     if first_run:
         n_active = sum(1 for l in listings if l.get("active"))
-        send_discord(f"✅ Internship alert bot is live — watching {n_active} active listings.")
+        msg = f"✅ Internship alert bot is live — watching {n_active} active listings."
+        send_discord(msg)
+        send_poke(msg)
     else:
         keywords = load_watchlist()
         if not keywords:
@@ -158,8 +184,9 @@ def main() -> None:
         if matched:
             matched.sort(key=lambda l: season(l)[0])  # summer first
             plural = "es" if len(matched) != 1 else ""
-            body = "\n".join(format_listing(l) for l in matched)
-            send_discord(f"🔔 {len(matched)} new internship match{plural}:\n{body}")
+            header = f"🔔 {len(matched)} new internship match{plural}:"
+            send_discord(header + "\n" + "\n".join(format_listing(l) for l in matched))
+            send_poke(header + "\n" + "\n".join(format_listing_plain(l) for l in matched))
 
     # persist: every id we've now seen (matched or not), plus the new ETag
     seen.update(l["id"] for l in listings if l.get("id"))

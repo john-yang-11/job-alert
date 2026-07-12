@@ -1,8 +1,13 @@
 # Internship Alerts
 
 Watches [SimplifyJobs/Summer2026-Internships](https://github.com/SimplifyJobs/Summer2026-Internships)
-every 30 minutes via GitHub Actions and sends a Discord message when a new
-listing matches the watchlist. Total running cost: $0.
+every 30 minutes via GitHub Actions and alerts when a new listing matches the
+watchlist. Total running cost: $0.
+
+Alerts go to **two channels**: Discord (rich message with clickable role links)
+and [Poke](https://poke.com) (a plain text describing company/role/season, no
+link). Set `DISCORD_WEBHOOK_URL` and/or `POKE_API_KEY` — whichever is present
+gets sent; the other is skipped. Get a Poke key at poke.com/kitchen → API Keys.
 
 ## Setup (one time, ~5 min)
 

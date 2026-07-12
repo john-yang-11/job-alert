@@ -15,7 +15,7 @@ import sys
 
 import requests
 
-from check import STATE_DIR, send_discord
+from check import STATE_DIR, send_discord, send_poke
 
 PROGRAMS_FILE = STATE_DIR.parent / "programs.json"
 PROGRAMS_STATE = STATE_DIR / "programs_state.json"
@@ -60,13 +60,17 @@ def main() -> None:
         state[url] = fp
 
     if first_run:
-        send_discord(
+        msg = (
             f"📋 Program watcher is live — tracking {len(state)} junior-program pages "
             "(daily check for updates like applications opening)."
         )
+        send_discord(msg)
+        send_poke(msg)
     elif changed:
-        lines = "\n".join(f"• **{p['name']}** — check <{p['url']}>" for p in changed)
-        send_discord(f"📋 Program page update detected:\n{lines}")
+        d_lines = "\n".join(f"• **{p['name']}** — check <{p['url']}>" for p in changed)
+        p_lines = "\n".join(f"• {p['name']}" for p in changed)
+        send_discord(f"📋 Program page update detected:\n{d_lines}")
+        send_poke(f"📋 Program page update (check the board):\n{p_lines}")
 
     for err in errors:
         print(f"WARNING: {err}", file=sys.stderr)
