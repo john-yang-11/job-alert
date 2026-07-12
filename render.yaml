@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: internship-buffer
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements-buffer.txt
+    startCommand: python buffer_server.py
+    healthCheckPath: /health
+    envVars:
+      - key: BUFFER_TOKEN
+        generateValue: true   # Render mints a random secret; copy it from the dashboard
