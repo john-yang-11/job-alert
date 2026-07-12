@@ -134,16 +134,38 @@ def send_poke(text: str) -> None:
     if not key:
         print("[poke dry-run] would send:\n" + text + "\n" + "-" * 40)
         return
+    # The inbound API drops this into your Poke chat "as if you texted it", so we
+    # instruct the agent to relay it to your phone verbatim instead of just reading it.
+    payload = (
+        "Send me a notification with the following internship alert. Relay it "
+        "exactly as written — do not summarize, rephrase, or add commentary:\n\n" + text
+    )
     # Poke has no documented length limit; iMessage/SMS split long texts on delivery
     resp = requests.post(
         "https://poke.com/api/v1/inbound/api-message",
         headers={"Authorization": f"Bearer {key}"},
-        json={"message": text},
+        json={"message": payload},
         timeout=30,
     )
     if not resp.ok:
         print(f"Poke error {resp.status_code}: {resp.text}", file=sys.stderr)
         resp.raise_for_status()
+
+
+def send_buffer(text: str) -> None:
+    # push the latest alert to the buffer MCP server so Poke can poll it.
+    # best-effort: a buffer outage must not fail the run or block Discord/Poke.
+    url = os.environ.get("BUFFER_URL")
+    if not url:
+        return
+    headers = {}
+    token = os.environ.get("BUFFER_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    try:
+        requests.post(url, headers=headers, json={"content": text}, timeout=15)
+    except Exception as e:
+        print(f"Buffer push failed (ignored): {e}", file=sys.stderr)
 
 
 def main() -> None:
@@ -185,8 +207,10 @@ def main() -> None:
             matched.sort(key=lambda l: season(l)[0])  # summer first
             plural = "es" if len(matched) != 1 else ""
             header = f"🔔 {len(matched)} new internship match{plural}:"
+            plain = header + "\n" + "\n".join(format_listing_plain(l) for l in matched)
             send_discord(header + "\n" + "\n".join(format_listing(l) for l in matched))
-            send_poke(header + "\n" + "\n".join(format_listing_plain(l) for l in matched))
+            send_poke(plain)
+            send_buffer(plain)
 
     # persist: every id we've now seen (matched or not), plus the new ETag
     seen.update(l["id"] for l in listings if l.get("id"))

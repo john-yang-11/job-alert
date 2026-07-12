@@ -29,6 +29,8 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           POKE_API_KEY: ${{ secrets.POKE_API_KEY }}
           WATCHLIST_CSV_URL: ${{ secrets.WATCHLIST_CSV_URL }}
+          BUFFER_URL: ${{ secrets.BUFFER_URL }}
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
         run: python check.py
 
       - name: Commit state
