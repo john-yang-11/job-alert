@@ -38,6 +38,7 @@ RETRY_AFTER_DAYS = 7
 CUSTOM_COMPANIES = {
     "amazon": "amazon",
     "aws": "amazon",
+    "capitalone": "capitalone",
 }
 # Cap newly-resolved companies per run so a batch of Workday probes (each a slow
 # multi-request brute-force) can't blow the hourly job's time budget. Anything

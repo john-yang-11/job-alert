@@ -59,6 +59,11 @@
   "platform": "greenhouse",
   "slug": "block"
  },
+ "Bloomberg": {
+  "checked_at": "2026-07-16T03:27:40.863097+00:00",
+  "platform": null,
+  "slug": null
+ },
  "Broadcom": {
   "checked_at": "2000-01-01T00:00:00+00:00",
   "platform": null,
@@ -90,7 +95,7 @@
   "slug": null
  },
  "DraftKings": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-07-16T03:31:56.439380+00:00",
   "platform": null,
   "slug": null
  },
@@ -200,9 +205,9 @@
   "slug": null
  },
  "NVIDIA": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
-  "platform": null,
-  "slug": null
+  "checked_at": "2026-07-16T03:29:36.368969+00:00",
+  "platform": "workday",
+  "slug": "nvidia|wd5|NvidiaExternalCareerSite"
  },
  "Netflix": {
   "checked_at": "2026-07-15T03:58:59.207689+00:00",
@@ -455,9 +460,9 @@
   "slug": null
  },
  "capital one": {
-  "checked_at": "2026-07-16T01:06:30.172814+00:00",
-  "platform": "workday",
-  "slug": "capitalone|wd12|Capital_One"
+  "checked_at": "2026-07-16T04:00:34.514013+00:00",
+  "platform": "capitalone",
+  "slug": "capitalone"
  },
  "chime": {
   "checked_at": "2026-07-15T03:51:26.569632+00:00",

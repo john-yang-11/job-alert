@@ -55,14 +55,19 @@ guessed as one slug, so it's probed separately: the job API returns HTTP 404
 for a valid tenant+datacenter with a wrong site but 422 for a wrong
 tenant/datacenter, which pins the first two cheaply, then common site-name
 patterns are tried for the third (this reaches most of the big companies on
-custom-looking Workday sites — Adobe, Salesforce, NVIDIA, Capital One, ...).
+custom-looking Workday sites — Adobe, Salesforce, NVIDIA, ...). For Workday we
+discover each board's "Intern" facet (e.g. `workerSubType`) from its own
+response and filter to intern roles server-side — much more reliable than a
+fuzzy `intern` text search, which buries real intern roles behind experienced
+ones on big boards.
 
-A few big companies aren't on any standard board (fully custom career sites).
-Those get a **bespoke integration** against the company's own JSON API, matched
-by name in `CUSTOM_COMPANIES` (in `resolve_companies.py`) rather than
-auto-resolved — Amazon (`amazon.jobs`) is the first. Adding another is one
-fetcher in `platforms.py` plus a name entry; no headless browser, so it stays
-as light as the platform integrations.
+A few big companies aren't on any standard board, or post interns somewhere the
+board doesn't surface. Those get a **bespoke integration** matched by name in
+`CUSTOM_COMPANIES` (in `resolve_companies.py`) rather than auto-resolved:
+Amazon (`amazon.jobs` JSON) and Capital One (scrapes their server-rendered
+`capitalonecareers.com` and unions in their Workday board, since their tech
+interns can appear on either). Adding another is one fetcher in `platforms.py`
+plus a name entry; no headless browser, so it stays light.
 
 Results are cached in `state/company_platforms.json`; still-unresolved
 companies (custom sites without a known API) are retried automatically after 7

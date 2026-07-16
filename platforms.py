@@ -102,11 +102,46 @@ def fetch_smartrecruiters(slug: str, company_name: str) -> list[dict]:
     return out
 
 
+INTERN_FACET_RE = re.compile(r"\bintern(ship)?s?\b", re.IGNORECASE)  # not "international"
+
+
+def _workday_post(api: str, headers: dict, applied: dict, offset: int, search: str) -> dict:
+    try:
+        resp = requests.post(
+            api, headers=headers, timeout=TIMEOUT,
+            json={"appliedFacets": applied, "limit": 20, "offset": offset, "searchText": search},
+        )
+    except requests.RequestException as e:
+        raise PlatformError(f"{api} -> {e}")
+    if resp.status_code != 200:
+        raise PlatformError(f"{api} -> HTTP {resp.status_code}")
+    try:
+        return resp.json()
+    except ValueError:
+        raise PlatformError(f"{api} -> non-JSON response")
+
+
+def _workday_intern_facet(data: dict) -> tuple[str, str] | None:
+    """Find the board's intern filter (facetParameter, value_id) from a response's
+    facets, e.g. workerSubType -> "Intern". IDs are tenant-specific but the
+    descriptor is stable, so we discover it per board. None if the board has none."""
+    for f in data.get("facets", []):
+        param = f.get("facetParameter")
+        if not param:
+            continue
+        for v in f.get("values", []):
+            if INTERN_FACET_RE.search(v.get("descriptor") or "") and v.get("id"):
+                return param, v["id"]
+    return None
+
+
 def fetch_workday(slug: str, company_name: str) -> list[dict]:
     # Workday needs three coordinates, not one, so the cache stores them packed
-    # as "tenant|wd|site" (see discover_workday). Page size is hard-capped at 20
-    # by the API and searchText is a fuzzy relevance match (it won't reduce the
-    # set to real interns), so we paginate and let check_companies filter titles.
+    # as "tenant|wd|site" (see discover_workday). Most boards expose an "Intern"
+    # facet (e.g. workerSubType); applying it returns exactly the intern roles
+    # server-side -- far better than a fuzzy "intern" text search, which buries
+    # real intern roles behind experienced ones on big boards. Fall back to the
+    # text search for the rare board with no such facet.
     try:
         tenant, wd, site = slug.split("|")
     except ValueError:
@@ -114,21 +149,17 @@ def fetch_workday(slug: str, company_name: str) -> list[dict]:
     base = f"https://{tenant}.{wd}.myworkdayjobs.com"
     api = f"{base}/wday/cxs/{tenant}/{site}/jobs"
     headers = {**HEADERS, "Content-Type": "application/json", "Accept": "application/json"}
+
+    first = _workday_post(api, headers, {}, 0, "")
+    facet = _workday_intern_facet(first)
+    if facet:
+        applied, search = {facet[0]: [facet[1]]}, ""
+    else:
+        applied, search = {}, "intern"
+
     out, offset, total = [], 0, None
     for _ in range(WORKDAY_MAX_PAGES):
-        try:
-            resp = requests.post(
-                api, headers=headers, timeout=TIMEOUT,
-                json={"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": "intern"},
-            )
-        except requests.RequestException as e:
-            raise PlatformError(f"{api} -> {e}")
-        if resp.status_code != 200:
-            raise PlatformError(f"{api} -> HTTP {resp.status_code}")
-        try:
-            data = resp.json()
-        except ValueError:
-            raise PlatformError(f"{api} -> non-JSON response")
+        data = _workday_post(api, headers, applied, offset, search)
         postings = data.get("jobPostings") or []
         for p in postings:
             path = p.get("externalPath", "")
@@ -291,6 +322,54 @@ def fetch_amazon(slug: str, company_name: str) -> list[dict]:
     return out
 
 
+CAPITALONE_MAX_PAGES = 5
+CAPITALONE_WORKDAY = "capitalone|wd12|Capital_One"
+_BROWSER_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+               "(KHTML, like Gecko) Chrome/120 Safari/537.36")
+
+
+def fetch_capitalone(slug: str, company_name: str) -> list[dict]:
+    # Capital One's tech interns can show up on their public careers site
+    # (capitalonecareers.com, server-rendered) OR their Workday board, so this
+    # unions both and dedups -- the redundant "scraper on top of the board" case.
+    # The careers site is a Phenom SSR page whose job links encode everything we
+    # need: /job/<location>/<title-slug>/<category>/<id>.
+    out, seen = [], set()
+
+    def add(job_id: str, title: str, url: str) -> None:
+        if job_id in seen:
+            return
+        seen.add(job_id)
+        out.append({"id": job_id, "title": title, "url": url})
+
+    base = "https://www.capitalonecareers.com"
+    headers = {**HEADERS, "User-Agent": _BROWSER_UA}
+    for pg in range(1, CAPITALONE_MAX_PAGES + 1):
+        try:
+            resp = requests.get(f"{base}/search-jobs/software%20engineer%20intern",
+                                headers=headers, params={"p": pg}, timeout=TIMEOUT)
+        except requests.RequestException as e:
+            raise PlatformError(f"capitalonecareers -> {e}")
+        if resp.status_code != 200:
+            raise PlatformError(f"capitalonecareers -> HTTP {resp.status_code}")
+        before = len(seen)
+        for path in re.findall(r'href="(/job/[^"]+)"', resp.text):
+            parts = path.strip("/").split("/")
+            if len(parts) < 5:
+                continue
+            add(f"capitalone:{parts[-1]}", parts[-3].replace("-", " "), base + path)
+        if len(seen) == before:   # no new links -> past the last results page
+            break
+
+    # also fold in the Workday board (facet-filtered to interns); best-effort
+    try:
+        for j in fetch_workday(CAPITALONE_WORKDAY, company_name):
+            add(j["id"], j["title"], j["url"])
+    except PlatformError:
+        pass
+    return out
+
+
 def verify_smartrecruiters(slug: str, company_name: str) -> bool:
     # unlike the other 3 platforms, this endpoint returns HTTP 200 with an empty
     # content list for ANY slug -- even ones that don't correspond to a real
@@ -311,6 +390,7 @@ PLATFORMS = {
     "smartrecruiters": fetch_smartrecruiters,
     "workday": fetch_workday,
     "amazon": fetch_amazon,
+    "capitalone": fetch_capitalone,
 }
 
 # platforms resolvable by guessing a single slug + verifying against the live API,
