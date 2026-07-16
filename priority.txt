@@ -10,6 +10,36 @@
 # be read directly. Anything else still gets caught by the hourly/30-min watchers.
 #
 # Examples (uncomment / replace with your own):
-# Stripe
-# Databricks
-# Jane Street
+Bloomberg
+Amazon
+adobe
+dandy
+ford
+Microsoft
+NVIDIA
+ramp
+Stripe
+uber
+visa
+Walmart
+wells fargo
+PNC
+IBM
+Google
+duolingo
+coinbase
+capital one
+Cisco
+DraftKings
+GitHub
+ford
+linkedin
+meta
+mongoDB
+okta
+plaid
+resy
+Snap
+Tesla
+US bank
+PNC
