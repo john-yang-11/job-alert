@@ -12,6 +12,7 @@ State: state/company_seen.json (posting ids already alerted on or seeded).
 import json
 import re
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from check import STATE_DIR, load_watchlist, send_discord, send_poke, send_buffer, clean_keyword
 from platforms import PLATFORMS
@@ -67,22 +68,28 @@ def main() -> None:
     first_run = not seen_file.exists()
     seen: set[str] = set() if first_run else set(json.loads(seen_file.read_text()))
 
+    # Board fetches are I/O-bound and hit different hosts, so run them
+    # concurrently -- turns a ~3-min sequential sweep of ~77 boards into ~30s.
+    def _fetch(name: str, info: dict) -> tuple[str, list[dict]]:
+        return name, PLATFORMS[info["platform"]](info["slug"], name)
+
     matched: list[tuple[str, dict]] = []
     errors = []
     all_ids: set[str] = set()
-    for name, info in resolved:
-        fetch = PLATFORMS[info["platform"]]
-        try:
-            jobs = fetch(info["slug"], name)
-        except Exception as e:
-            errors.append(f"{name}: {e}")
-            continue
-        for j in jobs:
-            all_ids.add(j["id"])
-            if j["id"] in seen:
+    with ThreadPoolExecutor(max_workers=12) as pool:
+        futures = {pool.submit(_fetch, name, info): name for name, info in resolved}
+        for fut in as_completed(futures):
+            try:
+                name, jobs = fut.result()
+            except Exception as e:
+                errors.append(f"{futures[fut]}: {e}")
                 continue
-            if is_swe_intern(j["title"]):
-                matched.append((name, j))
+            for j in jobs:
+                all_ids.add(j["id"])
+                if j["id"] in seen:
+                    continue
+                if is_swe_intern(j["title"]):
+                    matched.append((name, j))
 
     if first_run:
         msg = f"{icon} {kind} watcher is live — tracking {len(resolved)} companies directly on their job boards."

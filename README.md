@@ -1,14 +1,21 @@
 # Internship Alerts
 
-Watches two community internship repos every 30 minutes via GitHub Actions and
-alerts when a new listing matches the watchlist:
+Watches two community internship repos, plus company job boards directly, every
+hour via GitHub Actions and alerts when a new listing matches the watchlist:
 [SimplifyJobs/Summer2026-Internships](https://github.com/SimplifyJobs/Summer2026-Internships)
 and [vanshb03/Summer2026-Internships](https://github.com/vanshb03/Summer2026-Internships)
 (the CSCareers community repo — smaller and partly distinct, so it catches
 postings Simplify misses). Both use the same `listings.json` schema; `check.py`
 reads them in one pass and dedups the same job across the two by company+title.
-Add or swap repos in the `SOURCES` list at the top of `check.py`. Total running
-cost: $0.
+Add or swap repos in the `SOURCES` list at the top of `check.py`.
+
+Everything runs in **one hourly workflow** (`.github/workflows/check-all.yml`):
+`check.py` (repos) then `check_companies.py` (company boards, fetched
+concurrently), a single checkout/pip/commit. Consolidating into one run keeps a
+**private** repo comfortably under GitHub's free 2,000 Actions-minutes/month
+(GitHub bills a 1-minute minimum per run, so run *count* is what costs). To check
+more often than hourly, make the repo **public** — Actions is then free and
+unlimited.
 
 Alerts go to **two channels**: Discord (rich message with clickable role links)
 and [Poke](https://poke.com) (a plain text describing company/role/season, no
@@ -26,9 +33,9 @@ gets sent; the other is skipped. Get a Poke key at poke.com/kitchen → API Keys
    @mention you, so the default "only @mentions" setting would stay silent).
 4. **GitHub secret**: in this repo → Settings → Secrets and variables →
    Actions, add `DISCORD_WEBHOOK_URL`.
-5. Trigger the workflow once manually (Actions tab → "Check for new
-   internships" → Run workflow). The first run seeds the seen-list and sends a
-   "bot is live" message — no flood of old listings.
+5. Trigger the workflow once manually (Actions tab → "Check internships" → Run
+   workflow). The first run seeds the seen-list and sends a "bot is live"
+   message — no flood of old listings.
 
 ## Watchlist
 
@@ -87,14 +94,16 @@ internship (`intern`/`internship` + a SWE-ish keyword — see `SWE_RE` /
 
 ### Priority companies (fast lane)
 
-Must-not-miss companies go in `priority.txt` (one per line, same matching as the
-watchlist). A separate workflow runs `check_companies.py --priority` **every 30
-minutes** — 2x more often than the hourly full run — checking just that short
-list straight from their boards, with its own state file
-(`state/company_seen_priority.json`) so it never collides with the hourly run.
-Priority alerts are prefixed ⭐. Keep the list short (it runs often), and each
-entry needs to be on a supported board or have a custom checker to be read
-directly; anything else is still covered by the hourly/30-min watchers.
+`check_companies.py --priority` checks only the companies in `priority.txt` (one
+per line, same matching as the watchlist), straight from their boards, with its
+own state file (`state/company_seen_priority.json`) and ⭐-prefixed alerts. It's
+meant to run on a **tighter schedule than the hourly full check** — but on a
+private repo that extra frequency doesn't fit the free Actions budget, so the
+consolidated hourly workflow covers priority companies along with everyone else
+and no separate fast-lane workflow is wired up. If you make the repo **public**
+(Actions free/unlimited), add a workflow that runs `check_companies.py
+--priority` every 10–15 min for a genuine fast lane. Each entry needs to be on a
+supported board or have a custom checker to be read directly.
 
 ## Junior program watcher
 
