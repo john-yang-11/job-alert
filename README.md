@@ -88,8 +88,8 @@ internship (`intern`/`internship` + a SWE-ish keyword — see `SWE_RE` /
 ### Priority companies (fast lane)
 
 Must-not-miss companies go in `priority.txt` (one per line, same matching as the
-watchlist). A separate workflow runs `check_companies.py --priority` **every 10
-minutes** — 6x more often than the hourly full run — checking just that short
+watchlist). A separate workflow runs `check_companies.py --priority` **every 30
+minutes** — 2x more often than the hourly full run — checking just that short
 list straight from their boards, with its own state file
 (`state/company_seen_priority.json`) so it never collides with the hourly run.
 Priority alerts are prefixed ⭐. Keep the list short (it runs often), and each

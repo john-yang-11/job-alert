@@ -2,7 +2,7 @@ name: Check priority companies
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # every 10 min — fast lane for priority.txt companies
+    - cron: "*/30 * * * *"   # every 30 min — fast lane for priority.txt companies
   workflow_dispatch:
 
 permissions:

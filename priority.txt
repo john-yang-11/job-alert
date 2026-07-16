@@ -4,7 +4,7 @@
 # One company or keyword per line, matched case-insensitively against company
 # name + role title. Lines starting with # are ignored.
 #
-# Keep this list SHORT — it runs 6x more often, so only your must-not-miss
+# Keep this list SHORT — it runs more often, so only your must-not-miss
 # companies belong here. Each also needs to be on a supported board (Greenhouse/
 # Lever/Ashby/SmartRecruiters/Workday/Amazon) or have a custom checker, so it can
 # be read directly. Anything else still gets caught by the hourly/30-min watchers.
