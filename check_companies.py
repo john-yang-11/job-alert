@@ -13,11 +13,23 @@ import json
 import re
 import sys
 
-from check import STATE_DIR, load_watchlist, send_discord, send_poke, send_buffer
+from check import STATE_DIR, load_watchlist, send_discord, send_poke, send_buffer, clean_keyword
 from platforms import PLATFORMS
 from resolve_companies import resolve_new
 
 SEEN_FILE = STATE_DIR / "company_seen.json"
+PRIORITY_SEEN_FILE = STATE_DIR / "company_seen_priority.json"
+PRIORITY_FILE = STATE_DIR.parent / "priority.txt"
+
+
+def load_priority() -> list[str]:
+    """High-priority companies, read only from priority.txt (not the shared
+    watchlist sheet), so the fast 10-min run checks just this short list."""
+    if not PRIORITY_FILE.exists():
+        return []
+    lines = PRIORITY_FILE.read_text(encoding="utf-8").splitlines()
+    cleaned = (clean_keyword(l) for l in lines if l.strip() and not l.strip().startswith("#"))
+    return [k for k in cleaned if k]
 
 SWE_RE = re.compile(
     r"\b(software engineer(ing)?|swe|sde|software developer|"
@@ -34,14 +46,26 @@ def is_swe_intern(title: str) -> bool:
 
 
 def main() -> None:
+    priority = "--priority" in sys.argv
+    icon = "⭐" if priority else "🏢"
+    kind = "Priority" if priority else "Company board"
+    seen_file = PRIORITY_SEEN_FILE if priority else SEEN_FILE
     STATE_DIR.mkdir(exist_ok=True)
 
-    cache, names = resolve_new(load_watchlist())
-    resolved = [(name, cache[name]) for name in names if cache.get(name, {}).get("platform")]
-    print(f"{len(resolved)}/{len(names)} watchlist companies on a known job board")
+    if priority:
+        companies = load_priority()
+        if not companies:
+            print("priority.txt is empty — nothing to check")
+            return
+    else:
+        companies = load_watchlist()
 
-    first_run = not SEEN_FILE.exists()
-    seen: set[str] = set() if first_run else set(json.loads(SEEN_FILE.read_text()))
+    cache, names = resolve_new(companies)
+    resolved = [(name, cache[name]) for name in names if cache.get(name, {}).get("platform")]
+    print(f"{len(resolved)}/{len(names)} companies on a known job board")
+
+    first_run = not seen_file.exists()
+    seen: set[str] = set() if first_run else set(json.loads(seen_file.read_text()))
 
     matched: list[tuple[str, dict]] = []
     errors = []
@@ -61,14 +85,14 @@ def main() -> None:
                 matched.append((name, j))
 
     if first_run:
-        msg = f"🏢 Company board watcher is live — tracking {len(resolved)} companies directly on their job boards."
+        msg = f"{icon} {kind} watcher is live — tracking {len(resolved)} companies directly on their job boards."
         send_discord(msg)
         send_poke(msg)
     elif matched:
         d_lines = "\n".join(f"**{name}** — [{j['title']}]({j['url']})" for name, j in matched)
         p_lines = "\n".join(f"{name} — {j['title']}" for name, j in matched)
         plural = "s" if len(matched) != 1 else ""
-        header = f"🏢 {len(matched)} new company-board SWE listing{plural}:"
+        header = f"{icon} {len(matched)} new {kind.lower()} SWE listing{plural}:"
         send_discord(f"{header}\n{d_lines}")
         send_poke(f"{header}\n{p_lines}")
         send_buffer(f"{header}\n{p_lines}")
@@ -77,7 +101,7 @@ def main() -> None:
         print(f"WARNING: {err}", file=sys.stderr)
 
     seen |= all_ids
-    SEEN_FILE.write_text(json.dumps(sorted(seen)))
+    seen_file.write_text(json.dumps(sorted(seen)))
     print(
         f"{len(all_ids)} postings checked across {len(resolved)} companies, "
         f"{len(matched)} new SWE-intern match{'es' if len(matched) != 1 else ''}, "

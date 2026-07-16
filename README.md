@@ -80,6 +80,17 @@ Alerts fire only for postings whose title looks like a software-engineering
 internship (`intern`/`internship` + a SWE-ish keyword — see `SWE_RE` /
 `INTERN_RE` in `check_companies.py` if you want to loosen or tighten that).
 
+### Priority companies (fast lane)
+
+Must-not-miss companies go in `priority.txt` (one per line, same matching as the
+watchlist). A separate workflow runs `check_companies.py --priority` **every 10
+minutes** — 6x more often than the hourly full run — checking just that short
+list straight from their boards, with its own state file
+(`state/company_seen_priority.json`) so it never collides with the hourly run.
+Priority alerts are prefixed ⭐. Keep the list short (it runs often), and each
+entry needs to be on a supported board or have a custom checker to be read
+directly; anything else is still covered by the hourly/30-min watchers.
+
 ## Junior program watcher
 
 `check_programs.py` runs daily (~9:17 AM ET) and alerts when a junior-program
