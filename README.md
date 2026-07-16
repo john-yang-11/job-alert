@@ -1,8 +1,14 @@
 # Internship Alerts
 
-Watches [SimplifyJobs/Summer2026-Internships](https://github.com/SimplifyJobs/Summer2026-Internships)
-every 30 minutes via GitHub Actions and alerts when a new listing matches the
-watchlist. Total running cost: $0.
+Watches two community internship repos every 30 minutes via GitHub Actions and
+alerts when a new listing matches the watchlist:
+[SimplifyJobs/Summer2026-Internships](https://github.com/SimplifyJobs/Summer2026-Internships)
+and [vanshb03/Summer2026-Internships](https://github.com/vanshb03/Summer2026-Internships)
+(the CSCareers community repo — smaller and partly distinct, so it catches
+postings Simplify misses). Both use the same `listings.json` schema; `check.py`
+reads them in one pass and dedups the same job across the two by company+title.
+Add or swap repos in the `SOURCES` list at the top of `check.py`. Total running
+cost: $0.
 
 Alerts go to **two channels**: Discord (rich message with clickable role links)
 and [Poke](https://poke.com) (a plain text describing company/role/season, no
