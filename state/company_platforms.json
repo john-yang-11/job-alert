@@ -1,0 +1,917 @@
+{
+ "AMD": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "ASML": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "AT&T": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "AWS": {
+  "checked_at": "2026-07-16T02:16:35.340429+00:00",
+  "platform": "amazon",
+  "slug": "aws"
+ },
+ "AWS FALL": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Accenture": {
+  "checked_at": "2026-07-15T23:49:08.983169+00:00",
+  "platform": "workday",
+  "slug": "accenture|wd103|AccentureCareers"
+ },
+ "Airbnb": {
+  "checked_at": "2026-07-15T03:47:33.048402+00:00",
+  "platform": "greenhouse",
+  "slug": "airbnb"
+ },
+ "Alphabet": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Amazon": {
+  "checked_at": "2026-07-16T02:16:35.340429+00:00",
+  "platform": "amazon",
+  "slug": "amazon"
+ },
+ "Amazon Propel program": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "BAE systems": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "BLOCK": {
+  "checked_at": "2026-07-15T03:50:01.025318+00:00",
+  "platform": "greenhouse",
+  "slug": "block"
+ },
+ "Broadcom": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "CNN": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Caterpillar": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Cisco": {
+  "checked_at": "2026-07-16T01:07:58.770397+00:00",
+  "platform": "workday",
+  "slug": "cisco|wd5|Cisco_Careers"
+ },
+ "Deloitte": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Delta": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "DraftKings": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Dropbox": {
+  "checked_at": "2026-07-15T04:16:05.046864+00:00",
+  "platform": "greenhouse",
+  "slug": "dropbox"
+ },
+ "Electronic Arts": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Everpure": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Github": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Google": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Google ASDI": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "HP": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Hermeus": {
+  "checked_at": "2026-07-15T04:17:27.799915+00:00",
+  "platform": "lever",
+  "slug": "hermeus"
+ },
+ "Hubspot": {
+  "checked_at": "2026-07-15T03:56:49.202586+00:00",
+  "platform": "greenhouse",
+  "slug": "hubspot"
+ },
+ "Hudson River Trading": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "IBM": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "IBM accelerate": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Intuit": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "JP morgan chase fellowship": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "John Deere": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "KLA": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Lockheed Martin": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Lyft": {
+  "checked_at": "2026-07-15T03:58:01.812653+00:00",
+  "platform": "greenhouse",
+  "slug": "lyft"
+ },
+ "MLH": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Mastercard": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Microsoft": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "NVIDIA": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Netflix": {
+  "checked_at": "2026-07-15T03:58:59.207689+00:00",
+  "platform": "lever",
+  "slug": "netflix"
+ },
+ "Neuralink": {
+  "checked_at": "2026-07-15T04:17:21.339430+00:00",
+  "platform": "greenhouse",
+  "slug": "neuralink"
+ },
+ "Nokia": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Northrop Grumman": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "PNC": {
+  "checked_at": "2026-07-16T00:32:39.729736+00:00",
+  "platform": "workday",
+  "slug": "pnc|wd5|External"
+ },
+ "Palantir": {
+  "checked_at": "2026-07-15T04:00:27.725346+00:00",
+  "platform": "lever",
+  "slug": "palantir"
+ },
+ "Palo Alto Networks": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Paypal": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Pinterest": {
+  "checked_at": "2026-07-15T04:00:22.310103+00:00",
+  "platform": "greenhouse",
+  "slug": "pinterest"
+ },
+ "Point72": {
+  "checked_at": "2026-07-15T04:17:49.838464+00:00",
+  "platform": "greenhouse",
+  "slug": "point72"
+ },
+ "Qualcomm": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Reddit": {
+  "checked_at": "2026-07-15T04:00:53.643731+00:00",
+  "platform": "greenhouse",
+  "slug": "reddit"
+ },
+ "Rippling winter 27": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Rocket Companies": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "SEO tech developer": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Samsung": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "ServiceNow": {
+  "checked_at": "2026-07-15T04:02:37.539523+00:00",
+  "platform": "smartrecruiters",
+  "slug": "servicenow"
+ },
+ "Siemens": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Snap": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Snowflake": {
+  "checked_at": "2026-07-15T04:03:20.918232+00:00",
+  "platform": "ashby",
+  "slug": "snowflake"
+ },
+ "Spotify": {
+  "checked_at": "2026-07-15T04:03:55.402605+00:00",
+  "platform": "lever",
+  "slug": "spotify"
+ },
+ "StockX": {
+  "checked_at": "2026-07-15T04:04:35.083735+00:00",
+  "platform": "greenhouse",
+  "slug": "stockx"
+ },
+ "Stripe": {
+  "checked_at": "2026-07-15T04:04:39.316627+00:00",
+  "platform": "greenhouse",
+  "slug": "stripe"
+ },
+ "T-mobile": {
+  "checked_at": "2026-07-16T00:22:24.451700+00:00",
+  "platform": "workday",
+  "slug": "tmobile|wd1|External"
+ },
+ "TSMC": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Tencent": {
+  "checked_at": "2026-07-16T00:51:51.379644+00:00",
+  "platform": "workday",
+  "slug": "tencent|wd1|Tencent_Careers"
+ },
+ "Tesla": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "TikTok": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Two Sigma": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "US bank": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Uber Freight": {
+  "checked_at": "2026-07-15T04:06:12.031106+00:00",
+  "platform": "greenhouse",
+  "slug": "uberfreight"
+ },
+ "VRBO": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Workday": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "abbott": {
+  "checked_at": "2026-07-15T23:48:14.329989+00:00",
+  "platform": "workday",
+  "slug": "abbott|wd5|AbbottCareers"
+ },
+ "adobe": {
+  "checked_at": "2026-07-15T23:49:44.174231+00:00",
+  "platform": "workday",
+  "slug": "adobe|wd5|external_experienced"
+ },
+ "affirm": {
+  "checked_at": "2026-07-15T03:47:28.823263+00:00",
+  "platform": "greenhouse",
+  "slug": "affirm"
+ },
+ "airtable": {
+  "checked_at": "2026-07-15T03:47:37.255382+00:00",
+  "platform": "greenhouse",
+  "slug": "airtable"
+ },
+ "american express": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "apple": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "asana": {
+  "checked_at": "2026-07-15T03:48:42.928036+00:00",
+  "platform": "greenhouse",
+  "slug": "asana"
+ },
+ "atlassian": {
+  "checked_at": "2026-07-15T03:49:14.003067+00:00",
+  "platform": "lever",
+  "slug": "atlassian"
+ },
+ "bank of america global technology summit": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "blackrock": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "blizzard": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "bloomberg": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "blue origin": {
+  "checked_at": "2026-07-15T03:50:13.339855+00:00",
+  "platform": "lever",
+  "slug": "blueorigin"
+ },
+ "boeing": {
+  "checked_at": "2026-07-16T01:04:20.411523+00:00",
+  "platform": "workday",
+  "slug": "boeing|wd1|External_Careers"
+ },
+ "brex": {
+  "checked_at": "2026-07-15T03:50:26.476956+00:00",
+  "platform": "greenhouse",
+  "slug": "brex"
+ },
+ "bytedance": {
+  "checked_at": "2026-07-15T03:50:44.557712+00:00",
+  "platform": "smartrecruiters",
+  "slug": "bytedance"
+ },
+ "c1 data analyst": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "capital one": {
+  "checked_at": "2026-07-16T01:06:30.172814+00:00",
+  "platform": "workday",
+  "slug": "capitalone|wd12|Capital_One"
+ },
+ "chime": {
+  "checked_at": "2026-07-15T03:51:26.569632+00:00",
+  "platform": "greenhouse",
+  "slug": "chime"
+ },
+ "citadel launch": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "citi": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "clay": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "clear": {
+  "checked_at": "2026-07-15T03:51:58.906266+00:00",
+  "platform": "greenhouse",
+  "slug": "clear"
+ },
+ "cloudflare": {
+  "checked_at": "2026-07-15T03:52:03.193484+00:00",
+  "platform": "greenhouse",
+  "slug": "cloudflare"
+ },
+ "coinbase": {
+  "checked_at": "2026-07-15T03:52:16.591808+00:00",
+  "platform": "greenhouse",
+  "slug": "coinbase"
+ },
+ "comcast": {
+  "checked_at": "2026-07-16T01:10:59.803504+00:00",
+  "platform": "workday",
+  "slug": "comcast|wd5|Comcast_Careers"
+ },
+ "confluent": {
+  "checked_at": "2026-07-15T03:52:32.645683+00:00",
+  "platform": "ashby",
+  "slug": "confluent"
+ },
+ "crowdstrike": {
+  "checked_at": "2026-07-16T01:11:50.240396+00:00",
+  "platform": "workday",
+  "slug": "crowdstrike|wd5|CrowdstrikeCareers"
+ },
+ "cvs health": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "dandy": {
+  "checked_at": "2026-07-15T03:53:16.313312+00:00",
+  "platform": "ashby",
+  "slug": "dandy"
+ },
+ "databricks": {
+  "checked_at": "2026-07-15T03:53:20.722894+00:00",
+  "platform": "greenhouse",
+  "slug": "databricks"
+ },
+ "datadog": {
+  "checked_at": "2026-07-15T03:53:24.973469+00:00",
+  "platform": "greenhouse",
+  "slug": "datadog"
+ },
+ "dell": {
+  "checked_at": "2026-07-16T01:25:59.271777+00:00",
+  "platform": "workday",
+  "slug": "dell|wd1|External"
+ },
+ "disney": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "doordash": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "duolingo": {
+  "checked_at": "2026-07-15T03:54:36.114308+00:00",
+  "platform": "greenhouse",
+  "slug": "duolingo"
+ },
+ "ea pathfinder": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "epic": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "fidelity": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "figma": {
+  "checked_at": "2026-07-15T03:54:58.774798+00:00",
+  "platform": "greenhouse",
+  "slug": "figma"
+ },
+ "ford": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "general dynamics": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "general motors": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "handshake": {
+  "checked_at": "2026-07-15T03:56:25.851318+00:00",
+  "platform": "ashby",
+  "slug": "handshake"
+ },
+ "harmon": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "ignite NVIDIA": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "infosys": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "instacart": {
+  "checked_at": "2026-07-15T03:57:08.948026+00:00",
+  "platform": "greenhouse",
+  "slug": "instacart"
+ },
+ "jane street": {
+  "checked_at": "2026-07-15T03:46:57.700280+00:00",
+  "platform": "greenhouse",
+  "slug": "janestreet"
+ },
+ "jpmorgan": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "kalshi": {
+  "checked_at": "2026-07-15T03:57:35.737811+00:00",
+  "platform": "greenhouse",
+  "slug": "kalshi"
+ },
+ "leidos": {
+  "checked_at": "2026-07-16T00:52:46.806873+00:00",
+  "platform": "workday",
+  "slug": "leidos|wd5|External"
+ },
+ "lenovo": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "linkedin": {
+  "checked_at": "2026-07-15T03:57:46.723274+00:00",
+  "platform": "lever",
+  "slug": "linkedin"
+ },
+ "mercedes": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "meta": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "mongoDB": {
+  "checked_at": "2026-07-15T03:58:28.224332+00:00",
+  "platform": "greenhouse",
+  "slug": "mongodb"
+ },
+ "mongodb NeXt summit": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "morgan stanley": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "nasa": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "nintendo": {
+  "checked_at": "2026-07-15T03:59:03.494920+00:00",
+  "platform": "greenhouse",
+  "slug": "nintendo"
+ },
+ "notion": {
+  "checked_at": "2026-07-15T03:59:33.045004+00:00",
+  "platform": "ashby",
+  "slug": "notion"
+ },
+ "nutanix": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "okta": {
+  "checked_at": "2026-07-15T03:59:52.098229+00:00",
+  "platform": "greenhouse",
+  "slug": "okta"
+ },
+ "oracle": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "patreon": {
+  "checked_at": "2026-07-15T04:00:01.410942+00:00",
+  "platform": "ashby",
+  "slug": "patreon"
+ },
+ "plaid": {
+  "checked_at": "2026-07-15T04:00:24.446378+00:00",
+  "platform": "lever",
+  "slug": "plaid"
+ },
+ "pwc": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "ramp": {
+  "checked_at": "2026-07-15T04:00:40.964310+00:00",
+  "platform": "ashby",
+  "slug": "ramp"
+ },
+ "raytheon": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "redhat": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "resy": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "riot games": {
+  "checked_at": "2026-07-15T04:01:15.127145+00:00",
+  "platform": "greenhouse",
+  "slug": "riotgames"
+ },
+ "rippling": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "robinhood": {
+  "checked_at": "2026-07-15T04:01:19.281162+00:00",
+  "platform": "greenhouse",
+  "slug": "robinhood"
+ },
+ "roblox": {
+  "checked_at": "2026-07-15T04:01:23.367387+00:00",
+  "platform": "greenhouse",
+  "slug": "roblox"
+ },
+ "roche": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "roku": {
+  "checked_at": "2026-07-15T04:18:14.449149+00:00",
+  "platform": "greenhouse",
+  "slug": "roku"
+ },
+ "rtx": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "salesforce": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "salesforce future tech launchpad": {
+  "checked_at": "2026-07-16T00:46:19.215438+00:00",
+  "platform": "workday",
+  "slug": "salesforce|wd12|External_Career_Site"
+ },
+ "scale": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "seatgeek": {
+  "checked_at": "2026-07-15T04:02:28.524892+00:00",
+  "platform": "greenhouse",
+  "slug": "seatgeek"
+ },
+ "siriusxm": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "slack": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "sofi": {
+  "checked_at": "2026-07-15T04:03:28.304138+00:00",
+  "platform": "greenhouse",
+  "slug": "sofi"
+ },
+ "southwest": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "spaceX": {
+  "checked_at": "2026-07-15T04:03:41.178798+00:00",
+  "platform": "greenhouse",
+  "slug": "spacex"
+ },
+ "splunk": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "square": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "state street": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "stryker": {
+  "checked_at": "2026-07-16T00:22:01.235649+00:00",
+  "platform": "workday",
+  "slug": "stryker|wd1|StrykerCareers"
+ },
+ "tensorwave": {
+  "checked_at": "2026-07-15T04:05:12.262879+00:00",
+  "platform": "ashby",
+  "slug": "tensorwave"
+ },
+ "thrive by duolingo": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "tinder": {
+  "checked_at": "2026-07-15T04:05:36.741991+00:00",
+  "platform": "ashby",
+  "slug": "tinder"
+ },
+ "twilio": {
+  "checked_at": "2026-07-15T04:05:49.600497+00:00",
+  "platform": "greenhouse",
+  "slug": "twilio"
+ },
+ "twitter": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "uber": {
+  "checked_at": "2026-07-15T04:06:07.973864+00:00",
+  "platform": "smartrecruiters",
+  "slug": "uber"
+ },
+ "uber career prep": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "united health group": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "visa": {
+  "checked_at": "2026-07-15T04:07:21.704411+00:00",
+  "platform": "smartrecruiters",
+  "slug": "visa"
+ },
+ "vmware": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "walmart": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "waymo": {
+  "checked_at": "2026-07-15T04:07:52.776993+00:00",
+  "platform": "greenhouse",
+  "slug": "waymo"
+ },
+ "wells fargo": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "wellsfargo sophomore discovery fellowship": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "whatnot": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "xfinity": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "yahoo": {
+  "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ }
+}
