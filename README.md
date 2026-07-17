@@ -94,16 +94,16 @@ internship (`intern`/`internship` + a SWE-ish keyword — see `SWE_RE` /
 
 ### Priority companies (fast lane)
 
-`check_companies.py --priority` checks only the companies in `priority.txt` (one
-per line, same matching as the watchlist), straight from their boards, with its
-own state file (`state/company_seen_priority.json`) and ⭐-prefixed alerts. It's
-meant to run on a **tighter schedule than the hourly full check** — but on a
-private repo that extra frequency doesn't fit the free Actions budget, so the
-consolidated hourly workflow covers priority companies along with everyone else
-and no separate fast-lane workflow is wired up. If you make the repo **public**
-(Actions free/unlimited), add a workflow that runs `check_companies.py
---priority` every 10–15 min for a genuine fast lane. Each entry needs to be on a
-supported board or have a custom checker to be read directly.
+Must-not-miss companies go in `priority.txt` (one per line, same matching as the
+watchlist). `check-priority.yml` runs `check_companies.py --priority` **every 15
+minutes** — 4x the hourly full check — hitting just those companies' boards
+(fetched concurrently), with its own state file
+(`state/company_seen_priority.json`) so it never collides with the full run.
+Alerts are ⭐-prefixed. Each entry needs to be on a supported board or have a
+custom checker to be read directly. This fast lane's extra runs only fit
+GitHub's free Actions minutes on a **public** repo (Actions is free/unlimited
+there); on a private repo, drop this workflow and let the hourly run cover
+priority companies too.
 
 ## Junior program watcher
 
