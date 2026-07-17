@@ -1,7 +1,7 @@
 # Internship Alerts
 
 Watches two community internship repos, plus company job boards directly, every
-hour via GitHub Actions and alerts when a new listing matches the watchlist:
+30 minutes via GitHub Actions and alerts when a new listing matches the watchlist:
 [SimplifyJobs/Summer2026-Internships](https://github.com/SimplifyJobs/Summer2026-Internships)
 and [vanshb03/Summer2026-Internships](https://github.com/vanshb03/Summer2026-Internships)
 (the CSCareers community repo — smaller and partly distinct, so it catches
@@ -9,13 +9,13 @@ postings Simplify misses). Both use the same `listings.json` schema; `check.py`
 reads them in one pass and dedups the same job across the two by company+title.
 Add or swap repos in the `SOURCES` list at the top of `check.py`.
 
-Everything runs in **one hourly workflow** (`.github/workflows/check-all.yml`):
-`check.py` (repos) then `check_companies.py` (company boards, fetched
-concurrently), a single checkout/pip/commit. Consolidating into one run keeps a
-**private** repo comfortably under GitHub's free 2,000 Actions-minutes/month
-(GitHub bills a 1-minute minimum per run, so run *count* is what costs). To check
-more often than hourly, make the repo **public** — Actions is then free and
-unlimited.
+The main check runs in **one workflow** (`.github/workflows/check-all.yml`) every
+30 min: `check.py` (repos) then `check_companies.py` (company boards, fetched
+concurrently), a single checkout/pip/commit. GitHub bills a 1-minute minimum per
+run, so run *count* is what costs; on a **private** repo, drop the frequency (or
+consolidate more) to stay under the free 2,000 Actions-minutes/month. This repo
+runs **public**, where Actions is free and unlimited — hence the 30-min main
+check plus the 15-min priority fast lane below.
 
 Alerts go to **two channels**: Discord (rich message with clickable role links)
 and [Poke](https://poke.com) (a plain text describing company/role/season, no

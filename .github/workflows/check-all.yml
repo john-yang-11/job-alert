@@ -1,13 +1,13 @@
 name: Check internships
 
-# One consolidated hourly job: repo watchers + direct company boards, in a single
-# checkout/setup/pip with one state commit. Replaces the separate check / company /
-# priority workflows -- fewer runs (GitHub bills a 1-min minimum each) keeps a
-# private repo under the 2,000 free Actions-minutes/month, and one committer avoids
-# state-commit races. Board fetches run concurrently (see check_companies.py).
+# One consolidated job: repo watchers + direct company boards, in a single
+# checkout/setup/pip with one state commit. Board fetches run concurrently (see
+# check_companies.py). Runs every 30 min, offset (:07/:37) from the priority
+# workflow's quarter-hours to avoid overlapping state commits. Consolidating into
+# one job (vs several) keeps run count -- and Actions minutes -- low.
 on:
   schedule:
-    - cron: "7 * * * *"   # hourly
+    - cron: "7,37 * * * *"   # every 30 min
   workflow_dispatch:
 
 permissions:
