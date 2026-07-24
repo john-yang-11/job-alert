@@ -5,12 +5,12 @@
   "slug": null
  },
  "ASML": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-07-24T03:05:05.052674+00:00",
   "platform": null,
   "slug": null
  },
  "AT&T": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-07-24T03:05:15.442895+00:00",
   "platform": null,
   "slug": null
  },
@@ -65,7 +65,7 @@
   "slug": null
  },
  "Broadcom": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-07-24T03:07:06.425582+00:00",
   "platform": null,
   "slug": null
  },
@@ -420,7 +420,7 @@
   "slug": null
  },
  "blackrock": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-07-24T03:06:36.641487+00:00",
   "platform": null,
   "slug": null
  },
@@ -430,7 +430,7 @@
   "slug": null
  },
  "bloomberg": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-07-24T03:06:57.060313+00:00",
   "platform": null,
   "slug": null
  },
@@ -475,7 +475,7 @@
   "slug": null
  },
  "citi": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-07-24T03:08:17.962095+00:00",
   "platform": null,
   "slug": null
  },
