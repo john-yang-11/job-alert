@@ -55,7 +55,12 @@ def fetch_greenhouse(slug: str, company_name: str) -> list[dict]:
     if jobs is None:
         raise PlatformError("greenhouse: no 'jobs' key")
     return [
-        {"id": f"gh:{slug}:{j['id']}", "title": j.get("title", ""), "url": j.get("absolute_url", "")}
+        {
+            "id": f"gh:{slug}:{j['id']}",
+            "title": j.get("title", ""),
+            "url": j.get("absolute_url", ""),
+            "location": (j.get("location") or {}).get("name", "") or "",
+        }
         for j in jobs
     ]
 
@@ -65,7 +70,13 @@ def fetch_lever(slug: str, company_name: str) -> list[dict]:
     if not isinstance(data, list):
         raise PlatformError("lever: response is not a list")
     return [
-        {"id": f"lever:{slug}:{p['id']}", "title": p.get("text", ""), "url": p.get("hostedUrl", "")}
+        {
+            "id": f"lever:{slug}:{p['id']}",
+            "title": p.get("text", ""),
+            "url": p.get("hostedUrl", ""),
+            "location": (p.get("categories") or {}).get("location", "") or "",
+            "country": p.get("country", "") or "",  # ISO code when Lever provides it
+        }
         for p in data
     ]
 
@@ -76,7 +87,14 @@ def fetch_ashby(slug: str, company_name: str) -> list[dict]:
     if jobs is None:
         raise PlatformError("ashby: no 'jobs' key")
     return [
-        {"id": f"ashby:{slug}:{j['id']}", "title": j.get("title", ""), "url": j.get("jobUrl", "")}
+        {
+            "id": f"ashby:{slug}:{j['id']}",
+            "title": j.get("title", ""),
+            "url": j.get("jobUrl", ""),
+            "location": j.get("location", "") or "",
+            # full country name when Ashby's address block is populated
+            "country": ((j.get("address") or {}).get("postalAddress") or {}).get("addressCountry", "") or "",
+        }
         for j in jobs
     ]
 
@@ -92,12 +110,15 @@ def fetch_smartrecruiters(slug: str, company_name: str) -> list[dict]:
     for p in content:
         job_id = p.get("id")
         company = (p.get("company") or {}).get("identifier", slug)
+        loc = p.get("location") or {}
         out.append({
             "id": f"sr:{slug}:{job_id}",
             "title": p.get("name", ""),
             # "ref" is the internal API URL, not a public page; the public job page
             # lives at jobs.smartrecruiters.com/<company identifier>/<posting id>
             "url": f"https://jobs.smartrecruiters.com/{company}/{job_id}",
+            "location": loc.get("fullLocation", "") or "",
+            "country": loc.get("country", "") or "",  # ISO alpha-2, e.g. "us"
         })
     return out
 
@@ -163,10 +184,16 @@ def fetch_workday(slug: str, company_name: str) -> list[dict]:
         postings = data.get("jobPostings") or []
         for p in postings:
             path = p.get("externalPath", "")
+            # externalPath looks like "/job/San-Jose-California-US/Title-Slug_R123";
+            # the first segment is the location slug, hyphenated ("City-State-US"/
+            # "City-Country") -- no clean structured location from this endpoint.
+            parts = path.split("/")
+            loc = parts[2] if len(parts) > 2 else ""
             out.append({
                 "id": f"wd:{tenant}:{path}",
                 "title": p.get("title", ""),
                 "url": f"{base}/{site}{path}",
+                "location": loc,
             })
         # Workday reports the match count only on the first page; later pages
         # report total=0, so pin it once and page against that.
@@ -315,6 +342,8 @@ def fetch_amazon(slug: str, company_name: str) -> list[dict]:
                 "id": f"amazon:{path}",
                 "title": j.get("title", ""),
                 "url": f"https://www.amazon.jobs{path}",
+                "location": j.get("city", "") or "",
+                "country": j.get("country_code", "") or "",  # ISO alpha-3, e.g. "USA"
             })
         offset += limit
         if offset >= data.get("hits", 0) or not jobs:
@@ -336,11 +365,11 @@ def fetch_capitalone(slug: str, company_name: str) -> list[dict]:
     # need: /job/<location>/<title-slug>/<category>/<id>.
     out, seen = [], set()
 
-    def add(job_id: str, title: str, url: str) -> None:
+    def add(job_id: str, title: str, url: str, location: str = "") -> None:
         if job_id in seen:
             return
         seen.add(job_id)
-        out.append({"id": job_id, "title": title, "url": url})
+        out.append({"id": job_id, "title": title, "url": url, "location": location})
 
     base = "https://www.capitalonecareers.com"
     headers = {**HEADERS, "User-Agent": _BROWSER_UA}
@@ -357,14 +386,15 @@ def fetch_capitalone(slug: str, company_name: str) -> list[dict]:
             parts = path.strip("/").split("/")
             if len(parts) < 5:
                 continue
-            add(f"capitalone:{parts[-1]}", parts[-3].replace("-", " "), base + path)
+            add(f"capitalone:{parts[-1]}", parts[-3].replace("-", " "), base + path,
+                parts[-4].replace("-", " "))
         if len(seen) == before:   # no new links -> past the last results page
             break
 
     # also fold in the Workday board (facet-filtered to interns); best-effort
     try:
         for j in fetch_workday(CAPITALONE_WORKDAY, company_name):
-            add(j["id"], j["title"], j["url"])
+            add(j["id"], j["title"], j["url"], j.get("location", ""))
     except PlatformError:
         pass
     return out

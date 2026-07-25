@@ -1,13 +1,22 @@
 # Internship Alerts
 
-Watches two community internship repos, plus company job boards directly, every
-30 minutes via GitHub Actions and alerts when a new listing matches the watchlist:
-[SimplifyJobs/Summer2026-Internships](https://github.com/SimplifyJobs/Summer2026-Internships)
-and [vanshb03/Summer2026-Internships](https://github.com/vanshb03/Summer2026-Internships)
-(the CSCareers community repo — smaller and partly distinct, so it catches
-postings Simplify misses). Both use the same `listings.json` schema; `check.py`
-reads them in one pass and dedups the same job across the two by company+title.
-Add or swap repos in the `SOURCES` list at the top of `check.py`.
+Watches a community internship repo, plus company job boards directly, every
+30 minutes via GitHub Actions and alerts when a new listing matches the
+watchlist: [vanshb03/Summer2027-Internships](https://github.com/vanshb03/Summer2027-Internships)
+(the CSCareers community repo). SimplifyJobs hasn't opened a
+`Summer2027-Internships` repo yet as of 2026-07-24 (still only
+`Summer2026-Internships`); add it back to `SOURCES` in `check.py` once it
+exists, same URL pattern as the vanshb03 entry.
+
+**Only Summer 2027, US roles** are alerted on — see `is_target_season` /
+`is_us_location` in `check.py`. Community-repo listings are filtered by their
+`terms`/`season` and `locations` fields; direct company-board postings
+(`check_companies.py`) are filtered by an explicit year mention in the title
+(untitled-year postings pass through, since a board only ever lists what's
+currently open) and by whatever location/country field each ATS's API exposes
+(exact country code where available, free-text heuristic otherwise). Update
+`TARGET_YEAR`/`TARGET_SEASON`/`US_STATE_ABBRS`/`NON_US_HINTS` in `check.py`
+next cycle or if you want to loosen the location rule.
 
 The main check runs in **one workflow** (`.github/workflows/check-all.yml`) every
 30 min: `check.py` (repos) then `check_companies.py` (company boards, fetched

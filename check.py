@@ -1,4 +1,5 @@
-"""Check SimplifyJobs/Summer2026-Internships for new listings and alert via Discord.
+"""Check community internship repos (see SOURCES) for new Summer 2027 US
+listings and alert via Discord.
 
 Runs every 30 min on GitHub Actions (see .github/workflows/check.yml).
 State (seen listing IDs + ETag) lives in state/ and is committed back by the workflow.
@@ -25,13 +26,13 @@ sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 # Community internship repos to watch. Both publish the same listings.json schema
 # (id/company_name/title/url/active/is_visible); we read them in one pass and
-# dedup across them. Simplify is huge; the CSCareers/vanshb03 repo is smaller and
-# partly distinct, so it catches things Simplify misses (and vice versa).
-# NOTE: both are the Summer2026 cycle -- bump both URLs to Summer2027 together
-# when you switch cycles.
+# dedup across them.
+# Only Summer 2027 is tracked (see is_target_season below). SimplifyJobs hasn't
+# opened a Summer2027-Internships repo yet (checked 2026-07-24 -- still only
+# Summer2026-Internships, which is why it's dropped from here); add it back
+# once it exists, same URL pattern as vanshb03's below.
 SOURCES = [
-    ("Simplify", "https://raw.githubusercontent.com/SimplifyJobs/Summer2026-Internships/dev/.github/scripts/listings.json"),
-    ("CSCareers", "https://raw.githubusercontent.com/vanshb03/Summer2026-Internships/dev/.github/scripts/listings.json"),
+    ("CSCareers", "https://raw.githubusercontent.com/vanshb03/Summer2027-Internships/dev/.github/scripts/listings.json"),
 ]
 
 ROOT = Path(__file__).parent
@@ -85,6 +86,77 @@ def matches(listing: dict, keywords: list[str]) -> bool:
     # whole-word match so "visa" doesn't hit "TelevisaUnivision"
     haystack = f"{listing.get('company_name', '')} {listing.get('title', '')}".lower()
     return any(re.search(rf"\b{re.escape(kw.lower())}\b", haystack) for kw in keywords)
+
+
+# --- Season / location rules: only Summer 2027, only US roles ---------------
+TARGET_SEASON = "summer"
+TARGET_YEAR = "2027"
+
+US_STATE_ABBRS = {
+    "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID",
+    "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS",
+    "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK",
+    "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV",
+    "WI", "WY", "DC", "PR",
+}
+NON_US_HINTS = (
+    "canada", "united kingdom", "england", "scotland", "wales", "ireland",
+    "india", "germany", "france", "spain", "italy", "netherlands", "poland",
+    "mexico", "brazil", "china", "japan", "singapore", "australia",
+    "new zealand", "switzerland", "sweden", "norway", "denmark", "finland",
+    "austria", "belgium", "portugal", "israel", "united arab emirates",
+    "philippines", "vietnam", "indonesia", "malaysia", "thailand", "korea",
+    "taiwan", "hong kong", "argentina", "chile", "colombia", "peru", "egypt",
+    "south africa", "nigeria", "kenya", "romania", "ukraine", "russia",
+    "turkey", "greece", "czech", "hungary", "pakistan", "bangladesh",
+)
+
+
+def _is_us_text(text: str) -> bool | None:
+    """Classify one free-text location as US (True), non-US (False), or
+    unrecognized (None). Handles both 'City, ST' and hyphenated
+    'City-State-US' forms (Workday job paths use the latter)."""
+    low = text.lower().replace("-", " ")
+    if "united states" in low or re.search(r"\bus\b", low):
+        return True
+    if any(hint in low for hint in NON_US_HINTS):
+        return False
+    last = re.split(r"[,\s]+", text.strip())[-1] if text.strip() else ""
+    if last.upper() in US_STATE_ABBRS:
+        return True
+    return None
+
+
+def is_us_location(locations: list[str], country: str = "") -> bool:
+    """True unless there's a confident non-US signal. `country` (an ISO
+    alpha-2/alpha-3 code or full name straight from a platform's own API), when
+    given, is authoritative; otherwise falls back to free-text heuristics on
+    `locations`. Unrecognized/missing input defaults to True -- a formatting
+    quirk should never silently drop a real US posting."""
+    if country:
+        return country.strip().lower() in ("us", "usa", "united states", "united states of america")
+    results = [_is_us_text(loc) for loc in locations if loc and loc.strip()]
+    if any(r is True for r in results):
+        return True
+    if results and all(r is False for r in results):
+        return False
+    return True
+
+
+def is_target_season(listing: dict) -> bool:
+    """Only Summer 2027. Repo data doesn't reliably tag a year per-listing --
+    e.g. vanshb03's cycle repo bundles Winter/Spring/Summer/Fall postings under
+    one bare 'season' word with no year field -- so we trust the season word
+    and only use an explicit year mention as a safety net to drop clearly
+    stale listings."""
+    terms = [t for t in (listing.get("terms") or []) if t and t.upper() != "N/A"]
+    if not terms and listing.get("season"):
+        terms = [str(listing["season"])]
+    text = f"{' '.join(terms)} {listing.get('title', '')}".lower()
+    if TARGET_SEASON not in text:
+        return False
+    years = re.findall(r"\b(?:19|20)\d{2}\b", text)
+    return not years or TARGET_YEAR in years
 
 
 SEASON_RANK = {"summer": 0, "fall": 1, "winter": 2, "spring": 3}
@@ -277,9 +349,14 @@ def main() -> None:
             key = content_key(l)
             if key in seen_keys or key in batch_keys:   # same job from either repo
                 continue
-            if matches(l, keywords):
-                matched.append(l)
-                batch_keys.add(key)
+            if not matches(l, keywords):
+                continue
+            if not is_target_season(l):
+                continue
+            if not is_us_location(l.get("locations") or []):
+                continue
+            matched.append(l)
+            batch_keys.add(key)
     print(f"{len(matched)} new matches across sources")
 
     if matched:

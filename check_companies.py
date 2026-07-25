@@ -14,7 +14,10 @@ import re
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from check import STATE_DIR, load_watchlist, send_discord, send_poke, send_buffer, clean_keyword
+from check import (
+    STATE_DIR, load_watchlist, send_discord, send_poke, send_buffer, clean_keyword,
+    is_us_location, TARGET_YEAR,
+)
 from platforms import PLATFORMS
 from resolve_companies import resolve_new
 
@@ -44,6 +47,20 @@ INTERN_RE = re.compile(r"\bintern(ship)?\b", re.IGNORECASE)
 
 def is_swe_intern(title: str) -> bool:
     return bool(INTERN_RE.search(title) and SWE_RE.search(title))
+
+
+STALE_YEAR_RE = re.compile(r"\b(?:19|20)\d{2}\b")
+
+
+def is_current_cycle(title: str) -> bool:
+    """Best-effort year guard for direct company-board titles -- these boards
+    have no season metadata like the repo watcher does, just whatever's
+    currently open. Drop postings whose title explicitly names a year other
+    than TARGET_YEAR; titles with no year mentioned pass through unfiltered
+    (a company board only lists currently-open roles anyway, so an untitled
+    year is almost always the live cycle)."""
+    years = STALE_YEAR_RE.findall(title)
+    return not years or TARGET_YEAR in years
 
 
 def main() -> None:
@@ -88,7 +105,11 @@ def main() -> None:
                 all_ids.add(j["id"])
                 if j["id"] in seen:
                     continue
-                if is_swe_intern(j["title"]):
+                if (
+                    is_swe_intern(j["title"])
+                    and is_current_cycle(j["title"])
+                    and is_us_location([j.get("location", "")], j.get("country", ""))
+                ):
                     matched.append((name, j))
 
     if first_run:
