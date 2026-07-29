@@ -30,6 +30,14 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      # Keep the free-plan buffer awake (see check-all.yml for why).
+      - name: Wake buffer
+        env:
+          BUFFER_URL: ${{ secrets.BUFFER_URL }}
+        run: |
+          [ -n "$BUFFER_URL" ] || exit 0
+          curl -sS -m 90 "${BUFFER_URL%/*}/health" || echo "::warning::buffer wake failed"
+
       - name: Run priority board checker
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}

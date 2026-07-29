@@ -246,6 +246,11 @@ def send_poke(text: str) -> None:
 def send_buffer(text: str) -> None:
     # push the latest alert to the buffer MCP server so Poke can poll it.
     # best-effort: a buffer outage must not fail the run or block Discord/Poke.
+    #
+    # The buffer only sees traffic when an alert fires, so on a free-tier host it
+    # is usually asleep by then and the first request pays a ~50s cold start.
+    # A short timeout here silently drops exactly the pushes we care about, so
+    # wake it first, then post with room to spare, and retry once.
     url = os.environ.get("BUFFER_URL")
     if not url:
         return
@@ -253,10 +258,29 @@ def send_buffer(text: str) -> None:
     token = os.environ.get("BUFFER_TOKEN")
     if token:
         headers["Authorization"] = f"Bearer {token}"
+
+    wake_buffer()
+    for attempt in (1, 2):
+        try:
+            resp = requests.post(url, headers=headers, json={"content": text}, timeout=90)
+            if resp.ok:
+                return
+            print(f"Buffer push got {resp.status_code}: {resp.text[:200]}", file=sys.stderr)
+        except Exception as e:
+            print(f"Buffer push attempt {attempt} failed: {e}", file=sys.stderr)
+    print("WARNING: buffer never received this alert; Poke will not see it", file=sys.stderr)
+
+
+def wake_buffer() -> None:
+    """Nudge the buffer's /health so the cold start happens before the real POST."""
+    url = os.environ.get("BUFFER_URL")
+    if not url:
+        return
+    health = url.rsplit("/", 1)[0] + "/health"
     try:
-        requests.post(url, headers=headers, json={"content": text}, timeout=15)
+        requests.get(health, timeout=90)
     except Exception as e:
-        print(f"Buffer push failed (ignored): {e}", file=sys.stderr)
+        print(f"Buffer wake failed (continuing): {e}", file=sys.stderr)
 
 
 def load_state() -> tuple[set, set, bool]:

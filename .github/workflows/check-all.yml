@@ -30,6 +30,16 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      # The buffer is on a free plan that sleeps after ~15 min idle. Pinging it
+      # each run keeps it awake, so both the alert push below and Poke's own
+      # polls get an immediate answer instead of a ~50s cold start.
+      - name: Wake buffer
+        env:
+          BUFFER_URL: ${{ secrets.BUFFER_URL }}
+        run: |
+          [ -n "$BUFFER_URL" ] || exit 0
+          curl -sS -m 90 "${BUFFER_URL%/*}/health" || echo "::warning::buffer wake failed"
+
       - name: Run checkers
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}

@@ -1,9 +1,14 @@
 """Lightweight buffer between the internship checker and Poke.
 
 The checker POSTs its latest alert JSON here; the server keeps the most recent
-one in memory (and mirrors it to disk so a restart recovers it). Poke connects
-to this as a remote MCP server and reads it via the `get_latest_update` tool —
-so Poke *pulls* the alert instead of relying on a push reaching your phone.
+one in memory and mirrors it to disk. Poke connects to this as a remote MCP
+server and reads it via the `get_latest_update` tool — so Poke *pulls* the alert
+instead of relying on a push reaching your phone.
+
+Note: the disk mirror only survives a restart on a host with a persistent disk.
+On an ephemeral free plan (e.g. Render free) the file is wiped whenever the
+instance restarts or wakes from sleep, so /health will report has_data: false
+until the next alert is pushed. That is expected, not a failure.
 
 Endpoints when running:
   POST /update   -> store latest alert JSON (requires  Authorization: Bearer <BUFFER_TOKEN>)
@@ -29,8 +34,42 @@ from starlette.responses import JSONResponse
 
 TOKEN = os.environ.get("BUFFER_TOKEN", "")
 STATE = Path(os.environ.get("BUFFER_STATE", "buffer_state.json"))
+MCP_PATH = "/mcp"
 
 mcp = FastMCP("internship-buffer")
+
+
+class LenientMcpEntry:
+    """ASGI shim that stops well-behaved clients from bouncing off /mcp.
+
+    Two rough edges in the Streamable HTTP layer, both of which show up as a
+    failed connection on the client side:
+
+    1. The session manager matches the Accept header by exact substring and
+       demands BOTH application/json and text/event-stream. A client sending
+       only application/json -- or even a wildcard */* -- gets 406 Not
+       Acceptable. We rewrite Accept to the pair the spec wants.
+    2. Starlette 307-redirects /mcp/ to /mcp. Clients that drop the body or
+       the method on redirect fail mid-handshake, so fold the trailing-slash
+       form onto the real path instead of redirecting.
+
+    Only the MCP path is touched; /update and /health negotiate normally.
+    """
+
+    def __init__(self, app):
+        self.app = app
+
+    async def __call__(self, scope, receive, send):
+        if scope["type"] == "http":
+            path = scope.get("path", "")
+            if path == MCP_PATH + "/":
+                path = MCP_PATH
+                scope = dict(scope, path=path, raw_path=path.encode())
+            if path == MCP_PATH:
+                headers = [(k, v) for k, v in scope["headers"] if k.lower() != b"accept"]
+                headers.append((b"accept", b"application/json, text/event-stream"))
+                scope = dict(scope, headers=headers)
+        await self.app(scope, receive, send)
 
 
 def _load():
@@ -71,4 +110,13 @@ def get_latest_update() -> dict:
 
 
 if __name__ == "__main__":
-    mcp.run(transport="http", host="0.0.0.0", port=int(os.environ.get("PORT", "8000")))
+    import uvicorn
+
+    # Wrap the app rather than using mcp.run() so the Accept/redirect shim sits
+    # in front of the MCP handler. The shim forwards lifespan scopes untouched,
+    # which the session manager needs to start.
+    uvicorn.run(
+        LenientMcpEntry(mcp.http_app(path=MCP_PATH)),
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", "8000")),
+    )
