@@ -115,8 +115,17 @@ if __name__ == "__main__":
     # Wrap the app rather than using mcp.run() so the Accept/redirect shim sits
     # in front of the MCP handler. The shim forwards lifespan scopes untouched,
     # which the session manager needs to start.
+    #
+    # stateless_http: in the default stateful mode the server hands out an
+    # mcp-session-id on initialize and rejects every later request that does not
+    # echo it back with "400 Bad Request: Missing session ID". That is a bad fit
+    # here twice over: connector-style clients often do not carry the id between
+    # calls, and sessions live in memory, so a free-plan sleep or restart
+    # invalidates a connection that was working a minute ago. This server is one
+    # read-only tool over a single value -- there is no session state worth
+    # keeping -- so let every request stand on its own.
     uvicorn.run(
-        LenientMcpEntry(mcp.http_app(path=MCP_PATH)),
+        LenientMcpEntry(mcp.http_app(path=MCP_PATH, stateless_http=True)),
         host="0.0.0.0",
         port=int(os.environ.get("PORT", "8000")),
     )
