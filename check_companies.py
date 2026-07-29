@@ -15,7 +15,7 @@ import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from check import (
-    STATE_DIR, load_watchlist, send_discord, send_poke, send_buffer, clean_keyword,
+    STATE_DIR, load_watchlist, send_discord, send_poke, send_all, clean_keyword,
     is_us_location, TARGET_YEAR,
 )
 from platforms import PLATFORMS
@@ -121,9 +121,7 @@ def main() -> None:
         p_lines = "\n".join(f"{name} — {j['title']}" for name, j in matched)
         plural = "s" if len(matched) != 1 else ""
         header = f"{icon} {len(matched)} new {kind.lower()} SWE listing{plural}:"
-        send_discord(f"{header}\n{d_lines}")
-        send_poke(f"{header}\n{p_lines}")
-        send_buffer(f"{header}\n{p_lines}")
+        send_all(f"{header}\n{d_lines}", f"{header}\n{p_lines}")
 
     for err in errors:
         print(f"WARNING: {err}", file=sys.stderr)

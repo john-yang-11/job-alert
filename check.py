@@ -283,6 +283,31 @@ def wake_buffer() -> None:
         print(f"Buffer wake failed (continuing): {e}", file=sys.stderr)
 
 
+def send_all(discord_text: str, plain_text: str) -> None:
+    """Fan one alert out to every sink, each attempt independent.
+
+    send_discord and send_poke both raise on a bad response, and the buffer
+    push used to sit last in a bare sequence -- so a hiccup in either one meant
+    the buffer silently never saw an alert that had already reached Discord.
+    Give every sink its own attempt, then re-raise at the end so a delivery
+    failure still fails the run (which leaves state unsaved, and the alert is
+    retried on the next pass).
+    """
+    failures = []
+    for name, fn, text in (
+        ("discord", send_discord, discord_text),
+        ("poke", send_poke, plain_text),
+        ("buffer", send_buffer, plain_text),
+    ):
+        try:
+            fn(text)
+        except Exception as e:
+            print(f"{name} alert failed: {e}", file=sys.stderr)
+            failures.append(name)
+    if failures:
+        raise RuntimeError("alert delivery failed for: " + ", ".join(failures))
+
+
 def load_state() -> tuple[set, set, bool]:
     """Return (seen_ids, seen_keys, needs_reseed). The old on-disk format was a
     bare list of ids; detect it and trigger a one-time silent reseed so adding a
@@ -388,9 +413,7 @@ def main() -> None:
         plural = "es" if len(matched) != 1 else ""
         header = f"🔔 {len(matched)} new internship match{plural}:"
         plain = header + "\n" + "\n".join(format_listing_plain(l) for l in matched)
-        send_discord(header + "\n" + "\n".join(format_listing(l) for l in matched))
-        send_poke(plain)
-        send_buffer(plain)
+        send_all(header + "\n" + "\n".join(format_listing(l) for l in matched), plain)
 
     # persist every id and content-key we've now seen (across both sources)
     for l in fetched:
