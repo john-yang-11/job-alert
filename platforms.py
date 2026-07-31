@@ -7,6 +7,7 @@ so callers can try the next platform/slug guess.
 """
 
 import re
+import socket
 import time
 
 import requests
@@ -222,7 +223,11 @@ WORKDAY_WDS = ["wd1", "wd5", "wd3", "wd12", "wd10", "wd2", "wd101", "wd103", "wd
 # found"s. Pace the probes and back off on 429/timeout so the 404/200 signals
 # stay trustworthy.
 WORKDAY_PROBE_DELAY = 0.3
-WORKDAY_RETRY_STATUSES = {429, 503}
+# Transient by definition -- retry rather than read them as "site not here".
+# Deliberately excludes 403: Workday returns it when blocking a burst, but
+# treating it as retryable would make probes raise PlatformThrottled in bulk,
+# which is the uncacheable-forever state this whole path exists to avoid.
+WORKDAY_RETRY_STATUSES = {429, 502, 503, 504}
 WORKDAY_PROBE_ATTEMPTS = 3
 
 
@@ -262,12 +267,39 @@ def _workday_sites(tenant: str, name: str) -> list[str]:
     return out
 
 
+def _workday_host(tenant: str, wd: str) -> str:
+    return f"{tenant}.{wd}.myworkdayjobs.com"
+
+
+def _host_exists(host: str) -> bool:
+    """Whether the hostname resolves at all.
+
+    Not every Workday datacenter answers for every tenant -- wd2 and wd101
+    currently have no record for any tenant we probe, so they NXDOMAIN every
+    time. That surfaced as a ConnectionError, which _workday_probe could not
+    tell apart from throttling, so it raised PlatformThrottled; discover_workday
+    then reported every company that ISN'T on Workday as inconclusive rather
+    than a clean miss. resolve_new never caches an inconclusive result, so those
+    companies were retried on every single run, forever, consuming the whole
+    per-run budget and starving newly added companies. Checking DNS first turns
+    that permanent failure back into the definitive negative it always was --
+    and skips the HTTP attempts and back-off sleeps entirely.
+    """
+    try:
+        socket.getaddrinfo(host, 443)
+        return True
+    except socket.gaierror:
+        return False
+    except Exception:
+        return True  # anything else: let the HTTP probe make the call
+
+
 def _workday_probe(tenant: str, wd: str, site: str) -> int:
     """POST the jobs endpoint and return its HTTP status, retrying transient
     throttling (429/503/timeout). Raises PlatformThrottled if no definitive
     (non-throttled) response comes back -- so a throttle is never mistaken for a
     clean 422 'not here'."""
-    url = f"https://{tenant}.{wd}.myworkdayjobs.com/wday/cxs/{tenant}/{site}/jobs"
+    url = f"https://{_workday_host(tenant, wd)}/wday/cxs/{tenant}/{site}/jobs"
     headers = {**HEADERS, "Content-Type": "application/json", "Accept": "application/json"}
     for attempt in range(WORKDAY_PROBE_ATTEMPTS):
         try:
@@ -292,6 +324,10 @@ def discover_workday(name: str) -> str | None:
     for tenant in _workday_tenants(name):
         live_wd = None
         for wd in WORKDAY_WDS:
+            # no DNS record means this datacenter has nothing for this tenant --
+            # a permanent answer, not a throttle (see _host_exists)
+            if not _host_exists(_workday_host(tenant, wd)):
+                continue
             time.sleep(WORKDAY_PROBE_DELAY)
             try:
                 if _workday_probe(tenant, wd, "BogusSite_zz99") == 404:
