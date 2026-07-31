@@ -49,6 +49,11 @@
   "platform": null,
   "slug": null
  },
+ "Axon": {
+  "checked_at": "2026-07-29T17:37:37.288152+00:00",
+  "platform": "greenhouse",
+  "slug": "axon"
+ },
  "BAE systems": {
   "checked_at": "2000-01-01T00:00:00+00:00",
   "platform": null,
@@ -229,6 +234,11 @@
   "platform": null,
   "slug": null
  },
+ "Nuro": {
+  "checked_at": "2026-07-29T17:37:40.258633+00:00",
+  "platform": "greenhouse",
+  "slug": "nuro"
+ },
  "PNC": {
   "checked_at": "2026-07-16T00:32:39.729736+00:00",
   "platform": "workday",
@@ -399,6 +409,16 @@
   "platform": null,
   "slug": null
  },
+ "anduril": {
+  "checked_at": "2026-07-29T17:45:14.267822+00:00",
+  "platform": "greenhouse",
+  "slug": "andurilindustries"
+ },
+ "appian": {
+  "checked_at": "2026-07-29T17:37:52.808228+00:00",
+  "platform": "greenhouse",
+  "slug": "appian"
+ },
  "apple": {
   "checked_at": "2000-01-01T00:00:00+00:00",
   "platform": null,
@@ -534,6 +554,11 @@
   "platform": "greenhouse",
   "slug": "datadog"
  },
+ "deepgram": {
+  "checked_at": "2026-07-29T17:37:06.112575+00:00",
+  "platform": "ashby",
+  "slug": "deepgram"
+ },
  "dell": {
   "checked_at": "2026-07-16T01:25:59.271777+00:00",
   "platform": "workday",
@@ -654,6 +679,11 @@
   "platform": null,
   "slug": null
  },
+ "modus": {
+  "checked_at": "2026-07-29T17:37:50.096926+00:00",
+  "platform": "ashby",
+  "slug": "modus"
+ },
  "mongoDB": {
   "checked_at": "2026-07-15T03:58:28.224332+00:00",
   "platform": "greenhouse",
@@ -663,6 +693,11 @@
   "checked_at": "2000-01-01T00:00:00+00:00",
   "platform": null,
   "slug": null
+ },
+ "monogram": {
+  "checked_at": "2026-07-29T17:37:45.361247+00:00",
+  "platform": "ashby",
+  "slug": "monogram"
  },
  "morgan stanley": {
   "checked_at": "2000-01-01T00:00:00+00:00",
