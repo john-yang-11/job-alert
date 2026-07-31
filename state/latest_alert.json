@@ -1,4 +1,4 @@
 {
- "content": "(placeholder from the buffer persistence test, 2026-07-31 - not a real listing. Your next real alert replaces this automatically.)",
- "written_at": "2026-07-31T17:54:42.186923+00:00"
+ "content": "(second placeholder, freshness check - if Poke shows THIS one, new alerts propagate correctly. Your next real alert replaces it.)",
+ "written_at": "2026-07-31T18:41:36.073181+00:00"
 }
