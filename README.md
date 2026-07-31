@@ -114,6 +114,42 @@ GitHub's free Actions minutes on a **public** repo (Actions is free/unlimited
 there); on a private repo, drop this workflow and let the hourly run cover
 priority companies too.
 
+## Poke buffer (`buffer_server.py`)
+
+Poke's push can be unreliable, so alerts are also *pullable*: `buffer_server.py`
+is a tiny remote MCP server (deployed on Render, see `render.yaml`) exposing one
+tool, `get_latest_update`. The checker POSTs each alert to it, and Poke reads it
+on demand. Set `BUFFER_URL` (the `/update` endpoint) and `BUFFER_TOKEN`.
+
+The buffer keeps **no durable state of its own** — deliberately. On Render's
+free plan the instance sleeps after ~15 min idle and wakes with memory cleared
+and its disk reset, which gave every alert a ~15-minute shelf life: one pushed
+at 23:15 was gone by ~23:31, so asking Poke an hour later returned "no updates".
+The durable copy instead lives in the repo: `check.py` writes
+`state/latest_alert.json` (and `state/latest_alert_priority.json` for the fast
+lane — separate files so the two workflows never rebase-conflict), the workflow
+commits them, and `get_latest_update` falls back to reading those raw URLs,
+returning whichever copy has the newest `written_at`. So a sleeping or restarted
+buffer no longer loses anything, and `/health` reporting `has_data: false` is
+not a problem. Override the feed with `ALERT_FEED_URL` (comma-separated) if the
+repo ever moves.
+
+Note this makes alert text publicly readable, since the repo is public.
+
+Two deployment gotchas, both of which present as "Poke can't connect":
+- **`fastmcp` must be >= 3.4.5.** In 3.4.4 the `stateless_http` flag is silently
+  ignored and every session-less request is rejected with `Bad Request: Missing
+  session ID` — which is exactly how connector-style clients call it. Pinned in
+  `requirements-buffer.txt`.
+- The `LenientMcpEntry` shim fixes two Streamable-HTTP rough edges (an `Accept`
+  header match that 406s anything not offering both content types, and a 307 on
+  `/mcp/` that clients drop the body on). Don't remove it.
+
+The workflows ping `/health` before running so the alert push doesn't pay a ~50s
+cold start. That keeps it warm around *runs*, not around *reads* — if Poke reads
+while it's asleep the handshake can still time out, so an external uptime pinger
+every ~10 min is worth adding.
+
 ## Junior program watcher
 
 `check_programs.py` runs daily (~9:17 AM ET) and alerts when a junior-program

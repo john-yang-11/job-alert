@@ -16,6 +16,7 @@ import json
 import os
 import re
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
@@ -39,6 +40,11 @@ ROOT = Path(__file__).parent
 STATE_DIR = ROOT / "state"
 SEEN_FILE = STATE_DIR / "seen.json"
 ETAGS_FILE = STATE_DIR / "etags.json"   # {source_name: etag}
+# Durable copy of the last alert, one per lane. The two workflows commit to the
+# same repo, so a file both of them wrote would be the one place their rebases
+# could collide -- same reason the priority lane has its own seen-file.
+ALERT_FILE = STATE_DIR / "latest_alert.json"
+PRIORITY_ALERT_FILE = STATE_DIR / "latest_alert_priority.json"
 WATCHLIST_FILE = ROOT / "watchlist.txt"
 
 DISCORD_MSG_LIMIT = 2000     # Discord hard limit per message
@@ -243,6 +249,30 @@ def send_poke(text: str) -> None:
         resp.raise_for_status()
 
 
+def alert_payload(text: str) -> dict:
+    """The alert as both sinks store it.
+
+    Carries its own timestamp so the buffer can tell which of its two copies --
+    the pushed one or the committed one -- is actually the more recent, rather
+    than assuming the one it happens to be holding is current.
+    """
+    return {"content": text, "written_at": datetime.now(timezone.utc).isoformat()}
+
+
+def write_alert_file(text: str, path: Path = ALERT_FILE) -> None:
+    """Mirror the alert into state/, which the workflow commits back to the repo.
+
+    The buffer's own copies both die with its process: on a free-tier host the
+    instance sleeps after ~15 min idle and wakes with memory cleared and its
+    disk reset. An alert pushed at 23:15 was therefore gone by ~23:31 -- long
+    before you'd think to ask Poke about it. This committed file is the copy
+    that survives, and it's what makes a read hours later actually return
+    something.
+    """
+    STATE_DIR.mkdir(exist_ok=True)
+    path.write_text(json.dumps(alert_payload(text), indent=1), encoding="utf-8")
+
+
 def send_buffer(text: str) -> None:
     # push the latest alert to the buffer MCP server so Poke can poll it.
     # best-effort: a buffer outage must not fail the run or block Discord/Poke.
@@ -260,15 +290,19 @@ def send_buffer(text: str) -> None:
         headers["Authorization"] = f"Bearer {token}"
 
     wake_buffer()
+    payload = alert_payload(text)
     for attempt in (1, 2):
         try:
-            resp = requests.post(url, headers=headers, json={"content": text}, timeout=90)
+            resp = requests.post(url, headers=headers, json=payload, timeout=90)
             if resp.ok:
                 return
             print(f"Buffer push got {resp.status_code}: {resp.text[:200]}", file=sys.stderr)
         except Exception as e:
             print(f"Buffer push attempt {attempt} failed: {e}", file=sys.stderr)
-    print("WARNING: buffer never received this alert; Poke will not see it", file=sys.stderr)
+    # not fatal any more: the committed state/latest_alert.json is the buffer's
+    # fallback, so Poke still reads this alert once the workflow pushes state.
+    print("WARNING: buffer push failed; Poke will read it from the committed "
+          "state file instead (slower, waits for this run's commit)", file=sys.stderr)
 
 
 def wake_buffer() -> None:
@@ -283,7 +317,7 @@ def wake_buffer() -> None:
         print(f"Buffer wake failed (continuing): {e}", file=sys.stderr)
 
 
-def send_all(discord_text: str, plain_text: str) -> None:
+def send_all(discord_text: str, plain_text: str, alert_file: Path = ALERT_FILE) -> None:
     """Fan one alert out to every sink, each attempt independent.
 
     send_discord and send_poke both raise on a bad response, and the buffer
@@ -295,6 +329,9 @@ def send_all(discord_text: str, plain_text: str) -> None:
     """
     failures = []
     for name, fn, text in (
+        # state file first: it's a local write with no network to fail on, and
+        # it's the copy that outlives everything else.
+        ("state file", lambda t: write_alert_file(t, alert_file), plain_text),
         ("discord", send_discord, discord_text),
         ("poke", send_poke, plain_text),
         ("buffer", send_buffer, plain_text),

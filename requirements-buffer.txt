@@ -1,2 +1,6 @@
-fastmcp
+# 3.4.5+ required: in 3.4.4 the stateless_http flag is silently ignored and the
+# server rejects every session-less request with "Bad Request: Missing session
+# ID" -- which is exactly how connector-style clients like Poke call it.
+fastmcp>=3.4.5
 uvicorn
+requests

@@ -16,7 +16,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from check import (
     STATE_DIR, load_watchlist, send_discord, send_poke, send_all, clean_keyword,
-    is_us_location, TARGET_YEAR,
+    is_us_location, TARGET_YEAR, ALERT_FILE, PRIORITY_ALERT_FILE,
 )
 from platforms import PLATFORMS
 from resolve_companies import resolve_new
@@ -68,6 +68,7 @@ def main() -> None:
     icon = "⭐" if priority else "🏢"
     kind = "Priority" if priority else "Company board"
     seen_file = PRIORITY_SEEN_FILE if priority else SEEN_FILE
+    alert_file = PRIORITY_ALERT_FILE if priority else ALERT_FILE
     STATE_DIR.mkdir(exist_ok=True)
 
     if priority:
@@ -121,7 +122,7 @@ def main() -> None:
         p_lines = "\n".join(f"{name} — {j['title']}" for name, j in matched)
         plural = "s" if len(matched) != 1 else ""
         header = f"{icon} {len(matched)} new {kind.lower()} SWE listing{plural}:"
-        send_all(f"{header}\n{d_lines}", f"{header}\n{p_lines}")
+        send_all(f"{header}\n{d_lines}", f"{header}\n{p_lines}", alert_file=alert_file)
 
     for err in errors:
         print(f"WARNING: {err}", file=sys.stderr)
