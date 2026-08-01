@@ -255,14 +255,14 @@
   "slug": "palantir"
  },
  "Palo Alto Networks": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:15:08.073036+00:00",
   "platform": null,
   "slug": null
  },
  "Paypal": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
-  "platform": null,
-  "slug": null
+  "checked_at": "2026-08-01T09:15:33.196508+00:00",
+  "platform": "workday",
+  "slug": "paypal|wd1|jobs"
  },
  "Pinterest": {
   "checked_at": "2026-07-15T04:00:22.310103+00:00",
@@ -275,9 +275,9 @@
   "slug": "point72"
  },
  "Qualcomm": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
-  "platform": null,
-  "slug": null
+  "checked_at": "2026-08-01T09:15:56.514645+00:00",
+  "platform": "workday",
+  "slug": "qualcomm|wd12|External"
  },
  "Reddit": {
   "checked_at": "2026-07-15T04:00:53.643731+00:00",
@@ -285,22 +285,22 @@
   "slug": "reddit"
  },
  "Rippling winter 27": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:16:24.113837+00:00",
   "platform": null,
   "slug": null
  },
  "Rocket Companies": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
-  "platform": null,
-  "slug": null
+  "checked_at": "2026-08-01T09:16:59.155849+00:00",
+  "platform": "workday",
+  "slug": "rocket|wd5|Rocket_Careers"
  },
  "SEO tech developer": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:17:37.728280+00:00",
   "platform": null,
   "slug": null
  },
  "Samsung": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:17:18.686435+00:00",
   "platform": null,
   "slug": null
  },
@@ -310,7 +310,7 @@
   "slug": "servicenow"
  },
  "Siemens": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:17:43.222506+00:00",
   "platform": null,
   "slug": null
  },
@@ -360,7 +360,7 @@
   "slug": null
  },
  "TikTok": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:18:50.062093+00:00",
   "platform": null,
   "slug": null
  },
@@ -745,7 +745,7 @@
   "slug": "okta"
  },
  "oracle": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:14:50.620188+00:00",
   "platform": null,
   "slug": null
  },
@@ -760,7 +760,7 @@
   "slug": "plaid"
  },
  "pwc": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:15:52.282985+00:00",
   "platform": null,
   "slug": null
  },
@@ -770,14 +770,14 @@
   "slug": "ramp"
  },
  "raytheon": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:16:02.326559+00:00",
   "platform": null,
   "slug": null
  },
  "redhat": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
-  "platform": null,
-  "slug": null
+  "checked_at": "2026-08-01T09:16:06.359097+00:00",
+  "platform": "workday",
+  "slug": "redhat|wd5|jobs"
  },
  "resy": {
   "checked_at": "2026-08-01T03:50:21.364192+00:00",
@@ -790,7 +790,7 @@
   "slug": "riotgames"
  },
  "rippling": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:16:12.171862+00:00",
   "platform": null,
   "slug": null
  },
@@ -805,7 +805,7 @@
   "slug": "roblox"
  },
  "roche": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:16:42.985816+00:00",
   "platform": null,
   "slug": null
  },
@@ -815,14 +815,14 @@
   "slug": "roku"
  },
  "rtx": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:17:05.028614+00:00",
   "platform": null,
   "slug": null
  },
  "salesforce": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
-  "platform": null,
-  "slug": null
+  "checked_at": "2026-08-01T09:17:13.145090+00:00",
+  "platform": "workday",
+  "slug": "salesforce|wd12|External_Career_Site"
  },
  "salesforce future tech launchpad": {
   "checked_at": "2026-07-16T00:46:19.215438+00:00",
@@ -830,7 +830,7 @@
   "slug": "salesforce|wd12|External_Career_Site"
  },
  "scale": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:17:24.833519+00:00",
   "platform": null,
   "slug": null
  },
@@ -840,12 +840,12 @@
   "slug": "seatgeek"
  },
  "siriusxm": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:17:49.282995+00:00",
   "platform": null,
   "slug": null
  },
  "slack": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:17:54.692698+00:00",
   "platform": null,
   "slug": null
  },
@@ -855,7 +855,7 @@
   "slug": "sofi"
  },
  "southwest": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:18:00.489473+00:00",
   "platform": null,
   "slug": null
  },
@@ -865,17 +865,17 @@
   "slug": "spacex"
  },
  "splunk": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:18:06.245300+00:00",
   "platform": null,
   "slug": null
  },
  "square": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:18:12.315131+00:00",
   "platform": null,
   "slug": null
  },
  "state street": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:18:32.523288+00:00",
   "platform": null,
   "slug": null
  },
@@ -890,7 +890,7 @@
   "slug": "tensorwave"
  },
  "thrive by duolingo": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T09:18:44.308970+00:00",
   "platform": null,
   "slug": null
  },
