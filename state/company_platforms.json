@@ -114,10 +114,20 @@
   "platform": null,
   "slug": null
  },
+ "Etched": {
+  "checked_at": "2026-08-01T11:05:39.864513+00:00",
+  "platform": "ashby",
+  "slug": "etched"
+ },
  "Everpure": {
   "checked_at": "2026-08-01T04:06:48.790283+00:00",
   "platform": null,
   "slug": null
+ },
+ "GDIT systestems intern": {
+  "checked_at": "2026-08-01T11:05:53.009438+00:00",
+  "platform": "workday",
+  "slug": "gdit|wd5|External_Career_Site"
  },
  "GitHub": {
   "checked_at": "2026-08-01T03:50:09.848830+00:00",
@@ -345,7 +355,7 @@
   "slug": "tmobile|wd1|External"
  },
  "TSMC": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T11:03:04.298397+00:00",
   "platform": null,
   "slug": null
  },
@@ -365,7 +375,7 @@
   "slug": null
  },
  "Two Sigma": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T11:03:21.281681+00:00",
   "platform": null,
   "slug": null
  },
@@ -380,7 +390,12 @@
   "slug": "uberfreight"
  },
  "VRBO": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T11:03:55.799196+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "WD": {
+  "checked_at": "2026-08-01T11:04:51.283750+00:00",
   "platform": null,
   "slug": null
  },
@@ -390,7 +405,7 @@
   "slug": null
  },
  "Workday": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T11:04:29.860266+00:00",
   "platform": null,
   "slug": null
  },
@@ -434,6 +449,16 @@
   "platform": null,
   "slug": null
  },
+ "apple data thing": {
+  "checked_at": "2026-08-01T11:05:28.513535+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "aquatic": {
+  "checked_at": "2026-08-01T11:05:53.639364+00:00",
+  "platform": "ashby",
+  "slug": "aquatic"
+ },
  "asana": {
   "checked_at": "2026-07-15T03:48:42.928036+00:00",
   "platform": "greenhouse",
@@ -473,6 +498,11 @@
   "checked_at": "2026-07-16T01:04:20.411523+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|External_Careers"
+ },
+ "bosch": {
+  "checked_at": "2026-08-01T11:05:33.963418+00:00",
+  "platform": null,
+  "slug": null
  },
  "brex": {
   "checked_at": "2026-07-15T03:50:26.476956+00:00",
@@ -518,6 +548,11 @@
   "checked_at": "2026-07-15T03:51:58.906266+00:00",
   "platform": "greenhouse",
   "slug": "clear"
+ },
+ "cloud flare fall": {
+  "checked_at": "2026-08-01T11:05:16.675934+00:00",
+  "platform": null,
+  "slug": null
  },
  "cloudflare": {
   "checked_at": "2026-07-15T03:52:03.193484+00:00",
@@ -619,6 +654,11 @@
   "platform": null,
   "slug": null
  },
+ "gemnai fall": {
+  "checked_at": "2026-08-01T11:05:03.469667+00:00",
+  "platform": null,
+  "slug": null
+ },
  "general dynamics": {
   "checked_at": "2026-08-01T04:07:06.179276+00:00",
   "platform": null,
@@ -628,6 +668,11 @@
   "checked_at": "2026-08-01T06:38:33.106034+00:00",
   "platform": null,
   "slug": null
+ },
+ "go daddy": {
+  "checked_at": "2026-08-01T11:05:53.161543+00:00",
+  "platform": "greenhouse",
+  "slug": "godaddy"
  },
  "handshake": {
   "checked_at": "2026-07-15T03:56:25.851318+00:00",
@@ -854,6 +899,11 @@
   "platform": "greenhouse",
   "slug": "sofi"
  },
+ "sony": {
+  "checked_at": "2026-08-01T11:05:39.393398+00:00",
+  "platform": null,
+  "slug": null
+ },
  "southwest": {
   "checked_at": "2026-08-01T09:18:00.489473+00:00",
   "platform": null,
@@ -905,7 +955,7 @@
   "slug": "twilio"
  },
  "twitter": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T11:03:09.437518+00:00",
   "platform": null,
   "slug": null
  },
@@ -915,12 +965,12 @@
   "slug": "uber"
  },
  "uber career prep": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T11:03:33.101907+00:00",
   "platform": null,
   "slug": null
  },
  "united health group": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T11:03:44.851096+00:00",
   "platform": null,
   "slug": null
  },
@@ -930,12 +980,12 @@
   "slug": "visa"
  },
  "vmware": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T11:03:50.297925+00:00",
   "platform": null,
   "slug": null
  },
  "walmart": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T11:04:01.292187+00:00",
   "platform": null,
   "slug": null
  },
@@ -950,22 +1000,22 @@
   "slug": null
  },
  "wellsfargo sophomore discovery fellowship": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T11:04:13.105759+00:00",
   "platform": null,
   "slug": null
  },
  "whatnot": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T11:04:19.223443+00:00",
   "platform": null,
   "slug": null
  },
  "xfinity": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T11:04:40.224431+00:00",
   "platform": null,
   "slug": null
  },
  "yahoo": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T11:04:45.757721+00:00",
   "platform": null,
   "slug": null
  }
