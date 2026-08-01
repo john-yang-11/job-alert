@@ -1,12 +1,14 @@
 # Internship Alerts
 
-Watches a community internship repo, plus company job boards directly, every
+Watches two community internship repos, plus company job boards directly, every
 30 minutes via GitHub Actions and alerts when a new listing matches the
-watchlist: [vanshb03/Summer2027-Internships](https://github.com/vanshb03/Summer2027-Internships)
-(the CSCareers community repo). SimplifyJobs hasn't opened a
-`Summer2027-Internships` repo yet as of 2026-07-24 (still only
-`Summer2026-Internships`); add it back to `SOURCES` in `check.py` once it
-exists, same URL pattern as the vanshb03 entry.
+watchlist:
+[SimplifyJobs/Summer2027-Internships](https://github.com/SimplifyJobs/Summer2027-Internships)
+and
+[vanshb03/Summer2027-Internships](https://github.com/vanshb03/Summer2027-Internships)
+(the CSCareers community repo). Both publish the same schema and are deduped
+against each other. Simplify is much the larger feed (~14.6k listings vs ~330)
+and neither is a superset of the other, so keep both.
 
 **Only Summer 2027, US roles** are alerted on — see `is_target_season` /
 `is_us_location` in `check.py`. Community-repo listings are filtered by their

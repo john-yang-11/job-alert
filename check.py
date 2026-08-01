@@ -28,11 +28,12 @@ sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 # Community internship repos to watch. Both publish the same listings.json schema
 # (id/company_name/title/url/active/is_visible); we read them in one pass and
 # dedup across them.
-# Only Summer 2027 is tracked (see is_target_season below). SimplifyJobs hasn't
-# opened a Summer2027-Internships repo yet (checked 2026-07-24 -- still only
-# Summer2026-Internships, which is why it's dropped from here); add it back
-# once it exists, same URL pattern as vanshb03's below.
+# Only Summer 2027 is tracked (see is_target_season below). SimplifyJobs opened
+# its Summer2027 repo some time before 2026-07-31 and is back in; it is by far
+# the larger feed (~14.6k listings vs ~330) and at the time it was re-added it
+# carried 16 Summer-2027 watchlist matches the CSCareers repo did not have.
 SOURCES = [
+    ("Simplify", "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/.github/scripts/listings.json"),
     ("CSCareers", "https://raw.githubusercontent.com/vanshb03/Summer2027-Internships/dev/.github/scripts/listings.json"),
 ]
 
