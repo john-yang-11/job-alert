@@ -1,6 +1,6 @@
 {
  "AMD": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:03:29.595149+00:00",
   "platform": null,
   "slug": null
  },
@@ -20,7 +20,7 @@
   "slug": "aws"
  },
  "AWS FALL": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:04:04.735765+00:00",
   "platform": null,
   "slug": null
  },
@@ -35,7 +35,7 @@
   "slug": "airbnb"
  },
  "Alphabet": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:03:12.125118+00:00",
   "platform": null,
   "slug": null
  },
@@ -45,7 +45,7 @@
   "slug": "amazon"
  },
  "Amazon Propel program": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:03:24.272813+00:00",
   "platform": null,
   "slug": null
  },
@@ -55,7 +55,7 @@
   "slug": "axon"
  },
  "BAE systems": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:04:16.120629+00:00",
   "platform": null,
   "slug": null
  },
@@ -75,12 +75,12 @@
   "slug": null
  },
  "CNN": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:05:14.443807+00:00",
   "platform": null,
   "slug": null
  },
  "Caterpillar": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:04:51.577079+00:00",
   "platform": null,
   "slug": null
  },
@@ -90,12 +90,12 @@
   "slug": "cisco|wd5|Cisco_Careers"
  },
  "Deloitte": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:05:54.582289+00:00",
   "platform": null,
   "slug": null
  },
  "Delta": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:06:00.064487+00:00",
   "platform": null,
   "slug": null
  },
@@ -110,12 +110,12 @@
   "slug": "dropbox"
  },
  "Electronic Arts": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:06:38.261914+00:00",
   "platform": null,
   "slug": null
  },
  "Everpure": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:06:48.790283+00:00",
   "platform": null,
   "slug": null
  },
@@ -415,7 +415,7 @@
   "slug": "airtable"
  },
  "american express": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:03:48.270091+00:00",
   "platform": null,
   "slug": null
  },
@@ -430,7 +430,7 @@
   "slug": "appian"
  },
  "apple": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:03:53.617449+00:00",
   "platform": null,
   "slug": null
  },
@@ -445,7 +445,7 @@
   "slug": "atlassian"
  },
  "bank of america global technology summit": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:04:29.149152+00:00",
   "platform": null,
   "slug": null
  },
@@ -455,7 +455,7 @@
   "slug": null
  },
  "blizzard": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:04:34.953702+00:00",
   "platform": null,
   "slug": null
  },
@@ -485,7 +485,7 @@
   "slug": "bytedance"
  },
  "c1 data analyst": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:04:46.473355+00:00",
   "platform": null,
   "slug": null
  },
@@ -500,7 +500,7 @@
   "slug": "chime"
  },
  "citadel launch": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:05:03.177055+00:00",
   "platform": null,
   "slug": null
  },
@@ -510,7 +510,7 @@
   "slug": null
  },
  "clay": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:05:08.694501+00:00",
   "platform": null,
   "slug": null
  },
@@ -529,6 +529,11 @@
   "platform": "greenhouse",
   "slug": "coinbase"
  },
+ "colins aerospace": {
+  "checked_at": "2026-08-01T04:05:26.123255+00:00",
+  "platform": null,
+  "slug": null
+ },
  "comcast": {
   "checked_at": "2026-07-16T01:10:59.803504+00:00",
   "platform": "workday",
@@ -545,7 +550,7 @@
   "slug": "crowdstrike|wd5|CrowdstrikeCareers"
  },
  "cvs health": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:05:44.486529+00:00",
   "platform": null,
   "slug": null
  },
@@ -580,7 +585,7 @@
   "slug": null
  },
  "doordash": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:06:05.490863+00:00",
   "platform": null,
   "slug": null
  },
@@ -590,17 +595,17 @@
   "slug": "duolingo"
  },
  "ea pathfinder": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:06:17.935345+00:00",
   "platform": null,
   "slug": null
  },
  "epic": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:06:43.553743+00:00",
   "platform": null,
   "slug": null
  },
  "fidelity": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:06:54.729992+00:00",
   "platform": null,
   "slug": null
  },
@@ -615,7 +620,7 @@
   "slug": null
  },
  "general dynamics": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T04:07:06.179276+00:00",
   "platform": null,
   "slug": null
  },
