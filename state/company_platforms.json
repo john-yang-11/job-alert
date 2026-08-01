@@ -119,13 +119,18 @@
   "platform": null,
   "slug": null
  },
+ "GitHub": {
+  "checked_at": "2026-08-01T03:50:09.848830+00:00",
+  "platform": null,
+  "slug": null
+ },
  "Github": {
   "checked_at": "2000-01-01T00:00:00+00:00",
   "platform": null,
   "slug": null
  },
  "Google": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T03:50:04.025501+00:00",
   "platform": null,
   "slug": null
  },
@@ -155,7 +160,7 @@
   "slug": null
  },
  "IBM": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T03:49:58.526540+00:00",
   "platform": null,
   "slug": null
  },
@@ -205,7 +210,7 @@
   "slug": null
  },
  "Microsoft": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T03:49:35.036051+00:00",
   "platform": null,
   "slug": null
  },
@@ -310,7 +315,7 @@
   "slug": null
  },
  "Snap": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T03:50:26.729429+00:00",
   "platform": null,
   "slug": null
  },
@@ -350,7 +355,7 @@
   "slug": "tencent|wd1|Tencent_Careers"
  },
  "Tesla": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T03:50:41.329561+00:00",
   "platform": null,
   "slug": null
  },
@@ -365,7 +370,7 @@
   "slug": null
  },
  "US bank": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T03:51:16.576116+00:00",
   "platform": null,
   "slug": null
  },
@@ -376,6 +381,11 @@
  },
  "VRBO": {
   "checked_at": "2000-01-01T00:00:00+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Walmart": {
+  "checked_at": "2026-08-01T03:49:40.793779+00:00",
   "platform": null,
   "slug": null
  },
@@ -600,7 +610,7 @@
   "slug": "figma"
  },
  "ford": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T03:49:29.311226+00:00",
   "platform": null,
   "slug": null
  },
@@ -675,7 +685,7 @@
   "slug": null
  },
  "meta": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T03:50:15.589479+00:00",
   "platform": null,
   "slug": null
  },
@@ -765,7 +775,7 @@
   "slug": null
  },
  "resy": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T03:50:21.364192+00:00",
   "platform": null,
   "slug": null
  },
@@ -930,7 +940,7 @@
   "slug": "waymo"
  },
  "wells fargo": {
-  "checked_at": "2000-01-01T00:00:00+00:00",
+  "checked_at": "2026-08-01T03:49:52.783697+00:00",
   "platform": null,
   "slug": null
  },
