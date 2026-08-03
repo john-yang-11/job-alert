@@ -259,6 +259,11 @@
   "platform": "greenhouse",
   "slug": "nuro"
  },
+ "PDT partners": {
+  "checked_at": "2026-08-03T01:11:20.985415+00:00",
+  "platform": "greenhouse",
+  "slug": "pdtpartners"
+ },
  "PNC": {
   "checked_at": "2026-07-16T00:32:39.729736+00:00",
   "platform": "workday",
