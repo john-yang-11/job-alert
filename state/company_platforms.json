@@ -754,6 +754,11 @@
   "platform": "lever",
   "slug": "linkedin"
  },
+ "medtronic": {
+  "checked_at": "2026-08-03T23:42:10.860842+00:00",
+  "platform": "workday",
+  "slug": "medtronic|wd1|MedtronicCareers"
+ },
  "mercedes": {
   "checked_at": "2026-08-01T06:41:08.103895+00:00",
   "platform": null,
