@@ -909,6 +909,11 @@
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
+ "samsara": {
+  "checked_at": "2026-08-03T19:08:58.923412+00:00",
+  "platform": "greenhouse",
+  "slug": "samsara"
+ },
  "scale": {
   "checked_at": "2026-08-01T09:17:24.833519+00:00",
   "platform": null,
