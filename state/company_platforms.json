@@ -24,6 +24,11 @@
   "platform": null,
   "slug": null
  },
+ "Abercrombie & Fitch Co": {
+  "checked_at": "2026-08-03T17:28:21.007349+00:00",
+  "platform": null,
+  "slug": null
+ },
  "Accenture": {
   "checked_at": "2026-07-15T23:49:08.983169+00:00",
   "platform": "workday",
@@ -159,6 +164,11 @@
   "platform": null,
   "slug": null
  },
+ "Heliux": {
+  "checked_at": "2026-08-03T17:27:57.530398+00:00",
+  "platform": "ashby",
+  "slug": "heliux"
+ },
  "Hermeus": {
   "checked_at": "2026-07-15T04:17:27.799915+00:00",
   "platform": "lever",
@@ -191,6 +201,11 @@
  },
  "JP morgan chase fellowship": {
   "checked_at": "2026-08-01T06:40:28.258294+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "JP morgan hack4good": {
+  "checked_at": "2026-08-03T17:28:08.876568+00:00",
   "platform": null,
   "slug": null
  },
@@ -746,6 +761,16 @@
  },
  "meta": {
   "checked_at": "2026-08-01T03:50:15.589479+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "microsoft core ai": {
+  "checked_at": "2026-08-03T17:27:39.488318+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "mileniem applied ai engineer": {
+  "checked_at": "2026-08-03T17:27:57.082287+00:00",
   "platform": null,
   "slug": null
  },
