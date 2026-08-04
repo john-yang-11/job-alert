@@ -524,6 +524,11 @@
   "platform": "workday",
   "slug": "boeing|wd1|External_Careers"
  },
+ "boeing data analytics": {
+  "checked_at": "2026-08-04T03:31:19.062024+00:00",
+  "platform": "workday",
+  "slug": "boeing|wd1|External_Careers"
+ },
  "bosch": {
   "checked_at": "2026-08-01T11:05:33.963418+00:00",
   "platform": null,
