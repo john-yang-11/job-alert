@@ -284,6 +284,11 @@
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
+ "PNC data analsyt": {
+  "checked_at": "2026-08-05T14:58:47.380218+00:00",
+  "platform": "workday",
+  "slug": "pnc|wd5|External"
+ },
  "Palantir": {
   "checked_at": "2026-07-15T04:00:27.725346+00:00",
   "platform": "lever",
@@ -413,6 +418,11 @@
   "checked_at": "2026-07-15T04:06:12.031106+00:00",
   "platform": "greenhouse",
   "slug": "uberfreight"
+ },
+ "Urline": {
+  "checked_at": "2026-08-05T14:58:37.192345+00:00",
+  "platform": null,
+  "slug": null
  },
  "VRBO": {
   "checked_at": "2026-08-01T11:03:55.799196+00:00",
@@ -933,6 +943,11 @@
   "checked_at": "2026-07-15T04:02:28.524892+00:00",
   "platform": "greenhouse",
   "slug": "seatgeek"
+ },
+ "shopfiy winter": {
+  "checked_at": "2026-08-05T14:59:15.484847+00:00",
+  "platform": null,
+  "slug": null
  },
  "siriusxm": {
   "checked_at": "2026-08-01T09:17:49.282995+00:00",
