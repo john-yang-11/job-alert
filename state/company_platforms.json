@@ -145,7 +145,7 @@
   "slug": null
  },
  "Google": {
-  "checked_at": "2026-08-01T03:50:04.025501+00:00",
+  "checked_at": "2026-08-08T03:54:53.399347+00:00",
   "platform": null,
   "slug": null
  },
@@ -185,7 +185,7 @@
   "slug": null
  },
  "IBM": {
-  "checked_at": "2026-08-01T03:49:58.526540+00:00",
+  "checked_at": "2026-08-08T03:55:02.781983+00:00",
   "platform": null,
   "slug": null
  },
@@ -240,7 +240,7 @@
   "slug": null
  },
  "Microsoft": {
-  "checked_at": "2026-08-01T03:49:35.036051+00:00",
+  "checked_at": "2026-08-08T03:54:42.833162+00:00",
   "platform": null,
   "slug": null
  },
@@ -355,7 +355,7 @@
   "slug": null
  },
  "Snap": {
-  "checked_at": "2026-08-01T03:50:26.729429+00:00",
+  "checked_at": "2026-08-08T03:55:19.391196+00:00",
   "platform": null,
   "slug": null
  },
@@ -395,7 +395,7 @@
   "slug": "tencent|wd1|Tencent_Careers"
  },
  "Tesla": {
-  "checked_at": "2026-08-01T03:50:41.329561+00:00",
+  "checked_at": "2026-08-08T03:55:24.509009+00:00",
   "platform": null,
   "slug": null
  },
@@ -410,7 +410,7 @@
   "slug": null
  },
  "US bank": {
-  "checked_at": "2026-08-01T03:51:16.576116+00:00",
+  "checked_at": "2026-08-08T03:55:53.083502+00:00",
   "platform": null,
   "slug": null
  },
@@ -659,6 +659,11 @@
   "platform": null,
   "slug": null
  },
+ "docusign": {
+  "checked_at": "2026-08-08T03:56:14.320761+00:00",
+  "platform": null,
+  "slug": null
+ },
  "doordash": {
   "checked_at": "2026-08-01T04:06:05.490863+00:00",
   "platform": null,
@@ -673,6 +678,11 @@
   "checked_at": "2026-08-01T04:06:17.935345+00:00",
   "platform": null,
   "slug": null
+ },
+ "elastic": {
+  "checked_at": "2026-08-08T03:56:14.440677+00:00",
+  "platform": "greenhouse",
+  "slug": "elastic"
  },
  "epic": {
   "checked_at": "2026-08-01T04:06:43.553743+00:00",
@@ -690,7 +700,7 @@
   "slug": "figma"
  },
  "ford": {
-  "checked_at": "2026-08-01T03:49:29.311226+00:00",
+  "checked_at": "2026-08-08T03:54:48.119413+00:00",
   "platform": null,
   "slug": null
  },
@@ -780,7 +790,7 @@
   "slug": null
  },
  "meta": {
-  "checked_at": "2026-08-01T03:50:15.589479+00:00",
+  "checked_at": "2026-08-08T03:55:08.390762+00:00",
   "platform": null,
   "slug": null
  },
@@ -880,7 +890,7 @@
   "slug": "redhat|wd5|jobs"
  },
  "resy": {
-  "checked_at": "2026-08-01T03:50:21.364192+00:00",
+  "checked_at": "2026-08-08T03:55:13.661572+00:00",
   "platform": null,
   "slug": null
  },
@@ -1004,6 +1014,11 @@
   "platform": "ashby",
   "slug": "tensorwave"
  },
+ "textql": {
+  "checked_at": "2026-08-08T03:56:09.274671+00:00",
+  "platform": null,
+  "slug": null
+ },
  "thrive by duolingo": {
   "checked_at": "2026-08-01T09:18:44.308970+00:00",
   "platform": null,
@@ -1060,7 +1075,7 @@
   "slug": "waymo"
  },
  "wells fargo": {
-  "checked_at": "2026-08-01T03:49:52.783697+00:00",
+  "checked_at": "2026-08-08T03:56:04.151315+00:00",
   "platform": null,
   "slug": null
  },
