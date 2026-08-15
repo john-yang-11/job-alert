@@ -385,7 +385,7 @@
   "slug": "tmobile|wd1|External"
  },
  "TSMC": {
-  "checked_at": "2026-08-08T11:38:44.477900+00:00",
+  "checked_at": "2026-08-15T11:51:52.320975+00:00",
   "platform": null,
   "slug": null
  },
@@ -405,7 +405,7 @@
   "slug": null
  },
  "Two Sigma": {
-  "checked_at": "2026-08-08T11:39:13.075511+00:00",
+  "checked_at": "2026-08-15T11:52:09.125257+00:00",
   "platform": null,
   "slug": null
  },
@@ -425,12 +425,12 @@
   "slug": null
  },
  "VRBO": {
-  "checked_at": "2026-08-08T11:40:09.539890+00:00",
+  "checked_at": "2026-08-15T11:52:43.482904+00:00",
   "platform": null,
   "slug": null
  },
  "WD": {
-  "checked_at": "2026-08-08T11:40:30.834427+00:00",
+  "checked_at": "2026-08-15T11:52:54.160609+00:00",
   "platform": null,
   "slug": null
  },
@@ -440,7 +440,7 @@
   "slug": null
  },
  "Workday": {
-  "checked_at": "2026-08-08T11:41:17.073493+00:00",
+  "checked_at": "2026-08-15T11:53:29.462920+00:00",
   "platform": null,
   "slug": null
  },
@@ -485,7 +485,7 @@
   "slug": null
  },
  "apple data thing": {
-  "checked_at": "2026-08-08T11:37:34.965423+00:00",
+  "checked_at": "2026-08-15T11:51:12.065474+00:00",
   "platform": null,
   "slug": null
  },
@@ -540,7 +540,7 @@
   "slug": "boeing|wd1|External_Careers"
  },
  "bosch": {
-  "checked_at": "2026-08-08T11:37:43.662631+00:00",
+  "checked_at": "2026-08-15T11:51:17.303021+00:00",
   "platform": null,
   "slug": null
  },
@@ -590,7 +590,7 @@
   "slug": "clear"
  },
  "cloud flare fall": {
-  "checked_at": "2026-08-08T11:38:02.964804+00:00",
+  "checked_at": "2026-08-15T11:51:30.077095+00:00",
   "platform": null,
   "slug": null
  },
@@ -705,7 +705,7 @@
   "slug": null
  },
  "gemnai fall": {
-  "checked_at": "2026-08-08T11:38:26.675779+00:00",
+  "checked_at": "2026-08-15T11:51:41.838921+00:00",
   "platform": null,
   "slug": null
  },
@@ -975,7 +975,7 @@
   "slug": "sofi"
  },
  "sony": {
-  "checked_at": "2026-08-08T11:38:35.601171+00:00",
+  "checked_at": "2026-08-15T11:51:47.101812+00:00",
   "platform": null,
   "slug": null
  },
@@ -1040,7 +1040,7 @@
   "slug": "twilio"
  },
  "twitter": {
-  "checked_at": "2026-08-08T11:38:53.633563+00:00",
+  "checked_at": "2026-08-15T11:51:57.693621+00:00",
   "platform": null,
   "slug": null
  },
@@ -1050,12 +1050,12 @@
   "slug": "uber"
  },
  "uber career prep": {
-  "checked_at": "2026-08-08T11:39:32.367970+00:00",
+  "checked_at": "2026-08-15T11:52:20.770161+00:00",
   "platform": null,
   "slug": null
  },
  "united health group": {
-  "checked_at": "2026-08-08T11:39:51.663878+00:00",
+  "checked_at": "2026-08-15T11:52:32.512203+00:00",
   "platform": null,
   "slug": null
  },
@@ -1065,12 +1065,12 @@
   "slug": "visa"
  },
  "vmware": {
-  "checked_at": "2026-08-08T11:40:00.524479+00:00",
+  "checked_at": "2026-08-15T11:52:38.081185+00:00",
   "platform": null,
   "slug": null
  },
  "walmart": {
-  "checked_at": "2026-08-08T11:40:18.967907+00:00",
+  "checked_at": "2026-08-15T11:52:48.813312+00:00",
   "platform": null,
   "slug": null
  },
@@ -1085,22 +1085,22 @@
   "slug": null
  },
  "wellsfargo sophomore discovery fellowship": {
-  "checked_at": "2026-08-08T11:40:50.097407+00:00",
+  "checked_at": "2026-08-15T11:53:08.217229+00:00",
   "platform": null,
   "slug": null
  },
  "whatnot": {
-  "checked_at": "2026-08-08T11:40:58.950006+00:00",
+  "checked_at": "2026-08-15T11:53:13.928386+00:00",
   "platform": null,
   "slug": null
  },
  "xfinity": {
-  "checked_at": "2026-08-08T11:41:25.944444+00:00",
+  "checked_at": "2026-08-15T11:53:35.115970+00:00",
   "platform": null,
   "slug": null
  },
  "yahoo": {
-  "checked_at": "2026-08-08T11:41:34.845073+00:00",
+  "checked_at": "2026-08-15T11:53:40.516894+00:00",
   "platform": null,
   "slug": null
  }
