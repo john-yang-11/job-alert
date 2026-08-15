@@ -140,7 +140,7 @@
   "slug": null
  },
  "Github": {
-  "checked_at": "2026-08-08T07:08:57.276586+00:00",
+  "checked_at": "2026-08-15T07:38:03.182973+00:00",
   "platform": null,
   "slug": null
  },
@@ -150,12 +150,12 @@
   "slug": null
  },
  "Google ASDI": {
-  "checked_at": "2026-08-08T07:09:10.041293+00:00",
+  "checked_at": "2026-08-15T07:38:14.340898+00:00",
   "platform": null,
   "slug": null
  },
  "HP": {
-  "checked_at": "2026-08-08T07:09:22.577811+00:00",
+  "checked_at": "2026-08-15T07:38:24.779560+00:00",
   "platform": null,
   "slug": null
  },
@@ -180,7 +180,7 @@
   "slug": "hubspot"
  },
  "Hudson River Trading": {
-  "checked_at": "2026-08-08T07:09:36.033464+00:00",
+  "checked_at": "2026-08-15T07:38:36.892629+00:00",
   "platform": null,
   "slug": null
  },
@@ -190,17 +190,17 @@
   "slug": null
  },
  "IBM accelerate": {
-  "checked_at": "2026-08-08T07:09:49.059807+00:00",
+  "checked_at": "2026-08-15T07:38:48.107736+00:00",
   "platform": null,
   "slug": null
  },
  "Intuit": {
-  "checked_at": "2026-08-08T07:10:27.655858+00:00",
+  "checked_at": "2026-08-15T07:39:32.104631+00:00",
   "platform": null,
   "slug": null
  },
  "JP morgan chase fellowship": {
-  "checked_at": "2026-08-08T07:10:53.861381+00:00",
+  "checked_at": "2026-08-15T07:39:54.530577+00:00",
   "platform": null,
   "slug": null
  },
@@ -210,17 +210,17 @@
   "slug": null
  },
  "John Deere": {
-  "checked_at": "2026-08-08T07:10:40.630587+00:00",
+  "checked_at": "2026-08-15T07:39:43.198657+00:00",
   "platform": null,
   "slug": null
  },
  "KLA": {
-  "checked_at": "2026-08-08T07:11:08.140900+00:00",
+  "checked_at": "2026-08-15T07:40:04.820082+00:00",
   "platform": null,
   "slug": null
  },
  "Lockheed Martin": {
-  "checked_at": "2026-08-08T07:11:27.040564+00:00",
+  "checked_at": "2026-08-15T07:40:21.189195+00:00",
   "platform": null,
   "slug": null
  },
@@ -230,12 +230,12 @@
   "slug": "lyft"
  },
  "MLH": {
-  "checked_at": "2026-08-08T07:11:46.400333+00:00",
+  "checked_at": "2026-08-15T07:40:36.439859+00:00",
   "platform": null,
   "slug": null
  },
  "Mastercard": {
-  "checked_at": "2026-08-08T07:11:34.065502+00:00",
+  "checked_at": "2026-08-15T07:40:26.329543+00:00",
   "platform": null,
   "slug": null
  },
@@ -260,12 +260,12 @@
   "slug": "neuralink"
  },
  "Nokia": {
-  "checked_at": "2026-08-08T07:12:25.713226+00:00",
+  "checked_at": "2026-08-15T07:41:09.761463+00:00",
   "platform": null,
   "slug": null
  },
  "Northrop Grumman": {
-  "checked_at": "2026-08-08T07:12:39.363376+00:00",
+  "checked_at": "2026-08-15T07:41:20.840051+00:00",
   "platform": null,
   "slug": null
  },
@@ -715,9 +715,9 @@
   "slug": null
  },
  "general motors": {
-  "checked_at": "2026-08-08T07:08:50.495921+00:00",
-  "platform": null,
-  "slug": null
+  "checked_at": "2026-08-15T07:37:57.496081+00:00",
+  "platform": "workday",
+  "slug": "generalmotors|wd5|careers"
  },
  "go daddy": {
   "checked_at": "2026-08-01T11:05:53.161543+00:00",
@@ -730,17 +730,17 @@
   "slug": "handshake"
  },
  "harmon": {
-  "checked_at": "2026-08-08T07:09:16.073475+00:00",
+  "checked_at": "2026-08-15T07:38:19.518957+00:00",
   "platform": null,
   "slug": null
  },
  "ignite NVIDIA": {
-  "checked_at": "2026-08-08T07:10:02.285303+00:00",
+  "checked_at": "2026-08-15T07:38:59.211008+00:00",
   "platform": null,
   "slug": null
  },
  "infosys": {
-  "checked_at": "2026-08-08T07:10:21.295686+00:00",
+  "checked_at": "2026-08-15T07:39:15.978060+00:00",
   "platform": null,
   "slug": null
  },
@@ -755,7 +755,7 @@
   "slug": "janestreet"
  },
  "jpmorgan": {
-  "checked_at": "2026-08-08T07:10:59.786772+00:00",
+  "checked_at": "2026-08-15T07:39:59.465999+00:00",
   "platform": null,
   "slug": null
  },
@@ -770,7 +770,7 @@
   "slug": "leidos|wd5|External"
  },
  "lenovo": {
-  "checked_at": "2026-08-08T07:11:14.294537+00:00",
+  "checked_at": "2026-08-15T07:40:10.227504+00:00",
   "platform": null,
   "slug": null
  },
@@ -785,7 +785,7 @@
   "slug": "medtronic|wd1|MedtronicCareers"
  },
  "mercedes": {
-  "checked_at": "2026-08-08T07:11:40.217725+00:00",
+  "checked_at": "2026-08-15T07:40:31.309395+00:00",
   "platform": null,
   "slug": null
  },
@@ -815,7 +815,7 @@
   "slug": "mongodb"
  },
  "mongodb NeXt summit": {
-  "checked_at": "2026-08-08T07:11:59.524137+00:00",
+  "checked_at": "2026-08-15T07:40:47.961553+00:00",
   "platform": null,
   "slug": null
  },
@@ -825,12 +825,12 @@
   "slug": "monogram"
  },
  "morgan stanley": {
-  "checked_at": "2026-08-08T07:12:12.523456+00:00",
+  "checked_at": "2026-08-15T07:40:59.079083+00:00",
   "platform": null,
   "slug": null
  },
  "nasa": {
-  "checked_at": "2026-08-08T07:12:18.363228+00:00",
+  "checked_at": "2026-08-15T07:41:04.521492+00:00",
   "platform": null,
   "slug": null
  },
