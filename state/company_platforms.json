@@ -295,7 +295,7 @@
   "slug": "palantir"
  },
  "Palo Alto Networks": {
-  "checked_at": "2026-08-08T09:20:11.620132+00:00",
+  "checked_at": "2026-08-15T09:35:15.097694+00:00",
   "platform": null,
   "slug": null
  },
@@ -325,7 +325,7 @@
   "slug": "reddit"
  },
  "Rippling winter 27": {
-  "checked_at": "2026-08-08T09:20:48.514681+00:00",
+  "checked_at": "2026-08-15T09:35:50.857359+00:00",
   "platform": null,
   "slug": null
  },
@@ -335,12 +335,12 @@
   "slug": "rocket|wd5|Rocket_Careers"
  },
  "SEO tech developer": {
-  "checked_at": "2026-08-08T09:21:31.343139+00:00",
+  "checked_at": "2026-08-15T09:36:31.491964+00:00",
   "platform": null,
   "slug": null
  },
  "Samsung": {
-  "checked_at": "2026-08-08T09:21:14.340697+00:00",
+  "checked_at": "2026-08-15T09:36:15.113743+00:00",
   "platform": null,
   "slug": null
  },
@@ -350,7 +350,7 @@
   "slug": "servicenow"
  },
  "Siemens": {
-  "checked_at": "2026-08-08T09:21:36.832979+00:00",
+  "checked_at": "2026-08-15T09:36:37.587601+00:00",
   "platform": null,
   "slug": null
  },
@@ -400,7 +400,7 @@
   "slug": null
  },
  "TikTok": {
-  "checked_at": "2026-08-08T09:22:37.565602+00:00",
+  "checked_at": "2026-08-15T09:37:35.264772+00:00",
   "platform": null,
   "slug": null
  },
@@ -855,7 +855,7 @@
   "slug": "okta"
  },
  "oracle": {
-  "checked_at": "2026-08-08T09:19:51.998673+00:00",
+  "checked_at": "2026-08-15T09:34:56.574748+00:00",
   "platform": null,
   "slug": null
  },
@@ -870,7 +870,7 @@
   "slug": "plaid"
  },
  "pwc": {
-  "checked_at": "2026-08-08T09:20:26.144668+00:00",
+  "checked_at": "2026-08-15T09:35:28.979938+00:00",
   "platform": null,
   "slug": null
  },
@@ -880,7 +880,7 @@
   "slug": "ramp"
  },
  "raytheon": {
-  "checked_at": "2026-08-08T09:20:31.584985+00:00",
+  "checked_at": "2026-08-15T09:35:34.408706+00:00",
   "platform": null,
   "slug": null
  },
@@ -900,7 +900,7 @@
   "slug": "riotgames"
  },
  "rippling": {
-  "checked_at": "2026-08-08T09:20:36.876644+00:00",
+  "checked_at": "2026-08-15T09:35:39.618795+00:00",
   "platform": null,
   "slug": null
  },
@@ -915,7 +915,7 @@
   "slug": "roblox"
  },
  "roche": {
-  "checked_at": "2026-08-08T09:21:03.104269+00:00",
+  "checked_at": "2026-08-15T09:36:05.101333+00:00",
   "platform": null,
   "slug": null
  },
@@ -925,7 +925,7 @@
   "slug": "roku"
  },
  "rtx": {
-  "checked_at": "2026-08-08T09:21:08.728771+00:00",
+  "checked_at": "2026-08-15T09:36:10.101971+00:00",
   "platform": null,
   "slug": null
  },
@@ -945,7 +945,7 @@
   "slug": "samsara"
  },
  "scale": {
-  "checked_at": "2026-08-08T09:21:19.608024+00:00",
+  "checked_at": "2026-08-15T09:36:20.231148+00:00",
   "platform": null,
   "slug": null
  },
@@ -960,12 +960,12 @@
   "slug": null
  },
  "siriusxm": {
-  "checked_at": "2026-08-08T09:21:42.295656+00:00",
+  "checked_at": "2026-08-15T09:36:42.803169+00:00",
   "platform": null,
   "slug": null
  },
  "slack": {
-  "checked_at": "2026-08-08T09:21:47.694687+00:00",
+  "checked_at": "2026-08-15T09:36:47.902180+00:00",
   "platform": null,
   "slug": null
  },
@@ -980,7 +980,7 @@
   "slug": null
  },
  "southwest": {
-  "checked_at": "2026-08-08T09:21:52.642024+00:00",
+  "checked_at": "2026-08-15T09:36:52.611838+00:00",
   "platform": null,
   "slug": null
  },
@@ -990,17 +990,17 @@
   "slug": "spacex"
  },
  "splunk": {
-  "checked_at": "2026-08-08T09:21:58.219831+00:00",
+  "checked_at": "2026-08-15T09:36:57.908295+00:00",
   "platform": null,
   "slug": null
  },
  "square": {
-  "checked_at": "2026-08-08T09:22:03.439650+00:00",
+  "checked_at": "2026-08-15T09:37:03.158047+00:00",
   "platform": null,
   "slug": null
  },
  "state street": {
-  "checked_at": "2026-08-08T09:22:20.395640+00:00",
+  "checked_at": "2026-08-15T09:37:18.814246+00:00",
   "platform": null,
   "slug": null
  },
@@ -1025,7 +1025,7 @@
   "slug": "thenuclearcompany"
  },
  "thrive by duolingo": {
-  "checked_at": "2026-08-08T09:22:32.137399+00:00",
+  "checked_at": "2026-08-15T09:37:30.193927+00:00",
   "platform": null,
   "slug": null
  },
