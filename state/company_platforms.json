@@ -64,6 +64,11 @@
   "platform": "greenhouse",
   "slug": "block"
  },
+ "Bloomberg": {
+  "checked_at": "2026-08-16T04:33:13.049108+00:00",
+  "platform": null,
+  "slug": null
+ },
  "Broadcom": {
   "checked_at": "2026-08-16T04:18:41.709321+00:00",
   "platform": null,
@@ -84,6 +89,11 @@
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
+ "DraftKings": {
+  "checked_at": "2026-08-16T04:34:47.182379+00:00",
+  "platform": "jobfeed",
+  "slug": "https://careers.draftkings.com/jobs/xml/?rss=true"
+ },
  "Dropbox": {
   "checked_at": "2026-07-15T04:16:05.046864+00:00",
   "platform": "greenhouse",
@@ -98,6 +108,16 @@
   "checked_at": "2026-08-01T11:05:53.009438+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
+ },
+ "GitHub": {
+  "checked_at": "2026-08-16T04:34:50.999920+00:00",
+  "platform": "careersite",
+  "slug": "https://www.github.careers"
+ },
+ "Google": {
+  "checked_at": "2026-08-16T04:34:42.202468+00:00",
+  "platform": null,
+  "slug": null
  },
  "Heliux": {
   "checked_at": "2026-08-03T17:27:57.530398+00:00",
@@ -114,6 +134,11 @@
   "platform": "greenhouse",
   "slug": "hubspot"
  },
+ "IBM": {
+  "checked_at": "2026-08-16T04:34:33.205524+00:00",
+  "platform": null,
+  "slug": null
+ },
  "Lyft": {
   "checked_at": "2026-07-15T03:58:01.812653+00:00",
   "platform": "greenhouse",
@@ -125,9 +150,9 @@
   "slug": null
  },
  "NVIDIA": {
-  "checked_at": "2026-07-16T03:29:36.368969+00:00",
+  "checked_at": "2026-08-16T04:33:45.341178+00:00",
   "platform": "workday",
-  "slug": "nvidia|wd5|NvidiaExternalCareerSite"
+  "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
  "Netflix": {
   "checked_at": "2026-07-15T03:58:59.207689+00:00",
@@ -150,7 +175,7 @@
   "slug": "pdtpartners"
  },
  "PNC": {
-  "checked_at": "2026-07-16T00:32:39.729736+00:00",
+  "checked_at": "2026-08-16T04:34:22.734492+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -199,6 +224,11 @@
   "platform": "smartrecruiters",
   "slug": "servicenow"
  },
+ "Snap": {
+  "checked_at": "2026-08-16T04:35:41.792008+00:00",
+  "platform": "workdaysite",
+  "slug": "wd1|snapchat|snap"
+ },
  "Snowflake": {
   "checked_at": "2026-07-15T04:03:20.918232+00:00",
   "platform": "ashby",
@@ -215,7 +245,7 @@
   "slug": "stockx"
  },
  "Stripe": {
-  "checked_at": "2026-07-15T04:04:39.316627+00:00",
+  "checked_at": "2026-08-16T04:33:50.621467+00:00",
   "platform": "greenhouse",
   "slug": "stripe"
  },
@@ -229,10 +259,25 @@
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
+ "Tesla": {
+  "checked_at": "2026-08-16T04:35:48.652874+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "US bank": {
+  "checked_at": "2026-08-16T04:35:56.428350+00:00",
+  "platform": "workday",
+  "slug": "usbank|wd1|US_Bank_Careers"
+ },
  "Uber Freight": {
   "checked_at": "2026-07-15T04:06:12.031106+00:00",
   "platform": "greenhouse",
   "slug": "uberfreight"
+ },
+ "Walmart": {
+  "checked_at": "2026-08-16T04:33:59.739649+00:00",
+  "platform": null,
+  "slug": null
  },
  "abbott": {
   "checked_at": "2026-08-16T03:55:11.436358+00:00",
@@ -415,7 +460,7 @@
   "slug": "crowdstrike|wd5|CrowdstrikeCareers"
  },
  "dandy": {
-  "checked_at": "2026-07-15T03:53:16.313312+00:00",
+  "checked_at": "2026-08-16T04:33:19.578471+00:00",
   "platform": "ashby",
   "slug": "dandy"
  },
@@ -440,7 +485,7 @@
   "slug": "dell|wd1|External"
  },
  "duolingo": {
-  "checked_at": "2026-07-15T03:54:36.114308+00:00",
+  "checked_at": "2026-08-16T04:34:45.811443+00:00",
   "platform": "greenhouse",
   "slug": "duolingo"
  },
@@ -453,6 +498,11 @@
   "checked_at": "2026-07-15T03:54:58.774798+00:00",
   "platform": "greenhouse",
   "slug": "figma"
+ },
+ "ford": {
+  "checked_at": "2026-08-16T04:33:41.461053+00:00",
+  "platform": null,
+  "slug": null
  },
  "general motors": {
   "checked_at": "2026-08-15T07:37:57.496081+00:00",
@@ -499,13 +549,18 @@
   "platform": "workday",
   "slug": "medtronic|wd1|MedtronicCareers"
  },
+ "meta": {
+  "checked_at": "2026-08-16T04:35:02.546924+00:00",
+  "platform": null,
+  "slug": null
+ },
  "modus": {
   "checked_at": "2026-07-29T17:37:50.096926+00:00",
   "platform": "ashby",
   "slug": "modus"
  },
  "mongoDB": {
-  "checked_at": "2026-07-15T03:58:28.224332+00:00",
+  "checked_at": "2026-08-16T04:35:08.080043+00:00",
   "platform": "greenhouse",
   "slug": "mongodb"
  },
@@ -530,7 +585,7 @@
   "slug": "nutanix"
  },
  "okta": {
-  "checked_at": "2026-07-15T03:59:52.098229+00:00",
+  "checked_at": "2026-08-16T04:35:24.815866+00:00",
   "platform": "greenhouse",
   "slug": "okta"
  },
@@ -540,12 +595,12 @@
   "slug": "patreon"
  },
  "plaid": {
-  "checked_at": "2026-07-15T04:00:24.446378+00:00",
-  "platform": "lever",
+  "checked_at": "2026-08-16T04:35:27.825630+00:00",
+  "platform": "ashby",
   "slug": "plaid"
  },
  "ramp": {
-  "checked_at": "2026-07-15T04:00:40.964310+00:00",
+  "checked_at": "2026-08-16T04:33:46.828494+00:00",
   "platform": "ashby",
   "slug": "ramp"
  },
@@ -553,6 +608,11 @@
   "checked_at": "2026-08-01T09:16:06.359097+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
+ },
+ "resy": {
+  "checked_at": "2026-08-16T04:35:37.062261+00:00",
+  "platform": null,
+  "slug": null
  },
  "riot games": {
   "checked_at": "2026-07-15T04:01:15.127145+00:00",
@@ -643,5 +703,10 @@
   "checked_at": "2026-07-15T04:07:52.776993+00:00",
   "platform": "greenhouse",
   "slug": "waymo"
+ },
+ "wells fargo": {
+  "checked_at": "2026-08-16T04:34:02.859345+00:00",
+  "platform": "jobfeed",
+  "slug": "https://www.wellsfargojobs.com/jobs/xml/?rss=true"
  }
 }
