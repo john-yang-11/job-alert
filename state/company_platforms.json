@@ -60,12 +60,27 @@
   "slug": null
  },
  "BLOCK": {
-  "checked_at": "2026-07-15T03:50:01.025318+00:00",
+  "checked_at": "2026-08-16T04:17:36.340765+00:00",
   "platform": "greenhouse",
   "slug": "block"
  },
+ "Broadcom": {
+  "checked_at": "2026-08-16T04:18:41.709321+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "CNN": {
+  "checked_at": "2026-08-16T04:20:13.806194+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Caterpillar": {
+  "checked_at": "2026-08-16T04:19:19.091291+00:00",
+  "platform": "jobfeed",
+  "slug": "https://careers.caterpillar.com/jobs/xml/?rss=true"
+ },
  "Cisco": {
-  "checked_at": "2026-07-16T01:07:58.770397+00:00",
+  "checked_at": "2026-08-16T04:19:38.241533+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -289,63 +304,108 @@
   "platform": null,
   "slug": null
  },
+ "blizzard": {
+  "checked_at": "2026-08-16T04:17:35.541725+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "bloomberg": {
+  "checked_at": "2026-08-16T04:17:51.976120+00:00",
+  "platform": null,
+  "slug": null
+ },
  "blue origin": {
-  "checked_at": "2026-07-15T03:50:13.339855+00:00",
-  "platform": "lever",
-  "slug": "blueorigin"
+  "checked_at": "2026-08-16T04:18:08.865172+00:00",
+  "platform": "workday",
+  "slug": "blueorigin|wd5|BlueOrigin"
  },
  "boeing": {
-  "checked_at": "2026-07-16T01:04:20.411523+00:00",
+  "checked_at": "2026-08-16T04:18:11.443355+00:00",
   "platform": "workday",
-  "slug": "boeing|wd1|External_Careers"
+  "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
  "boeing data analytics": {
   "checked_at": "2026-08-04T03:31:19.062024+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|External_Careers"
  },
+ "bosch": {
+  "checked_at": "2026-08-16T04:18:13.940783+00:00",
+  "platform": "smartrecruiters",
+  "slug": "BoschGroup"
+ },
  "brex": {
-  "checked_at": "2026-07-15T03:50:26.476956+00:00",
+  "checked_at": "2026-08-16T04:18:18.271366+00:00",
   "platform": "greenhouse",
   "slug": "brex"
  },
  "bytedance": {
-  "checked_at": "2026-07-15T03:50:44.557712+00:00",
+  "checked_at": "2026-08-16T04:19:03.857473+00:00",
   "platform": "smartrecruiters",
   "slug": "bytedance"
  },
+ "c1 data analyst": {
+  "checked_at": "2026-08-16T04:19:17.157575+00:00",
+  "platform": null,
+  "slug": null
+ },
  "capital one": {
-  "checked_at": "2026-07-16T04:00:34.514013+00:00",
+  "checked_at": "2026-08-16T04:19:17.157771+00:00",
   "platform": "capitalone",
   "slug": "capitalone"
  },
  "chime": {
-  "checked_at": "2026-07-15T03:51:26.569632+00:00",
+  "checked_at": "2026-08-16T04:19:19.688862+00:00",
   "platform": "greenhouse",
   "slug": "chime"
  },
+ "citadel launch": {
+  "checked_at": "2026-08-16T04:19:52.204100+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "citi": {
+  "checked_at": "2026-08-16T04:19:55.335500+00:00",
+  "platform": "workday",
+  "slug": "citi|wd5|2"
+ },
+ "clay": {
+  "checked_at": "2026-08-16T04:19:55.795565+00:00",
+  "platform": "ashby",
+  "slug": "claylabs"
+ },
  "clear": {
-  "checked_at": "2026-07-15T03:51:58.906266+00:00",
+  "checked_at": "2026-08-16T04:19:59.460389+00:00",
   "platform": "greenhouse",
   "slug": "clear"
  },
+ "cloud flare fall": {
+  "checked_at": "2026-08-16T04:20:01.498315+00:00",
+  "platform": "workday",
+  "slug": "tibco|wd5|Cloud_Software_Group"
+ },
  "cloudflare": {
-  "checked_at": "2026-07-15T03:52:03.193484+00:00",
+  "checked_at": "2026-08-16T04:20:06.785583+00:00",
   "platform": "greenhouse",
   "slug": "cloudflare"
  },
  "coinbase": {
-  "checked_at": "2026-07-15T03:52:16.591808+00:00",
+  "checked_at": "2026-08-16T04:20:17.442734+00:00",
   "platform": "greenhouse",
   "slug": "coinbase"
  },
+ "colins aerospace": {
+  "checked_at": "2026-08-16T04:20:31.040477+00:00",
+  "platform": null,
+  "slug": null
+ },
  "comcast": {
-  "checked_at": "2026-07-16T01:10:59.803504+00:00",
+  "checked_at": "2026-08-16T04:20:42.021630+00:00",
   "platform": "workday",
   "slug": "comcast|wd5|Comcast_Careers"
  },
  "confluent": {
-  "checked_at": "2026-07-15T03:52:32.645683+00:00",
+  "checked_at": "2026-08-16T04:21:03.047183+00:00",
   "platform": "ashby",
   "slug": "confluent"
  },
