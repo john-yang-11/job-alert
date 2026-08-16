@@ -240,14 +240,24 @@
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
  "Netflix": {
-  "checked_at": "2026-07-15T03:58:59.207689+00:00",
-  "platform": "lever",
-  "slug": "netflix"
+  "checked_at": "2026-08-16T06:55:56.231463+00:00",
+  "platform": null,
+  "slug": null
  },
  "Neuralink": {
-  "checked_at": "2026-07-15T04:17:21.339430+00:00",
+  "checked_at": "2026-08-16T06:55:57.694775+00:00",
   "platform": "greenhouse",
   "slug": "neuralink"
+ },
+ "Nokia": {
+  "checked_at": "2026-08-16T06:56:25.344729+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Northrop Grumman": {
+  "checked_at": "2026-08-16T06:56:45.297578+00:00",
+  "platform": null,
+  "slug": null
  },
  "Nuro": {
   "checked_at": "2026-07-29T17:37:40.258633+00:00",
@@ -274,18 +284,23 @@
   "platform": "lever",
   "slug": "palantir"
  },
+ "Palo Alto Networks": {
+  "checked_at": "2026-08-16T06:57:00.755464+00:00",
+  "platform": "workday",
+  "slug": "paloaltonetworks|wd5|panwexternalcareers"
+ },
  "Paypal": {
   "checked_at": "2026-08-01T09:15:33.196508+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
  "Pinterest": {
-  "checked_at": "2026-07-15T04:00:22.310103+00:00",
-  "platform": "greenhouse",
-  "slug": "pinterest"
+  "checked_at": "2026-08-16T06:57:03.182296+00:00",
+  "platform": "jobfeed",
+  "slug": "https://www.pinterestcareers.com/jobs/xml/?rss=true"
  },
  "Point72": {
-  "checked_at": "2026-07-15T04:17:49.838464+00:00",
+  "checked_at": "2026-08-16T06:57:04.153706+00:00",
   "platform": "greenhouse",
   "slug": "point72"
  },
@@ -295,14 +310,24 @@
   "slug": "qualcomm|wd12|External"
  },
  "Reddit": {
-  "checked_at": "2026-07-15T04:00:53.643731+00:00",
+  "checked_at": "2026-08-16T06:57:35.970483+00:00",
   "platform": "greenhouse",
   "slug": "reddit"
+ },
+ "Rippling winter 27": {
+  "checked_at": "2026-08-16T06:58:36.528640+00:00",
+  "platform": null,
+  "slug": null
  },
  "Rocket Companies": {
   "checked_at": "2026-08-01T09:16:59.155849+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
+ },
+ "Samsung": {
+  "checked_at": "2026-08-16T06:59:52.642245+00:00",
+  "platform": "workday",
+  "slug": "sec|wd3|Samsung_Careers"
  },
  "ServiceNow": {
   "checked_at": "2026-07-15T04:02:37.539523+00:00",
@@ -734,13 +759,18 @@
   "platform": null,
   "slug": null
  },
+ "nasa": {
+  "checked_at": "2026-08-16T06:55:47.972763+00:00",
+  "platform": null,
+  "slug": null
+ },
  "nintendo": {
-  "checked_at": "2026-07-15T03:59:03.494920+00:00",
+  "checked_at": "2026-08-16T06:56:02.982316+00:00",
   "platform": "greenhouse",
   "slug": "nintendo"
  },
  "notion": {
-  "checked_at": "2026-07-15T03:59:33.045004+00:00",
+  "checked_at": "2026-08-16T06:56:45.683015+00:00",
   "platform": "ashby",
   "slug": "notion"
  },
@@ -754,8 +784,13 @@
   "platform": "greenhouse",
   "slug": "okta"
  },
+ "oracle": {
+  "checked_at": "2026-08-16T06:56:59.358872+00:00",
+  "platform": null,
+  "slug": null
+ },
  "patreon": {
-  "checked_at": "2026-07-15T04:00:01.410942+00:00",
+  "checked_at": "2026-08-16T06:57:01.523828+00:00",
   "platform": "ashby",
   "slug": "patreon"
  },
@@ -764,10 +799,20 @@
   "platform": "ashby",
   "slug": "plaid"
  },
+ "pwc": {
+  "checked_at": "2026-08-16T06:57:32.354189+00:00",
+  "platform": null,
+  "slug": null
+ },
  "ramp": {
   "checked_at": "2026-08-16T04:33:46.828494+00:00",
   "platform": "ashby",
   "slug": "ramp"
+ },
+ "raytheon": {
+  "checked_at": "2026-08-16T06:57:35.321615+00:00",
+  "platform": "workday",
+  "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
  "redhat": {
   "checked_at": "2026-08-01T09:16:06.359097+00:00",
@@ -780,24 +825,39 @@
   "slug": null
  },
  "riot games": {
-  "checked_at": "2026-07-15T04:01:15.127145+00:00",
+  "checked_at": "2026-08-16T06:58:09.894928+00:00",
   "platform": "greenhouse",
   "slug": "riotgames"
  },
+ "rippling": {
+  "checked_at": "2026-08-16T06:58:22.118951+00:00",
+  "platform": null,
+  "slug": null
+ },
  "robinhood": {
-  "checked_at": "2026-07-15T04:01:19.281162+00:00",
+  "checked_at": "2026-08-16T06:58:39.290972+00:00",
   "platform": "greenhouse",
   "slug": "robinhood"
  },
  "roblox": {
-  "checked_at": "2026-07-15T04:01:23.367387+00:00",
+  "checked_at": "2026-08-16T06:58:44.169255+00:00",
   "platform": "greenhouse",
   "slug": "roblox"
  },
+ "roche": {
+  "checked_at": "2026-08-16T06:59:07.452401+00:00",
+  "platform": null,
+  "slug": null
+ },
  "roku": {
-  "checked_at": "2026-07-15T04:18:14.449149+00:00",
+  "checked_at": "2026-08-16T06:59:08.126733+00:00",
   "platform": "greenhouse",
   "slug": "roku"
+ },
+ "rtx": {
+  "checked_at": "2026-08-16T06:59:23.547184+00:00",
+  "platform": null,
+  "slug": null
  },
  "salesforce": {
   "checked_at": "2026-08-01T09:17:13.145090+00:00",
@@ -805,7 +865,7 @@
   "slug": "salesforce|wd12|External_Career_Site"
  },
  "salesforce future tech launchpad": {
-  "checked_at": "2026-07-16T00:46:19.215438+00:00",
+  "checked_at": "2026-08-16T06:59:49.412124+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
