@@ -154,6 +154,11 @@
   "platform": "workday",
   "slug": "hp|wd5|ExternalCareerSite"
  },
+ "HPR": {
+  "checked_at": "2026-08-16T05:38:08.444932+00:00",
+  "platform": null,
+  "slug": null
+ },
  "Heliux": {
   "checked_at": "2026-08-03T17:27:57.530398+00:00",
   "platform": "ashby",
@@ -165,19 +170,64 @@
   "slug": "hermeus"
  },
  "Hubspot": {
-  "checked_at": "2026-07-15T03:56:49.202586+00:00",
+  "checked_at": "2026-08-16T05:38:31.381482+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Hudson River Trading": {
+  "checked_at": "2026-08-16T05:38:46.325851+00:00",
   "platform": "greenhouse",
-  "slug": "hubspot"
+  "slug": "hrttalentcommunity"
  },
  "IBM": {
   "checked_at": "2026-08-16T04:34:33.205524+00:00",
   "platform": null,
   "slug": null
  },
+ "IBM accelerate": {
+  "checked_at": "2026-08-16T05:39:03.764810+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Intuit": {
+  "checked_at": "2026-08-16T05:39:49.199244+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "JP morgan chase fellowship": {
+  "checked_at": "2026-08-16T05:40:30.588251+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "John Deere": {
+  "checked_at": "2026-08-16T05:40:15.183792+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "KLA": {
+  "checked_at": "2026-08-16T05:40:43.314484+00:00",
+  "platform": "workday",
+  "slug": "kla|wd1|Search"
+ },
+ "Lockheed Martin": {
+  "checked_at": "2026-08-16T05:41:14.494255+00:00",
+  "platform": null,
+  "slug": null
+ },
  "Lyft": {
-  "checked_at": "2026-07-15T03:58:01.812653+00:00",
+  "checked_at": "2026-08-16T05:41:16.453679+00:00",
   "platform": "greenhouse",
   "slug": "lyft"
+ },
+ "MLH": {
+  "checked_at": "2026-08-16T05:41:33.446560+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Mastercard": {
+  "checked_at": "2026-08-16T05:41:18.740321+00:00",
+  "platform": "workday",
+  "slug": "mastercard|wd1|CorporateCareers"
  },
  "Microsoft": {
   "checked_at": "2026-08-16T03:55:01.463311+00:00",
@@ -599,8 +649,18 @@
   "platform": null,
   "slug": null
  },
+ "ignite NVIDIA": {
+  "checked_at": "2026-08-16T05:39:05.517998+00:00",
+  "platform": "ashby",
+  "slug": "allinbits"
+ },
+ "infosys": {
+  "checked_at": "2026-08-16T05:39:25.042897+00:00",
+  "platform": null,
+  "slug": null
+ },
  "instacart": {
-  "checked_at": "2026-07-15T03:57:08.948026+00:00",
+  "checked_at": "2026-08-16T05:39:29.158645+00:00",
   "platform": "greenhouse",
   "slug": "instacart"
  },
@@ -609,15 +669,25 @@
   "platform": "greenhouse",
   "slug": "janestreet"
  },
+ "jpmorgan": {
+  "checked_at": "2026-08-16T05:40:39.936159+00:00",
+  "platform": null,
+  "slug": null
+ },
  "kalshi": {
-  "checked_at": "2026-07-15T03:57:35.737811+00:00",
+  "checked_at": "2026-08-16T05:40:40.875110+00:00",
   "platform": "greenhouse",
   "slug": "kalshi"
  },
  "leidos": {
-  "checked_at": "2026-07-16T00:52:46.806873+00:00",
+  "checked_at": "2026-08-16T05:40:48.197454+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
+ },
+ "lenovo": {
+  "checked_at": "2026-08-16T05:40:56.549088+00:00",
+  "platform": null,
+  "slug": null
  },
  "linkedin": {
   "checked_at": "2026-08-16T03:48:27.046907+00:00",
@@ -628,6 +698,11 @@
   "checked_at": "2026-08-03T23:42:10.860842+00:00",
   "platform": "workday",
   "slug": "medtronic|wd1|MedtronicCareers"
+ },
+ "mercedes": {
+  "checked_at": "2026-08-16T05:41:25.652009+00:00",
+  "platform": null,
+  "slug": null
  },
  "meta": {
   "checked_at": "2026-08-16T04:35:02.546924+00:00",
@@ -644,10 +719,20 @@
   "platform": "greenhouse",
   "slug": "mongodb"
  },
+ "mongodb NeXt summit": {
+  "checked_at": "2026-08-16T05:41:49.573056+00:00",
+  "platform": null,
+  "slug": null
+ },
  "monogram": {
   "checked_at": "2026-07-29T17:37:45.361247+00:00",
   "platform": "ashby",
   "slug": "monogram"
+ },
+ "morgan stanley": {
+  "checked_at": "2026-08-16T05:43:13.867384+00:00",
+  "platform": null,
+  "slug": null
  },
  "nintendo": {
   "checked_at": "2026-07-15T03:59:03.494920+00:00",
