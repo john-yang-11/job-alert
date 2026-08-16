@@ -714,11 +714,6 @@
   "platform": null,
   "slug": null
  },
- "general motors": {
-  "checked_at": "2026-08-15T07:37:57.496081+00:00",
-  "platform": "workday",
-  "slug": "generalmotors|wd5|careers"
- },
  "go daddy": {
   "checked_at": "2026-08-01T11:05:53.161543+00:00",
   "platform": "greenhouse",
