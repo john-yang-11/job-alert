@@ -66,21 +66,63 @@ waiting on Simplify, for every watchlist company that turns out to be on a
 supported job board: Greenhouse, Lever, Ashby, SmartRecruiters, or Workday.
 
 `resolve_companies.py` figures out which board (if any) each watchlist company
-uses. For the four ATSs it guesses common slug conventions (e.g. "Capital One"
--> `capitalone`) and verifies against the live API. Workday needs three
-coordinates (tenant + datacenter + an arbitrary site name) that can't be
-guessed as one slug, so it's probed separately: the job API returns HTTP 404
-for a valid tenant+datacenter with a wrong site but 422 for a wrong
-tenant/datacenter, which pins the first two cheaply, then common site-name
-patterns are tried for the third (this reaches most of the big companies on
-custom-looking Workday sites — Adobe, Salesforce, NVIDIA, ...). For Workday we
-discover each board's "Intern" facet (e.g. `workerSubType`) from its own
-response and filter to intern roles server-side — much more reliable than a
-fuzzy `intern` text search, which buries real intern roles behind experienced
-ones on big boards.
+uses, in three passes.
 
-A few big companies aren't on any standard board, or post interns somewhere the
-board doesn't surface. Those get a **bespoke integration** matched by name in
+**1. Read the board off the company's own careers page** (`discover_from_careers_page`).
+Guesses a careers URL from the company name (`careers.<x>.com`, `jobs.<x>.com`,
+`<x>.com/careers`), fetches it, and pulls the board's real coordinates out of
+the HTML — following a `/jobs`-style link one level in when the landing page is
+pure marketing (Snap's board link lives there, not on the front page). This runs
+*first* because it's both broader and safer than guessing: it finds boards whose
+slug looks nothing like the company (Samsung's Workday tenant is `sec`, Hudson
+River Trading's Greenhouse board is `hrttalentcommunity`, US Bank's site is
+`US_Bank_Careers`), and a link from the company's own site proves ownership,
+which a slug guess does not. Whatever it finds is verified against the live API
+before being cached.
+
+**2. Guess slug conventions** for the four single-slug ATSs (e.g. "Capital One"
+-> `capitalone`) and verify against the live API.
+
+**3. Probe for Workday coordinates**, which need three parts (tenant +
+datacenter + an arbitrary site name) that can't be guessed as one slug: the job
+API returns HTTP 404 for a valid tenant+datacenter with a wrong site but 422 for
+a wrong tenant/datacenter, which pins the first two cheaply, then common
+site-name patterns are tried for the third. For Workday we discover each board's
+"Intern" facet (e.g. `workerSubType`) from its own response and filter to intern
+roles server-side — much more reliable than a fuzzy `intern` text search, which
+buries real intern roles behind experienced ones on big boards.
+
+Watch out for **vendor sandbox boards**: ATSs hand out demo tenants under real
+company names, and slug-guessing used to accept them — `lever/linkedin` is
+"LinkedIn Partner Sandbox - RSC testing" (23 fake postings) and
+`smartrecruiters/uber` holds one posting titled "Test UAT". Those read as
+"resolved" while alerting on nothing, which is worse than an unresolved company
+because it never shows up in the miss report. `SANDBOX_RE` + `verify_lever` in
+`platforms.py` reject them now, and `KNOWN_BAD_BOARDS` in `resolve_companies.py`
+evicts any that were already cached.
+
+Beyond the five ATSs, two more board shapes are supported, both auto-detected by
+pass 1:
+
+- **`workdaysite`** — Workday's other public host layout,
+  `wdN.myworkdaysite.com/recruiting/<tenant>/<site>` (Snap). Same API as
+  `workday`, but the datacenter leads the hostname instead of trailing the
+  tenant, so it can't be packed into the same slug.
+- **`careersite`** — the JSON API some Radancy sites expose at
+  `<base>/api/jobs?limit=100&page=N` (GitHub, AMD). Preferred over `jobfeed`
+  where both exist, since it carries a structured location and country. `limit`
+  silently caps at 100, so it pages. Note GitHub's careers host is on the
+  `.careers` TLD rather than a subdomain of `.com`, which is why
+  `_careers_urls` guesses that form too.
+- **`jobfeed`** — big-employer career sites built on Radancy (Wells Fargo, Uber,
+  DraftKings, Caterpillar, Fidelity, Nutanix) are JS-rendered with no JSON API,
+  but publish every req as an XML feed at `/jobs/xml/?rss=true`. Two dialects
+  exist and a host serves one or the other: RSS `<item>` (title/link only) and
+  Radancy's `<source><job>` (adds city/state/country). The feed URL is the slug,
+  since there's no tenant id to rebuild it from.
+
+A few big companies aren't on any of those, or post interns somewhere the board
+doesn't surface. Those get a **bespoke integration** matched by name in
 `CUSTOM_COMPANIES` (in `resolve_companies.py`) rather than auto-resolved:
 Amazon (`amazon.jobs` JSON) and Capital One (scrapes their server-rendered
 `capitalonecareers.com` and unions in their Workday board, since their tech
@@ -96,8 +138,14 @@ automatically as part of `check_companies.py`, but can also be run standalone to
 see the hit/miss breakdown:
 
 ```
-python resolve_companies.py
+python resolve_companies.py            # resolve + hit/miss report
+python resolve_companies.py --audit    # also fetch every board and report counts
 ```
+
+`--audit` is the one to run when something feels quiet: it fetches each resolved
+board and flags the ones returning `EMPTY` or erroring. A board that resolves but
+returns nothing is indistinguishable from a hiring freeze unless you look, so a
+dead slug can sit there for months.
 
 Alerts fire only for postings whose title looks like a software-engineering
 internship (`intern`/`internship` + a SWE-ish keyword — see `SWE_RE` /
@@ -110,11 +158,29 @@ watchlist). `check-priority.yml` runs `check_companies.py --priority` **every 15
 minutes** — 4x the hourly full check — hitting just those companies' boards
 (fetched concurrently), with its own state file
 (`state/company_seen_priority.json`) so it never collides with the full run.
-Alerts are ⭐-prefixed. Each entry needs to be on a supported board or have a
-custom checker to be read directly. This fast lane's extra runs only fit
-GitHub's free Actions minutes on a **public** repo (Actions is free/unlimited
-there); on a private repo, drop this workflow and let the hourly run cover
-priority companies too.
+Alerts are ⭐-prefixed. This fast lane's extra runs only fit GitHub's free
+Actions minutes on a **public** repo (Actions is free/unlimited there); on a
+private repo, drop this workflow and let the hourly run cover priority companies
+too.
+
+**A `priority.txt` entry only does something if that company resolved to a
+board.** The fast lane reads boards directly; a company with no readable board
+is silently a no-op here and is only picked up by the 30-min repo watcher, at
+whatever lag Simplify has. Run `python resolve_companies.py` and check the
+unresolved list before assuming a name in `priority.txt` is being watched
+quickly. The stubborn ones are big companies whose careers sites are
+JS-rendered with no public API and bot-protection on top (Google, Meta,
+Microsoft, Apple, Tesla, Bloomberg, IBM, Walmart, TikTok) — those would each
+need a headless browser, which this repo deliberately avoids.
+
+**GitHub Actions does not honour these crons.** Scheduled workflows are
+best-effort and get heavily deprioritised: measured over 18h, `check-priority`
+(`*/15`) actually fired every ~100 min on average with a worst gap of **3h07m**,
+and `check-all` (`7,37`) averaged ~117 min with a worst gap of **3h48m**. So the
+"fast lane" is currently no faster than the main check, and overnight both can
+go quiet for hours. Nothing in this repo can fix that from inside a cron —
+it needs an external trigger (a free uptime pinger hitting the
+`workflow_dispatch` API) or a long-running job that loops internally.
 
 ## Poke buffer (`buffer_server.py`)
 

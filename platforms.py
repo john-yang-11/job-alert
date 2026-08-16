@@ -9,6 +9,8 @@ so callers can try the next platform/slug guess.
 import re
 import socket
 import time
+import xml.etree.ElementTree as ET
+from urllib.parse import urljoin, urlsplit
 
 import requests
 
@@ -47,10 +49,29 @@ def _names_match(company_name: str, candidate_name: str) -> bool:
     return bool(a and b and (a in b or b in a))
 
 
-def fetch_greenhouse(slug: str, company_name: str) -> list[dict]:
-    board = _get_json(f"https://boards-api.greenhouse.io/v1/boards/{slug}")
+def verify_greenhouse(slug: str, company_name: str) -> bool:
+    """Board-name match, for the slug-guessing path only.
+
+    This is a guard against a *guess* landing on some unrelated company's board,
+    so it belongs here rather than in fetch_greenhouse: a board we found linked
+    from the company's own careers page is theirs no matter what it's called, and
+    name-checking it on every fetch just breaks it forever. Hudson River
+    Trading's board is "HRT Talent Community" and Twitter's careers site now
+    points at xAI's -- both correct, both rejected by a name match.
+    """
+    try:
+        board = _get_json(f"https://boards-api.greenhouse.io/v1/boards/{slug}")
+    except PlatformError:
+        return False
     if not isinstance(board, dict) or not _names_match(company_name, board.get("name", "")):
-        raise PlatformError(f"greenhouse board name mismatch for slug {slug!r}")
+        return False
+    try:
+        return bool(fetch_greenhouse(slug, company_name))
+    except PlatformError:
+        return False
+
+
+def fetch_greenhouse(slug: str, company_name: str) -> list[dict]:
     data = _get_json(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs")
     jobs = data.get("jobs") if isinstance(data, dict) else None
     if jobs is None:
@@ -82,6 +103,50 @@ def fetch_lever(slug: str, company_name: str) -> list[dict]:
     ]
 
 
+# Vendors hand out sandbox/demo boards under a real company's name -- e.g.
+# lever/"linkedin" is "LinkedIn Partner Sandbox - RSC testing" (23 fake postings
+# like "Anirban jobReq 3 - public"), and smartrecruiters/"uber" holds one posting
+# titled "Test UAT". Slug-guessing happily accepted those, so the watcher looked
+# like it was covering LinkedIn and Uber while reading a demo tenant -- a silent
+# miss, worse than an unresolved company (which at least shows up in the report).
+SANDBOX_RE = re.compile(r"\b(sandbox|demo|dummy|test(ing)?|staging|uat|qa)\b", re.IGNORECASE)
+# "QA Engineer" and "Test Engineer" are real jobs, so the posting-title check
+# uses the unambiguous markers only, and only condemns a board small enough that
+# every posting matching one can't be coincidence. A demo tenant holds a handful
+# of rows; a real board with 30 QA roles is just a company that hires QA.
+SANDBOX_POSTING_RE = re.compile(r"\b(sandbox|demo|dummy|staging|uat|test)\b", re.IGNORECASE)
+SANDBOX_MAX_POSTINGS = 5
+
+
+def _looks_like_sandbox(titles: list[str]) -> bool:
+    return (0 < len(titles) <= SANDBOX_MAX_POSTINGS
+            and all(SANDBOX_POSTING_RE.search(t or "") for t in titles))
+
+
+def verify_lever(slug: str, company_name: str) -> bool:
+    """Lever's posting API exposes no company name to match on, so confirm the
+    slug via its public board page title and reject obvious sandbox tenants."""
+    try:
+        postings = fetch_lever(slug, company_name)
+    except PlatformError:
+        return False
+    if not postings:
+        return False
+    try:
+        resp = requests.get(f"https://jobs.lever.co/{slug}", headers=HEADERS, timeout=TIMEOUT)
+    except requests.RequestException:
+        return True  # page unreachable: fall back to trusting the API response
+    if resp.status_code != 200:
+        return True
+    # the board's own name is the strongest signal, and the place the weaker
+    # markers ("testing", "QA") are unambiguous -- no real board is titled that
+    title = re.search(r"<title>(.*?)</title>", resp.text, re.S)
+    if title and SANDBOX_RE.search(title.group(1)):
+        return False
+    # a board whose every posting reads like test data is a sandbox too
+    return not _looks_like_sandbox([p["title"] for p in postings])
+
+
 def fetch_ashby(slug: str, company_name: str) -> list[dict]:
     data = _get_json(f"https://api.ashbyhq.com/posting-api/job-board/{slug}")
     jobs = data.get("jobs") if isinstance(data, dict) else None
@@ -107,6 +172,8 @@ def fetch_smartrecruiters(slug: str, company_name: str) -> list[dict]:
         raise PlatformError("smartrecruiters: no 'content' key")
     if any(not isinstance(p, dict) for p in content):
         raise PlatformError("smartrecruiters: malformed 'content' entries (likely wrong slug)")
+    if _looks_like_sandbox([p.get("name", "") for p in content]):
+        raise PlatformError(f"smartrecruiters: {slug!r} looks like a sandbox tenant")
     out = []
     for p in content:
         job_id = p.get("id")
@@ -157,19 +224,11 @@ def _workday_intern_facet(data: dict) -> tuple[str, str] | None:
     return None
 
 
-def fetch_workday(slug: str, company_name: str) -> list[dict]:
-    # Workday needs three coordinates, not one, so the cache stores them packed
-    # as "tenant|wd|site" (see discover_workday). Most boards expose an "Intern"
-    # facet (e.g. workerSubType); applying it returns exactly the intern roles
-    # server-side -- far better than a fuzzy "intern" text search, which buries
-    # real intern roles behind experienced ones on big boards. Fall back to the
-    # text search for the rare board with no such facet.
-    try:
-        tenant, wd, site = slug.split("|")
-    except ValueError:
-        raise PlatformError(f"workday: malformed slug {slug!r}")
-    base = f"https://{tenant}.{wd}.myworkdayjobs.com"
-    api = f"{base}/wday/cxs/{tenant}/{site}/jobs"
+def _workday_collect(api: str, job_base: str, tenant: str) -> list[dict]:
+    # Most boards expose an "Intern" facet (e.g. workerSubType); applying it
+    # returns exactly the intern roles server-side -- far better than a fuzzy
+    # "intern" text search, which buries real intern roles behind experienced
+    # ones on big boards. Fall back to the text search for a board with no facet.
     headers = {**HEADERS, "Content-Type": "application/json", "Accept": "application/json"}
 
     first = _workday_post(api, headers, {}, 0, "")
@@ -193,7 +252,7 @@ def fetch_workday(slug: str, company_name: str) -> list[dict]:
             out.append({
                 "id": f"wd:{tenant}:{path}",
                 "title": p.get("title", ""),
-                "url": f"{base}/{site}{path}",
+                "url": f"{job_base}{path}",
                 "location": loc,
             })
         # Workday reports the match count only on the first page; later pages
@@ -204,6 +263,32 @@ def fetch_workday(slug: str, company_name: str) -> list[dict]:
         if offset >= total or not postings:
             break
     return out
+
+
+def fetch_workday(slug: str, company_name: str) -> list[dict]:
+    # Workday needs three coordinates, not one, so the cache stores them packed
+    # as "tenant|wd|site" (see discover_workday).
+    try:
+        tenant, wd, site = slug.split("|")
+    except ValueError:
+        raise PlatformError(f"workday: malformed slug {slug!r}")
+    base = f"https://{tenant}.{wd}.myworkdayjobs.com"
+    return _workday_collect(f"{base}/wday/cxs/{tenant}/{site}/jobs", f"{base}/{site}", tenant)
+
+
+def fetch_workdaysite(slug: str, company_name: str) -> list[dict]:
+    """Workday's other public host shape: wdN.myworkdaysite.com/recruiting/
+    <tenant>/<site> (Snap uses it). Same cxs API, different URL layout, and the
+    datacenter leads the hostname instead of trailing the tenant -- so it can't
+    be packed into the myworkdayjobs "tenant|wd|site" slug. Stored as
+    "wd|tenant|site"."""
+    try:
+        wd, tenant, site = slug.split("|")
+    except ValueError:
+        raise PlatformError(f"workdaysite: malformed slug {slug!r}")
+    base = f"https://{wd}.myworkdaysite.com"
+    return _workday_collect(f"{base}/wday/cxs/{tenant}/{site}/jobs",
+                            f"{base}/recruiting/{tenant}/{site}", tenant)
 
 
 # --- Workday discovery -------------------------------------------------------
@@ -294,11 +379,11 @@ def _host_exists(host: str) -> bool:
         return True  # anything else: let the HTTP probe make the call
 
 
-def _workday_probe(tenant: str, wd: str, site: str) -> int:
-    """POST the jobs endpoint and return its HTTP status, retrying transient
-    throttling (429/503/timeout). Raises PlatformThrottled if no definitive
-    (non-throttled) response comes back -- so a throttle is never mistaken for a
-    clean 422 'not here'."""
+def _workday_probe(tenant: str, wd: str, site: str) -> tuple[int, int]:
+    """POST the jobs endpoint and return (HTTP status, total postings), retrying
+    transient throttling (429/503/timeout). Raises PlatformThrottled if no
+    definitive (non-throttled) response comes back -- so a throttle is never
+    mistaken for a clean 422 'not here'. `total` is 0 for any non-200."""
     url = f"https://{_workday_host(tenant, wd)}/wday/cxs/{tenant}/{site}/jobs"
     headers = {**HEADERS, "Content-Type": "application/json", "Accept": "application/json"}
     for attempt in range(WORKDAY_PROBE_ATTEMPTS):
@@ -308,7 +393,13 @@ def _workday_probe(tenant: str, wd: str, site: str) -> int:
                 json={"appliedFacets": {}, "limit": 1, "offset": 0, "searchText": ""},
             )
             if resp.status_code not in WORKDAY_RETRY_STATUSES:
-                return resp.status_code
+                total = 0
+                if resp.status_code == 200:
+                    try:
+                        total = (resp.json() or {}).get("total", 0) or 0
+                    except ValueError:
+                        total = 0
+                return resp.status_code, total
         except requests.RequestException:
             pass
         time.sleep(WORKDAY_PROBE_DELAY * (attempt + 2))  # linear back-off
@@ -330,7 +421,7 @@ def discover_workday(name: str) -> str | None:
                 continue
             time.sleep(WORKDAY_PROBE_DELAY)
             try:
-                if _workday_probe(tenant, wd, "BogusSite_zz99") == 404:
+                if _workday_probe(tenant, wd, "BogusSite_zz99")[0] == 404:
                     live_wd = wd  # tenant+datacenter valid, site just wrong
                     break
             except PlatformThrottled:
@@ -340,7 +431,13 @@ def discover_workday(name: str) -> str | None:
         for site in _workday_sites(tenant, name):
             time.sleep(WORKDAY_PROBE_DELAY)
             try:
-                if _workday_probe(tenant, live_wd, site) == 200:
+                # A 200 alone isn't enough: tenants keep empty stub sites around
+                # (qualcomm|wd12|External answers 200 with zero reqs), and since a
+                # resolved entry is trusted forever, accepting one silently parks
+                # the company on a board that can never alert. Require postings as
+                # evidence, the same bar verify_smartrecruiters sets.
+                status, total = _workday_probe(tenant, live_wd, site)
+                if status == 200 and total > 0:
                     return f"{tenant}|{live_wd}|{site}"
             except PlatformThrottled:
                 throttled = True
@@ -436,16 +533,266 @@ def fetch_capitalone(slug: str, company_name: str) -> list[dict]:
     return out
 
 
+# --- Server-rendered XML job feeds (Radancy et al.) --------------------------
+# Big-employer career sites built on Radancy (Wells Fargo, Uber, DraftKings,
+# Caterpillar, Fidelity, Nutanix, ...) are JS-rendered -- nothing to scrape and
+# no JSON API -- but they publish the whole req list as an XML feed at
+# /jobs/xml/?rss=true. Two dialects are in the wild and a host serves one or the
+# other: RSS <channel><item> (title/link/guid only) and Radancy's own
+# <source><job> (adds city/state/country). The feed URL *is* the slug, since
+# there's no tenant identifier to rebuild it from.
+JOBFEED_PATHS = ("/jobs/xml/?rss=true", "/en/jobs/xml/?rss=true",
+                 "/careers-home/jobs/xml/?rss=true")
+
+
+def _feed_entries(url: str) -> list[ET.Element]:
+    try:
+        resp = requests.get(url, headers={**HEADERS, "Accept": "application/xml,text/xml,*/*"},
+                            timeout=TIMEOUT)
+    except requests.RequestException as e:
+        raise PlatformError(f"{url} -> {e}")
+    if resp.status_code != 200:
+        raise PlatformError(f"{url} -> HTTP {resp.status_code}")
+    if not resp.content.lstrip().startswith(b"<?xml"):
+        raise PlatformError(f"{url} -> not an XML feed")
+    # Parse the raw bytes, not resp.text. These hosts send "Content-Type:
+    # text/xml" with no charset, so requests falls back to ISO-8859-1 (RFC 2616)
+    # while the document itself declares utf-8 -- decoding via .text turned every
+    # en-dash and curly quote into mojibake ("Engineer \xe2\x80\x93 Hardware").
+    # ElementTree reads the XML declaration, so bytes decode correctly.
+    try:
+        root = ET.fromstring(resp.content)
+    except ET.ParseError as e:
+        raise PlatformError(f"{url} -> malformed XML ({e})")
+    return root.findall(".//item") or root.findall(".//job")
+
+
+def fetch_jobfeed(slug: str, company_name: str) -> list[dict]:
+    entries = _feed_entries(slug)
+    if not entries:
+        raise PlatformError(f"{slug} -> feed has no entries")
+    host = urlsplit(slug).netloc
+    out = []
+    for e in entries:
+        url = (e.findtext("url") or e.findtext("link") or "").strip()
+        title = (e.findtext("title") or "").strip()
+        if not title:
+            continue
+        job_id = (e.findtext("requisitionid") or e.findtext("referencenumber")
+                  or e.findtext("guid") or url).strip()
+        # <job> carries structured city/state/country; <item> carries none at
+        # all, and is_us_location treats an empty location as "don't drop it".
+        loc = ", ".join(p for p in ((e.findtext("city") or "").strip(),
+                                    (e.findtext("state") or "").strip()) if p)
+        out.append({
+            "id": f"feed:{host}:{job_id}",
+            "title": title,
+            "url": url,
+            "location": loc,
+            "country": (e.findtext("country") or "").strip(),
+        })
+    return out
+
+
+# --- Radancy JSON careers API ------------------------------------------------
+# The same vendor also ships a JSON API on some sites (GitHub, AMD) where others
+# only expose the XML feed above: <base>/api/jobs?limit=100&page=N, each row
+# wrapped in {"data": {...}} with a structured full_location/country -- better
+# than the feed, which is why this is tried first. limit caps at 100 (larger
+# values return nothing at all, not an error), so it has to page.
+CAREERSITE_PAGE_SIZE = 100
+CAREERSITE_MAX_PAGES = 12
+
+
+def _careersite_page(base: str, page: int) -> dict:
+    data = _get_json(f"{base}/api/jobs",
+                     params={"limit": CAREERSITE_PAGE_SIZE, "page": page})
+    if not isinstance(data, dict) or "jobs" not in data:
+        raise PlatformError(f"{base}/api/jobs -> unexpected response shape")
+    return data
+
+
+def fetch_careersite(slug: str, company_name: str) -> list[dict]:
+    base = slug.rstrip("/")
+    host = urlsplit(base).netloc
+    out = []
+    for page in range(1, CAREERSITE_MAX_PAGES + 1):
+        data = _careersite_page(base, page)
+        rows = data.get("jobs") or []
+        for row in rows:
+            j = row.get("data") or {}
+            job_id = j.get("req_id") or j.get("slug")
+            if not job_id:
+                continue
+            out.append({
+                "id": f"cs:{host}:{job_id}",
+                "title": j.get("title", ""),
+                # apply_url points at the ATS login wall; this is the readable page
+                "url": f"{base}/careers-home/jobs/{j.get('slug', job_id)}",
+                "location": j.get("full_location", "") or j.get("city", "") or "",
+                "country": j.get("country", "") or "",
+            })
+        if len(rows) < CAREERSITE_PAGE_SIZE or len(out) >= data.get("totalCount", 0):
+            break
+    return out
+
+
+# --- Board discovery from a company's own careers page -----------------------
+# Slug-guessing only finds boards whose slug looks like the company name, which
+# misses the ones that matter most: Samsung's Workday tenant is "sec", Hudson
+# River Trading's Greenhouse board is "hrttalentcommunity", US Bank's site is
+# "US_Bank_Careers". But every one of those career sites links to its own board,
+# so read the coordinates off the page instead of guessing them.
+DISCOVERY_TIMEOUT = 10
+DOMAIN_STOPWORDS = {"inc", "corp", "corporation", "llc", "ltd", "co", "the",
+                    "group", "company"}
+# path segments that show up where a slug would be but aren't one
+NON_SLUGS = {"embed", "job_board", "www", "en", "us", "job", "jobs", "search", "careers"}
+
+_WD_RE = re.compile(r"([a-z0-9-]+)\.(wd\d+)\.myworkdayjobs\.com/(?:wday/[^\"'\s]*?/)?"
+                    r"(?:[a-zA-Z]{2}-[A-Z]{2}/)?([A-Za-z0-9_-]+)")
+# note: unlike myworkdayjobs.com, this host is just the datacenter -- the tenant
+# lives in the path (wd1.myworkdaysite.com/recruiting/snapchat/snap)
+_WDSITE_RE = re.compile(r"(wd\d+)\.myworkdaysite\.com/(?:[a-zA-Z]{2}-[A-Z]{2}/)?"
+                        r"(?:recruiting/)?([A-Za-z0-9_-]+)/([A-Za-z0-9_-]+)")
+_BOARD_RES = (
+    ("greenhouse", re.compile(r"(?:boards|job-boards)\.greenhouse\.io/"
+                              r"(?:embed/job_board\?for=)?([a-zA-Z0-9_-]+)")),
+    ("lever", re.compile(r"jobs\.lever\.co/([a-zA-Z0-9_-]+)")),
+    ("ashby", re.compile(r"jobs\.ashbyhq\.com/([a-zA-Z0-9_-]+)")),
+    ("smartrecruiters", re.compile(r"(?:jobs|careers)\.smartrecruiters\.com/([a-zA-Z0-9_-]+)")),
+)
+
+
+def _company_domains(name: str) -> list[str]:
+    words = [w for w in re.sub(r"[^a-z0-9 &]", " ", name.lower()).split()
+             if w and w not in DOMAIN_STOPWORDS]
+    if not words:
+        return []
+    out = ["".join(words) + ".com"]
+    if len(words) > 1:
+        out += ["-".join(words) + ".com", words[0] + ".com"]
+    return out[:3]
+
+
+def _careers_urls(name: str) -> list[str]:
+    urls = [f"https://{sub}{d}{path}"
+            for d in _company_domains(name)
+            for sub, path in (("careers.", ""), ("jobs.", ""), ("www.", "/careers"))]
+    # some companies put careers on the .careers TLD instead of a subdomain of
+    # their .com (github.careers), which no amount of guessing around ".com"
+    # reaches
+    words = [w for w in re.sub(r"[^a-z0-9 &]", " ", name.lower()).split()
+             if w and w not in DOMAIN_STOPWORDS]
+    if words:
+        urls.append(f"https://www.{''.join(words)}.careers")
+    return urls
+
+
+def _extract_board(html: str) -> tuple[str, str] | None:
+    m = _WD_RE.search(html)
+    if m and m.group(3) not in NON_SLUGS:
+        return "workday", f"{m.group(1)}|{m.group(2)}|{m.group(3)}"
+    m = _WDSITE_RE.search(html)
+    if m and m.group(3) not in NON_SLUGS:
+        return "workdaysite", f"{m.group(1)}|{m.group(2)}|{m.group(3)}"
+    for platform, rx in _BOARD_RES:
+        m = rx.search(html)
+        if m and m.group(1) not in NON_SLUGS:
+            return platform, m.group(1)
+    return None
+
+
+_JOB_LINK_RE = re.compile(r"""href=["']([^"'#]*?/(?:jobs|job-search|search-jobs|openings)/?)["']""",
+                          re.IGNORECASE)
+MAX_JOB_SUBPAGES = 2
+
+
+def _job_links(page_url: str, html: str) -> list[str]:
+    """Same-host links that look like the actual listings page. Career landing
+    pages are often pure marketing (Snap's links to its board live one click in,
+    on /jobs), so discovery follows a couple of them."""
+    base = urlsplit(page_url)
+    out = []
+    for href in _JOB_LINK_RE.findall(html):
+        url = urljoin(page_url, href)
+        parts = urlsplit(url)
+        if parts.netloc != base.netloc or parts.path.rstrip("/") == base.path.rstrip("/"):
+            continue
+        if url not in out:
+            out.append(url)
+    return out
+
+
+def discover_from_careers_page(name: str) -> tuple[str, str] | None:
+    """Load the company's careers page and read its job board's coordinates off
+    it. Returns (platform, slug) or None. Unverified -- the caller should
+    confirm against the live API before caching it."""
+    headers = {**HEADERS, "Accept": "text/html,application/xhtml+xml,*/*;q=0.8",
+               "Accept-Language": "en-US,en;q=0.9"}
+
+    def load(url: str):
+        try:
+            resp = requests.get(url, headers=headers, timeout=DISCOVERY_TIMEOUT,
+                                allow_redirects=True)
+        except requests.RequestException:
+            return None
+        return resp if resp.status_code < 400 else None
+
+    for url in _careers_urls(name):
+        resp = load(url)
+        if resp is None:
+            continue
+        found = _extract_board(resp.text)
+        if found:
+            return found
+        for link in _job_links(resp.url, resp.text)[:MAX_JOB_SUBPAGES]:
+            sub = load(link)
+            if sub is None:
+                continue
+            found = _extract_board(sub.text)
+            if found:
+                return found
+        # no embedded board: the site may still expose its own reqs directly
+        host = f"{urlsplit(resp.url).scheme}://{urlsplit(resp.url).netloc}"
+        try:
+            if (_careersite_page(host, 1).get("totalCount") or 0) > 0:
+                return "careersite", host
+        except PlatformError:
+            pass
+        for path in JOBFEED_PATHS:
+            feed = host + path
+            try:
+                if _feed_entries(feed):
+                    return "jobfeed", feed
+            except PlatformError:
+                continue
+    return None
+
+
+def verify_discovered(platform: str, slug: str, company_name: str) -> None:
+    """Liveness-check a board found on the company's own careers page, raising
+    PlatformError if it isn't real.
+
+    Deliberately the plain fetcher and not VERIFIERS: those are ownership gates
+    for *guessed* slugs, and a board linked from the company's own careers page
+    is already known to be theirs. Running them here would reject correct
+    answers -- see verify_greenhouse.
+    """
+    PLATFORMS[platform](slug, company_name)
+
+
 def verify_smartrecruiters(slug: str, company_name: str) -> bool:
     # unlike the other 3 platforms, this endpoint returns HTTP 200 with an empty
     # content list for ANY slug -- even ones that don't correspond to a real
     # company -- so a 200 alone is not proof the slug is real. Require at least
     # one actual open posting as evidence before accepting the slug guess.
+    # Goes through fetch_ rather than the raw endpoint so the sandbox-tenant
+    # guard applies here too -- postings alone aren't proof it's the real board.
     try:
-        data = _get_json(f"https://api.smartrecruiters.com/v1/companies/{slug}/postings")
+        return bool(fetch_smartrecruiters(slug, company_name))
     except PlatformError:
         return False
-    return isinstance(data, dict) and data.get("totalFound", 0) > 0
 
 
 # fetchers by platform name; check_companies.py looks up the resolved platform here
@@ -455,6 +802,9 @@ PLATFORMS = {
     "ashby": fetch_ashby,
     "smartrecruiters": fetch_smartrecruiters,
     "workday": fetch_workday,
+    "workdaysite": fetch_workdaysite,
+    "jobfeed": fetch_jobfeed,
+    "careersite": fetch_careersite,
     "amazon": fetch_amazon,
     "capitalone": fetch_capitalone,
 }
@@ -469,4 +819,6 @@ ATS_ORDER = ["greenhouse", "lever", "ashby", "smartrecruiters"]
 # existence check before resolve_companies.py trusts a slug guess
 VERIFIERS = {
     "smartrecruiters": verify_smartrecruiters,
+    "lever": verify_lever,
+    "greenhouse": verify_greenhouse,
 }
