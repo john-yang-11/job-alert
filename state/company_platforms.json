@@ -1,28 +1,63 @@
 {
+ "AMD": {
+  "checked_at": "2026-08-16T03:56:17.764641+00:00",
+  "platform": "careersite",
+  "slug": "https://careers.amd.com"
+ },
+ "ASML": {
+  "checked_at": "2026-08-16T03:57:26.123881+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "AT&T": {
+  "checked_at": "2026-08-16T03:57:35.600203+00:00",
+  "platform": null,
+  "slug": null
+ },
  "AWS": {
-  "checked_at": "2026-07-16T02:16:35.340429+00:00",
+  "checked_at": "2026-08-16T03:57:47.054518+00:00",
   "platform": "amazon",
   "slug": "aws"
  },
+ "AWS FALL": {
+  "checked_at": "2026-08-16T03:58:01.487560+00:00",
+  "platform": null,
+  "slug": null
+ },
  "Accenture": {
-  "checked_at": "2026-07-15T23:49:08.983169+00:00",
+  "checked_at": "2026-08-16T03:55:25.716113+00:00",
   "platform": "workday",
   "slug": "accenture|wd103|AccentureCareers"
  },
  "Airbnb": {
-  "checked_at": "2026-07-15T03:47:33.048402+00:00",
+  "checked_at": "2026-08-16T03:55:51.275806+00:00",
   "platform": "greenhouse",
   "slug": "airbnb"
  },
+ "Alphabet": {
+  "checked_at": "2026-08-16T03:55:58.549055+00:00",
+  "platform": null,
+  "slug": null
+ },
  "Amazon": {
-  "checked_at": "2026-07-16T02:16:35.340429+00:00",
+  "checked_at": "2026-08-16T03:55:58.549084+00:00",
   "platform": "amazon",
   "slug": "amazon"
+ },
+ "Amazon Propel program": {
+  "checked_at": "2026-08-16T03:56:10.654832+00:00",
+  "platform": null,
+  "slug": null
  },
  "Axon": {
   "checked_at": "2026-07-29T17:37:37.288152+00:00",
   "platform": "greenhouse",
   "slug": "axon"
+ },
+ "BAE systems": {
+  "checked_at": "2026-08-16T03:58:49.458008+00:00",
+  "platform": null,
+  "slug": null
  },
  "BLOCK": {
   "checked_at": "2026-07-15T03:50:01.025318+00:00",
@@ -69,6 +104,11 @@
   "platform": "greenhouse",
   "slug": "lyft"
  },
+ "Microsoft": {
+  "checked_at": "2026-08-16T03:55:01.463311+00:00",
+  "platform": null,
+  "slug": null
+ },
  "NVIDIA": {
   "checked_at": "2026-07-16T03:29:36.368969+00:00",
   "platform": "workday",
@@ -105,7 +145,7 @@
   "slug": "pnc|wd5|External"
  },
  "Palantir": {
-  "checked_at": "2026-07-15T04:00:27.725346+00:00",
+  "checked_at": "2026-08-16T03:55:06.036412+00:00",
   "platform": "lever",
   "slug": "palantir"
  },
@@ -180,24 +220,29 @@
   "slug": "uberfreight"
  },
  "abbott": {
-  "checked_at": "2026-07-15T23:48:14.329989+00:00",
+  "checked_at": "2026-08-16T03:55:11.436358+00:00",
   "platform": "workday",
-  "slug": "abbott|wd5|AbbottCareers"
+  "slug": "abbott|wd5|abbottcareers"
  },
  "adobe": {
-  "checked_at": "2026-07-15T23:49:44.174231+00:00",
+  "checked_at": "2026-08-16T03:55:45.408718+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
  "affirm": {
-  "checked_at": "2026-07-15T03:47:28.823263+00:00",
+  "checked_at": "2026-08-16T03:55:46.518378+00:00",
   "platform": "greenhouse",
   "slug": "affirm"
  },
  "airtable": {
-  "checked_at": "2026-07-15T03:47:37.255382+00:00",
+  "checked_at": "2026-08-16T03:55:52.304626+00:00",
   "platform": "greenhouse",
   "slug": "airtable"
+ },
+ "american express": {
+  "checked_at": "2026-08-16T03:56:41.336096+00:00",
+  "platform": null,
+  "slug": null
  },
  "anduril": {
   "checked_at": "2026-07-29T17:45:14.267822+00:00",
@@ -209,20 +254,40 @@
   "platform": "greenhouse",
   "slug": "appian"
  },
+ "apple": {
+  "checked_at": "2026-08-16T03:56:50.401912+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "apple data thing": {
+  "checked_at": "2026-08-16T03:57:03.902044+00:00",
+  "platform": null,
+  "slug": null
+ },
  "aquatic": {
   "checked_at": "2026-08-01T11:05:53.639364+00:00",
   "platform": "ashby",
   "slug": "aquatic"
  },
  "asana": {
-  "checked_at": "2026-07-15T03:48:42.928036+00:00",
+  "checked_at": "2026-08-16T03:57:06.831565+00:00",
   "platform": "greenhouse",
   "slug": "asana"
  },
  "atlassian": {
-  "checked_at": "2026-07-15T03:49:14.003067+00:00",
-  "platform": "lever",
-  "slug": "atlassian"
+  "checked_at": "2026-08-16T03:57:47.054488+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "bank of america global technology summit": {
+  "checked_at": "2026-08-16T03:59:21.624118+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "blackrock": {
+  "checked_at": "2026-08-16T03:59:42.264517+00:00",
+  "platform": null,
+  "slug": null
  },
  "blue origin": {
   "checked_at": "2026-07-15T03:50:13.339855+00:00",
@@ -350,7 +415,7 @@
   "slug": "instacart"
  },
  "jane street": {
-  "checked_at": "2026-07-15T03:46:57.700280+00:00",
+  "checked_at": "2026-08-16T03:55:03.350806+00:00",
   "platform": "greenhouse",
   "slug": "janestreet"
  },
