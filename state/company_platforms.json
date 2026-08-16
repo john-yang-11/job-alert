@@ -775,9 +775,9 @@
   "slug": null
  },
  "linkedin": {
-  "checked_at": "2026-07-15T03:57:46.723274+00:00",
-  "platform": "lever",
-  "slug": "linkedin"
+  "checked_at": "2026-08-16T03:48:27.046907+00:00",
+  "platform": null,
+  "slug": null
  },
  "medtronic": {
   "checked_at": "2026-08-03T23:42:10.860842+00:00",
@@ -1045,9 +1045,9 @@
   "slug": null
  },
  "uber": {
-  "checked_at": "2026-07-15T04:06:07.973864+00:00",
-  "platform": "smartrecruiters",
-  "slug": "uber"
+  "checked_at": "2026-08-16T03:48:15.733693+00:00",
+  "platform": "jobfeed",
+  "slug": "https://jobs.uber.com/jobs/xml/?rss=true"
  },
  "uber career prep": {
   "checked_at": "2026-08-15T11:52:20.770161+00:00",
@@ -1060,9 +1060,9 @@
   "slug": null
  },
  "visa": {
-  "checked_at": "2026-07-15T04:07:21.704411+00:00",
-  "platform": "smartrecruiters",
-  "slug": "visa"
+  "checked_at": "2026-08-16T03:48:21.272761+00:00",
+  "platform": "workday",
+  "slug": "visa|wd5|Visa"
  },
  "vmware": {
   "checked_at": "2026-08-15T11:52:38.081185+00:00",
