@@ -89,20 +89,40 @@
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
+ "Deloitte": {
+  "checked_at": "2026-08-16T05:04:28.014020+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "Delta": {
+  "checked_at": "2026-08-16T05:04:36.035553+00:00",
+  "platform": null,
+  "slug": null
+ },
  "DraftKings": {
   "checked_at": "2026-08-16T04:34:47.182379+00:00",
   "platform": "jobfeed",
   "slug": "https://careers.draftkings.com/jobs/xml/?rss=true"
  },
  "Dropbox": {
-  "checked_at": "2026-07-15T04:16:05.046864+00:00",
-  "platform": "greenhouse",
-  "slug": "dropbox"
+  "checked_at": "2026-08-16T05:05:03.304737+00:00",
+  "platform": "jobfeed",
+  "slug": "https://www.dropbox.jobs/jobs/xml/?rss=true"
+ },
+ "Electronic Arts": {
+  "checked_at": "2026-08-16T05:06:19.922059+00:00",
+  "platform": null,
+  "slug": null
  },
  "Etched": {
   "checked_at": "2026-08-01T11:05:39.864513+00:00",
   "platform": "ashby",
   "slug": "etched"
+ },
+ "Everpure": {
+  "checked_at": "2026-08-16T05:06:37.574024+00:00",
+  "platform": null,
+  "slug": null
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-01T11:05:53.009438+00:00",
@@ -114,10 +134,25 @@
   "platform": "careersite",
   "slug": "https://www.github.careers"
  },
+ "Github": {
+  "checked_at": "2026-08-16T05:07:31.319055+00:00",
+  "platform": "careersite",
+  "slug": "https://www.github.careers"
+ },
  "Google": {
   "checked_at": "2026-08-16T04:34:42.202468+00:00",
   "platform": null,
   "slug": null
+ },
+ "Google ASDI": {
+  "checked_at": "2026-08-16T05:07:47.058423+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "HP": {
+  "checked_at": "2026-08-16T05:08:16.679241+00:00",
+  "platform": "workday",
+  "slug": "hp|wd5|ExternalCareerSite"
  },
  "Heliux": {
   "checked_at": "2026-08-03T17:27:57.530398+00:00",
@@ -125,7 +160,7 @@
   "slug": "heliux"
  },
  "Hermeus": {
-  "checked_at": "2026-07-15T04:17:27.799915+00:00",
+  "checked_at": "2026-08-16T05:08:00.892563+00:00",
   "platform": "lever",
   "slug": "hermeus"
  },
@@ -455,9 +490,14 @@
   "slug": "confluent"
  },
  "crowdstrike": {
-  "checked_at": "2026-07-16T01:11:50.240396+00:00",
+  "checked_at": "2026-08-16T05:03:08.938412+00:00",
   "platform": "workday",
-  "slug": "crowdstrike|wd5|CrowdstrikeCareers"
+  "slug": "crowdstrike|wd5|crowdstrikecareers"
+ },
+ "cvs health": {
+  "checked_at": "2026-08-16T05:03:53.154508+00:00",
+  "platform": null,
+  "slug": null
  },
  "dandy": {
   "checked_at": "2026-08-16T04:33:19.578471+00:00",
@@ -465,12 +505,12 @@
   "slug": "dandy"
  },
  "databricks": {
-  "checked_at": "2026-07-15T03:53:20.722894+00:00",
+  "checked_at": "2026-08-16T05:03:58.351096+00:00",
   "platform": "greenhouse",
   "slug": "databricks"
  },
  "datadog": {
-  "checked_at": "2026-07-15T03:53:24.973469+00:00",
+  "checked_at": "2026-08-16T05:04:00.845742+00:00",
   "platform": "greenhouse",
   "slug": "datadog"
  },
@@ -480,27 +520,62 @@
   "slug": "deepgram"
  },
  "dell": {
-  "checked_at": "2026-07-16T01:25:59.271777+00:00",
-  "platform": "workday",
-  "slug": "dell|wd1|External"
+  "checked_at": "2026-08-16T05:04:17.875339+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "disney": {
+  "checked_at": "2026-08-16T05:04:55.028311+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "doordash": {
+  "checked_at": "2026-08-16T05:05:01.780325+00:00",
+  "platform": null,
+  "slug": null
  },
  "duolingo": {
   "checked_at": "2026-08-16T04:34:45.811443+00:00",
   "platform": "greenhouse",
   "slug": "duolingo"
  },
+ "ea pathfinder": {
+  "checked_at": "2026-08-16T05:05:24.844877+00:00",
+  "platform": null,
+  "slug": null
+ },
  "elastic": {
   "checked_at": "2026-08-08T03:56:14.440677+00:00",
   "platform": "greenhouse",
   "slug": "elastic"
  },
+ "epic": {
+  "checked_at": "2026-08-16T05:06:29.575206+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "fidelity": {
+  "checked_at": "2026-08-16T05:06:43.797789+00:00",
+  "platform": "workdaysite",
+  "slug": "wd1|fmr|FidelityCareers"
+ },
  "figma": {
-  "checked_at": "2026-07-15T03:54:58.774798+00:00",
+  "checked_at": "2026-08-16T05:06:44.815485+00:00",
   "platform": "greenhouse",
   "slug": "figma"
  },
  "ford": {
   "checked_at": "2026-08-16T04:33:41.461053+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "gemnai fall": {
+  "checked_at": "2026-08-16T05:06:59.651596+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "general dynamics": {
+  "checked_at": "2026-08-16T05:07:27.430786+00:00",
   "platform": null,
   "slug": null
  },
@@ -515,9 +590,14 @@
   "slug": "godaddy"
  },
  "handshake": {
-  "checked_at": "2026-07-15T03:56:25.851318+00:00",
+  "checked_at": "2026-08-16T05:07:51.570912+00:00",
   "platform": "ashby",
   "slug": "handshake"
+ },
+ "harmon": {
+  "checked_at": "2026-08-16T05:07:58.024507+00:00",
+  "platform": null,
+  "slug": null
  },
  "instacart": {
   "checked_at": "2026-07-15T03:57:08.948026+00:00",
