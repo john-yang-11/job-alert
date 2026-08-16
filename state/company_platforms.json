@@ -324,15 +324,25 @@
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
+ "SEO tech developer": {
+  "checked_at": "2026-08-16T07:39:25.848239+00:00",
+  "platform": null,
+  "slug": null
+ },
  "Samsung": {
   "checked_at": "2026-08-16T06:59:52.642245+00:00",
   "platform": "workday",
   "slug": "sec|wd3|Samsung_Careers"
  },
  "ServiceNow": {
-  "checked_at": "2026-07-15T04:02:37.539523+00:00",
-  "platform": "smartrecruiters",
-  "slug": "servicenow"
+  "checked_at": "2026-08-16T07:39:27.905530+00:00",
+  "platform": "jobfeed",
+  "slug": "https://careers.servicenow.com/jobs/xml/?rss=true"
+ },
+ "Siemens": {
+  "checked_at": "2026-08-16T07:39:45.588458+00:00",
+  "platform": null,
+  "slug": null
  },
  "Snap": {
   "checked_at": "2026-08-16T04:35:41.792008+00:00",
@@ -340,17 +350,17 @@
   "slug": "wd1|snapchat|snap"
  },
  "Snowflake": {
-  "checked_at": "2026-07-15T04:03:20.918232+00:00",
+  "checked_at": "2026-08-16T07:40:02.414385+00:00",
   "platform": "ashby",
   "slug": "snowflake"
  },
  "Spotify": {
-  "checked_at": "2026-07-15T04:03:55.402605+00:00",
+  "checked_at": "2026-08-16T07:40:53.115897+00:00",
   "platform": "lever",
   "slug": "spotify"
  },
  "StockX": {
-  "checked_at": "2026-07-15T04:04:35.083735+00:00",
+  "checked_at": "2026-08-16T07:41:11.259918+00:00",
   "platform": "greenhouse",
   "slug": "stockx"
  },
@@ -360,17 +370,27 @@
   "slug": "stripe"
  },
  "T-mobile": {
-  "checked_at": "2026-07-16T00:22:24.451700+00:00",
+  "checked_at": "2026-08-16T07:41:20.290324+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
+ "TSMC": {
+  "checked_at": "2026-08-16T07:42:26.444019+00:00",
+  "platform": null,
+  "slug": null
+ },
  "Tencent": {
-  "checked_at": "2026-07-16T00:51:51.379644+00:00",
+  "checked_at": "2026-08-16T07:41:38.212571+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
  "Tesla": {
   "checked_at": "2026-08-16T04:35:48.652874+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "TikTok": {
+  "checked_at": "2026-08-16T07:42:04.402715+00:00",
   "platform": null,
   "slug": null
  },
@@ -874,40 +894,85 @@
   "platform": "greenhouse",
   "slug": "samsara"
  },
+ "scale": {
+  "checked_at": "2026-08-16T07:39:10.107596+00:00",
+  "platform": null,
+  "slug": null
+ },
  "seatgeek": {
-  "checked_at": "2026-07-15T04:02:28.524892+00:00",
+  "checked_at": "2026-08-16T07:39:10.766418+00:00",
   "platform": "greenhouse",
   "slug": "seatgeek"
  },
+ "siriusxm": {
+  "checked_at": "2026-08-16T07:39:48.437087+00:00",
+  "platform": "careersite",
+  "slug": "https://careers.siriusxm.com"
+ },
+ "slack": {
+  "checked_at": "2026-08-16T07:39:55.666839+00:00",
+  "platform": "workday",
+  "slug": "salesforce|wd12|Slack"
+ },
  "sofi": {
-  "checked_at": "2026-07-15T04:03:28.304138+00:00",
+  "checked_at": "2026-08-16T07:40:08.061053+00:00",
   "platform": "greenhouse",
   "slug": "sofi"
  },
+ "sony": {
+  "checked_at": "2026-08-16T07:40:24.044077+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "southwest": {
+  "checked_at": "2026-08-16T07:40:38.177286+00:00",
+  "platform": null,
+  "slug": null
+ },
  "spaceX": {
-  "checked_at": "2026-07-15T04:03:41.178798+00:00",
+  "checked_at": "2026-08-16T07:40:41.895648+00:00",
   "platform": "greenhouse",
   "slug": "spacex"
  },
+ "splunk": {
+  "checked_at": "2026-08-16T07:40:50.973563+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "square": {
+  "checked_at": "2026-08-16T07:41:03.089475+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "state street": {
+  "checked_at": "2026-08-16T07:41:11.019500+00:00",
+  "platform": "workday",
+  "slug": "statestreet|wd1|Global"
+ },
  "stryker": {
-  "checked_at": "2026-07-16T00:22:01.235649+00:00",
+  "checked_at": "2026-08-16T07:41:13.921723+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
  "tensorwave": {
-  "checked_at": "2026-07-15T04:05:12.262879+00:00",
+  "checked_at": "2026-08-16T07:41:38.994129+00:00",
   "platform": "ashby",
-  "slug": "tensorwave"
+  "slug": "TensorWave"
  },
  "the nuclear company": {
   "checked_at": "2026-08-10T02:28:12.968612+00:00",
   "platform": "greenhouse",
   "slug": "thenuclearcompany"
  },
+ "thrive by duolingo": {
+  "checked_at": "2026-08-16T07:41:51.891758+00:00",
+  "platform": null,
+  "slug": null
+ },
  "tinder": {
-  "checked_at": "2026-07-15T04:05:36.741991+00:00",
-  "platform": "ashby",
-  "slug": "tinder"
+  "checked_at": "2026-08-16T07:42:12.149186+00:00",
+  "platform": null,
+  "slug": null
  },
  "twilio": {
   "checked_at": "2026-07-15T04:05:49.600497+00:00",
