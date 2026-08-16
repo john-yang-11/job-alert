@@ -43,6 +43,11 @@ from platforms import (
 
 PLATFORMS_FILE = STATE_DIR / "company_platforms.json"
 RETRY_AFTER_DAYS = 7
+# How long a *resolved* entry is trusted before being re-checked. Long, because
+# a board that works today almost certainly works tomorrow and re-resolving is
+# the expensive path; short enough that a company moving off its board is caught
+# in weeks rather than never.
+RECHECK_HIT_AFTER_DAYS = 30
 
 # Companies on fully-custom career sites (no standard board) get a bespoke
 # fetcher in platforms.py, matched here by exact normalized name rather than by
@@ -174,12 +179,20 @@ def dedup_names(companies: list[str]) -> list[str]:
 
 
 def _stale(entry: dict) -> bool:
-    if entry.get("platform"):
-        return False
     checked_at = entry.get("checked_at")
     if not checked_at:
         return True
     age = datetime.now(timezone.utc) - datetime.fromisoformat(checked_at)
+    # A hit expires too, just far more slowly than a miss. Nothing ever
+    # invalidated a resolved entry, so a company that moved off its board stayed
+    # cached against the dead slug forever -- lever/netflix, lever/atlassian,
+    # ashby/tinder and workday/generalmotors have been 404ing on every run,
+    # unwatched but still counted as covered. That is the sandbox failure again:
+    # a company that looks covered and alerts on nothing. Re-resolving is what
+    # notices, so let a hit age out and MAX_NEW_PER_RUN spread the cost (218
+    # companies over 30 days is ~7 a day).
+    if entry.get("platform"):
+        return age > timedelta(days=RECHECK_HIT_AFTER_DAYS)
     return age > timedelta(days=RETRY_AFTER_DAYS)
 
 
