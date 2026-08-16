@@ -99,6 +99,11 @@
   "platform": null,
   "slug": null
  },
+ "Deloitte ai smth": {
+  "checked_at": "2026-08-16T13:39:08.504560+00:00",
+  "platform": null,
+  "slug": null
+ },
  "Delta": {
   "checked_at": "2026-08-16T05:04:36.035553+00:00",
   "platform": null,
@@ -654,6 +659,11 @@
   "platform": null,
   "slug": null
  },
+ "delta ai engineering": {
+  "checked_at": "2026-08-16T13:39:43.793112+00:00",
+  "platform": null,
+  "slug": null
+ },
  "disney": {
   "checked_at": "2026-08-16T05:04:55.028311+00:00",
   "platform": null,
@@ -724,6 +734,11 @@
   "platform": "greenhouse",
   "slug": "godaddy"
  },
+ "goldman": {
+  "checked_at": "2026-08-16T13:39:22.443400+00:00",
+  "platform": null,
+  "slug": null
+ },
  "handshake": {
   "checked_at": "2026-08-16T05:07:51.570912+00:00",
   "platform": "ashby",
@@ -731,6 +746,11 @@
  },
  "harmon": {
   "checked_at": "2026-08-16T05:07:58.024507+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "hershy": {
+  "checked_at": "2026-08-16T13:39:16.051904+00:00",
   "platform": null,
   "slug": null
  },
@@ -844,6 +864,11 @@
   "platform": "ashby",
   "slug": "notion"
  },
+ "notion winter": {
+  "checked_at": "2026-08-16T13:39:09.061874+00:00",
+  "platform": "ashby",
+  "slug": "notion"
+ },
  "nutanix": {
   "checked_at": "2026-08-08T07:12:39.852791+00:00",
   "platform": "ashby",
@@ -888,6 +913,11 @@
   "checked_at": "2026-08-01T09:16:06.359097+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
+ },
+ "replit": {
+  "checked_at": "2026-08-16T13:39:16.408819+00:00",
+  "platform": "ashby",
+  "slug": "replit"
  },
  "resy": {
   "checked_at": "2026-08-16T04:35:37.062261+00:00",
