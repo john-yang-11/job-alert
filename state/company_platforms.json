@@ -24,6 +24,11 @@
   "platform": null,
   "slug": null
  },
+ "Abercrombie & Fitch Co": {
+  "checked_at": "2026-08-16T08:45:22.155462+00:00",
+  "platform": "workday",
+  "slug": "abercrombie|wd108|anf"
+ },
  "Accenture": {
   "checked_at": "2026-08-16T03:55:25.716113+00:00",
   "platform": "workday",
@@ -196,6 +201,11 @@
  },
  "JP morgan chase fellowship": {
   "checked_at": "2026-08-16T05:40:30.588251+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "JP morgan hack4good": {
+  "checked_at": "2026-08-16T08:45:20.434253+00:00",
   "platform": null,
   "slug": null
  },
@@ -394,20 +404,45 @@
   "platform": null,
   "slug": null
  },
+ "Two Sigma": {
+  "checked_at": "2026-08-16T08:41:32.210269+00:00",
+  "platform": null,
+  "slug": null
+ },
  "US bank": {
   "checked_at": "2026-08-16T04:35:56.428350+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
  "Uber Freight": {
-  "checked_at": "2026-07-15T04:06:12.031106+00:00",
+  "checked_at": "2026-08-16T08:41:35.428201+00:00",
   "platform": "greenhouse",
   "slug": "uberfreight"
+ },
+ "Urline": {
+  "checked_at": "2026-08-16T08:45:34.289269+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "VRBO": {
+  "checked_at": "2026-08-16T08:43:36.908902+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "WD": {
+  "checked_at": "2026-08-16T08:43:49.452142+00:00",
+  "platform": "smartrecruiters",
+  "slug": "WesternDigital"
  },
  "Walmart": {
   "checked_at": "2026-08-16T04:33:59.739649+00:00",
   "platform": null,
   "slug": null
+ },
+ "Workday": {
+  "checked_at": "2026-08-16T08:44:20.491451+00:00",
+  "platform": "workday",
+  "slug": "workday|wd5|Workday"
  },
  "abbott": {
   "checked_at": "2026-08-16T03:55:11.436358+00:00",
@@ -754,6 +789,16 @@
   "platform": null,
   "slug": null
  },
+ "microsoft core ai": {
+  "checked_at": "2026-08-16T08:44:53.880497+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "mileniem applied ai engineer": {
+  "checked_at": "2026-08-16T08:45:06.361628+00:00",
+  "platform": null,
+  "slug": null
+ },
  "modus": {
   "checked_at": "2026-07-29T17:37:50.096926+00:00",
   "platform": "ashby",
@@ -904,6 +949,11 @@
   "platform": "greenhouse",
   "slug": "seatgeek"
  },
+ "shopfiy winter": {
+  "checked_at": "2026-08-16T08:45:57.795307+00:00",
+  "platform": null,
+  "slug": null
+ },
  "siriusxm": {
   "checked_at": "2026-08-16T07:39:48.437087+00:00",
   "platform": "careersite",
@@ -959,6 +1009,11 @@
   "platform": "ashby",
   "slug": "TensorWave"
  },
+ "textql": {
+  "checked_at": "2026-08-16T08:46:04.913005+00:00",
+  "platform": null,
+  "slug": null
+ },
  "the nuclear company": {
   "checked_at": "2026-08-10T02:28:12.968612+00:00",
   "platform": "greenhouse",
@@ -975,22 +1030,47 @@
   "slug": null
  },
  "twilio": {
-  "checked_at": "2026-07-15T04:05:49.600497+00:00",
+  "checked_at": "2026-08-16T08:41:09.052005+00:00",
   "platform": "greenhouse",
   "slug": "twilio"
+ },
+ "twitter": {
+  "checked_at": "2026-08-16T08:41:09.533899+00:00",
+  "platform": "greenhouse",
+  "slug": "xai"
  },
  "uber": {
   "checked_at": "2026-08-16T03:48:15.733693+00:00",
   "platform": "jobfeed",
   "slug": "https://jobs.uber.com/jobs/xml/?rss=true"
  },
+ "uber career prep": {
+  "checked_at": "2026-08-16T08:41:34.090556+00:00",
+  "platform": "jobfeed",
+  "slug": "https://jobs.uber.com/jobs/xml/?rss=true"
+ },
+ "united health group": {
+  "checked_at": "2026-08-16T08:43:03.781412+00:00",
+  "platform": null,
+  "slug": null
+ },
  "visa": {
   "checked_at": "2026-08-16T03:48:21.272761+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
+ "vmware": {
+  "checked_at": "2026-08-16T08:43:30.862928+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "walmart": {
+  "checked_at": "2026-08-16T08:43:44.607312+00:00",
+  "platform": null,
+  "slug": null
+ },
  "waymo": {
-  "checked_at": "2026-07-15T04:07:52.776993+00:00",
+  "checked_at": "2026-08-16T08:43:46.891427+00:00",
   "platform": "greenhouse",
   "slug": "waymo"
  },
@@ -998,5 +1078,25 @@
   "checked_at": "2026-08-16T04:34:02.859345+00:00",
   "platform": "jobfeed",
   "slug": "https://www.wellsfargojobs.com/jobs/xml/?rss=true"
+ },
+ "wellsfargo sophomore discovery fellowship": {
+  "checked_at": "2026-08-16T08:43:55.113318+00:00",
+  "platform": "jobfeed",
+  "slug": "https://www.wellsfargojobs.com/jobs/xml/?rss=true"
+ },
+ "whatnot": {
+  "checked_at": "2026-08-16T08:44:06.737799+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "xfinity": {
+  "checked_at": "2026-08-16T08:44:21.903973+00:00",
+  "platform": "workday",
+  "slug": "comcast|wd5|Comcast_Careers"
+ },
+ "yahoo": {
+  "checked_at": "2026-08-16T08:44:38.691206+00:00",
+  "platform": null,
+  "slug": null
  }
 }
