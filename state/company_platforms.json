@@ -649,6 +649,11 @@
   "platform": "greenhouse",
   "slug": "datadog"
  },
+ "datadog winter 2027": {
+  "checked_at": "2026-08-19T03:56:43.269198+00:00",
+  "platform": null,
+  "slug": null
+ },
  "deepgram": {
   "checked_at": "2026-07-29T17:37:06.112575+00:00",
   "platform": "ashby",
