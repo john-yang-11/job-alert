@@ -759,6 +759,11 @@
   "platform": null,
   "slug": null
  },
+ "humana": {
+  "checked_at": "2026-08-19T03:07:05.370006+00:00",
+  "platform": "workday",
+  "slug": "humana|wd5|Humana_External_Career_Site"
+ },
  "ignite NVIDIA": {
   "checked_at": "2026-08-16T05:39:05.517998+00:00",
   "platform": "ashby",
