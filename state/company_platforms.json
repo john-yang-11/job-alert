@@ -1094,6 +1094,11 @@
   "platform": null,
   "slug": null
  },
+ "toast": {
+  "checked_at": "2026-08-21T16:46:47.077939+00:00",
+  "platform": "greenhouse",
+  "slug": "toast"
+ },
  "twilio": {
   "checked_at": "2026-08-16T08:41:09.052005+00:00",
   "platform": "greenhouse",
