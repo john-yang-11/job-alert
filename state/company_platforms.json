@@ -644,6 +644,11 @@
   "platform": "greenhouse",
   "slug": "databricks"
  },
+ "databricks winter": {
+  "checked_at": "2026-08-21T04:20:27.597753+00:00",
+  "platform": null,
+  "slug": null
+ },
  "datadog": {
   "checked_at": "2026-08-16T05:04:00.845742+00:00",
   "platform": "greenhouse",
