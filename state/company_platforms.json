@@ -519,6 +519,11 @@
   "platform": null,
   "slug": null
  },
+ "blackstone": {
+  "checked_at": "2026-08-21T20:35:15.940228+00:00",
+  "platform": "workday",
+  "slug": "blackstone|wd1|Blackstone_Careers"
+ },
  "blizzard": {
   "checked_at": "2026-08-16T04:17:35.541725+00:00",
   "platform": null,
