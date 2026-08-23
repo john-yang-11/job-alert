@@ -509,6 +509,11 @@
   "platform": null,
   "slug": null
  },
+ "atoms": {
+  "checked_at": "2026-08-23T01:55:42.602508+00:00",
+  "platform": "greenhouse",
+  "slug": "atoms"
+ },
  "bank of america global technology summit": {
   "checked_at": "2026-08-16T03:59:21.624118+00:00",
   "platform": null,
@@ -1171,6 +1176,11 @@
  },
  "yahoo": {
   "checked_at": "2026-08-16T08:44:38.691206+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "zipline": {
+  "checked_at": "2026-08-23T01:55:41.186481+00:00",
   "platform": null,
   "slug": null
  }
