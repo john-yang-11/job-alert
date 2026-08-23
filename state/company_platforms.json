@@ -200,12 +200,12 @@
   "slug": null
  },
  "Intuit": {
-  "checked_at": "2026-08-16T05:39:49.199244+00:00",
+  "checked_at": "2026-08-23T06:56:45.420270+00:00",
   "platform": null,
   "slug": null
  },
  "JP morgan chase fellowship": {
-  "checked_at": "2026-08-16T05:40:30.588251+00:00",
+  "checked_at": "2026-08-23T06:57:22.134332+00:00",
   "platform": null,
   "slug": null
  },
@@ -215,7 +215,7 @@
   "slug": null
  },
  "John Deere": {
-  "checked_at": "2026-08-16T05:40:15.183792+00:00",
+  "checked_at": "2026-08-23T06:57:09.357658+00:00",
   "platform": null,
   "slug": null
  },
@@ -225,7 +225,7 @@
   "slug": "kla|wd1|Search"
  },
  "Lockheed Martin": {
-  "checked_at": "2026-08-16T05:41:14.494255+00:00",
+  "checked_at": "2026-08-23T06:57:59.347102+00:00",
   "platform": null,
   "slug": null
  },
@@ -235,7 +235,7 @@
   "slug": "lyft"
  },
  "MLH": {
-  "checked_at": "2026-08-16T05:41:33.446560+00:00",
+  "checked_at": "2026-08-23T06:58:11.680231+00:00",
   "platform": null,
   "slug": null
  },
@@ -255,7 +255,7 @@
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
  "Netflix": {
-  "checked_at": "2026-08-16T06:55:56.231463+00:00",
+  "checked_at": "2026-08-23T07:00:38.892095+00:00",
   "platform": null,
   "slug": null
  },
@@ -265,7 +265,7 @@
   "slug": "neuralink"
  },
  "Nokia": {
-  "checked_at": "2026-08-16T06:56:25.344729+00:00",
+  "checked_at": "2026-08-23T07:00:56.738894+00:00",
   "platform": null,
   "slug": null
  },
@@ -805,7 +805,7 @@
   "slug": "janestreet"
  },
  "jpmorgan": {
-  "checked_at": "2026-08-16T05:40:39.936159+00:00",
+  "checked_at": "2026-08-23T06:57:31.730583+00:00",
   "platform": null,
   "slug": null
  },
@@ -825,7 +825,7 @@
   "slug": "leidos|wd5|External"
  },
  "lenovo": {
-  "checked_at": "2026-08-16T05:40:56.549088+00:00",
+  "checked_at": "2026-08-23T06:57:38.745640+00:00",
   "platform": null,
   "slug": null
  },
@@ -840,7 +840,7 @@
   "slug": "medtronic|wd1|MedtronicCareers"
  },
  "mercedes": {
-  "checked_at": "2026-08-16T05:41:25.652009+00:00",
+  "checked_at": "2026-08-23T06:58:05.560230+00:00",
   "platform": null,
   "slug": null
  },
@@ -870,7 +870,7 @@
   "slug": "mongodb"
  },
  "mongodb NeXt summit": {
-  "checked_at": "2026-08-16T05:41:49.573056+00:00",
+  "checked_at": "2026-08-23T06:58:29.654511+00:00",
   "platform": null,
   "slug": null
  },
@@ -880,12 +880,12 @@
   "slug": "monogram"
  },
  "morgan stanley": {
-  "checked_at": "2026-08-16T05:43:13.867384+00:00",
+  "checked_at": "2026-08-23T06:59:54.837614+00:00",
   "platform": null,
   "slug": null
  },
  "nasa": {
-  "checked_at": "2026-08-16T06:55:47.972763+00:00",
+  "checked_at": "2026-08-23T07:00:31.533027+00:00",
   "platform": null,
   "slug": null
  },
