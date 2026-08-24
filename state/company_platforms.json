@@ -544,6 +544,11 @@
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
+ "bny": {
+  "checked_at": "2026-08-24T15:20:12.921943+00:00",
+  "platform": null,
+  "slug": null
+ },
  "boeing": {
   "checked_at": "2026-08-16T04:18:11.443355+00:00",
   "platform": "workday",
