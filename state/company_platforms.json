@@ -31,6 +31,7 @@
  },
  "Accenture": {
   "checked_at": "2026-08-16T03:55:25.716113+00:00",
+  "deep_scanned_at": "2026-08-26T18:15:12.287874+00:00",
   "platform": "workday",
   "slug": "accenture|wd103|AccentureCareers"
  },
@@ -321,6 +322,7 @@
  },
  "Qualcomm": {
   "checked_at": "2026-08-01T09:15:56.514645+00:00",
+  "consecutive_failures": 1,
   "platform": "workday",
   "slug": "qualcomm|wd12|External"
  },
@@ -451,11 +453,13 @@
  },
  "abbott": {
   "checked_at": "2026-08-16T03:55:11.436358+00:00",
+  "deep_scanned_at": "2026-08-26T18:15:12.287874+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
  "adobe": {
   "checked_at": "2026-08-16T03:55:45.408718+00:00",
+  "deep_scanned_at": "2026-08-26T18:15:12.287874+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -476,7 +480,6 @@
  },
  "anduril": {
   "checked_at": "2026-07-29T17:45:14.267822+00:00",
-  "consecutive_failures": 1,
   "platform": "greenhouse",
   "slug": "andurilindustries"
  },
@@ -497,6 +500,7 @@
  },
  "aquatic": {
   "checked_at": "2026-08-01T11:05:53.639364+00:00",
+  "consecutive_failures": 1,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -542,6 +546,7 @@
  },
  "blue origin": {
   "checked_at": "2026-08-16T04:18:08.865172+00:00",
+  "deep_scanned_at": "2026-08-26T18:15:12.287874+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -632,7 +637,7 @@
  },
  "comcast": {
   "checked_at": "2026-08-16T04:20:42.021630+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "workday",
   "slug": "comcast|wd5|Comcast_Careers"
  },
@@ -793,7 +798,7 @@
  },
  "ignite NVIDIA": {
   "checked_at": "2026-08-16T05:39:05.517998+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "allinbits"
  },
@@ -914,6 +919,7 @@
  },
  "nutanix": {
   "checked_at": "2026-08-08T07:12:39.852791+00:00",
+  "consecutive_failures": 1,
   "platform": "ashby",
   "slug": "nutanix"
  },
@@ -1179,7 +1185,7 @@
  },
  "xfinity": {
   "checked_at": "2026-08-16T08:44:21.903973+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "workday",
   "slug": "comcast|wd5|Comcast_Careers"
  },
@@ -1192,5 +1198,10 @@
   "checked_at": "2026-08-23T01:55:41.186481+00:00",
   "platform": null,
   "slug": null
+ },
+ "zoox": {
+  "checked_at": "2026-08-26T18:13:50.940875+00:00",
+  "platform": "lever",
+  "slug": "zoox"
  }
 }
