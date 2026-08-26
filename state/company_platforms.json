@@ -631,6 +631,7 @@
  },
  "comcast": {
   "checked_at": "2026-08-16T04:20:42.021630+00:00",
+  "consecutive_failures": 1,
   "platform": "workday",
   "slug": "comcast|wd5|Comcast_Careers"
  },
@@ -791,6 +792,7 @@
  },
  "ignite NVIDIA": {
   "checked_at": "2026-08-16T05:39:05.517998+00:00",
+  "consecutive_failures": 1,
   "platform": "ashby",
   "slug": "allinbits"
  },
@@ -1061,6 +1063,7 @@
  },
  "spaceX": {
   "checked_at": "2026-08-16T07:40:41.895648+00:00",
+  "consecutive_failures": 1,
   "platform": "greenhouse",
   "slug": "spacex"
  },
@@ -1176,6 +1179,7 @@
  },
  "xfinity": {
   "checked_at": "2026-08-16T08:44:21.903973+00:00",
+  "consecutive_failures": 1,
   "platform": "workday",
   "slug": "comcast|wd5|Comcast_Careers"
  },
