@@ -155,15 +155,18 @@ def main() -> None:
     seen: set[str] = set() if first_run else set(json.loads(seen_file.read_text()))
 
     # How long since the last run of this lane. GitHub schedules cron on a
-    # best-effort basis and throttles high-frequency workflows hard: the priority
-    # lane asks for every 15 minutes and over 40 consecutive runs got a median
-    # gap of 43 minutes and a worst case of 111. Printing the real gap means the
-    # drift shows up in the log instead of being a thing only the cron line
-    # claims. Read before the file is rewritten below, obviously.
+    # best-effort basis and throttles high-frequency workflows hard, so the gap
+    # the cron line asks for and the gap you get are different numbers; printing
+    # the real one keeps that visible in the log.
+    #
+    # From the recorded timestamp, not the state file's mtime: a fresh checkout
+    # writes every file, so on Actions the mtime is always "now" and the first
+    # version of this reported 0 min every single run.
+    meta = json.loads(matcher_file.read_text()) if matcher_file.exists() else {}
     since = ""
-    if not first_run:
-        age_min = (datetime.now().timestamp() - seen_file.stat().st_mtime) / 60
-        since = f", {age_min:.0f} min since last run"
+    if last := meta.get("last_run"):
+        gap = (datetime.now(timezone.utc) - datetime.fromisoformat(last)).total_seconds()
+        since = f", {gap / 60:.0f} min since last run"
 
     # Board fetches are I/O-bound and hit different hosts, so run them
     # concurrently -- turns a ~3-min sequential sweep of ~77 boards into ~30s.
@@ -276,13 +279,16 @@ def main() -> None:
 
     # Announce a widened filter rather than letting its backlog sit silent.
     # Skipped on a first run, where there is no backlog by definition.
-    recorded = json.loads(matcher_file.read_text()).get("matcher_version", 1)         if matcher_file.exists() else (MATCHER_VERSION if first_run else 1)
+    recorded = meta.get("matcher_version", MATCHER_VERSION if first_run else 1)
     if recorded != MATCHER_VERSION:
         print(f"WARNING: title filter changed (v{recorded} -> v{MATCHER_VERSION}); "
               f"roles the old one rejected are already marked seen and will not "
               f"alert on their own. Run backfill_seen.py to catch them up.",
               file=sys.stderr)
-    matcher_file.write_text(json.dumps({"matcher_version": MATCHER_VERSION}))
+    matcher_file.write_text(json.dumps({
+        "matcher_version": MATCHER_VERSION,
+        "last_run": datetime.now(timezone.utc).isoformat(),
+    }))
 
     seen |= all_ids
     seen_file.write_text(json.dumps(sorted(seen)))
