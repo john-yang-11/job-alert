@@ -92,6 +92,7 @@
  },
  "Cisco": {
   "checked_at": "2026-08-16T04:19:38.241533+00:00",
+  "deep_scanned_at": "2026-08-26T19:14:51.832209+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -322,7 +323,7 @@
  },
  "Qualcomm": {
   "checked_at": "2026-08-01T09:15:56.514645+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "workday",
   "slug": "qualcomm|wd12|External"
  },
@@ -500,7 +501,7 @@
  },
  "aquatic": {
   "checked_at": "2026-08-01T11:05:53.639364+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -557,6 +558,7 @@
  },
  "boeing": {
   "checked_at": "2026-08-16T04:18:11.443355+00:00",
+  "deep_scanned_at": "2026-08-26T19:14:51.832209+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -602,6 +604,7 @@
  },
  "citi": {
   "checked_at": "2026-08-16T04:19:55.335500+00:00",
+  "deep_scanned_at": "2026-08-26T19:14:51.832209+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -617,6 +620,8 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-08-16T04:20:01.498315+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-08-26T19:14:51.832209+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
@@ -637,7 +642,7 @@
  },
  "comcast": {
   "checked_at": "2026-08-16T04:20:42.021630+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "workday",
   "slug": "comcast|wd5|Comcast_Careers"
  },
@@ -798,7 +803,7 @@
  },
  "ignite NVIDIA": {
   "checked_at": "2026-08-16T05:39:05.517998+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "allinbits"
  },
@@ -919,7 +924,7 @@
  },
  "nutanix": {
   "checked_at": "2026-08-08T07:12:39.852791+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "nutanix"
  },
@@ -1185,7 +1190,7 @@
  },
  "xfinity": {
   "checked_at": "2026-08-16T08:44:21.903973+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "workday",
   "slug": "comcast|wd5|Comcast_Careers"
  },
