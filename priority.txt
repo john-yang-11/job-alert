@@ -1,5 +1,11 @@
-# HIGH-PRIORITY companies — checked every 10 minutes (vs hourly for the full
-# watchlist), straight from each company's own job board for the fastest alerts.
+# HIGH-PRIORITY companies — checked as often as GitHub will actually schedule
+# them, straight from each company's own job board for the fastest alerts.
+#
+# The workflow asks for every 15 minutes, but GitHub throttles high-frequency
+# cron and does not deliver it -- observed gaps have ranged from ~40 minutes to
+# over three hours depending on the day (see the README's "Priority companies"
+# section). Treat this lane as "usually sooner than the 30-min one", not as a
+# guarantee. Each run prints the real gap since the last one.
 #
 # One company or keyword per line, matched case-insensitively against company
 # name + role title. Lines starting with # are ignored.

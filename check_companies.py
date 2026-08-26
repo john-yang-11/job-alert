@@ -12,7 +12,9 @@ State: state/company_seen.json (posting ids already alerted on or seeded).
 import json
 import re
 import sys
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timedelta, timezone
 
 from check import (
     STATE_DIR, load_watchlist, send_discord, send_poke, send_all, clean_keyword,
@@ -21,8 +23,38 @@ from check import (
 from platforms import PLATFORMS, PlatformThrottled
 from resolve_companies import resolve_new, record_board_results, save_cache
 
+# How long a facet-less Workday board's full read stays good, and how many
+# boards may be read that way in one run.
+#
+# The deep read (see _workday_collect) is expensive -- a 2,000-posting board is
+# 100 requests -- and reading all 14 facet-less boards at once took 5 minutes and
+# turned up 8 intern postings, all on one board, none of them US SWE. That is
+# not a per-30-min question. But leaving them on the cheap path meant they were
+# silently unwatched, which is the failure this whole module keeps hitting. So
+# read them in full on a rotation: every board gets a complete read a few times a
+# day, and no single run pays for more than a handful.
+DEEP_RESCAN_HOURS = 6
+MAX_DEEP_PER_RUN = 4
+# Ceiling on how long this run may spend on full reads, whatever the network is
+# doing. A local dry run once stretched to two hours when the resolver started
+# failing under load; the reads themselves are worth minutes, so cap them and
+# let the rotation collect the rest next time.
+DEEP_TIME_BUDGET = 240
+
+# Bump whenever is_swe_intern's notion of a match widens. Every posting id ever
+# fetched goes into the seen-file, matched or not, so widening the filter is not
+# retroactive: a role the previous filter rejected is already marked seen and
+# will never alert. That is not a bug in the seen-file -- recording everything is
+# what stops a filter change re-alerting an entire board -- but it does mean a
+# widening leaves a backlog behind, and last time nobody noticed until three
+# "why didn't I get a notification?" investigations later. This makes the run
+# say so, and backfill_seen.py collects it.
+MATCHER_VERSION = 2
+
 SEEN_FILE = STATE_DIR / "company_seen.json"
 PRIORITY_SEEN_FILE = STATE_DIR / "company_seen_priority.json"
+MATCHER_FILE = STATE_DIR / "matcher_version.json"
+PRIORITY_MATCHER_FILE = STATE_DIR / "matcher_version_priority.json"
 PRIORITY_FILE = STATE_DIR.parent / "priority.txt"
 
 
@@ -77,6 +109,7 @@ def main() -> None:
     icon = "⭐" if priority else "🏢"
     kind = "Priority" if priority else "Company board"
     seen_file = PRIORITY_SEEN_FILE if priority else SEEN_FILE
+    matcher_file = PRIORITY_MATCHER_FILE if priority else MATCHER_FILE
     alert_file = PRIORITY_ALERT_FILE if priority else ALERT_FILE
     STATE_DIR.mkdir(exist_ok=True)
 
@@ -121,16 +154,60 @@ def main() -> None:
     first_run = not seen_file.exists()
     seen: set[str] = set() if first_run else set(json.loads(seen_file.read_text()))
 
+    # How long since the last run of this lane. GitHub schedules cron on a
+    # best-effort basis and throttles high-frequency workflows hard: the priority
+    # lane asks for every 15 minutes and over 40 consecutive runs got a median
+    # gap of 43 minutes and a worst case of 111. Printing the real gap means the
+    # drift shows up in the log instead of being a thing only the cron line
+    # claims. Read before the file is rewritten below, obviously.
+    since = ""
+    if not first_run:
+        age_min = (datetime.now().timestamp() - seen_file.stat().st_mtime) / 60
+        since = f", {age_min:.0f} min since last run"
+
     # Board fetches are I/O-bound and hit different hosts, so run them
     # concurrently -- turns a ~3-min sequential sweep of ~77 boards into ~30s.
+
+    # Boards whose turn it is for a full read this run, oldest first, so one that
+    # has never had a full read goes first and the rotation self-levels. The
+    # priority lane never does one -- it needs to stay quick. visa and US bank
+    # are on priority.txt and do have facet-less boards, so the fast lane stays
+    # blind to them; it says so in a WARNING each run, and the 30-min lane's
+    # rotation is what actually covers them. Facet boards are included and cost
+    # nothing extra, since
+    # _workday_collect ignores `deep` when a facet exists; that keeps this from
+    # having to know which boards are facet-less before it has asked them.
+    deep_names: set[str] = set()
+    if not priority:
+        now = datetime.now(timezone.utc)
+        due = []
+        for name, info in resolved:
+            if info["platform"] not in ("workday", "workdaysite"):
+                continue
+            ts = info.get("deep_scanned_at")
+            age = timedelta.max if not ts else now - datetime.fromisoformat(ts)
+            if age > timedelta(hours=DEEP_RESCAN_HOURS):
+                due.append((age, name))
+        due.sort(key=lambda t: t[0], reverse=True)
+        deep_names = {n for _, n in due[:MAX_DEEP_PER_RUN]}
+        if due:
+            print(f"{len(due)} Workday board(s) due a full read; "
+                  f"doing {len(deep_names)} this run")
+
+    deep_deadline = time.monotonic() + DEEP_TIME_BUDGET
+
     def _fetch(name: str, info: dict) -> tuple[str, list[dict]]:
-        return name, PLATFORMS[info["platform"]](info["slug"], name)
+        fetch = PLATFORMS[info["platform"]]
+        if name in deep_names:
+            return name, fetch(info["slug"], name, deep=True, deadline=deep_deadline)
+        return name, fetch(info["slug"], name)
 
     matched: list[tuple[str, dict]] = []
     errors = []
     all_ids: set[str] = set()
     ok_boards: set[str] = set()
     failed_boards: set[str] = set()
+    empty_boards: set[str] = set()
     with ThreadPoolExecutor(max_workers=12) as pool:
         futures = {pool.submit(_fetch, name, info): name for name, info in resolved}
         for fut in as_completed(futures):
@@ -146,6 +223,11 @@ def main() -> None:
                 failed_boards.add(futures[fut])
                 continue
             ok_boards.add(name)
+            if not jobs:
+                # 200 with nothing in it. Not an error, so nothing above catches
+                # it, but a board that answers with an empty list is watching
+                # exactly as much as a board that 404s.
+                empty_boards.add(name)
             for j in jobs:
                 all_ids.add(j["id"])
                 if j["id"] in seen:
@@ -157,14 +239,24 @@ def main() -> None:
                 ):
                     matched.append((name, j))
 
+    # Stamp only the boards that actually came back, so a throttled or failed
+    # deep read is retried next run rather than counting as done for six hours.
+    stamp = datetime.now(timezone.utc).isoformat()
+    for name in deep_names & ok_boards:
+        cache[name]["deep_scanned_at"] = stamp
+
     # Record before alerting: send_all raises if a sink is down, and a dead board
     # should still be counted on a run where Discord happened to be flaky.
     # Aliases share one fetch, so they share its verdict too -- otherwise the
     # deduped-away name would keep its dead slug forever, never being fetched.
+    def _expand(reps: set[str]) -> set[str]:
+        return {n for rep in reps for n in aliases.get(rep, [rep])}
+
     record_board_results(
         cache,
-        {n for rep in ok_boards for n in aliases.get(rep, [rep])},
-        {n for rep in failed_boards for n in aliases.get(rep, [rep])},
+        _expand(ok_boards - empty_boards),
+        _expand(failed_boards),
+        _expand(empty_boards),
     )
     save_cache(cache)
 
@@ -182,12 +274,25 @@ def main() -> None:
     for err in errors:
         print(f"WARNING: {err}", file=sys.stderr)
 
+    # Announce a widened filter rather than letting its backlog sit silent.
+    # Skipped on a first run, where there is no backlog by definition.
+    recorded = json.loads(matcher_file.read_text()).get("matcher_version", 1)         if matcher_file.exists() else (MATCHER_VERSION if first_run else 1)
+    if recorded != MATCHER_VERSION:
+        print(f"WARNING: title filter changed (v{recorded} -> v{MATCHER_VERSION}); "
+              f"roles the old one rejected are already marked seen and will not "
+              f"alert on their own. Run backfill_seen.py to catch them up.",
+              file=sys.stderr)
+    matcher_file.write_text(json.dumps({"matcher_version": MATCHER_VERSION}))
+
     seen |= all_ids
     seen_file.write_text(json.dumps(sorted(seen)))
+    if empty_boards:
+        print(f"WARNING: {len(empty_boards)} board(s) returned no postings at all: "
+              f"{', '.join(sorted(empty_boards))}", file=sys.stderr)
     print(
         f"{len(all_ids)} postings checked across {len(resolved)} companies, "
         f"{len(matched)} new SWE-intern match{'es' if len(matched) != 1 else ''}, "
-        f"{len(errors)} errors"
+        f"{len(errors)} errors, {len(empty_boards)} empty{since}"
     )
 
 

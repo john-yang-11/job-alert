@@ -125,6 +125,56 @@ NON_US_HINTS = (
     "costa rica", "dominican republic", "el salvador", "guatemala",
     "honduras", "nicaragua", "uruguay", "paraguay", "bolivia", "ecuador",
     "venezuela",
+    # Seen on current intern postings with no hint to catch them.
+    "bulgaria", "croatia", "serbia", "slovakia", "slovenia", "lithuania",
+    "latvia", "estonia", "luxembourg", "iceland", "morocco", "tunisia",
+    "qatar", "saudi arabia", "jordan", "lebanon", "sri lanka", "nepal",
+    "cambodia", "kazakhstan", "manila",
+)
+
+US_STATE_NAMES = (
+    "alabama", "alaska", "arizona", "arkansas", "california", "colorado",
+    "connecticut", "delaware", "florida", "hawaii", "idaho", "illinois",
+    "indiana", "iowa", "kansas", "kentucky", "louisiana", "maine", "maryland",
+    "massachusetts", "michigan", "minnesota", "mississippi", "missouri",
+    "montana", "nebraska", "nevada", "new hampshire", "new jersey",
+    "new mexico", "new york", "north carolina", "north dakota", "ohio",
+    "oklahoma", "oregon", "pennsylvania", "rhode island", "south carolina",
+    "south dakota", "tennessee", "texas", "utah", "vermont", "virginia",
+    "washington", "west virginia", "wisconsin", "wyoming", "puerto rico",
+    # Deliberately not "georgia": the country collides with the state, and the
+    # state's own cities (Atlanta, Savannah) carry the signal anyway.
+)
+
+# Bare foreign city names, for postings that give a city and nothing else.
+#
+# Kept short and one-sided on purpose. Being wrong in the non-US direction
+# drops a real US posting silently, which is the failure this file keeps being
+# fixed for; being wrong the other way costs one noisy alert. So a city is only
+# listed when its US namesake is a village at most -- Prague OK is ~2,400
+# people, Milan and Lodz smaller still.
+#
+# Deliberately excluded despite appearing in current board data: Berlin
+# (Berlin CT, ~20k), Amsterdam (Amsterdam NY, ~18k), Warsaw (Warsaw IN, ~16k)
+# and Dublin (Dublin CA and Dublin OH, both large). Those keep defaulting to US.
+NON_US_CITIES = (
+    "prague", "milano", "kuala lumpur", "lodz", "tianjin", "wuxi", "oslo",
+    "sofia", "toronto", "mississauga", "longueuil", "bengaluru", "gurgaon",
+    "shenzhen", "guangzhou", "hyderabad", "pune", "zurich", "munich",
+    "stockholm", "copenhagen", "helsinki", "lisbon", "budapest", "bucharest",
+)
+
+# Word-boundary matching, not substring. "india" is a substring of "Indiana",
+# so every Indiana posting whose location lacked a "US" token -- the ordinary
+# "Indianapolis, Indiana" shape Greenhouse and friends emit -- was classified
+# non-US and dropped without a trace.
+_HINT_RE = re.compile(
+    r"\b(" + "|".join(re.escape(h) for h in NON_US_HINTS + NON_US_CITIES) + r")\b",
+    re.IGNORECASE,
+)
+_STATE_RE = re.compile(
+    r"\b(" + "|".join(re.escape(n) for n in US_STATE_NAMES) + r")\b",
+    re.IGNORECASE,
 )
 
 
@@ -135,8 +185,13 @@ def _is_us_text(text: str) -> bool | None:
     low = text.lower().replace("-", " ")
     if "united states" in low or re.search(r"\bus\b", low):
         return True
-    if any(hint in low for hint in NON_US_HINTS):
+    if _HINT_RE.search(low):
         return False
+    # Spelled-out state names count as a confident yes, not just the two-letter
+    # codes. "Austin, Texas" used to fall through to the default-to-US rule,
+    # which gave the right answer for the wrong reason and told us nothing.
+    if _STATE_RE.search(low):
+        return True
     last = re.split(r"[,\s]+", text.strip())[-1] if text.strip() else ""
     if last.upper() in US_STATE_ABBRS:
         return True

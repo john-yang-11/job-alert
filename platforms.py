@@ -8,8 +8,11 @@ so callers can try the next platform/slug guess.
 
 import re
 import socket
+import sys
+import threading
 import time
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urljoin, urlsplit
 
 import requests
@@ -195,19 +198,36 @@ INTERN_FACET_RE = re.compile(r"\bintern(ship)?s?\b", re.IGNORECASE)  # not "inte
 
 
 def _workday_post(api: str, headers: dict, applied: dict, offset: int, search: str) -> dict:
-    try:
-        resp = requests.post(
-            api, headers=headers, timeout=TIMEOUT,
-            json={"appliedFacets": applied, "limit": 20, "offset": offset, "searchText": search},
-        )
-    except requests.RequestException as e:
-        raise PlatformError(f"{api} -> {e}")
-    if resp.status_code != 200:
-        raise PlatformError(f"{api} -> HTTP {resp.status_code}")
-    try:
-        return resp.json()
-    except ValueError:
-        raise PlatformError(f"{api} -> non-JSON response")
+    # limit is capped at 20 server-side -- 50 and up answer HTTP 400 -- so a big
+    # board genuinely costs one request per 20 postings and the deep path in
+    # _workday_collect issues a lot of them. Retry the transient statuses rather
+    # than letting one throttled page fail the whole board.
+    last = None
+    for attempt in range(WORKDAY_PROBE_ATTEMPTS):
+        try:
+            with WORKDAY_INFLIGHT:
+                resp = requests.post(
+                    api, headers=headers, timeout=TIMEOUT,
+                    json={"appliedFacets": applied, "limit": 20, "offset": offset,
+                          "searchText": search},
+                )
+        except requests.RequestException as e:
+            last = PlatformError(f"{api} -> {e}")
+        else:
+            if resp.status_code == 200:
+                try:
+                    return resp.json()
+                except ValueError:
+                    raise PlatformError(f"{api} -> non-JSON response")
+            if resp.status_code not in WORKDAY_RETRY_STATUSES:
+                raise PlatformError(f"{api} -> HTTP {resp.status_code}")
+            last = PlatformThrottled(f"{api} -> HTTP {resp.status_code}")
+        time.sleep(WORKDAY_PROBE_DELAY * (attempt + 2))
+    # Deliberately PlatformThrottled, not PlatformError: a board we hammered into
+    # a 429 is not a dead board, and record_board_results must not count it
+    # toward dropping the cache entry. Getting this wrong would have let the deep
+    # scan below evict the very boards it exists to read.
+    raise last
 
 
 def _workday_intern_facet(data: dict) -> tuple[str, str] | None:
@@ -224,25 +244,80 @@ def _workday_intern_facet(data: dict) -> tuple[str, str] | None:
     return None
 
 
-def _workday_collect(api: str, job_base: str, tenant: str) -> list[dict]:
+def _workday_collect(api: str, job_base: str, tenant: str, deep: bool = False,
+                     deadline: float | None = None) -> list[dict]:
     # Most boards expose an "Intern" facet (e.g. workerSubType); applying it
-    # returns exactly the intern roles server-side -- far better than a fuzzy
-    # "intern" text search, which buries real intern roles behind experienced
-    # ones on big boards. Fall back to the text search for a board with no facet.
+    # returns exactly the intern roles server-side, and the result set is small
+    # enough to page in full.
+    #
+    # 14 of 37 boards have no such facet, and for those the old fallback -- a
+    # searchText="intern" query -- was close to useless. Workday matches that
+    # text against job *descriptions*, unranked: Visa returns 479 "matches" out
+    # of 732 postings and not one of the first eight has "intern" in its title.
+    # Truncated at WORKDAY_MAX_PAGES, the 120 postings fetched were an arbitrary
+    # slice, so nine large boards (visa, US bank, T-mobile, leidos, Accenture,
+    # GDIT, state street, Workday, blackstone) were effectively unwatched while
+    # reporting a clean 200 every run.
+    #
+    # So when there's no facet and `deep` is set, ignore the search entirely,
+    # page the whole board, and filter titles here. That costs ~570 extra
+    # requests across those boards, which is why only the 30-min lane passes
+    # deep=True; the 15-min priority lane keeps the cheap path.
     headers = {**HEADERS, "Content-Type": "application/json", "Accept": "application/json"}
 
     first = _workday_post(api, headers, {}, 0, "")
     facet = _workday_intern_facet(first)
+    title_filter = False
     if facet:
-        applied, search = {facet[0]: [facet[1]]}, ""
+        applied, search, max_pages = {facet[0]: [facet[1]]}, "", WORKDAY_MAX_PAGES
+    elif deep:
+        applied, search, max_pages = {}, "", WORKDAY_MAX_PAGES_NOFACET
+        title_filter = True
     else:
-        applied, search = {}, "intern"
+        applied, search, max_pages = {}, "intern", WORKDAY_MAX_PAGES
+
+    # A facet-less board is read in full, and at ~2.8s a page a 2,000-posting
+    # board is 100 sequential requests -- about five minutes on its own. Fan the
+    # offsets out once the first page has told us the total. Boards are already
+    # fetched concurrently by the caller, so keep this pool small.
+    def _page(off: int) -> list[dict]:
+        # Checked here as well as when planning the page list: pages are queued
+        # onto a pool that can't be cancelled, and if the network slows down
+        # mid-read the estimate that sized the list is already wrong. Whatever
+        # is skipped shows up in the unscanned count below.
+        if deadline is not None and time.monotonic() > deadline:
+            return []
+        return _workday_post(api, headers, applied, off, search).get("jobPostings") or []
 
     out, offset, total = [], 0, None
-    for _ in range(WORKDAY_MAX_PAGES):
-        data = _workday_post(api, headers, applied, offset, search)
-        postings = data.get("jobPostings") or []
+    pages = []
+    for _ in range(max_pages):
+        if pages:
+            postings = pages.pop(0)
+        else:
+            data = _workday_post(api, headers, applied, offset, search)
+            postings = data.get("jobPostings") or []
+            if total is None:
+                total = data.get("total", 0)
+            if title_filter and total > 20:
+                # everything after page 0, capped by the page budget
+                offsets = list(range(20, min(total, max_pages * 20), 20))
+                if deadline is not None:
+                    # A full read is worth minutes, never a whole run. Trim the
+                    # page list to what the remaining budget can pay for rather
+                    # than starting work we'd abandon; whatever is left is
+                    # reported as unscanned below and picked up next rotation.
+                    left = deadline - time.monotonic()
+                    affordable = max(0, int(left / SECONDS_PER_PAGE * WORKDAY_PAGE_WORKERS))
+                    offsets = offsets[:affordable]
+                with ThreadPoolExecutor(max_workers=WORKDAY_PAGE_WORKERS) as pool:
+                    pages = list(pool.map(_page, offsets))
         for p in postings:
+            title = p.get("title", "")
+            # Paging the unfiltered board means everything arrives, so the
+            # "is this an internship" question moves here.
+            if title_filter and not INTERN_FACET_RE.search(title):
+                continue
             path = p.get("externalPath", "")
             # externalPath looks like "/job/San-Jose-California-US/Title-Slug_R123";
             # the first segment is the location slug, hyphenated ("City-State-US"/
@@ -251,21 +326,26 @@ def _workday_collect(api: str, job_base: str, tenant: str) -> list[dict]:
             loc = parts[2] if len(parts) > 2 else ""
             out.append({
                 "id": f"wd:{tenant}:{path}",
-                "title": p.get("title", ""),
+                "title": title,
                 "url": f"{job_base}{path}",
                 "location": loc,
             })
         # Workday reports the match count only on the first page; later pages
         # report total=0, so pin it once and page against that.
-        if total is None:
-            total = data.get("total", 0)
         offset += 20
-        if offset >= total or not postings:
+        if offset >= total or (not postings and not pages):
             break
+    # Say so when the cap bit. A board we only half-read is exactly the kind of
+    # quiet partial failure this module keeps getting caught by, and a silent
+    # one is indistinguishable from a board with nothing to report.
+    if total and offset < total:
+        print(f"WARNING: {api} -> scanned {offset} of {total} postings "
+              f"({total - offset} unscanned, page cap {max_pages})", file=sys.stderr)
     return out
 
 
-def fetch_workday(slug: str, company_name: str) -> list[dict]:
+def fetch_workday(slug: str, company_name: str, deep: bool = False,
+                  deadline: float | None = None) -> list[dict]:
     # Workday needs three coordinates, not one, so the cache stores them packed
     # as "tenant|wd|site" (see discover_workday).
     try:
@@ -273,10 +353,12 @@ def fetch_workday(slug: str, company_name: str) -> list[dict]:
     except ValueError:
         raise PlatformError(f"workday: malformed slug {slug!r}")
     base = f"https://{tenant}.{wd}.myworkdayjobs.com"
-    return _workday_collect(f"{base}/wday/cxs/{tenant}/{site}/jobs", f"{base}/{site}", tenant)
+    return _workday_collect(f"{base}/wday/cxs/{tenant}/{site}/jobs", f"{base}/{site}",
+                            tenant, deep=deep, deadline=deadline)
 
 
-def fetch_workdaysite(slug: str, company_name: str) -> list[dict]:
+def fetch_workdaysite(slug: str, company_name: str, deep: bool = False,
+                      deadline: float | None = None) -> list[dict]:
     """Workday's other public host shape: wdN.myworkdaysite.com/recruiting/
     <tenant>/<site> (Snap uses it). Same cxs API, different URL layout, and the
     datacenter leads the hostname instead of trailing the tenant -- so it can't
@@ -288,7 +370,8 @@ def fetch_workdaysite(slug: str, company_name: str) -> list[dict]:
         raise PlatformError(f"workdaysite: malformed slug {slug!r}")
     base = f"https://{wd}.myworkdaysite.com"
     return _workday_collect(f"{base}/wday/cxs/{tenant}/{site}/jobs",
-                            f"{base}/recruiting/{tenant}/{site}", tenant)
+                            f"{base}/recruiting/{tenant}/{site}", tenant, deep=deep,
+                            deadline=deadline)
 
 
 # --- Workday discovery -------------------------------------------------------
@@ -297,12 +380,34 @@ def fetch_workdaysite(slug: str, company_name: str) -> list[dict]:
 # enough to brute-force cheaply: a valid tenant+wd with a bogus site returns 404
 # (a wrong tenant/wd returns 422), so we lock tenant+wd first, then try common
 # site-name patterns for a 200.
-# Workday relevance-ranks an "intern" search, so SWE-intern titles cluster on the
-# first page or two -- measured across several boards, all hits landed on page 0.
-# 6 pages (120 postings) is a generous safety margin while keeping each board to
-# ~6 requests instead of 25 (the searchText fuzzy-matches hundreds of postings,
-# so scanning them all every run was almost entirely wasted work).
+# Page budget for a board queried through its intern facet: the facet returns
+# only intern reqs, so 6 pages (120 postings) covers every board we watch with
+# room to spare.
 WORKDAY_MAX_PAGES = 6
+# Page budget for a facet-less board, which _workday_collect reads in full and
+# filters by title. These are whole job boards rather than intern subsets, so
+# the budget has to be an order of magnitude larger: the biggest we watch report
+# 2,000 (Workday's own ceiling on `total`). Boards that exceed it warn.
+#
+# This replaces an earlier claim that Workday relevance-ranks an "intern" text
+# search so hits "cluster on the first page or two". That holds on boards with
+# the facet, where the query isn't text at all -- and is flatly false without
+# one. See the comment in _workday_collect.
+WORKDAY_MAX_PAGES_NOFACET = 100
+# Concurrent page fetches within one facet-less board. Small on purpose:
+# check_companies already runs 12 boards at once, so this multiplies.
+WORKDAY_PAGE_WORKERS = 3
+# A hard ceiling on Workday requests in flight across the whole process.
+# check_companies runs 12 boards at once and each facet-less board fans out its
+# own pages, so without this the deep scan peaked around 60 concurrent requests
+# and Workday rate-limited by source IP -- visa, leidos, Accenture and GDIT all
+# failed while being perfectly healthy when asked one at a time. The cap is on
+# requests rather than boards because that is what Workday actually counts.
+WORKDAY_INFLIGHT = threading.BoundedSemaphore(10)
+# Measured page latency, used only to decide how much of a board a deep read can
+# afford before its deadline. Rounded up from ~2.8s so the estimate errs toward
+# doing less rather than overrunning.
+SECONDS_PER_PAGE = 3.0
 WORKDAY_WDS = ["wd1", "wd5", "wd3", "wd12", "wd10", "wd2", "wd101", "wd103", "wd105"]
 # Workday throttles bursts of probes, which turns real boards into false "not
 # found"s. Pace the probes and back off on 429/timeout so the 404/200 signals

@@ -17,8 +17,15 @@ and neither is a superset of the other, so keep both.
 (untitled-year postings pass through, since a board only ever lists what's
 currently open) and by whatever location/country field each ATS's API exposes
 (exact country code where available, free-text heuristic otherwise). Update
-`TARGET_YEAR`/`TARGET_SEASON`/`US_STATE_ABBRS`/`NON_US_HINTS` in `check.py`
-next cycle or if you want to loosen the location rule.
+`TARGET_YEAR`/`TARGET_SEASON`/`US_STATE_ABBRS`/`US_STATE_NAMES`/
+`NON_US_HINTS`/`NON_US_CITIES` in `check.py` next cycle or if you want to
+loosen the location rule. Those hints are matched on **word boundaries**, not
+as substrings: "india" is a substring of "Indiana", and matching loosely
+meant every Indiana posting whose location lacked a `US` token — the ordinary
+"Indianapolis, Indiana" shape — was classified non-US and dropped without a
+trace. An unrecognised location still defaults to US, deliberately: being
+wrong that way costs one noisy alert, while being wrong the other way loses a
+real posting silently.
 
 The main check runs in **one workflow** (`.github/workflows/check-all.yml`) every
 30 min: `check.py` (repos) then `check_companies.py` (company boards, fetched
@@ -87,10 +94,44 @@ before being cached.
 datacenter + an arbitrary site name) that can't be guessed as one slug: the job
 API returns HTTP 404 for a valid tenant+datacenter with a wrong site but 422 for
 a wrong tenant/datacenter, which pins the first two cheaply, then common
-site-name patterns are tried for the third. For Workday we discover each board's
-"Intern" facet (e.g. `workerSubType`) from its own response and filter to intern
-roles server-side — much more reliable than a fuzzy `intern` text search, which
-buries real intern roles behind experienced ones on big boards.
+site-name patterns are tried for the third. Campus and university site names are
+tried **before** the corporate ones: a tenant can run two boards, the first that
+answers with any postings wins, and Mastercard sat on `CorporateCareers` — 1,108
+postings whose intern facet was 19 Latin America roles and zero US — while its
+Summer 2027 SWE intern req lived on `/Campus`. This tool only ever wants interns,
+so a campus board is always the better answer.
+
+For Workday we discover each board's "Intern" facet (e.g. `workerSubType`) from
+its own response and filter to intern roles server-side.
+
+**Boards with no intern facet get read in full instead.** 14 of 37 Workday
+boards have no such facet, and the old fallback — a `searchText=intern` query —
+turned out to be close to useless: Workday matches that text against job
+*descriptions*, unranked, so Visa returned 479 "matches" out of 731 postings
+with not one "intern" in the first eight titles. Truncated at 6 pages, the 120
+postings fetched were an arbitrary slice, and nine large boards (visa, US bank,
+T-mobile, leidos, Accenture, GDIT, state street, Workday, blackstone) were
+effectively unwatched while reporting a clean HTTP 200 every run.
+
+Those boards are now paged in full and filtered by title locally. That is
+expensive — `limit` is capped at 20 server-side, so a 2,000-posting board is 100
+requests — so it runs on a rotation rather than every run: `DEEP_RESCAN_HOURS`
+and `MAX_DEEP_PER_RUN` in `check_companies.py` mean each board gets a complete
+read a few times a day and no single run pays for more than a handful.
+`DEEP_TIME_BUDGET` caps the whole thing regardless of what the network is doing,
+and anything left unread is named in a `WARNING` rather than passed over
+silently. The priority lane never does a full read — it needs to stay quick.
+`visa` and `US bank` are on `priority.txt` *and* have facet-less boards, so the
+fast lane stays blind to them and says so in a `WARNING` every run; the 30-min
+lane's rotation is what actually covers them.
+
+**Boards that answer with nothing are counted as failures.** A board returning
+HTTP 200 and an empty list raises no error, so failure counting alone never saw
+it: Qualcomm, aquatic and nutanix were all returning empty while counting as
+covered. `record_board_results` now treats an empty response like an error, and
+`DROP_AFTER_FAILURES` consecutive runs of either drops the cache entry so it
+re-resolves. A board can legitimately empty out between seasons; the cost of
+being wrong is one re-resolution.
 
 Watch out for **vendor sandbox boards**: ATSs hand out demo tenants under real
 company names, and slug-guessing used to accept them — `lever/linkedin` is
@@ -181,6 +222,32 @@ and `check-all` (`7,37`) averaged ~117 min with a worst gap of **3h48m**. So the
 go quiet for hours. Nothing in this repo can fix that from inside a cron —
 it needs an external trigger (a free uptime pinger hitting the
 `workflow_dispatch` API) or a long-running job that loops internally.
+
+## Catching up after the title filter widens (`backfill_seen.py`)
+
+`check_companies.py` records **every** posting id it fetches into the seen-file,
+matched or not. That is deliberate — it is what stops a filter change from
+re-alerting an entire board — but it means widening `SWE_RE` is not
+retroactive. A role the previous filter rejected is already marked seen, so the
+widened filter will never surface it; only postings first seen *after* the
+change can alert.
+
+Widening the filter to cover ML/AI, data engineering, firmware, embedded and
+bare "software development" stranded 13 currently-open US roles this way: AMD's
+firmware and ML intern reqs, three at Neuralink, Etched's firmware intern,
+Point72's ML researcher — exactly the roles the widening was for.
+
+`backfill_seen.py` finds them (open now, matching the current filter, already
+marked seen, and rejected by `PREVIOUS_SWE_RE`) and sends them once:
+
+```bash
+python backfill_seen.py          # dry run — prints what it would send
+python backfill_seen.py --send   # actually send
+```
+
+`MATCHER_VERSION` in `check_companies.py` guards against this being forgotten
+next time: bump it whenever the filter widens, and the run warns that a backlog
+exists instead of leaving it silent.
 
 ## Poke buffer (`buffer_server.py`)
 

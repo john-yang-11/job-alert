@@ -239,7 +239,8 @@ def save_cache(cache: dict) -> None:
     PLATFORMS_FILE.write_text(json.dumps(cache, indent=1, sort_keys=True))
 
 
-def record_board_results(cache: dict, ok: set[str], failed: set[str]) -> None:
+def record_board_results(cache: dict, ok: set[str], failed: set[str],
+                         empty: set[str] = frozenset()) -> None:
     """Feed this run's board outcomes back into the resolution cache.
 
     _stale() ages a resolved entry out after RECHECK_HIT_AFTER_DAYS, which does
@@ -254,16 +255,26 @@ def record_board_results(cache: dict, ok: set[str], failed: set[str]) -> None:
     PlatformError carries only a message string with no status to match on. A
     transient blip -- a read timeout, one bad deploy -- is wiped by the next
     success before it can ever reach the threshold.
+
+    `empty` is counted the same way as `failed`, and is the more important of
+    the two. A board that answers HTTP 200 with zero postings raises nothing, so
+    error counting alone never sees it -- Qualcomm, aquatic and nutanix have all
+    been returning an empty list while counting as covered, and Mastercard sat
+    on a board whose intern facet was 19 Latin America roles for ten days
+    looking perfectly healthy. A board can of course be legitimately empty
+    between seasons; the cost of being wrong is one re-resolution, since
+    dropping an entry only sends it back to resolve_new().
     """
     for name in ok:
         cache.get(name, {}).pop("consecutive_failures", None)
-    for name in failed:
+    for name in set(failed) | set(empty):
         entry = cache.get(name)
         if not entry:
             continue
         n = entry.get("consecutive_failures", 0) + 1
         if n >= DROP_AFTER_FAILURES:
-            print(f"{name}: {n} consecutive board failures, dropping "
+            why = "empty responses" if name in empty else "board failures"
+            print(f"{name}: {n} consecutive {why}, dropping "
                   f"{entry.get('platform')}/{entry.get('slug')} to re-resolve")
             del cache[name]
         else:
