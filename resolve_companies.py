@@ -43,6 +43,10 @@ from platforms import (
 
 PLATFORMS_FILE = STATE_DIR / "company_platforms.json"
 RETRY_AFTER_DAYS = 7
+# Consecutive failed board fetches before a resolved entry is dropped and
+# re-resolved. Six is ~3h on the 30-min lane: long enough to ride out a board's
+# bad afternoon, short enough that a dead slug doesn't sit there for a month.
+DROP_AFTER_FAILURES = 6
 # How long a *resolved* entry is trusted before being re-checked. Long, because
 # a board that works today almost certainly works tomorrow and re-resolving is
 # the expensive path; short enough that a company moving off its board is caught
@@ -226,9 +230,44 @@ def resolve_new(companies: list[str] | None = None) -> tuple[dict, list[str]]:
         cache[name] = entry
         status = f"{result['platform']}/{result['slug']}" if result else "not found"
         print(f"{name}: {status}")
+    save_cache(cache)
+    return cache, names
+
+
+def save_cache(cache: dict) -> None:
     STATE_DIR.mkdir(exist_ok=True)
     PLATFORMS_FILE.write_text(json.dumps(cache, indent=1, sort_keys=True))
-    return cache, names
+
+
+def record_board_results(cache: dict, ok: set[str], failed: set[str]) -> None:
+    """Feed this run's board outcomes back into the resolution cache.
+
+    _stale() ages a resolved entry out after RECHECK_HIT_AFTER_DAYS, which does
+    eventually catch a company that moved off its board -- but "eventually" is a
+    month, and the checker already knows within a single run that a board is
+    returning nothing. comcast 404'd on every run for a week while still counting
+    as covered. So count consecutive failures and drop the entry once it's
+    clearly dead, which puts it back in resolve_new()'s queue next run.
+
+    Counting runs rather than matching status codes is deliberate: comcast
+    answered HTTP 410, then 422, then non-JSON on successive runs, and
+    PlatformError carries only a message string with no status to match on. A
+    transient blip -- a read timeout, one bad deploy -- is wiped by the next
+    success before it can ever reach the threshold.
+    """
+    for name in ok:
+        cache.get(name, {}).pop("consecutive_failures", None)
+    for name in failed:
+        entry = cache.get(name)
+        if not entry:
+            continue
+        n = entry.get("consecutive_failures", 0) + 1
+        if n >= DROP_AFTER_FAILURES:
+            print(f"{name}: {n} consecutive board failures, dropping "
+                  f"{entry.get('platform')}/{entry.get('slug')} to re-resolve")
+            del cache[name]
+        else:
+            entry["consecutive_failures"] = n
 
 
 def audit(cache: dict, names: list[str]) -> None:

@@ -116,6 +116,15 @@ NON_US_HINTS = (
     "taiwan", "hong kong", "argentina", "chile", "colombia", "peru", "egypt",
     "south africa", "nigeria", "kenya", "romania", "ukraine", "russia",
     "turkey", "greece", "czech", "hungary", "pakistan", "bangladesh",
+    # Latin America beyond the big three above. Mastercard's campus board is
+    # mostly these, and without them "San-Jose-Costa-Rica" reads as US: the
+    # hints miss it, then the trailing token isn't a state abbreviation, so it
+    # falls through to the "unrecognized defaults to US" rule.
+    # Deliberately omitting Panama and Jamaica -- Panama City FL and Jamaica NY
+    # are real US locations, and a hint beats a state check in _is_us_text.
+    "costa rica", "dominican republic", "el salvador", "guatemala",
+    "honduras", "nicaragua", "uruguay", "paraguay", "bolivia", "ecuador",
+    "venezuela",
 )
 
 

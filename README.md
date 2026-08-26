@@ -229,6 +229,43 @@ automated checks and can't be watched this way.
 A page "change" is any edit to the page's visible text, so expect occasional
 alerts for cosmetic edits — the message just says which page to go look at.
 
+## Pathway watcher
+
+`check_pathway.py` runs hourly (:22) against [Pathway](https://www.trypathway.app),
+a third aggregator alongside the community repos and the direct company boards.
+It earns its place by covering companies the other two can't: Pathway lists IBM,
+Google, Microsoft and other custom-career-site companies that
+`resolve_companies.py` fails to resolve to any board.
+
+Pathway is behind a login and has no API — the full listing set is
+server-rendered into the `/internships` document as a Next.js RSC payload. Each
+run signs in through Supabase, rebuilds the session cookie the app's server
+expects, fetches that one page and parses the job records out of it.
+
+**Requires two secrets**, which are yours to add (`Settings → Secrets and
+variables → Actions`):
+
+| secret | value |
+|---|---|
+| `PATHWAY_EMAIL` | your Pathway account email |
+| `PATHWAY_PASSWORD` | your Pathway password |
+
+Signing in per-run is deliberate: a copied cookie or refresh token expires or
+rotates within the hour and would need re-pasting, whereas a password grant
+mints a fresh token every run and needs no attention.
+
+### The blind-watcher alarm
+
+A watcher's silence is ambiguous — "nothing posted" and "I've been broken for a
+week" look identical from the outside. So this one reports itself: after
+`ALARM_AFTER` (3) consecutive failed runs it sends a ⚠️ alert through the same
+Discord/Poke path as a job alert, and a ✅ when it recovers. `state/pathway_health.json`
+holds the counter, and the workflow commits it even on failure so the count
+actually accumulates.
+
+Things that trip it: a changed Pathway password, a login/page-structure change,
+or Pathway adding MFA. All are loud, none are silent.
+
 ## Local test
 
 ```
@@ -236,4 +273,6 @@ set DISCORD_WEBHOOK_URL=...   (omit for dry-run: messages print to console)
 pip install -r requirements.txt
 python check.py
 python check_companies.py    (first run resolves the whole watchlist -- slow)
+set PATHWAY_EMAIL=... & set PATHWAY_PASSWORD=...
+python check_pathway.py      (first run seeds ~1,400 listings silently)
 ```

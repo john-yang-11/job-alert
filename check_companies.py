@@ -18,8 +18,8 @@ from check import (
     STATE_DIR, load_watchlist, send_discord, send_poke, send_all, clean_keyword,
     is_us_location, TARGET_YEAR, ALERT_FILE, PRIORITY_ALERT_FILE,
 )
-from platforms import PLATFORMS
-from resolve_companies import resolve_new
+from platforms import PLATFORMS, PlatformThrottled
+from resolve_companies import resolve_new, record_board_results, save_cache
 
 SEEN_FILE = STATE_DIR / "company_seen.json"
 PRIORITY_SEEN_FILE = STATE_DIR / "company_seen_priority.json"
@@ -36,10 +36,19 @@ def load_priority() -> list[str]:
     return [k for k in cleaned if k]
 
 SWE_RE = re.compile(
-    r"\b(software engineer(ing)?|swe|sde|software developer|"
-    r"software dev(elopment)? engineer|"  # Amazon's "Software Dev Engineer" / SDE
+    r"\b(software engineer(ing)?|swe|sde|"
+    # Bare "software development" / "software dev" count too. The old form was
+    # "software dev(elopment)? engineer", which required the word "engineer" and
+    # so missed Intel's "Software Development Graduate Intern" outright.
+    r"software dev(eloper|elopment)?|"
     r"full[- ]?stack|back[- ]?end engineer|front[- ]?end engineer|"
-    r"site reliability engineer|platform engineer)\b",
+    r"site reliability engineer|platform engineer|"
+    # Adjacent roles worth hearing about, nearly all at companies already on the
+    # watchlist: AMD firmware, TikTok/ByteDance ML, IBM data engineering. Kept
+    # tight on purpose -- a bare "embedded" or "data" would drag in the hardware
+    # and analytics reqs these boards are full of.
+    r"machine learning|ml engineer|ai engineer|applied ai|"
+    r"data engineer|firmware|embedded (software|systems|engineer))\b",
     re.IGNORECASE,
 )
 INTERN_RE = re.compile(r"\bintern(ship)?\b", re.IGNORECASE)
@@ -83,6 +92,32 @@ def main() -> None:
     resolved = [(name, cache[name]) for name in names if cache.get(name, {}).get("platform")]
     print(f"{len(resolved)}/{len(names)} companies on a known job board")
 
+    # Say which ones aren't covered. The count alone reads as fine -- "21/31" --
+    # while hiding that Google, Meta and Microsoft are in the missing ten. On the
+    # priority lane an unwatched company defeats the entire point of the file, so
+    # name them loudly there.
+    unresolved = [n for n in names if not cache.get(n, {}).get("platform")]
+    if unresolved:
+        msg = f"{len(unresolved)} with no board, not checked: {', '.join(sorted(unresolved))}"
+        if priority:
+            print(f"WARNING: {msg}", file=sys.stderr)
+        else:
+            print(msg)
+
+    # Two watchlist names can point at one board (xfinity and comcast both
+    # resolve to workday/comcast|wd5|Comcast_Careers), which costs a duplicate
+    # fetch and prints the same error twice. dedup_names() only catches names
+    # that differ by casing, so collapse on the resolved board itself.
+    by_board: dict[tuple, tuple[str, dict]] = {}
+    aliases: dict[str, list[str]] = {}
+    for name, info in resolved:
+        key = (info["platform"], info["slug"])
+        rep, _ = by_board.setdefault(key, (name, info))
+        aliases.setdefault(rep, []).append(name)
+    if len(by_board) < len(resolved):
+        print(f"{len(resolved) - len(by_board)} duplicate board(s) collapsed")
+    resolved = list(by_board.values())
+
     first_run = not seen_file.exists()
     seen: set[str] = set() if first_run else set(json.loads(seen_file.read_text()))
 
@@ -94,14 +129,23 @@ def main() -> None:
     matched: list[tuple[str, dict]] = []
     errors = []
     all_ids: set[str] = set()
+    ok_boards: set[str] = set()
+    failed_boards: set[str] = set()
     with ThreadPoolExecutor(max_workers=12) as pool:
         futures = {pool.submit(_fetch, name, info): name for name, info in resolved}
         for fut in as_completed(futures):
             try:
                 name, jobs = fut.result()
-            except Exception as e:
+            except PlatformThrottled as e:
+                # Throttling says nothing about whether the board is alive, so
+                # don't let it count toward dropping the entry.
                 errors.append(f"{futures[fut]}: {e}")
                 continue
+            except Exception as e:
+                errors.append(f"{futures[fut]}: {e}")
+                failed_boards.add(futures[fut])
+                continue
+            ok_boards.add(name)
             for j in jobs:
                 all_ids.add(j["id"])
                 if j["id"] in seen:
@@ -112,6 +156,17 @@ def main() -> None:
                     and is_us_location([j.get("location", "")], j.get("country", ""))
                 ):
                     matched.append((name, j))
+
+    # Record before alerting: send_all raises if a sink is down, and a dead board
+    # should still be counted on a run where Discord happened to be flaky.
+    # Aliases share one fetch, so they share its verdict too -- otherwise the
+    # deduped-away name would keep its dead slug forever, never being fetched.
+    record_board_results(
+        cache,
+        {n for rep in ok_boards for n in aliases.get(rep, [rep])},
+        {n for rep in failed_boards for n in aliases.get(rep, [rep])},
+    )
+    save_cache(cache)
 
     if first_run:
         msg = f"{icon} {kind} watcher is live — tracking {len(resolved)} companies directly on their job boards."

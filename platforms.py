@@ -338,6 +338,15 @@ def _workday_sites(tenant: str, name: str) -> list[str]:
     titled = [w.capitalize() for w in words]
     brand = ["_".join(titled), "".join(titled), "_".join(words)] if len(words) > 1 else []
     pats = [
+        # Campus sites first, on purpose. A tenant can run two boards -- a big
+        # corporate one and a small campus one -- and the first site that answers
+        # with any postings wins. Mastercard resolved to CorporateCareers (1,108
+        # reqs, whose intern facet is 19 Latin America consulting roles and zero
+        # US) while its actual "Software Engineer Intern, Summer 2027" sat on
+        # /Campus, unwatched. This tool only ever wants interns, so when a campus
+        # board exists it is always the better answer.
+        "Campus", "CampusCareers", "Campus_Careers", "Students",
+        "University", "EarlyCareers", "Early_Careers",
         "External", "Careers", "careers", "jobs", "Jobs", "ExternalCareers",
         "ExternalCareerSite", "External_Career_Site", "external_experienced",
         "External_Careers", "Global_Careers",
