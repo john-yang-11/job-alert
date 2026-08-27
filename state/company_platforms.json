@@ -138,7 +138,6 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-01T11:05:53.009438+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-08-26T22:28:35.671842+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
@@ -165,6 +164,7 @@
  },
  "HP": {
   "checked_at": "2026-08-16T05:08:16.679241+00:00",
+  "deep_scanned_at": "2026-08-27T03:32:07.726952+00:00",
   "platform": "workday",
   "slug": "hp|wd5|ExternalCareerSite"
  },
@@ -225,6 +225,7 @@
  },
  "KLA": {
   "checked_at": "2026-08-16T05:40:43.314484+00:00",
+  "deep_scanned_at": "2026-08-27T03:32:07.726952+00:00",
   "platform": "workday",
   "slug": "kla|wd1|Search"
  },
@@ -325,7 +326,7 @@
  },
  "Qualcomm": {
   "checked_at": "2026-08-01T09:15:56.514645+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "workday",
   "slug": "qualcomm|wd12|External"
  },
@@ -503,7 +504,7 @@
  },
  "aquatic": {
   "checked_at": "2026-08-01T11:05:53.639364+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -641,12 +642,6 @@
   "platform": null,
   "slug": null
  },
- "comcast": {
-  "checked_at": "2026-08-16T04:20:42.021630+00:00",
-  "consecutive_failures": 5,
-  "platform": "workday",
-  "slug": "comcast|wd5|Comcast_Careers"
- },
  "confluent": {
   "checked_at": "2026-08-16T04:21:03.047183+00:00",
   "platform": "ashby",
@@ -740,7 +735,6 @@
  },
  "fidelity": {
   "checked_at": "2026-08-16T05:06:43.797789+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-08-26T22:28:35.671842+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
@@ -805,12 +799,6 @@
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
- "ignite NVIDIA": {
-  "checked_at": "2026-08-16T05:39:05.517998+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "allinbits"
- },
  "infosys": {
   "checked_at": "2026-08-23T05:44:00.658783+00:00",
   "platform": null,
@@ -843,6 +831,7 @@
  },
  "leidos": {
   "checked_at": "2026-08-16T05:40:48.197454+00:00",
+  "deep_scanned_at": "2026-08-27T03:32:07.726952+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
  },
@@ -928,7 +917,7 @@
  },
  "nutanix": {
   "checked_at": "2026-08-08T07:12:39.852791+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "nutanix"
  },
@@ -1191,12 +1180,6 @@
   "checked_at": "2026-08-23T09:39:36.096201+00:00",
   "platform": null,
   "slug": null
- },
- "xfinity": {
-  "checked_at": "2026-08-16T08:44:21.903973+00:00",
-  "consecutive_failures": 5,
-  "platform": "workday",
-  "slug": "comcast|wd5|Comcast_Careers"
  },
  "yahoo": {
   "checked_at": "2026-08-23T09:39:48.946679+00:00",
