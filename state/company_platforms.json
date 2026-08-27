@@ -246,6 +246,7 @@
  },
  "Mastercard": {
   "checked_at": "2026-08-16T05:41:18.740321+00:00",
+  "deep_scanned_at": "2026-08-27T14:36:22.593481+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|Campus"
  },
@@ -256,6 +257,7 @@
  },
  "NVIDIA": {
   "checked_at": "2026-08-16T04:33:45.341178+00:00",
+  "deep_scanned_at": "2026-08-27T14:36:22.593481+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
@@ -306,6 +308,7 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-08-16T06:57:00.755464+00:00",
+  "deep_scanned_at": "2026-08-27T14:36:22.593481+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
@@ -326,7 +329,7 @@
  },
  "Qualcomm": {
   "checked_at": "2026-08-01T09:15:56.514645+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "workday",
   "slug": "qualcomm|wd12|External"
  },
@@ -504,7 +507,7 @@
  },
  "aquatic": {
   "checked_at": "2026-08-01T11:05:53.639364+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -641,6 +644,12 @@
   "checked_at": "2026-08-23T05:05:02.270889+00:00",
   "platform": null,
   "slug": null
+ },
+ "comcast": {
+  "checked_at": "2026-08-27T14:35:18.389179+00:00",
+  "deep_scanned_at": "2026-08-27T14:36:22.593481+00:00",
+  "platform": "workday",
+  "slug": "comcast|wd115|Comcast_Careers"
  },
  "confluent": {
   "checked_at": "2026-08-16T04:21:03.047183+00:00",
@@ -799,6 +808,11 @@
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
+ "ignite NVIDIA": {
+  "checked_at": "2026-08-27T14:35:32.470317+00:00",
+  "platform": null,
+  "slug": null
+ },
  "infosys": {
   "checked_at": "2026-08-23T05:44:00.658783+00:00",
   "platform": null,
@@ -917,7 +931,7 @@
  },
  "nutanix": {
   "checked_at": "2026-08-08T07:12:39.852791+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "nutanix"
  },
@@ -937,7 +951,7 @@
   "slug": "patreon"
  },
  "paycom": {
-  "checked_at": "2026-08-20T03:56:15.716275+00:00",
+  "checked_at": "2026-08-27T14:35:53.042234+00:00",
   "platform": null,
   "slug": null
  },
@@ -1180,6 +1194,11 @@
   "checked_at": "2026-08-23T09:39:36.096201+00:00",
   "platform": null,
   "slug": null
+ },
+ "xfinity": {
+  "checked_at": "2026-08-27T14:35:33.803977+00:00",
+  "platform": "workday",
+  "slug": "comcast|wd115|Comcast_Careers"
  },
  "yahoo": {
   "checked_at": "2026-08-23T09:39:48.946679+00:00",
