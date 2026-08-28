@@ -56,7 +56,7 @@
   "slug": null
  },
  "Axon": {
-  "checked_at": "2026-07-29T17:37:37.288152+00:00",
+  "checked_at": "2026-08-28T21:30:44.727392+00:00",
   "platform": "greenhouse",
   "slug": "axon"
  },
@@ -282,7 +282,7 @@
   "slug": null
  },
  "Nuro": {
-  "checked_at": "2026-07-29T17:37:40.258633+00:00",
+  "checked_at": "2026-08-28T21:31:12.190992+00:00",
   "platform": "greenhouse",
   "slug": "nuro"
  },
@@ -373,6 +373,7 @@
  },
  "Snap": {
   "checked_at": "2026-08-16T04:35:41.792008+00:00",
+  "deep_scanned_at": "2026-08-28T21:31:39.944997+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -489,12 +490,12 @@
   "slug": null
  },
  "anduril": {
-  "checked_at": "2026-07-29T17:45:14.267822+00:00",
-  "platform": "greenhouse",
-  "slug": "andurilindustries"
+  "checked_at": "2026-08-28T21:30:36.113357+00:00",
+  "platform": null,
+  "slug": null
  },
  "appian": {
-  "checked_at": "2026-07-29T17:37:52.808228+00:00",
+  "checked_at": "2026-08-28T21:30:41.013041+00:00",
   "platform": "greenhouse",
   "slug": "appian"
  },
@@ -510,7 +511,7 @@
  },
  "aquatic": {
   "checked_at": "2026-08-28T11:14:51.871161+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -696,9 +697,9 @@
   "slug": null
  },
  "deepgram": {
-  "checked_at": "2026-07-29T17:37:06.112575+00:00",
+  "checked_at": "2026-08-28T21:31:07.397101+00:00",
   "platform": "ashby",
-  "slug": "deepgram"
+  "slug": "Deepgram"
  },
  "dell": {
   "checked_at": "2026-08-23T05:06:04.768923+00:00",
@@ -888,7 +889,7 @@
   "slug": null
  },
  "modus": {
-  "checked_at": "2026-07-29T17:37:50.096926+00:00",
+  "checked_at": "2026-08-28T21:31:08.321036+00:00",
   "platform": "ashby",
   "slug": "modus"
  },
@@ -903,7 +904,7 @@
   "slug": null
  },
  "monogram": {
-  "checked_at": "2026-07-29T17:37:45.361247+00:00",
+  "checked_at": "2026-08-28T21:31:09.655984+00:00",
   "platform": "ashby",
   "slug": "monogram"
  },
@@ -980,7 +981,6 @@
  },
  "redhat": {
   "checked_at": "2026-08-01T09:16:06.359097+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-08-28T11:15:51.671378+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
@@ -1068,6 +1068,8 @@
  },
  "slack": {
   "checked_at": "2026-08-16T07:39:55.666839+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-08-28T21:31:39.944997+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
@@ -1103,11 +1105,14 @@
  },
  "state street": {
   "checked_at": "2026-08-16T07:41:11.019500+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-08-28T21:31:39.944997+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
  "stryker": {
   "checked_at": "2026-08-16T07:41:13.921723+00:00",
+  "deep_scanned_at": "2026-08-28T21:31:39.944997+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
