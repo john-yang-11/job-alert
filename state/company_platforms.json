@@ -315,7 +315,6 @@
  },
  "Paypal": {
   "checked_at": "2026-08-01T09:15:33.196508+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-08-27T23:58:13.307129+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
@@ -330,6 +329,11 @@
   "platform": "greenhouse",
   "slug": "point72"
  },
+ "Qualcomm": {
+  "checked_at": "2026-08-28T11:15:11.671398+00:00",
+  "platform": null,
+  "slug": null
+ },
  "Reddit": {
   "checked_at": "2026-08-16T06:57:35.970483+00:00",
   "platform": "greenhouse",
@@ -342,6 +346,7 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-01T09:16:59.155849+00:00",
+  "deep_scanned_at": "2026-08-28T11:15:51.671378+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -352,6 +357,7 @@
  },
  "Samsung": {
   "checked_at": "2026-08-16T06:59:52.642245+00:00",
+  "deep_scanned_at": "2026-08-28T11:15:51.671378+00:00",
   "platform": "workday",
   "slug": "sec|wd3|Samsung_Careers"
  },
@@ -501,6 +507,12 @@
   "checked_at": "2026-08-23T04:20:49.804564+00:00",
   "platform": null,
   "slug": null
+ },
+ "aquatic": {
+  "checked_at": "2026-08-28T11:14:51.871161+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
@@ -669,7 +681,7 @@
   "slug": "databricks"
  },
  "databricks winter": {
-  "checked_at": "2026-08-21T04:20:27.597753+00:00",
+  "checked_at": "2026-08-28T11:15:26.846675+00:00",
   "platform": null,
   "slug": null
  },
@@ -920,6 +932,11 @@
   "platform": "ashby",
   "slug": "notion"
  },
+ "nutanix": {
+  "checked_at": "2026-08-28T11:14:53.520600+00:00",
+  "platform": "jobfeed",
+  "slug": "https://careers.nutanix.com/jobs/xml/?rss=true"
+ },
  "okta": {
   "checked_at": "2026-08-16T04:35:24.815866+00:00",
   "platform": "greenhouse",
@@ -963,6 +980,8 @@
  },
  "redhat": {
   "checked_at": "2026-08-01T09:16:06.359097+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-08-28T11:15:51.671378+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
@@ -1013,6 +1032,7 @@
  },
  "salesforce": {
   "checked_at": "2026-08-01T09:17:13.145090+00:00",
+  "deep_scanned_at": "2026-08-28T11:15:51.671378+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
