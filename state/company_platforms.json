@@ -26,6 +26,7 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-08-16T08:45:22.155462+00:00",
+  "deep_scanned_at": "2026-08-29T10:24:45.215381+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -399,7 +400,6 @@
  },
  "T-mobile": {
   "checked_at": "2026-08-16T07:41:20.290324+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-08-29T03:21:03.512896+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
@@ -463,6 +463,8 @@
  },
  "Workday": {
   "checked_at": "2026-08-16T08:44:20.491451+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-08-29T10:24:45.215381+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -515,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-08-28T11:14:51.871161+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -578,6 +580,7 @@
  },
  "boeing data analytics": {
   "checked_at": "2026-08-04T03:31:19.062024+00:00",
+  "deep_scanned_at": "2026-08-29T10:24:45.215381+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|External_Careers"
  },
@@ -869,6 +872,7 @@
  },
  "medtronic": {
   "checked_at": "2026-08-03T23:42:10.860842+00:00",
+  "deep_scanned_at": "2026-08-29T10:24:45.215381+00:00",
   "platform": "workday",
   "slug": "medtronic|wd1|MedtronicCareers"
  },
