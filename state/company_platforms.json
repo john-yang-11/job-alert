@@ -399,6 +399,8 @@
  },
  "T-mobile": {
   "checked_at": "2026-08-16T07:41:20.290324+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-08-29T03:21:03.512896+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
@@ -409,6 +411,7 @@
  },
  "Tencent": {
   "checked_at": "2026-08-16T07:41:38.212571+00:00",
+  "deep_scanned_at": "2026-08-29T03:21:03.512896+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -429,6 +432,8 @@
  },
  "US bank": {
   "checked_at": "2026-08-16T04:35:56.428350+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-08-29T03:21:03.512896+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -511,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-08-28T11:14:51.871161+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -1068,7 +1073,6 @@
  },
  "slack": {
   "checked_at": "2026-08-16T07:39:55.666839+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-08-28T21:31:39.944997+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
@@ -1105,7 +1109,6 @@
  },
  "state street": {
   "checked_at": "2026-08-16T07:41:11.019500+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-08-28T21:31:39.944997+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
@@ -1173,6 +1176,8 @@
  },
  "visa": {
   "checked_at": "2026-08-16T03:48:21.272761+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-08-29T03:21:03.512896+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
