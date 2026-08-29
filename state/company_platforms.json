@@ -93,7 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-08-16T04:19:38.241533+00:00",
-  "deep_scanned_at": "2026-08-26T19:14:51.832209+00:00",
+  "deep_scanned_at": "2026-08-29T18:49:32.640940+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -475,7 +475,7 @@
  },
  "adobe": {
   "checked_at": "2026-08-16T03:55:45.408718+00:00",
-  "deep_scanned_at": "2026-08-26T18:15:12.287874+00:00",
+  "deep_scanned_at": "2026-08-29T18:49:32.640940+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -514,12 +514,6 @@
   "platform": null,
   "slug": null
  },
- "aquatic": {
-  "checked_at": "2026-08-28T11:14:51.871161+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
- },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
   "platform": "greenhouse",
@@ -547,7 +541,6 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-08-29T15:18:41.142771+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -564,7 +557,7 @@
  },
  "blue origin": {
   "checked_at": "2026-08-16T04:18:08.865172+00:00",
-  "deep_scanned_at": "2026-08-26T18:15:12.287874+00:00",
+  "deep_scanned_at": "2026-08-29T18:49:32.640940+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -575,7 +568,7 @@
  },
  "boeing": {
   "checked_at": "2026-08-16T04:18:11.443355+00:00",
-  "deep_scanned_at": "2026-08-26T19:14:51.832209+00:00",
+  "deep_scanned_at": "2026-08-29T18:49:32.640940+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
