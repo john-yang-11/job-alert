@@ -82,7 +82,7 @@
   "slug": null
  },
  "CNN": {
-  "checked_at": "2026-08-23T05:04:50.236188+00:00",
+  "checked_at": "2026-08-30T11:49:51.215616+00:00",
   "platform": null,
   "slug": null
  },
@@ -98,7 +98,7 @@
   "slug": "cisco|wd5|Cisco_Careers"
  },
  "Deloitte": {
-  "checked_at": "2026-08-23T05:06:15.788696+00:00",
+  "checked_at": "2026-08-30T11:51:19.519156+00:00",
   "platform": null,
   "slug": null
  },
@@ -108,7 +108,7 @@
   "slug": null
  },
  "Delta": {
-  "checked_at": "2026-08-23T05:39:47.493793+00:00",
+  "checked_at": "2026-08-30T11:51:27.536847+00:00",
   "platform": null,
   "slug": null
  },
@@ -123,7 +123,7 @@
   "slug": "https://www.dropbox.jobs/jobs/xml/?rss=true"
  },
  "Electronic Arts": {
-  "checked_at": "2026-08-23T05:41:23.649786+00:00",
+  "checked_at": "2026-08-30T11:53:13.754941+00:00",
   "platform": null,
   "slug": null
  },
@@ -133,7 +133,7 @@
   "slug": "etched"
  },
  "Everpure": {
-  "checked_at": "2026-08-23T05:41:42.046660+00:00",
+  "checked_at": "2026-08-30T11:53:31.651991+00:00",
   "platform": null,
   "slug": null
  },
@@ -294,7 +294,7 @@
  },
  "PNC": {
   "checked_at": "2026-08-16T04:34:22.734492+00:00",
-  "deep_scanned_at": "2026-08-27T23:58:13.307129+00:00",
+  "deep_scanned_at": "2026-08-30T11:55:24.808680+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -316,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-08-01T09:15:33.196508+00:00",
-  "deep_scanned_at": "2026-08-27T23:58:13.307129+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-08-30T11:55:24.808680+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -516,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-08-29T21:40:46.503801+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -652,7 +653,7 @@
   "slug": "coinbase"
  },
  "colins aerospace": {
-  "checked_at": "2026-08-23T05:05:02.270889+00:00",
+  "checked_at": "2026-08-30T11:50:06.779909+00:00",
   "platform": null,
   "slug": null
  },
@@ -674,7 +675,7 @@
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
  "cvs health": {
-  "checked_at": "2026-08-23T05:05:49.218110+00:00",
+  "checked_at": "2026-08-30T11:50:49.211563+00:00",
   "platform": null,
   "slug": null
  },
@@ -709,7 +710,7 @@
   "slug": "Deepgram"
  },
  "dell": {
-  "checked_at": "2026-08-23T05:06:04.768923+00:00",
+  "checked_at": "2026-08-30T11:51:10.073090+00:00",
   "platform": null,
   "slug": null
  },
@@ -719,7 +720,7 @@
   "slug": null
  },
  "disney": {
-  "checked_at": "2026-08-23T05:40:02.961766+00:00",
+  "checked_at": "2026-08-30T11:51:49.113261+00:00",
   "platform": null,
   "slug": null
  },
@@ -729,7 +730,7 @@
   "slug": "https://careers.docusign.com"
  },
  "doordash": {
-  "checked_at": "2026-08-23T05:40:09.091257+00:00",
+  "checked_at": "2026-08-30T11:51:56.064094+00:00",
   "platform": null,
   "slug": null
  },
@@ -739,7 +740,7 @@
   "slug": "duolingo"
  },
  "ea pathfinder": {
-  "checked_at": "2026-08-23T05:40:28.620330+00:00",
+  "checked_at": "2026-08-30T11:52:16.841929+00:00",
   "platform": null,
   "slug": null
  },
@@ -749,7 +750,7 @@
   "slug": "elastic"
  },
  "epic": {
-  "checked_at": "2026-08-23T05:41:33.746223+00:00",
+  "checked_at": "2026-08-30T11:53:23.224012+00:00",
   "platform": null,
   "slug": null
  },
@@ -775,12 +776,12 @@
   "slug": null
  },
  "gemnai fall": {
-  "checked_at": "2026-08-23T05:41:55.256788+00:00",
+  "checked_at": "2026-08-30T11:53:46.704960+00:00",
   "platform": null,
   "slug": null
  },
  "general dynamics": {
-  "checked_at": "2026-08-23T05:42:30.992933+00:00",
+  "checked_at": "2026-08-30T11:55:01.447445+00:00",
   "platform": null,
   "slug": null
  },
@@ -984,13 +985,14 @@
  },
  "raytheon": {
   "checked_at": "2026-08-16T06:57:35.321615+00:00",
-  "deep_scanned_at": "2026-08-27T23:58:13.307129+00:00",
+  "deep_scanned_at": "2026-08-30T11:55:24.808680+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
  "redhat": {
   "checked_at": "2026-08-01T09:16:06.359097+00:00",
-  "deep_scanned_at": "2026-08-28T11:15:51.671378+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-08-30T11:55:24.808680+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
