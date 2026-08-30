@@ -139,7 +139,8 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-01T11:05:53.009438+00:00",
-  "deep_scanned_at": "2026-08-26T22:28:35.671842+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-08-30T00:10:53.354118+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -165,7 +166,7 @@
  },
  "HP": {
   "checked_at": "2026-08-16T05:08:16.679241+00:00",
-  "deep_scanned_at": "2026-08-27T03:32:07.726952+00:00",
+  "deep_scanned_at": "2026-08-30T00:10:53.354118+00:00",
   "platform": "workday",
   "slug": "hp|wd5|ExternalCareerSite"
  },
@@ -226,7 +227,7 @@
  },
  "KLA": {
   "checked_at": "2026-08-16T05:40:43.314484+00:00",
-  "deep_scanned_at": "2026-08-27T03:32:07.726952+00:00",
+  "deep_scanned_at": "2026-08-30T00:10:53.354118+00:00",
   "platform": "workday",
   "slug": "kla|wd1|Search"
  },
@@ -516,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-08-29T21:40:46.503801+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -637,7 +638,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-08-16T04:20:01.498315+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-08-29T21:41:10.916567+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -756,7 +756,6 @@
  },
  "fidelity": {
   "checked_at": "2026-08-16T05:06:43.797789+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-08-29T21:41:10.916567+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
@@ -859,7 +858,7 @@
  },
  "leidos": {
   "checked_at": "2026-08-16T05:40:48.197454+00:00",
-  "deep_scanned_at": "2026-08-27T03:32:07.726952+00:00",
+  "deep_scanned_at": "2026-08-30T00:10:53.354118+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
  },
