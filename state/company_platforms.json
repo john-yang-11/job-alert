@@ -514,12 +514,6 @@
   "platform": null,
   "slug": null
  },
- "aquatic": {
-  "checked_at": "2026-08-30T22:01:49.025595+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
- },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
   "platform": "greenhouse",
@@ -611,6 +605,7 @@
  },
  "chime": {
   "checked_at": "2026-08-16T04:19:19.688862+00:00",
+  "consecutive_failures": 1,
   "platform": "greenhouse",
   "slug": "chime"
  },
@@ -621,7 +616,7 @@
  },
  "citi": {
   "checked_at": "2026-08-16T04:19:55.335500+00:00",
-  "deep_scanned_at": "2026-08-29T21:41:10.916567+00:00",
+  "deep_scanned_at": "2026-08-31T23:22:45.030818+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -637,7 +632,8 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-08-16T04:20:01.498315+00:00",
-  "deep_scanned_at": "2026-08-29T21:41:10.916567+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-08-31T23:22:45.030818+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
@@ -669,7 +665,7 @@
  },
  "crowdstrike": {
   "checked_at": "2026-08-16T05:03:08.938412+00:00",
-  "deep_scanned_at": "2026-08-29T21:41:10.916567+00:00",
+  "deep_scanned_at": "2026-08-31T23:22:45.030818+00:00",
   "platform": "workday",
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
@@ -755,7 +751,7 @@
  },
  "fidelity": {
   "checked_at": "2026-08-16T05:06:43.797789+00:00",
-  "deep_scanned_at": "2026-08-29T21:41:10.916567+00:00",
+  "deep_scanned_at": "2026-08-31T23:22:45.030818+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
  },
