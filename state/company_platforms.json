@@ -32,7 +32,7 @@
  },
  "Accenture": {
   "checked_at": "2026-08-16T03:55:25.716113+00:00",
-  "deep_scanned_at": "2026-08-29T15:18:41.142771+00:00",
+  "deep_scanned_at": "2026-08-31T06:03:10.216045+00:00",
   "platform": "workday",
   "slug": "accenture|wd103|AccentureCareers"
  },
@@ -475,7 +475,7 @@
  },
  "adobe": {
   "checked_at": "2026-08-16T03:55:45.408718+00:00",
-  "deep_scanned_at": "2026-08-29T18:49:32.640940+00:00",
+  "deep_scanned_at": "2026-08-31T06:03:10.216045+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-08-30T22:01:49.025595+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -547,7 +547,8 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "deep_scanned_at": "2026-08-29T15:18:41.142771+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-08-31T06:03:10.216045+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -816,7 +817,7 @@
  },
  "humana": {
   "checked_at": "2026-08-19T03:07:05.370006+00:00",
-  "deep_scanned_at": "2026-08-29T15:18:41.142771+00:00",
+  "deep_scanned_at": "2026-08-31T06:03:10.216045+00:00",
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
