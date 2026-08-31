@@ -26,7 +26,7 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-08-16T08:45:22.155462+00:00",
-  "deep_scanned_at": "2026-08-29T10:24:45.215381+00:00",
+  "deep_scanned_at": "2026-08-31T00:30:47.956343+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -215,7 +215,7 @@
   "slug": null
  },
  "JP morgan hack4good": {
-  "checked_at": "2026-08-23T09:40:33.544722+00:00",
+  "checked_at": "2026-08-31T00:29:14.925551+00:00",
   "platform": null,
   "slug": null
  },
@@ -442,7 +442,7 @@
   "slug": "uberfreight"
  },
  "Urline": {
-  "checked_at": "2026-08-23T09:40:47.629354+00:00",
+  "checked_at": "2026-08-31T00:29:27.453598+00:00",
   "platform": null,
   "slug": null
  },
@@ -463,14 +463,13 @@
  },
  "Workday": {
   "checked_at": "2026-08-16T08:44:20.491451+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-08-30T22:07:23.860150+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
  "abbott": {
   "checked_at": "2026-08-16T03:55:11.436358+00:00",
-  "deep_scanned_at": "2026-08-29T15:18:41.142771+00:00",
+  "deep_scanned_at": "2026-08-31T00:30:47.956343+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -517,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-08-30T22:01:49.025595+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -581,7 +580,7 @@
  },
  "boeing data analytics": {
   "checked_at": "2026-08-04T03:31:19.062024+00:00",
-  "deep_scanned_at": "2026-08-29T10:24:45.215381+00:00",
+  "deep_scanned_at": "2026-08-31T00:30:47.956343+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|External_Careers"
  },
@@ -715,7 +714,7 @@
   "slug": null
  },
  "delta ai engineering": {
-  "checked_at": "2026-08-23T13:41:58.452064+00:00",
+  "checked_at": "2026-08-31T00:30:17.466677+00:00",
   "platform": null,
   "slug": null
  },
@@ -796,7 +795,7 @@
   "slug": "godaddy"
  },
  "goldman": {
-  "checked_at": "2026-08-23T13:41:44.254943+00:00",
+  "checked_at": "2026-08-31T00:30:02.587690+00:00",
   "platform": null,
   "slug": null
  },
@@ -811,7 +810,7 @@
   "slug": null
  },
  "hershy": {
-  "checked_at": "2026-08-23T13:41:38.181321+00:00",
+  "checked_at": "2026-08-31T00:29:55.365063+00:00",
   "platform": null,
   "slug": null
  },
@@ -874,7 +873,7 @@
  },
  "medtronic": {
   "checked_at": "2026-08-03T23:42:10.860842+00:00",
-  "deep_scanned_at": "2026-08-29T10:24:45.215381+00:00",
+  "deep_scanned_at": "2026-08-31T00:30:47.956343+00:00",
   "platform": "workday",
   "slug": "medtronic|wd1|MedtronicCareers"
  },
@@ -889,12 +888,12 @@
   "slug": null
  },
  "microsoft core ai": {
-  "checked_at": "2026-08-23T09:40:04.595734+00:00",
+  "checked_at": "2026-08-31T00:28:48.058380+00:00",
   "platform": null,
   "slug": null
  },
  "mileniem applied ai engineer": {
-  "checked_at": "2026-08-23T09:40:17.818772+00:00",
+  "checked_at": "2026-08-31T00:29:01.436639+00:00",
   "platform": null,
   "slug": null
  },
@@ -1067,7 +1066,7 @@
   "slug": "seatgeek"
  },
  "shopfiy winter": {
-  "checked_at": "2026-08-23T09:41:02.687359+00:00",
+  "checked_at": "2026-08-31T00:29:40.648979+00:00",
   "platform": null,
   "slug": null
  },
@@ -1130,7 +1129,7 @@
   "slug": "TensorWave"
  },
  "textql": {
-  "checked_at": "2026-08-23T09:41:09.494603+00:00",
+  "checked_at": "2026-08-31T00:29:48.080208+00:00",
   "platform": null,
   "slug": null
  },
@@ -1211,7 +1210,7 @@
   "slug": "https://www.wellsfargojobs.com/jobs/xml/?rss=true"
  },
  "whatnot": {
-  "checked_at": "2026-08-23T09:39:36.096201+00:00",
+  "checked_at": "2026-08-31T00:28:14.087117+00:00",
   "platform": null,
   "slug": null
  },
@@ -1221,12 +1220,12 @@
   "slug": "comcast|wd115|Comcast_Careers"
  },
  "yahoo": {
-  "checked_at": "2026-08-23T09:39:48.946679+00:00",
+  "checked_at": "2026-08-31T00:28:31.854670+00:00",
   "platform": null,
   "slug": null
  },
  "zipline": {
-  "checked_at": "2026-08-23T01:55:41.186481+00:00",
+  "checked_at": "2026-08-31T00:30:24.438596+00:00",
   "platform": null,
   "slug": null
  },
