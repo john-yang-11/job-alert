@@ -128,7 +128,7 @@
   "slug": null
  },
  "Etched": {
-  "checked_at": "2026-08-01T11:05:39.864513+00:00",
+  "checked_at": "2026-08-31T13:33:21.150964+00:00",
   "platform": "ashby",
   "slug": "etched"
  },
@@ -138,8 +138,9 @@
   "slug": null
  },
  "GDIT systestems intern": {
-  "checked_at": "2026-08-01T11:05:53.009438+00:00",
-  "deep_scanned_at": "2026-08-30T00:10:53.354118+00:00",
+  "checked_at": "2026-08-31T13:33:28.152076+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-08-31T13:35:20.666730+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -315,8 +316,9 @@
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
  "Paypal": {
-  "checked_at": "2026-08-01T09:15:33.196508+00:00",
-  "deep_scanned_at": "2026-08-30T11:55:24.808680+00:00",
+  "checked_at": "2026-08-31T13:33:42.209634+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-08-31T13:35:20.666730+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -346,8 +348,8 @@
   "slug": null
  },
  "Rocket Companies": {
-  "checked_at": "2026-08-01T09:16:59.155849+00:00",
-  "deep_scanned_at": "2026-08-30T16:41:06.861741+00:00",
+  "checked_at": "2026-08-31T13:34:20.827579+00:00",
+  "deep_scanned_at": "2026-08-31T13:35:20.666730+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -516,7 +518,7 @@
  },
  "aquatic": {
   "checked_at": "2026-08-30T22:01:49.025595+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -547,7 +549,6 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-08-31T06:03:10.216045+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -791,7 +792,7 @@
   "slug": null
  },
  "go daddy": {
-  "checked_at": "2026-08-01T11:05:53.161543+00:00",
+  "checked_at": "2026-08-31T13:33:32.591129+00:00",
   "platform": "greenhouse",
   "slug": "godaddy"
  },
@@ -990,8 +991,9 @@
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
  "redhat": {
-  "checked_at": "2026-08-01T09:16:06.359097+00:00",
-  "deep_scanned_at": "2026-08-30T11:55:24.808680+00:00",
+  "checked_at": "2026-08-31T13:33:56.555128+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-08-31T13:35:20.666730+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
@@ -1041,8 +1043,7 @@
   "slug": null
  },
  "salesforce": {
-  "checked_at": "2026-08-01T09:17:13.145090+00:00",
-  "deep_scanned_at": "2026-08-30T16:41:06.861741+00:00",
+  "checked_at": "2026-08-31T13:34:54.291699+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
