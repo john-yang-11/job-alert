@@ -165,7 +165,7 @@
  },
  "HP": {
   "checked_at": "2026-08-16T05:08:16.679241+00:00",
-  "deep_scanned_at": "2026-08-30T00:10:53.354118+00:00",
+  "deep_scanned_at": "2026-09-01T02:01:20.552133+00:00",
   "platform": "workday",
   "slug": "hp|wd5|ExternalCareerSite"
  },
@@ -226,7 +226,7 @@
  },
  "KLA": {
   "checked_at": "2026-08-16T05:40:43.314484+00:00",
-  "deep_scanned_at": "2026-08-30T00:10:53.354118+00:00",
+  "deep_scanned_at": "2026-09-01T02:01:20.552133+00:00",
   "platform": "workday",
   "slug": "kla|wd1|Search"
  },
@@ -514,6 +514,12 @@
   "platform": null,
   "slug": null
  },
+ "aquatic": {
+  "checked_at": "2026-09-01T02:00:55.474799+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
+ },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
   "platform": "greenhouse",
@@ -605,7 +611,6 @@
  },
  "chime": {
   "checked_at": "2026-08-16T04:19:19.688862+00:00",
-  "consecutive_failures": 1,
   "platform": "greenhouse",
   "slug": "chime"
  },
@@ -632,7 +637,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-08-16T04:20:01.498315+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-08-31T23:22:45.030818+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -654,7 +658,7 @@
  },
  "comcast": {
   "checked_at": "2026-08-27T14:35:18.389179+00:00",
-  "deep_scanned_at": "2026-08-30T05:49:44.629688+00:00",
+  "deep_scanned_at": "2026-09-01T02:01:20.552133+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
@@ -853,7 +857,7 @@
  },
  "leidos": {
   "checked_at": "2026-08-16T05:40:48.197454+00:00",
-  "deep_scanned_at": "2026-08-30T00:10:53.354118+00:00",
+  "deep_scanned_at": "2026-09-01T02:01:20.552133+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
  },
