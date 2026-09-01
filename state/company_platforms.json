@@ -358,7 +358,7 @@
  },
  "Samsung": {
   "checked_at": "2026-08-16T06:59:52.642245+00:00",
-  "deep_scanned_at": "2026-08-30T16:41:06.861741+00:00",
+  "deep_scanned_at": "2026-09-01T13:28:09.599610+00:00",
   "platform": "workday",
   "slug": "sec|wd3|Samsung_Careers"
  },
@@ -374,7 +374,7 @@
  },
  "Snap": {
   "checked_at": "2026-08-16T04:35:41.792008+00:00",
-  "deep_scanned_at": "2026-08-30T19:31:38.390189+00:00",
+  "deep_scanned_at": "2026-09-01T13:28:09.599610+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-01T02:00:55.474799+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -984,7 +984,7 @@
  },
  "raytheon": {
   "checked_at": "2026-08-16T06:57:35.321615+00:00",
-  "deep_scanned_at": "2026-08-30T11:55:24.808680+00:00",
+  "deep_scanned_at": "2026-09-01T13:28:09.599610+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
@@ -1077,7 +1077,8 @@
  },
  "slack": {
   "checked_at": "2026-08-16T07:39:55.666839+00:00",
-  "deep_scanned_at": "2026-08-30T16:41:06.861741+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-01T13:28:09.599610+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
