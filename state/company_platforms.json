@@ -93,7 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-08-16T04:19:38.241533+00:00",
-  "deep_scanned_at": "2026-08-31T19:37:16.388538+00:00",
+  "deep_scanned_at": "2026-09-02T11:10:22.816251+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -316,7 +316,6 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-02T05:43:32.613655+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
@@ -348,7 +347,6 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-02T05:43:32.613655+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
@@ -518,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-02T00:59:41.964320+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -576,7 +574,7 @@
  },
  "boeing": {
   "checked_at": "2026-08-16T04:18:11.443355+00:00",
-  "deep_scanned_at": "2026-08-31T19:37:16.388538+00:00",
+  "deep_scanned_at": "2026-09-02T11:10:22.816251+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -623,7 +621,7 @@
  },
  "citi": {
   "checked_at": "2026-08-16T04:19:55.335500+00:00",
-  "deep_scanned_at": "2026-08-31T23:22:45.030818+00:00",
+  "deep_scanned_at": "2026-09-02T11:10:22.816251+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -697,6 +695,7 @@
  },
  "datadog": {
   "checked_at": "2026-08-16T05:04:00.845742+00:00",
+  "consecutive_failures": 1,
   "platform": "greenhouse",
   "slug": "datadog"
  },
@@ -992,7 +991,6 @@
  },
  "redhat": {
   "checked_at": "2026-08-31T13:33:56.555128+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-02T05:43:32.613655+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
@@ -1044,7 +1042,7 @@
  },
  "salesforce": {
   "checked_at": "2026-08-31T13:34:54.291699+00:00",
-  "deep_scanned_at": "2026-08-31T19:37:16.388538+00:00",
+  "deep_scanned_at": "2026-09-02T11:10:22.816251+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
