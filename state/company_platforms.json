@@ -139,7 +139,8 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "deep_scanned_at": "2026-08-31T13:35:20.666730+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-02T01:00:07.136712+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -475,7 +476,7 @@
  },
  "adobe": {
   "checked_at": "2026-08-16T03:55:45.408718+00:00",
-  "deep_scanned_at": "2026-08-31T06:03:10.216045+00:00",
+  "deep_scanned_at": "2026-09-02T01:00:07.136712+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -514,6 +515,12 @@
   "platform": null,
   "slug": null
  },
+ "aquatic": {
+  "checked_at": "2026-09-02T00:59:41.964320+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
+ },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
   "platform": "greenhouse",
@@ -541,7 +548,8 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "deep_scanned_at": "2026-08-31T06:03:10.216045+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-02T01:00:07.136712+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -810,7 +818,7 @@
  },
  "humana": {
   "checked_at": "2026-08-19T03:07:05.370006+00:00",
-  "deep_scanned_at": "2026-08-31T06:03:10.216045+00:00",
+  "deep_scanned_at": "2026-09-02T01:00:07.136712+00:00",
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
