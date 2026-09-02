@@ -139,7 +139,6 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-02T01:00:07.136712+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
@@ -289,7 +288,7 @@
   "slug": "nuro"
  },
  "PDT partners": {
-  "checked_at": "2026-08-03T01:11:20.985415+00:00",
+  "checked_at": "2026-09-02T05:42:02.080956+00:00",
   "platform": "greenhouse",
   "slug": "pdtpartners"
  },
@@ -317,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "deep_scanned_at": "2026-08-31T13:35:20.666730+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-02T05:43:32.613655+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -348,7 +348,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "deep_scanned_at": "2026-08-31T13:35:20.666730+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-02T05:43:32.613655+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -517,7 +518,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-02T00:59:41.964320+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -548,7 +549,6 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-02T01:00:07.136712+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -565,7 +565,7 @@
  },
  "blue origin": {
   "checked_at": "2026-08-16T04:18:08.865172+00:00",
-  "deep_scanned_at": "2026-08-31T19:37:16.388538+00:00",
+  "deep_scanned_at": "2026-09-02T05:43:32.613655+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -701,7 +701,7 @@
   "slug": "datadog"
  },
  "datadog winter 2027": {
-  "checked_at": "2026-08-26T04:20:37.604204+00:00",
+  "checked_at": "2026-09-02T05:43:05.169694+00:00",
   "platform": null,
   "slug": null
  },
@@ -772,7 +772,7 @@
   "slug": null
  },
  "ge aero fall 2027": {
-  "checked_at": "2026-08-26T01:53:07.823204+00:00",
+  "checked_at": "2026-09-02T05:42:46.773147+00:00",
   "platform": null,
   "slug": null
  },
@@ -853,7 +853,7 @@
   "slug": "kalshi"
  },
  "l3 harris": {
-  "checked_at": "2026-08-26T01:52:47.045224+00:00",
+  "checked_at": "2026-09-02T05:42:25.529766+00:00",
   "platform": null,
   "slug": null
  },
@@ -992,7 +992,8 @@
  },
  "redhat": {
   "checked_at": "2026-08-31T13:33:56.555128+00:00",
-  "deep_scanned_at": "2026-08-31T13:35:20.666730+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-02T05:43:32.613655+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
