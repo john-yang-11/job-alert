@@ -258,7 +258,7 @@
  },
  "NVIDIA": {
   "checked_at": "2026-08-16T04:33:45.341178+00:00",
-  "deep_scanned_at": "2026-09-01T07:43:13.939428+00:00",
+  "deep_scanned_at": "2026-09-02T21:45:36.211956+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
@@ -294,7 +294,7 @@
  },
  "PNC": {
   "checked_at": "2026-08-16T04:34:22.734492+00:00",
-  "deep_scanned_at": "2026-09-01T07:43:13.939428+00:00",
+  "deep_scanned_at": "2026-09-02T21:45:36.211956+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -310,7 +310,7 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-08-16T06:57:00.755464+00:00",
-  "deep_scanned_at": "2026-09-01T07:43:13.939428+00:00",
+  "deep_scanned_at": "2026-09-02T21:45:36.211956+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
@@ -513,12 +513,6 @@
   "checked_at": "2026-08-30T05:45:36.397025+00:00",
   "platform": null,
   "slug": null
- },
- "aquatic": {
-  "checked_at": "2026-09-02T00:59:41.964320+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
@@ -984,7 +978,7 @@
  },
  "raytheon": {
   "checked_at": "2026-08-16T06:57:35.321615+00:00",
-  "deep_scanned_at": "2026-09-01T13:28:09.599610+00:00",
+  "deep_scanned_at": "2026-09-02T21:45:36.211956+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
@@ -1051,7 +1045,7 @@
   "slug": "salesforce|wd12|External_Career_Site"
  },
  "samsara": {
-  "checked_at": "2026-08-03T19:08:58.923412+00:00",
+  "checked_at": "2026-09-02T21:45:12.351400+00:00",
   "platform": "greenhouse",
   "slug": "samsara"
  },
