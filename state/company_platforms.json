@@ -139,7 +139,6 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-03T13:51:34.068578+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
@@ -317,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "deep_scanned_at": "2026-09-02T05:43:32.613655+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-03T17:49:42.528522+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -517,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-03T00:05:41.906468+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -548,7 +548,8 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "deep_scanned_at": "2026-09-02T01:00:07.136712+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-03T17:49:42.528522+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -564,7 +565,7 @@
  },
  "blue origin": {
   "checked_at": "2026-08-16T04:18:08.865172+00:00",
-  "deep_scanned_at": "2026-09-02T05:43:32.613655+00:00",
+  "deep_scanned_at": "2026-09-03T17:49:42.528522+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -816,12 +817,12 @@
  },
  "humana": {
   "checked_at": "2026-08-19T03:07:05.370006+00:00",
-  "deep_scanned_at": "2026-09-02T01:00:07.136712+00:00",
+  "deep_scanned_at": "2026-09-03T17:49:42.528522+00:00",
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
  "ignite NVIDIA": {
-  "checked_at": "2026-08-27T14:35:32.470317+00:00",
+  "checked_at": "2026-09-03T17:48:57.721316+00:00",
   "platform": null,
   "slug": null
  },
@@ -963,7 +964,7 @@
   "slug": "patreon"
  },
  "paycom": {
-  "checked_at": "2026-08-27T14:35:53.042234+00:00",
+  "checked_at": "2026-09-03T17:49:15.717182+00:00",
   "platform": null,
   "slug": null
  },
