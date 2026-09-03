@@ -400,7 +400,6 @@
  },
  "T-mobile": {
   "checked_at": "2026-08-16T07:41:20.290324+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-03T04:17:43.837262+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
@@ -433,7 +432,8 @@
  },
  "US bank": {
   "checked_at": "2026-08-16T04:35:56.428350+00:00",
-  "deep_scanned_at": "2026-09-01T20:08:33.864753+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-03T09:09:15.895296+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -464,13 +464,14 @@
  },
  "Workday": {
   "checked_at": "2026-08-16T08:44:20.491451+00:00",
-  "deep_scanned_at": "2026-09-01T20:08:33.864753+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-03T09:09:15.895296+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
  "abbott": {
   "checked_at": "2026-08-16T03:55:11.436358+00:00",
-  "deep_scanned_at": "2026-09-01T20:08:33.864753+00:00",
+  "deep_scanned_at": "2026-09-03T09:09:15.895296+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -517,7 +518,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-03T00:05:41.906468+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -1113,7 +1114,6 @@
  },
  "state street": {
   "checked_at": "2026-08-16T07:41:11.019500+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-03T04:17:43.837262+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
@@ -1181,7 +1181,8 @@
  },
  "visa": {
   "checked_at": "2026-08-16T03:48:21.272761+00:00",
-  "deep_scanned_at": "2026-09-01T20:08:33.864753+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-03T09:09:15.895296+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
