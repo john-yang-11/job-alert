@@ -432,6 +432,7 @@
  },
  "US bank": {
   "checked_at": "2026-08-16T04:35:56.428350+00:00",
+  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-01T20:08:33.864753+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
