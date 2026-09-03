@@ -26,13 +26,13 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-08-16T08:45:22.155462+00:00",
-  "deep_scanned_at": "2026-09-01T22:49:12.413009+00:00",
+  "deep_scanned_at": "2026-09-03T13:51:34.068578+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
  "Accenture": {
   "checked_at": "2026-08-16T03:55:25.716113+00:00",
-  "deep_scanned_at": "2026-09-01T22:49:12.413009+00:00",
+  "deep_scanned_at": "2026-09-03T13:51:34.068578+00:00",
   "platform": "workday",
   "slug": "accenture|wd103|AccentureCareers"
  },
@@ -139,7 +139,8 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "deep_scanned_at": "2026-09-02T01:00:07.136712+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-03T13:51:34.068578+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -463,7 +464,6 @@
  },
  "Workday": {
   "checked_at": "2026-08-16T08:44:20.491451+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-03T09:09:15.895296+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
@@ -476,7 +476,7 @@
  },
  "adobe": {
   "checked_at": "2026-08-16T03:55:45.408718+00:00",
-  "deep_scanned_at": "2026-09-02T01:00:07.136712+00:00",
+  "deep_scanned_at": "2026-09-03T13:51:34.068578+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -517,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-03T00:05:41.906468+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
