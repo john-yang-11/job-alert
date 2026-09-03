@@ -400,7 +400,8 @@
  },
  "T-mobile": {
   "checked_at": "2026-08-16T07:41:20.290324+00:00",
-  "deep_scanned_at": "2026-09-01T17:26:47.461327+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-03T04:17:43.837262+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
@@ -411,7 +412,7 @@
  },
  "Tencent": {
   "checked_at": "2026-08-16T07:41:38.212571+00:00",
-  "deep_scanned_at": "2026-09-01T17:26:47.461327+00:00",
+  "deep_scanned_at": "2026-09-03T04:17:43.837262+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -432,7 +433,6 @@
  },
  "US bank": {
   "checked_at": "2026-08-16T04:35:56.428350+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-01T20:08:33.864753+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
@@ -517,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-03T00:05:41.906468+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -580,10 +580,9 @@
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
  "boeing data analytics": {
-  "checked_at": "2026-08-04T03:31:19.062024+00:00",
-  "deep_scanned_at": "2026-09-01T22:49:12.413009+00:00",
+  "checked_at": "2026-09-03T04:17:06.088291+00:00",
   "platform": "workday",
-  "slug": "boeing|wd1|External_Careers"
+  "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
  "bosch": {
   "checked_at": "2026-08-16T04:18:13.940783+00:00",
@@ -1078,7 +1077,6 @@
  },
  "slack": {
   "checked_at": "2026-08-16T07:39:55.666839+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-03T00:06:28.966833+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
@@ -1115,13 +1113,14 @@
  },
  "state street": {
   "checked_at": "2026-08-16T07:41:11.019500+00:00",
-  "deep_scanned_at": "2026-09-01T17:26:47.461327+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-03T04:17:43.837262+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
  "stryker": {
   "checked_at": "2026-08-16T07:41:13.921723+00:00",
-  "deep_scanned_at": "2026-09-01T17:26:47.461327+00:00",
+  "deep_scanned_at": "2026-09-03T04:17:43.837262+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
