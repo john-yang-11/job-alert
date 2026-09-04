@@ -26,7 +26,7 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-08-16T08:45:22.155462+00:00",
-  "deep_scanned_at": "2026-09-03T13:51:34.068578+00:00",
+  "deep_scanned_at": "2026-09-04T20:55:46.290177+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -139,7 +139,8 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "deep_scanned_at": "2026-09-03T13:51:34.068578+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-04T20:55:46.290177+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -316,7 +317,7 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "deep_scanned_at": "2026-09-03T17:49:42.528522+00:00",
+  "deep_scanned_at": "2026-09-04T20:55:46.290177+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -463,7 +464,6 @@
  },
  "Workday": {
   "checked_at": "2026-08-16T08:44:20.491451+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T19:07:05.999015+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
@@ -496,9 +496,9 @@
   "slug": null
  },
  "anduril": {
-  "checked_at": "2026-08-28T21:30:36.113357+00:00",
-  "platform": null,
-  "slug": null
+  "checked_at": "2026-09-04T20:55:11.755295+00:00",
+  "platform": "greenhouse",
+  "slug": "andurilindustries"
  },
  "appian": {
   "checked_at": "2026-08-28T21:30:41.013041+00:00",
@@ -517,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-04T19:05:58.080244+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -564,7 +564,7 @@
  },
  "blue origin": {
   "checked_at": "2026-08-16T04:18:08.865172+00:00",
-  "deep_scanned_at": "2026-09-03T17:49:42.528522+00:00",
+  "deep_scanned_at": "2026-09-04T20:55:46.290177+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -745,6 +745,7 @@
  },
  "elastic": {
   "checked_at": "2026-08-08T03:56:14.440677+00:00",
+  "consecutive_failures": 1,
   "platform": "greenhouse",
   "slug": "elastic"
  },
@@ -1107,9 +1108,9 @@
   "slug": null
  },
  "square": {
-  "checked_at": "2026-08-30T22:03:20.615320+00:00",
-  "platform": null,
-  "slug": null
+  "checked_at": "2026-09-04T20:55:11.755312+00:00",
+  "platform": "greenhouse",
+  "slug": "block"
  },
  "state street": {
   "checked_at": "2026-08-16T07:41:11.019500+00:00",
@@ -1225,9 +1226,9 @@
   "slug": null
  },
  "zipline": {
-  "checked_at": "2026-08-31T00:30:24.438596+00:00",
-  "platform": null,
-  "slug": null
+  "checked_at": "2026-09-04T20:55:11.755319+00:00",
+  "platform": "greenhouse",
+  "slug": "flyzipline"
  },
  "zoox": {
   "checked_at": "2026-08-26T18:13:50.940875+00:00",
