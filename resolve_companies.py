@@ -62,6 +62,17 @@ CUSTOM_COMPANIES = {
     "aws": "amazon",
     "capitalone": "capitalone",
 }
+# Companies whose watchlist name doesn't yield their board slug and whose
+# careers page hides it behind JS, so neither slug-guessing nor
+# discover_from_careers_page can find it. Hand-mapped name -> (platform, slug),
+# keyed the same way as CUSTOM_COMPANIES. Every entry here was a company that
+# read as "no board found" and was silently skipped on every run -- the sheet
+# says "scale", the board is greenhouse/scaleai, and nothing bridges that gap.
+# Verified live before being added; keep this list short and factual.
+BOARD_OVERRIDES = {
+    "scale": ("greenhouse", "scaleai"),
+    "scaleai": ("greenhouse", "scaleai"),
+}
 # Cap newly-resolved companies per run so a batch of Workday probes (each a slow
 # multi-request brute-force) can't blow the hourly job's time budget. Anything
 # skipped stays out of the cache and is retried next run. Generous because the
@@ -108,6 +119,9 @@ def resolve_one(name: str) -> dict | None:
     key = re.sub(r"[^a-z0-9]", "", name.lower())
     if key in CUSTOM_COMPANIES:
         return {"platform": CUSTOM_COMPANIES[key], "slug": key}
+    if key in BOARD_OVERRIDES:
+        platform, slug = BOARD_OVERRIDES[key]
+        return {"platform": platform, "slug": slug}
     # Read the board off the company's own careers page before guessing slugs.
     # It's both broader (finds boards whose slug looks nothing like the company
     # name) and safer (a slug guess can land on a vendor sandbox), so it wins.
@@ -169,6 +183,14 @@ def load_cache() -> dict:
         if (entry.get("platform"), entry.get("slug")) in KNOWN_BAD_BOARDS:
             print(f"{name}: dropping known-bad board "
                   f"{entry['platform']}/{entry['slug']}, will re-resolve")
+            del cache[name]
+            continue
+        # A newly-added override has to beat the cached miss, or the company
+        # stays unwatched until RETRY_AFTER_DAYS happens to expire.
+        key = re.sub(r"[^a-z0-9]", "", name.lower())
+        if key in BOARD_OVERRIDES and (entry.get("platform"), entry.get("slug")) != BOARD_OVERRIDES[key]:
+            print(f"{name}: override now maps to "
+                  f"{BOARD_OVERRIDES[key][0]}/{BOARD_OVERRIDES[key][1]}, re-resolving")
             del cache[name]
     return cache
 
