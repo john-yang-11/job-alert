@@ -256,6 +256,30 @@ def resolve_new(companies: list[str] | None = None) -> tuple[dict, list[str]]:
             # than locked out for RETRY_AFTER_DAYS on a false negative
             print(f"{name}: throttled, leaving uncached to retry next run")
             continue
+        # A re-resolve that finds nothing must never demote a board that still
+        # works. RECHECK_HIT_AFTER_DAYS exists to catch a company moving off its
+        # board, but resolution is not the test for that -- discovery is far
+        # more fragile than fetching. anduril resolved to greenhouse/
+        # andurilindustries on 2026-07-29, aged out 30 days later, failed to
+        # re-resolve (its careers page renders the board in JS and the slug
+        # isn't guessable from "anduril"), and was written back as
+        # platform: null. The board was serving 2200 postings the whole time.
+        # It read as "no board, not checked" for seven days, with its "2027
+        # Software Engineer Intern" open and unreported.
+        #
+        # So when re-resolution comes up empty, ask the old board directly. Only
+        # a board that no longer answers gets nulled.
+        prev = cache.get(name) or {}
+        if result is None and prev.get("platform"):
+            try:
+                if PLATFORMS[prev["platform"]](prev["slug"], name):
+                    print(f"{name}: re-resolve found nothing but "
+                          f"{prev['platform']}/{prev['slug']} still answers; keeping it",
+                          file=sys.stderr)
+                    cache[name] = dict(prev, checked_at=datetime.now(timezone.utc).isoformat())
+                    continue
+            except Exception:
+                pass  # old board is gone too -- fall through and null it
         entry = (result or {"platform": None, "slug": None})
         entry["checked_at"] = datetime.now(timezone.utc).isoformat()
         cache[name] = entry
