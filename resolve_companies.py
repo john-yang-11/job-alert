@@ -72,6 +72,10 @@ CUSTOM_COMPANIES = {
 BOARD_OVERRIDES = {
     "scale": ("greenhouse", "scaleai"),
     "scaleai": ("greenhouse", "scaleai"),
+    "anduril": ("greenhouse", "andurilindustries"),
+    "square": ("greenhouse", "block"),      # company renamed; board never did
+    "block": ("greenhouse", "block"),
+    "zipline": ("greenhouse", "flyzipline"),
 }
 # Cap newly-resolved companies per run so a batch of Workday probes (each a slow
 # multi-request brute-force) can't blow the hourly job's time budget. Anything
@@ -94,6 +98,11 @@ KNOWN_BAD_BOARDS = {
     ("lever", "linkedin"),          # "LinkedIn Partner Sandbox - RSC testing"
     ("smartrecruiters", "uber"),    # single posting titled "Test UAT"
     ("smartrecruiters", "visa"),    # 2 stub postings; real board is Workday
+    # 7 postings, every one Latin America (Costa Rica, Mexico, El Salvador).
+    # Walmart's US board is the custom careers.walmart.com site. Accepting this
+    # would make Walmart read as covered while alerting on nothing -- the
+    # Mastercard failure exactly.
+    ("smartrecruiters", "walmartinc"),
 }
 
 
