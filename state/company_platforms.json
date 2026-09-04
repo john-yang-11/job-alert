@@ -294,7 +294,7 @@
  },
  "PNC": {
   "checked_at": "2026-08-16T04:34:22.734492+00:00",
-  "deep_scanned_at": "2026-09-02T21:45:36.211956+00:00",
+  "deep_scanned_at": "2026-09-04T11:42:28.219204+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -331,7 +331,7 @@
   "slug": "point72"
  },
  "Qualcomm": {
-  "checked_at": "2026-08-28T11:15:11.671398+00:00",
+  "checked_at": "2026-09-04T11:41:45.349874+00:00",
   "platform": null,
   "slug": null
  },
@@ -358,7 +358,7 @@
  },
  "Samsung": {
   "checked_at": "2026-08-16T06:59:52.642245+00:00",
-  "deep_scanned_at": "2026-09-03T00:06:28.966833+00:00",
+  "deep_scanned_at": "2026-09-04T11:42:28.219204+00:00",
   "platform": "workday",
   "slug": "sec|wd3|Samsung_Careers"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-03T23:13:37.706290+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -688,7 +688,7 @@
   "slug": "databricks"
  },
  "databricks winter": {
-  "checked_at": "2026-08-28T11:15:26.846675+00:00",
+  "checked_at": "2026-09-04T11:42:04.036987+00:00",
   "platform": null,
   "slug": null
  },
@@ -983,7 +983,7 @@
  },
  "raytheon": {
   "checked_at": "2026-08-16T06:57:35.321615+00:00",
-  "deep_scanned_at": "2026-09-02T21:45:36.211956+00:00",
+  "deep_scanned_at": "2026-09-04T11:42:28.219204+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
@@ -1076,7 +1076,8 @@
  },
  "slack": {
   "checked_at": "2026-08-16T07:39:55.666839+00:00",
-  "deep_scanned_at": "2026-09-03T00:06:28.966833+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-04T11:42:28.219204+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
