@@ -33,11 +33,31 @@ class PlatformThrottled(PlatformError):
     """
 
 
+# Read timeouts for a single-request board, escalating across attempts. The
+# big boards are the ones that time out -- anduril's greenhouse board serves
+# 2200 postings in one response and did not fit in a flat 20s, so it failed on
+# consecutive runs while being perfectly healthy. Connect stays short; it is
+# only the download that is slow.
+_GET_READ_TIMEOUTS = (TIMEOUT, 45, 75)
+
+
 def _get_json(url: str, params: dict | None = None) -> dict | list:
-    try:
-        resp = requests.get(url, headers=HEADERS, params=params, timeout=TIMEOUT)
-    except requests.RequestException as e:
-        raise PlatformError(f"{url} -> {e}")
+    last: Exception | None = None
+    for read_timeout in _GET_READ_TIMEOUTS:
+        try:
+            resp = requests.get(url, headers=HEADERS, params=params,
+                                timeout=(10, read_timeout))
+            break
+        except requests.Timeout as e:
+            last = e
+            continue
+        except requests.RequestException as e:
+            raise PlatformError(f"{url} -> {e}")
+    else:
+        # Never got a response. A timeout says nothing about whether the board
+        # is alive, so this must not count toward dropping the cache entry --
+        # that is exactly what PlatformThrottled is for.
+        raise PlatformThrottled(f"{url} -> {last}")
     if resp.status_code != 200:
         raise PlatformError(f"{url} -> HTTP {resp.status_code}")
     try:
