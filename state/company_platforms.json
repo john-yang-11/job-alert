@@ -347,7 +347,6 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T21:09:33.993932+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
@@ -517,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-04T19:05:58.080244+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -637,7 +636,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-08-16T04:20:01.498315+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T21:09:33.993932+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -659,7 +657,7 @@
  },
  "comcast": {
   "checked_at": "2026-08-27T14:35:18.389179+00:00",
-  "deep_scanned_at": "2026-09-03T23:14:00.653764+00:00",
+  "deep_scanned_at": "2026-09-04T21:24:36.891105+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
@@ -670,7 +668,7 @@
  },
  "crowdstrike": {
   "checked_at": "2026-08-16T05:03:08.938412+00:00",
-  "deep_scanned_at": "2026-09-04T01:19:27.438040+00:00",
+  "deep_scanned_at": "2026-09-04T21:24:36.891105+00:00",
   "platform": "workday",
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
@@ -756,7 +754,7 @@
  },
  "fidelity": {
   "checked_at": "2026-08-16T05:06:43.797789+00:00",
-  "deep_scanned_at": "2026-09-04T01:19:27.438040+00:00",
+  "deep_scanned_at": "2026-09-04T21:24:36.891105+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
  },
@@ -991,7 +989,6 @@
  },
  "redhat": {
   "checked_at": "2026-08-31T13:33:56.555128+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T21:09:33.993932+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
@@ -1043,7 +1040,7 @@
  },
  "salesforce": {
   "checked_at": "2026-08-31T13:34:54.291699+00:00",
-  "deep_scanned_at": "2026-09-03T23:14:00.653764+00:00",
+  "deep_scanned_at": "2026-09-04T21:24:36.891105+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
