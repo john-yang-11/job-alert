@@ -247,7 +247,7 @@
  },
  "Mastercard": {
   "checked_at": "2026-08-16T05:41:18.740321+00:00",
-  "deep_scanned_at": "2026-09-02T18:56:43.708887+00:00",
+  "deep_scanned_at": "2026-09-04T06:31:33.979550+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|Campus"
  },
@@ -258,7 +258,7 @@
  },
  "NVIDIA": {
   "checked_at": "2026-08-16T04:33:45.341178+00:00",
-  "deep_scanned_at": "2026-09-02T21:45:36.211956+00:00",
+  "deep_scanned_at": "2026-09-04T06:31:33.979550+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
@@ -310,7 +310,7 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-08-16T06:57:00.755464+00:00",
-  "deep_scanned_at": "2026-09-02T21:45:36.211956+00:00",
+  "deep_scanned_at": "2026-09-04T06:31:33.979550+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-03T23:13:37.706290+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -856,7 +856,7 @@
  },
  "leidos": {
   "checked_at": "2026-08-16T05:40:48.197454+00:00",
-  "deep_scanned_at": "2026-09-02T18:56:43.708887+00:00",
+  "deep_scanned_at": "2026-09-04T06:31:33.979550+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
  },
