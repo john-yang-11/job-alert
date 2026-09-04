@@ -93,7 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-08-16T04:19:38.241533+00:00",
-  "deep_scanned_at": "2026-09-03T20:57:14.468334+00:00",
+  "deep_scanned_at": "2026-09-04T21:06:33.204632+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -139,7 +139,6 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T20:55:46.290177+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
@@ -497,6 +496,7 @@
  },
  "anduril": {
   "checked_at": "2026-09-04T20:55:11.755295+00:00",
+  "consecutive_failures": 1,
   "platform": "greenhouse",
   "slug": "andurilindustries"
  },
@@ -517,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-04T19:05:58.080244+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -548,7 +548,8 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "deep_scanned_at": "2026-09-03T17:49:42.528522+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-04T21:06:33.204632+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -575,7 +576,7 @@
  },
  "boeing": {
   "checked_at": "2026-08-16T04:18:11.443355+00:00",
-  "deep_scanned_at": "2026-09-03T20:57:14.468334+00:00",
+  "deep_scanned_at": "2026-09-04T21:06:33.204632+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -745,7 +746,6 @@
  },
  "elastic": {
   "checked_at": "2026-08-08T03:56:14.440677+00:00",
-  "consecutive_failures": 1,
   "platform": "greenhouse",
   "slug": "elastic"
  },
@@ -817,7 +817,7 @@
  },
  "humana": {
   "checked_at": "2026-08-19T03:07:05.370006+00:00",
-  "deep_scanned_at": "2026-09-03T17:49:42.528522+00:00",
+  "deep_scanned_at": "2026-09-04T21:06:33.204632+00:00",
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
@@ -848,6 +848,7 @@
  },
  "kalshi": {
   "checked_at": "2026-08-16T05:40:40.875110+00:00",
+  "consecutive_failures": 1,
   "platform": "greenhouse",
   "slug": "kalshi"
  },
