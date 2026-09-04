@@ -299,7 +299,7 @@
   "slug": "pnc|wd5|External"
  },
  "PNC data analsyt": {
-  "checked_at": "2026-08-05T14:58:47.380218+00:00",
+  "checked_at": "2026-09-04T16:16:19.118842+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -374,7 +374,7 @@
  },
  "Snap": {
   "checked_at": "2026-08-16T04:35:41.792008+00:00",
-  "deep_scanned_at": "2026-09-03T00:06:28.966833+00:00",
+  "deep_scanned_at": "2026-09-04T16:16:50.116011+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-03T23:13:37.706290+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -872,7 +872,7 @@
  },
  "medtronic": {
   "checked_at": "2026-09-03T00:06:04.328063+00:00",
-  "deep_scanned_at": "2026-09-03T00:06:28.966833+00:00",
+  "deep_scanned_at": "2026-09-04T16:16:50.116011+00:00",
   "platform": "workday",
   "slug": "medtronic|wd1|MedtronicCareers"
  },
@@ -1076,7 +1076,6 @@
  },
  "slack": {
   "checked_at": "2026-08-16T07:39:55.666839+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T11:42:28.219204+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
@@ -1113,13 +1112,14 @@
  },
  "state street": {
   "checked_at": "2026-08-16T07:41:11.019500+00:00",
-  "deep_scanned_at": "2026-09-03T04:17:43.837262+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-04T16:16:50.116011+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
  "stryker": {
   "checked_at": "2026-08-16T07:41:13.921723+00:00",
-  "deep_scanned_at": "2026-09-03T04:17:43.837262+00:00",
+  "deep_scanned_at": "2026-09-04T16:16:50.116011+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
