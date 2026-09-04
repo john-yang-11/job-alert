@@ -214,14 +214,23 @@ JS-rendered with no public API and bot-protection on top (Google, Meta,
 Microsoft, Apple, Tesla, Bloomberg, IBM, Walmart, TikTok) — those would each
 need a headless browser, which this repo deliberately avoids.
 
-**GitHub Actions does not honour these crons.** Scheduled workflows are
-best-effort and get heavily deprioritised: measured over 18h, `check-priority`
-(`*/15`) actually fired every ~100 min on average with a worst gap of **3h07m**,
-and `check-all` (`7,37`) averaged ~117 min with a worst gap of **3h48m**. So the
-"fast lane" is currently no faster than the main check, and overnight both can
-go quiet for hours. Nothing in this repo can fix that from inside a cron —
-it needs an external trigger (a free uptime pinger hitting the
-`workflow_dispatch` API) or a long-running job that loops internally.
+**GitHub Actions does not honour these crons, and the gap is far worse than
+it first looked.** Scheduled workflows are best-effort and get heavily
+deprioritised. An early 18h sample put the worst `check-all` gap at 3h48m.
+Re-measured on 2026-09-04 over the last **58 scheduled runs spanning 229
+hours**, the real numbers are:
+
+| | asked for | actually got |
+|---|---|---|
+| `check-all` gap | 30 min | **median 3h40m, worst 11h17m** |
+| `check-all` runs/day | 48 | **6.1** |
+
+That is 13% of the requested schedule. This is now the single largest source
+of delay in the system: a board can be perfectly resolved, perfectly matched,
+and still leave you four hours behind someone watching a Discord. Nothing in
+this repo can fix it from inside a cron — it needs an external trigger (a free
+uptime pinger hitting the `workflow_dispatch` API) or a long-running job that
+loops internally and re-dispatches itself before the 6h job cap.
 
 ## Catching up after the title filter widens (`backfill_seen.py`)
 
