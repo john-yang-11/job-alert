@@ -400,7 +400,8 @@
  },
  "T-mobile": {
   "checked_at": "2026-08-16T07:41:20.290324+00:00",
-  "deep_scanned_at": "2026-09-03T04:17:43.837262+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-04T16:57:48.363816+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
@@ -411,7 +412,7 @@
  },
  "Tencent": {
   "checked_at": "2026-08-16T07:41:38.212571+00:00",
-  "deep_scanned_at": "2026-09-03T04:17:43.837262+00:00",
+  "deep_scanned_at": "2026-09-04T16:57:48.363816+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -432,7 +433,8 @@
  },
  "US bank": {
   "checked_at": "2026-08-16T04:35:56.428350+00:00",
-  "deep_scanned_at": "2026-09-03T09:09:15.895296+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-04T16:57:48.363816+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -469,7 +471,7 @@
  },
  "abbott": {
   "checked_at": "2026-08-16T03:55:11.436358+00:00",
-  "deep_scanned_at": "2026-09-03T09:09:15.895296+00:00",
+  "deep_scanned_at": "2026-09-04T16:57:48.363816+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -513,12 +515,6 @@
   "checked_at": "2026-08-30T05:45:36.397025+00:00",
   "platform": null,
   "slug": null
- },
- "aquatic": {
-  "checked_at": "2026-09-03T23:13:37.706290+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
@@ -1055,9 +1051,9 @@
   "slug": "samsara"
  },
  "scale": {
-  "checked_at": "2026-08-30T22:01:56.379202+00:00",
-  "platform": null,
-  "slug": null
+  "checked_at": "2026-09-04T16:57:04.716387+00:00",
+  "platform": "greenhouse",
+  "slug": "scaleai"
  },
  "seatgeek": {
   "checked_at": "2026-08-16T07:39:10.766418+00:00",
@@ -1112,7 +1108,6 @@
  },
  "state street": {
   "checked_at": "2026-08-16T07:41:11.019500+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T16:16:50.116011+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
