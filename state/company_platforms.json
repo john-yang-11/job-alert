@@ -347,7 +347,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "deep_scanned_at": "2026-09-03T20:57:14.468334+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-04T21:09:33.993932+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -496,7 +497,6 @@
  },
  "anduril": {
   "checked_at": "2026-09-04T20:55:11.755295+00:00",
-  "consecutive_failures": 1,
   "platform": "greenhouse",
   "slug": "andurilindustries"
  },
@@ -517,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-04T19:05:58.080244+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -548,7 +548,6 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T21:06:33.204632+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -622,7 +621,7 @@
  },
  "citi": {
   "checked_at": "2026-08-16T04:19:55.335500+00:00",
-  "deep_scanned_at": "2026-09-03T23:14:00.653764+00:00",
+  "deep_scanned_at": "2026-09-04T21:09:33.993932+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -638,7 +637,8 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-08-16T04:20:01.498315+00:00",
-  "deep_scanned_at": "2026-09-03T23:14:00.653764+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-04T21:09:33.993932+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
@@ -848,7 +848,6 @@
  },
  "kalshi": {
   "checked_at": "2026-08-16T05:40:40.875110+00:00",
-  "consecutive_failures": 1,
   "platform": "greenhouse",
   "slug": "kalshi"
  },
@@ -992,7 +991,8 @@
  },
  "redhat": {
   "checked_at": "2026-08-31T13:33:56.555128+00:00",
-  "deep_scanned_at": "2026-09-03T20:57:14.468334+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-04T21:09:33.993932+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
