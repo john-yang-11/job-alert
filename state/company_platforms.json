@@ -139,7 +139,6 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T20:55:46.290177+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
@@ -166,7 +165,6 @@
  },
  "HP": {
   "checked_at": "2026-08-16T05:08:16.679241+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T23:15:28.444956+00:00",
   "platform": "workday",
   "slug": "hp|wd5|ExternalCareerSite"
@@ -228,7 +226,6 @@
  },
  "KLA": {
   "checked_at": "2026-08-16T05:40:43.314484+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T23:15:28.444956+00:00",
   "platform": "workday",
   "slug": "kla|wd1|Search"
@@ -250,7 +247,6 @@
  },
  "Mastercard": {
   "checked_at": "2026-08-16T05:41:18.740321+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T23:15:28.444956+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|Campus"
@@ -304,7 +300,6 @@
  },
  "PNC data analsyt": {
   "checked_at": "2026-09-04T16:16:19.118842+00:00",
-  "consecutive_failures": 1,
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -315,14 +310,12 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-08-16T06:57:00.755464+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-05T01:21:50.519233+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T20:55:46.290177+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
@@ -354,7 +347,6 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T21:09:33.993932+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
@@ -366,8 +358,7 @@
  },
  "Samsung": {
   "checked_at": "2026-08-16T06:59:52.642245+00:00",
-  "consecutive_failures": 1,
-  "deep_scanned_at": "2026-09-04T11:42:28.219204+00:00",
+  "deep_scanned_at": "2026-09-05T10:54:08.328046+00:00",
   "platform": "workday",
   "slug": "sec|wd3|Samsung_Careers"
  },
@@ -383,7 +374,7 @@
  },
  "Snap": {
   "checked_at": "2026-08-16T04:35:41.792008+00:00",
-  "deep_scanned_at": "2026-09-04T16:16:50.116011+00:00",
+  "deep_scanned_at": "2026-09-05T10:54:08.328046+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -409,7 +400,6 @@
  },
  "T-mobile": {
   "checked_at": "2026-08-16T07:41:20.290324+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T16:57:48.363816+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
@@ -421,7 +411,6 @@
  },
  "Tencent": {
   "checked_at": "2026-08-16T07:41:38.212571+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T16:57:48.363816+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
@@ -474,14 +463,12 @@
  },
  "Workday": {
   "checked_at": "2026-08-16T08:44:20.491451+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T19:07:05.999015+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
  "abbott": {
   "checked_at": "2026-08-16T03:55:11.436358+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T16:57:48.363816+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
@@ -529,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-05T01:21:28.927198+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -560,7 +547,6 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T21:06:33.204632+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -577,7 +563,6 @@
  },
  "blue origin": {
   "checked_at": "2026-08-16T04:18:08.865172+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T20:55:46.290177+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
@@ -589,14 +574,12 @@
  },
  "boeing": {
   "checked_at": "2026-08-16T04:18:11.443355+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T21:06:33.204632+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
  "boeing data analytics": {
   "checked_at": "2026-09-03T04:17:06.088291+00:00",
-  "consecutive_failures": 1,
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -637,7 +620,6 @@
  },
  "citi": {
   "checked_at": "2026-08-16T04:19:55.335500+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T21:09:33.993932+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
@@ -654,7 +636,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-08-16T04:20:01.498315+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T21:09:33.993932+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -687,7 +668,6 @@
  },
  "crowdstrike": {
   "checked_at": "2026-08-16T05:03:08.938412+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T21:24:36.891105+00:00",
   "platform": "workday",
   "slug": "crowdstrike|wd5|crowdstrikecareers"
@@ -774,7 +754,6 @@
  },
  "fidelity": {
   "checked_at": "2026-08-16T05:06:43.797789+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T21:24:36.891105+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
@@ -836,7 +815,6 @@
  },
  "humana": {
   "checked_at": "2026-08-19T03:07:05.370006+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T21:06:33.204632+00:00",
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
@@ -878,7 +856,6 @@
  },
  "leidos": {
   "checked_at": "2026-08-16T05:40:48.197454+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T23:15:28.444956+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
@@ -895,7 +872,6 @@
  },
  "medtronic": {
   "checked_at": "2026-09-03T00:06:04.328063+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T16:16:50.116011+00:00",
   "platform": "workday",
   "slug": "medtronic|wd1|MedtronicCareers"
@@ -1007,14 +983,12 @@
  },
  "raytheon": {
   "checked_at": "2026-08-16T06:57:35.321615+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-05T01:21:50.519233+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
  "redhat": {
   "checked_at": "2026-08-31T13:33:56.555128+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-04T21:09:33.993932+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
@@ -1102,7 +1076,6 @@
  },
  "slack": {
   "checked_at": "2026-08-16T07:39:55.666839+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-05T06:17:22.714895+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
@@ -1139,15 +1112,14 @@
  },
  "state street": {
   "checked_at": "2026-08-16T07:41:11.019500+00:00",
-  "consecutive_failures": 1,
-  "deep_scanned_at": "2026-09-04T16:16:50.116011+00:00",
+  "consecutive_failures": 2,
+  "deep_scanned_at": "2026-09-05T10:54:08.328046+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
  "stryker": {
   "checked_at": "2026-08-16T07:41:13.921723+00:00",
-  "consecutive_failures": 1,
-  "deep_scanned_at": "2026-09-04T16:16:50.116011+00:00",
+  "deep_scanned_at": "2026-09-05T10:54:08.328046+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
