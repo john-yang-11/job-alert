@@ -139,7 +139,8 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "deep_scanned_at": "2026-09-04T20:55:46.290177+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-05T18:59:23.682650+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -316,7 +317,7 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "deep_scanned_at": "2026-09-04T20:55:46.290177+00:00",
+  "deep_scanned_at": "2026-09-05T18:59:23.682650+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -463,7 +464,8 @@
  },
  "Workday": {
   "checked_at": "2026-08-16T08:44:20.491451+00:00",
-  "deep_scanned_at": "2026-09-04T19:07:05.999015+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-05T18:59:23.682650+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -514,12 +516,6 @@
   "platform": null,
   "slug": null
  },
- "aquatic": {
-  "checked_at": "2026-09-05T01:21:28.927198+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
- },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
   "platform": "greenhouse",
@@ -563,7 +559,7 @@
  },
  "blue origin": {
   "checked_at": "2026-08-16T04:18:08.865172+00:00",
-  "deep_scanned_at": "2026-09-04T20:55:46.290177+00:00",
+  "deep_scanned_at": "2026-09-05T18:59:23.682650+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
