@@ -26,7 +26,7 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-08-16T08:45:22.155462+00:00",
-  "deep_scanned_at": "2026-09-04T20:55:46.290177+00:00",
+  "deep_scanned_at": "2026-09-05T21:08:32.904083+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -93,7 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-08-16T04:19:38.241533+00:00",
-  "deep_scanned_at": "2026-09-04T21:06:33.204632+00:00",
+  "deep_scanned_at": "2026-09-05T21:08:32.904083+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -139,7 +139,6 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-05T18:59:23.682650+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
@@ -464,7 +463,6 @@
  },
  "Workday": {
   "checked_at": "2026-08-16T08:44:20.491451+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-05T18:59:23.682650+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
@@ -515,6 +513,12 @@
   "checked_at": "2026-08-30T05:45:36.397025+00:00",
   "platform": null,
   "slug": null
+ },
+ "aquatic": {
+  "checked_at": "2026-09-05T21:08:09.730637+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
@@ -570,7 +574,7 @@
  },
  "boeing": {
   "checked_at": "2026-08-16T04:18:11.443355+00:00",
-  "deep_scanned_at": "2026-09-04T21:06:33.204632+00:00",
+  "deep_scanned_at": "2026-09-05T21:08:32.904083+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -811,7 +815,7 @@
  },
  "humana": {
   "checked_at": "2026-08-19T03:07:05.370006+00:00",
-  "deep_scanned_at": "2026-09-04T21:06:33.204632+00:00",
+  "deep_scanned_at": "2026-09-05T21:08:32.904083+00:00",
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
