@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-05T21:08:09.730637+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -547,7 +547,8 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "deep_scanned_at": "2026-09-04T21:06:33.204632+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-05T23:13:57.575358+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -620,7 +621,7 @@
  },
  "citi": {
   "checked_at": "2026-08-16T04:19:55.335500+00:00",
-  "deep_scanned_at": "2026-09-04T21:09:33.993932+00:00",
+  "deep_scanned_at": "2026-09-05T23:13:57.575358+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -636,7 +637,8 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-08-16T04:20:01.498315+00:00",
-  "deep_scanned_at": "2026-09-04T21:09:33.993932+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-05T23:13:57.575358+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
@@ -989,7 +991,8 @@
  },
  "redhat": {
   "checked_at": "2026-08-31T13:33:56.555128+00:00",
-  "deep_scanned_at": "2026-09-04T21:09:33.993932+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-05T23:13:57.575358+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
