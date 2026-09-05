@@ -32,7 +32,7 @@
  },
  "Accenture": {
   "checked_at": "2026-08-16T03:55:25.716113+00:00",
-  "deep_scanned_at": "2026-09-04T19:07:05.999015+00:00",
+  "deep_scanned_at": "2026-09-05T16:46:42.012494+00:00",
   "platform": "workday",
   "slug": "accenture|wd103|AccentureCareers"
  },
@@ -400,7 +400,6 @@
  },
  "T-mobile": {
   "checked_at": "2026-08-16T07:41:20.290324+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-05T13:50:48.941466+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
@@ -433,7 +432,8 @@
  },
  "US bank": {
   "checked_at": "2026-08-16T04:35:56.428350+00:00",
-  "deep_scanned_at": "2026-09-04T16:57:48.363816+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-05T16:46:42.012494+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -476,7 +476,7 @@
  },
  "adobe": {
   "checked_at": "2026-08-16T03:55:45.408718+00:00",
-  "deep_scanned_at": "2026-09-04T19:07:05.999015+00:00",
+  "deep_scanned_at": "2026-09-05T16:46:42.012494+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -517,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-05T01:21:28.927198+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -1180,7 +1180,8 @@
  },
  "visa": {
   "checked_at": "2026-08-16T03:48:21.272761+00:00",
-  "deep_scanned_at": "2026-09-04T19:07:05.999015+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-05T16:46:42.012494+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
