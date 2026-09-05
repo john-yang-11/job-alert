@@ -400,7 +400,8 @@
  },
  "T-mobile": {
   "checked_at": "2026-08-16T07:41:20.290324+00:00",
-  "deep_scanned_at": "2026-09-04T16:57:48.363816+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-05T13:50:48.941466+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
@@ -411,7 +412,7 @@
  },
  "Tencent": {
   "checked_at": "2026-08-16T07:41:38.212571+00:00",
-  "deep_scanned_at": "2026-09-04T16:57:48.363816+00:00",
+  "deep_scanned_at": "2026-09-05T13:50:48.941466+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -469,7 +470,7 @@
  },
  "abbott": {
   "checked_at": "2026-08-16T03:55:11.436358+00:00",
-  "deep_scanned_at": "2026-09-04T16:57:48.363816+00:00",
+  "deep_scanned_at": "2026-09-05T13:50:48.941466+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -516,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-05T01:21:28.927198+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -872,7 +873,7 @@
  },
  "medtronic": {
   "checked_at": "2026-09-03T00:06:04.328063+00:00",
-  "deep_scanned_at": "2026-09-04T16:16:50.116011+00:00",
+  "deep_scanned_at": "2026-09-05T13:50:48.941466+00:00",
   "platform": "workday",
   "slug": "medtronic|wd1|MedtronicCareers"
  },
@@ -1112,7 +1113,6 @@
  },
  "state street": {
   "checked_at": "2026-08-16T07:41:11.019500+00:00",
-  "consecutive_failures": 2,
   "deep_scanned_at": "2026-09-05T10:54:08.328046+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
