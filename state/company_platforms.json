@@ -139,7 +139,8 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "deep_scanned_at": "2026-09-05T18:59:23.682650+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-06T21:42:11.228880+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -278,7 +279,7 @@
   "slug": null
  },
  "Northrop Grumman": {
-  "checked_at": "2026-08-30T19:28:47.944985+00:00",
+  "checked_at": "2026-09-06T21:39:55.688478+00:00",
   "platform": null,
   "slug": null
  },
@@ -341,7 +342,7 @@
   "slug": "reddit"
  },
  "Rippling winter 27": {
-  "checked_at": "2026-08-30T19:30:08.221122+00:00",
+  "checked_at": "2026-09-06T21:41:00.671379+00:00",
   "platform": null,
   "slug": null
  },
@@ -432,7 +433,8 @@
  },
  "US bank": {
   "checked_at": "2026-08-16T04:35:56.428350+00:00",
-  "deep_scanned_at": "2026-09-05T16:46:42.012494+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-06T21:42:11.228880+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -516,7 +518,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-06T17:20:10.644793+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -563,7 +565,7 @@
  },
  "blue origin": {
   "checked_at": "2026-08-16T04:18:08.865172+00:00",
-  "deep_scanned_at": "2026-09-05T18:59:23.682650+00:00",
+  "deep_scanned_at": "2026-09-06T21:42:11.228880+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -952,7 +954,7 @@
   "slug": "okta"
  },
  "oracle": {
-  "checked_at": "2026-08-30T19:29:00.656664+00:00",
+  "checked_at": "2026-09-06T21:40:06.400396+00:00",
   "platform": null,
   "slug": null
  },
@@ -972,7 +974,7 @@
   "slug": "plaid"
  },
  "pwc": {
-  "checked_at": "2026-08-30T19:29:40.209496+00:00",
+  "checked_at": "2026-09-06T21:40:33.823505+00:00",
   "platform": null,
   "slug": null
  },
@@ -1009,7 +1011,7 @@
   "slug": "riotgames"
  },
  "rippling": {
-  "checked_at": "2026-08-30T19:29:53.432105+00:00",
+  "checked_at": "2026-09-06T21:40:46.593537+00:00",
   "platform": null,
   "slug": null
  },
@@ -1024,7 +1026,7 @@
   "slug": "roblox"
  },
  "roche": {
-  "checked_at": "2026-08-30T19:30:40.874549+00:00",
+  "checked_at": "2026-09-06T21:41:24.707531+00:00",
   "platform": null,
   "slug": null
  },
@@ -1034,7 +1036,7 @@
   "slug": "roku"
  },
  "rtx": {
-  "checked_at": "2026-08-30T19:31:00.925844+00:00",
+  "checked_at": "2026-09-06T21:41:39.283228+00:00",
   "platform": null,
   "slug": null
  },
@@ -1179,7 +1181,8 @@
  },
  "visa": {
   "checked_at": "2026-08-16T03:48:21.272761+00:00",
-  "deep_scanned_at": "2026-09-05T16:46:42.012494+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-06T21:42:11.228880+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
