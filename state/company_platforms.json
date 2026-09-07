@@ -114,6 +114,7 @@
  },
  "DraftKings": {
   "checked_at": "2026-08-16T04:34:47.182379+00:00",
+  "consecutive_failures": 1,
   "platform": "jobfeed",
   "slug": "https://careers.draftkings.com/jobs/xml/?rss=true"
  },
