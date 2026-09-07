@@ -114,7 +114,6 @@
  },
  "DraftKings": {
   "checked_at": "2026-08-16T04:34:47.182379+00:00",
-  "consecutive_failures": 1,
   "platform": "jobfeed",
   "slug": "https://careers.draftkings.com/jobs/xml/?rss=true"
  },
@@ -166,7 +165,7 @@
  },
  "HP": {
   "checked_at": "2026-08-16T05:08:16.679241+00:00",
-  "deep_scanned_at": "2026-09-06T06:33:57.026954+00:00",
+  "deep_scanned_at": "2026-09-07T15:47:01.388626+00:00",
   "platform": "workday",
   "slug": "hp|wd5|ExternalCareerSite"
  },
@@ -348,7 +347,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "deep_scanned_at": "2026-09-06T01:18:32.245220+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-07T15:47:01.388626+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -515,6 +515,12 @@
   "platform": null,
   "slug": null
  },
+ "aquatic": {
+  "checked_at": "2026-09-07T15:46:34.293559+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
+ },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
   "platform": "greenhouse",
@@ -542,7 +548,6 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-07T09:39:14.071645+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -632,7 +637,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-08-16T04:20:01.498315+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-07T09:39:14.071645+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -665,7 +669,7 @@
  },
  "crowdstrike": {
   "checked_at": "2026-08-16T05:03:08.938412+00:00",
-  "deep_scanned_at": "2026-09-06T01:18:32.245220+00:00",
+  "deep_scanned_at": "2026-09-07T15:47:01.388626+00:00",
   "platform": "workday",
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
@@ -751,7 +755,7 @@
  },
  "fidelity": {
   "checked_at": "2026-08-16T05:06:43.797789+00:00",
-  "deep_scanned_at": "2026-09-06T01:18:32.245220+00:00",
+  "deep_scanned_at": "2026-09-07T15:47:01.388626+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
  },
@@ -992,7 +996,6 @@
  },
  "redhat": {
   "checked_at": "2026-08-31T13:33:56.555128+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-07T09:39:14.071645+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
