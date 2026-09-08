@@ -93,7 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-08-16T04:19:38.241533+00:00",
-  "deep_scanned_at": "2026-09-06T23:51:22.818923+00:00",
+  "deep_scanned_at": "2026-09-08T19:33:40.886428+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -139,7 +139,6 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-08T16:34:00.144825+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
@@ -317,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "deep_scanned_at": "2026-09-06T23:51:22.818923+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-08T19:33:40.886428+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -464,7 +464,8 @@
  },
  "Workday": {
   "checked_at": "2026-08-16T08:44:20.491451+00:00",
-  "deep_scanned_at": "2026-09-06T23:51:22.818923+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-08T19:33:40.886428+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -517,7 +518,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-08T16:33:18.416496+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -621,7 +622,7 @@
  },
  "citi": {
   "checked_at": "2026-08-16T04:19:55.335500+00:00",
-  "deep_scanned_at": "2026-09-07T04:28:49.727311+00:00",
+  "deep_scanned_at": "2026-09-08T19:33:40.886428+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
