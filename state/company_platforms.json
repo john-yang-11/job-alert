@@ -139,7 +139,8 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "deep_scanned_at": "2026-09-06T21:42:11.228880+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-08T16:34:00.144825+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -432,7 +433,7 @@
  },
  "US bank": {
   "checked_at": "2026-08-16T04:35:56.428350+00:00",
-  "deep_scanned_at": "2026-09-06T21:42:11.228880+00:00",
+  "deep_scanned_at": "2026-09-08T16:34:00.144825+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -514,6 +515,12 @@
   "platform": null,
   "slug": null
  },
+ "aquatic": {
+  "checked_at": "2026-09-08T16:33:18.416496+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
+ },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
   "platform": "greenhouse",
@@ -568,7 +575,7 @@
  },
  "boeing": {
   "checked_at": "2026-08-16T04:18:11.443355+00:00",
-  "deep_scanned_at": "2026-09-06T23:51:22.818923+00:00",
+  "deep_scanned_at": "2026-09-08T16:34:00.144825+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -1179,7 +1186,8 @@
  },
  "visa": {
   "checked_at": "2026-08-16T03:48:21.272761+00:00",
-  "deep_scanned_at": "2026-09-06T21:42:11.228880+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-08T16:34:00.144825+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
