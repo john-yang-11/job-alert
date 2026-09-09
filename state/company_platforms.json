@@ -247,7 +247,7 @@
  },
  "Mastercard": {
   "checked_at": "2026-08-16T05:41:18.740321+00:00",
-  "deep_scanned_at": "2026-09-07T19:52:51.149637+00:00",
+  "deep_scanned_at": "2026-09-09T09:10:25.941439+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|Campus"
  },
@@ -258,7 +258,7 @@
  },
  "NVIDIA": {
   "checked_at": "2026-08-16T04:33:45.341178+00:00",
-  "deep_scanned_at": "2026-09-07T22:46:26.012814+00:00",
+  "deep_scanned_at": "2026-09-09T09:10:25.941439+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
@@ -347,7 +347,6 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-09T04:35:11.996246+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
@@ -514,12 +513,6 @@
   "checked_at": "2026-09-06T06:29:40.912036+00:00",
   "platform": null,
   "slug": null
- },
- "aquatic": {
-  "checked_at": "2026-09-08T16:33:18.416496+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
@@ -699,7 +692,7 @@
   "slug": "datadog"
  },
  "datadog winter 2027": {
-  "checked_at": "2026-09-02T05:43:05.169694+00:00",
+  "checked_at": "2026-09-09T09:09:46.282719+00:00",
   "platform": null,
   "slug": null
  },
@@ -770,7 +763,7 @@
   "slug": null
  },
  "ge aero fall 2027": {
-  "checked_at": "2026-09-02T05:42:46.773147+00:00",
+  "checked_at": "2026-09-09T09:09:31.260732+00:00",
   "platform": null,
   "slug": null
  },
@@ -851,13 +844,13 @@
   "slug": "kalshi"
  },
  "l3 harris": {
-  "checked_at": "2026-09-02T05:42:25.529766+00:00",
+  "checked_at": "2026-09-09T09:09:10.681799+00:00",
   "platform": null,
   "slug": null
  },
  "leidos": {
   "checked_at": "2026-08-16T05:40:48.197454+00:00",
-  "deep_scanned_at": "2026-09-07T19:52:51.149637+00:00",
+  "deep_scanned_at": "2026-09-09T09:10:25.941439+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
  },
@@ -1047,7 +1040,7 @@
  },
  "salesforce": {
   "checked_at": "2026-08-31T13:34:54.291699+00:00",
-  "deep_scanned_at": "2026-09-07T19:52:51.149637+00:00",
+  "deep_scanned_at": "2026-09-09T09:10:25.941439+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
