@@ -294,7 +294,7 @@
  },
  "PNC": {
   "checked_at": "2026-08-16T04:34:22.734492+00:00",
-  "deep_scanned_at": "2026-09-07T22:46:26.012814+00:00",
+  "deep_scanned_at": "2026-09-09T13:53:10.604424+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -310,7 +310,7 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-08-16T06:57:00.755464+00:00",
-  "deep_scanned_at": "2026-09-07T22:46:26.012814+00:00",
+  "deep_scanned_at": "2026-09-09T13:53:10.604424+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
@@ -469,7 +469,7 @@
  },
  "abbott": {
   "checked_at": "2026-08-16T03:55:11.436358+00:00",
-  "deep_scanned_at": "2026-09-08T01:08:03.393126+00:00",
+  "deep_scanned_at": "2026-09-09T13:53:10.604424+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -513,6 +513,12 @@
   "checked_at": "2026-09-06T06:29:40.912036+00:00",
   "platform": null,
   "slug": null
+ },
+ "aquatic": {
+  "checked_at": "2026-09-09T13:52:40.049455+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
@@ -983,7 +989,7 @@
  },
  "raytheon": {
   "checked_at": "2026-08-16T06:57:35.321615+00:00",
-  "deep_scanned_at": "2026-09-07T22:46:26.012814+00:00",
+  "deep_scanned_at": "2026-09-09T13:53:10.604424+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
