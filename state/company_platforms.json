@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-08T16:33:18.416496+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -547,7 +547,8 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "deep_scanned_at": "2026-09-07T09:39:14.071645+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-09T00:06:09.287863+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -636,7 +637,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-08-16T04:20:01.498315+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-08T22:00:48.428226+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -658,7 +658,7 @@
  },
  "comcast": {
   "checked_at": "2026-08-27T14:35:18.389179+00:00",
-  "deep_scanned_at": "2026-09-07T09:39:14.071645+00:00",
+  "deep_scanned_at": "2026-09-09T00:06:09.287863+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
@@ -669,7 +669,7 @@
  },
  "crowdstrike": {
   "checked_at": "2026-08-16T05:03:08.938412+00:00",
-  "deep_scanned_at": "2026-09-07T15:47:01.388626+00:00",
+  "deep_scanned_at": "2026-09-09T00:06:09.287863+00:00",
   "platform": "workday",
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
@@ -904,7 +904,6 @@
  },
  "moelis": {
   "checked_at": "2026-09-07T04:28:26.140870+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-08T22:00:48.428226+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
@@ -997,7 +996,7 @@
  },
  "redhat": {
   "checked_at": "2026-08-31T13:33:56.555128+00:00",
-  "deep_scanned_at": "2026-09-07T09:39:14.071645+00:00",
+  "deep_scanned_at": "2026-09-09T00:06:09.287863+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
