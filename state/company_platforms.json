@@ -165,7 +165,7 @@
  },
  "HP": {
   "checked_at": "2026-08-16T05:08:16.679241+00:00",
-  "deep_scanned_at": "2026-09-07T15:47:01.388626+00:00",
+  "deep_scanned_at": "2026-09-09T04:35:11.996246+00:00",
   "platform": "workday",
   "slug": "hp|wd5|ExternalCareerSite"
  },
@@ -226,7 +226,7 @@
  },
  "KLA": {
   "checked_at": "2026-08-16T05:40:43.314484+00:00",
-  "deep_scanned_at": "2026-09-07T19:52:51.149637+00:00",
+  "deep_scanned_at": "2026-09-09T04:35:11.996246+00:00",
   "platform": "workday",
   "slug": "kla|wd1|Search"
  },
@@ -347,7 +347,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "deep_scanned_at": "2026-09-07T15:47:01.388626+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-09T04:35:11.996246+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -516,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-08T16:33:18.416496+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -547,7 +548,6 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-09T00:06:09.287863+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -755,7 +755,7 @@
  },
  "fidelity": {
   "checked_at": "2026-08-16T05:06:43.797789+00:00",
-  "deep_scanned_at": "2026-09-07T15:47:01.388626+00:00",
+  "deep_scanned_at": "2026-09-09T04:35:11.996246+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
  },
@@ -1140,7 +1140,7 @@
   "slug": null
  },
  "the nuclear company": {
-  "checked_at": "2026-08-10T02:28:12.968612+00:00",
+  "checked_at": "2026-09-09T04:34:43.757838+00:00",
   "platform": "greenhouse",
   "slug": "thenuclearcompany"
  },
