@@ -139,7 +139,6 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-10T01:24:50.369108+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
@@ -317,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "deep_scanned_at": "2026-09-08T19:33:40.886428+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-10T06:37:09.066207+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -464,7 +464,7 @@
  },
  "Workday": {
   "checked_at": "2026-08-16T08:44:20.491451+00:00",
-  "deep_scanned_at": "2026-09-08T19:33:40.886428+00:00",
+  "deep_scanned_at": "2026-09-10T06:37:09.066207+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -514,12 +514,6 @@
   "checked_at": "2026-09-06T06:29:40.912036+00:00",
   "platform": null,
   "slug": null
- },
- "aquatic": {
-  "checked_at": "2026-09-09T13:52:40.049455+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
@@ -621,7 +615,7 @@
  },
  "citi": {
   "checked_at": "2026-08-16T04:19:55.335500+00:00",
-  "deep_scanned_at": "2026-09-08T19:33:40.886428+00:00",
+  "deep_scanned_at": "2026-09-10T06:37:09.066207+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -637,7 +631,8 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-08-16T04:20:01.498315+00:00",
-  "deep_scanned_at": "2026-09-08T22:00:48.428226+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-10T06:37:09.066207+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
