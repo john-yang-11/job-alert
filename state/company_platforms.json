@@ -247,7 +247,7 @@
  },
  "Mastercard": {
   "checked_at": "2026-08-16T05:41:18.740321+00:00",
-  "deep_scanned_at": "2026-09-09T09:10:25.941439+00:00",
+  "deep_scanned_at": "2026-09-10T21:50:53.761001+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|Campus"
  },
@@ -258,7 +258,7 @@
  },
  "NVIDIA": {
   "checked_at": "2026-08-16T04:33:45.341178+00:00",
-  "deep_scanned_at": "2026-09-09T09:10:25.941439+00:00",
+  "deep_scanned_at": "2026-09-10T21:50:53.761001+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
@@ -347,7 +347,6 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-10T19:14:51.916591+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
@@ -470,7 +469,7 @@
  },
  "abbott": {
   "checked_at": "2026-08-16T03:55:11.436358+00:00",
-  "deep_scanned_at": "2026-09-09T13:53:10.604424+00:00",
+  "deep_scanned_at": "2026-09-10T21:50:53.761001+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -517,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-10T11:47:06.775790+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -1047,7 +1046,7 @@
  },
  "salesforce": {
   "checked_at": "2026-08-31T13:34:54.291699+00:00",
-  "deep_scanned_at": "2026-09-09T09:10:25.941439+00:00",
+  "deep_scanned_at": "2026-09-10T21:50:53.761001+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
