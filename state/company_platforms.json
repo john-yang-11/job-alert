@@ -139,7 +139,8 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "deep_scanned_at": "2026-09-10T01:24:50.369108+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-11T17:09:53.767045+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -432,7 +433,7 @@
  },
  "US bank": {
   "checked_at": "2026-08-16T04:35:56.428350+00:00",
-  "deep_scanned_at": "2026-09-10T01:24:50.369108+00:00",
+  "deep_scanned_at": "2026-09-11T17:09:53.767045+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -516,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-11T09:05:24.705678+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -620,7 +621,7 @@
  },
  "citi": {
   "checked_at": "2026-08-16T04:19:55.335500+00:00",
-  "deep_scanned_at": "2026-09-10T06:37:09.066207+00:00",
+  "deep_scanned_at": "2026-09-11T17:09:53.767045+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -1185,7 +1186,8 @@
  },
  "visa": {
   "checked_at": "2026-08-16T03:48:21.272761+00:00",
-  "deep_scanned_at": "2026-09-10T01:24:50.369108+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-11T17:09:53.767045+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
