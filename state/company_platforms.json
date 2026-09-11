@@ -93,7 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-08-16T04:19:38.241533+00:00",
-  "deep_scanned_at": "2026-09-10T01:24:50.369108+00:00",
+  "deep_scanned_at": "2026-09-11T13:32:35.405001+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -331,7 +331,7 @@
   "slug": "point72"
  },
  "Qualcomm": {
-  "checked_at": "2026-09-04T11:41:45.349874+00:00",
+  "checked_at": "2026-09-11T13:31:51.917600+00:00",
   "platform": null,
   "slug": null
  },
@@ -400,7 +400,6 @@
  },
  "T-mobile": {
   "checked_at": "2026-08-16T07:41:20.290324+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-11T09:05:59.887890+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
@@ -412,7 +411,7 @@
  },
  "Tencent": {
   "checked_at": "2026-08-16T07:41:38.212571+00:00",
-  "deep_scanned_at": "2026-09-09T23:09:41.961376+00:00",
+  "deep_scanned_at": "2026-09-11T13:32:35.405001+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -517,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-11T09:05:24.705678+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -575,7 +574,7 @@
  },
  "boeing": {
   "checked_at": "2026-08-16T04:18:11.443355+00:00",
-  "deep_scanned_at": "2026-09-09T23:09:41.961376+00:00",
+  "deep_scanned_at": "2026-09-11T13:32:35.405001+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -689,7 +688,7 @@
   "slug": "databricks"
  },
  "databricks winter": {
-  "checked_at": "2026-09-04T11:42:04.036987+00:00",
+  "checked_at": "2026-09-11T13:32:09.379447+00:00",
   "platform": null,
   "slug": null
  },
@@ -873,7 +872,7 @@
  },
  "medtronic": {
   "checked_at": "2026-09-03T00:06:04.328063+00:00",
-  "deep_scanned_at": "2026-09-09T23:09:41.961376+00:00",
+  "deep_scanned_at": "2026-09-11T13:32:35.405001+00:00",
   "platform": "workday",
   "slug": "medtronic|wd1|MedtronicCareers"
  },
@@ -1119,7 +1118,6 @@
  },
  "state street": {
   "checked_at": "2026-08-16T07:41:11.019500+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-11T09:05:59.887890+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
