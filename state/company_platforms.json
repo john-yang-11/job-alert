@@ -26,7 +26,7 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-08-16T08:45:22.155462+00:00",
-  "deep_scanned_at": "2026-09-10T11:47:33.851318+00:00",
+  "deep_scanned_at": "2026-09-11T22:29:59.766827+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -316,7 +316,6 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-11T20:01:03.052306+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
@@ -464,7 +463,6 @@
  },
  "Workday": {
   "checked_at": "2026-08-16T08:44:20.491451+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-11T20:01:03.052306+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
@@ -518,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-11T09:05:24.705678+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -638,7 +636,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-08-16T04:20:01.498315+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-11T20:01:03.052306+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -671,7 +668,7 @@
  },
  "crowdstrike": {
   "checked_at": "2026-08-16T05:03:08.938412+00:00",
-  "deep_scanned_at": "2026-09-10T16:19:50.582793+00:00",
+  "deep_scanned_at": "2026-09-11T22:29:59.766827+00:00",
   "platform": "workday",
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
@@ -818,7 +815,7 @@
  },
  "humana": {
   "checked_at": "2026-08-19T03:07:05.370006+00:00",
-  "deep_scanned_at": "2026-09-10T11:47:33.851318+00:00",
+  "deep_scanned_at": "2026-09-11T22:29:59.766827+00:00",
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
@@ -906,7 +903,8 @@
  },
  "moelis": {
   "checked_at": "2026-09-07T04:28:26.140870+00:00",
-  "deep_scanned_at": "2026-09-10T11:47:33.851318+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-11T22:29:59.766827+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
  },
