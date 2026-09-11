@@ -32,7 +32,7 @@
  },
  "Accenture": {
   "checked_at": "2026-08-16T03:55:25.716113+00:00",
-  "deep_scanned_at": "2026-09-09T17:47:56.822648+00:00",
+  "deep_scanned_at": "2026-09-11T00:03:09.988524+00:00",
   "platform": "workday",
   "slug": "accenture|wd103|AccentureCareers"
  },
@@ -294,7 +294,7 @@
  },
  "PNC": {
   "checked_at": "2026-08-16T04:34:22.734492+00:00",
-  "deep_scanned_at": "2026-09-09T13:53:10.604424+00:00",
+  "deep_scanned_at": "2026-09-11T00:03:09.988524+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -310,7 +310,7 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-08-16T06:57:00.755464+00:00",
-  "deep_scanned_at": "2026-09-09T13:53:10.604424+00:00",
+  "deep_scanned_at": "2026-09-11T00:03:09.988524+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-10T11:47:06.775790+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -989,7 +989,7 @@
  },
  "raytheon": {
   "checked_at": "2026-08-16T06:57:35.321615+00:00",
-  "deep_scanned_at": "2026-09-09T13:53:10.604424+00:00",
+  "deep_scanned_at": "2026-09-11T00:03:09.988524+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
