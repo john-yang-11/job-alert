@@ -1,6 +1,7 @@
 {
  "AMD": {
   "checked_at": "2026-08-16T03:56:17.764641+00:00",
+  "consecutive_failures": 1,
   "platform": "careersite",
   "slug": "https://careers.amd.com"
  },
@@ -32,7 +33,7 @@
  },
  "Accenture": {
   "checked_at": "2026-08-16T03:55:25.716113+00:00",
-  "deep_scanned_at": "2026-09-11T00:03:09.988524+00:00",
+  "deep_scanned_at": "2026-09-12T09:13:42.070583+00:00",
   "platform": "workday",
   "slug": "accenture|wd103|AccentureCareers"
  },
@@ -247,7 +248,7 @@
  },
  "Mastercard": {
   "checked_at": "2026-08-16T05:41:18.740321+00:00",
-  "deep_scanned_at": "2026-09-10T21:50:53.761001+00:00",
+  "deep_scanned_at": "2026-09-12T09:13:42.070583+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|Campus"
  },
@@ -258,7 +259,7 @@
  },
  "NVIDIA": {
   "checked_at": "2026-08-16T04:33:45.341178+00:00",
-  "deep_scanned_at": "2026-09-10T21:50:53.761001+00:00",
+  "deep_scanned_at": "2026-09-12T09:13:42.070583+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
@@ -347,7 +348,6 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-12T04:59:25.476155+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
@@ -517,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-12T04:59:02.544331+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -1047,7 +1047,7 @@
  },
  "salesforce": {
   "checked_at": "2026-08-31T13:34:54.291699+00:00",
-  "deep_scanned_at": "2026-09-10T21:50:53.761001+00:00",
+  "deep_scanned_at": "2026-09-12T09:13:42.070583+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
@@ -1078,6 +1078,7 @@
  },
  "siriusxm": {
   "checked_at": "2026-08-16T07:39:48.437087+00:00",
+  "consecutive_failures": 1,
   "platform": "careersite",
   "slug": "https://careers.siriusxm.com"
  },
