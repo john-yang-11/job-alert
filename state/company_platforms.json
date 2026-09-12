@@ -165,7 +165,7 @@
  },
  "HP": {
   "checked_at": "2026-08-16T05:08:16.679241+00:00",
-  "deep_scanned_at": "2026-09-10T19:14:51.916591+00:00",
+  "deep_scanned_at": "2026-09-12T00:35:09.867244+00:00",
   "platform": "workday",
   "slug": "hp|wd5|ExternalCareerSite"
  },
@@ -514,12 +514,6 @@
   "platform": null,
   "slug": null
  },
- "aquatic": {
-  "checked_at": "2026-09-11T09:05:24.705678+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
- },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
   "platform": "greenhouse",
@@ -547,7 +541,8 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "deep_scanned_at": "2026-09-10T16:19:50.582793+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-12T00:35:09.867244+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -754,7 +749,8 @@
  },
  "fidelity": {
   "checked_at": "2026-08-16T05:06:43.797789+00:00",
-  "deep_scanned_at": "2026-09-10T16:19:50.582793+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-12T00:35:09.867244+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
  },
@@ -903,7 +899,6 @@
  },
  "moelis": {
   "checked_at": "2026-09-07T04:28:26.140870+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-11T22:29:59.766827+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
@@ -996,7 +991,7 @@
  },
  "redhat": {
   "checked_at": "2026-08-31T13:33:56.555128+00:00",
-  "deep_scanned_at": "2026-09-10T16:19:50.582793+00:00",
+  "deep_scanned_at": "2026-09-12T00:35:09.867244+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
