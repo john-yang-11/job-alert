@@ -358,7 +358,7 @@
  },
  "Samsung": {
   "checked_at": "2026-08-16T06:59:52.642245+00:00",
-  "deep_scanned_at": "2026-09-11T04:29:31.351989+00:00",
+  "deep_scanned_at": "2026-09-12T16:14:59.573211+00:00",
   "platform": "workday",
   "slug": "sec|wd3|Samsung_Careers"
  },
@@ -374,7 +374,7 @@
  },
  "Snap": {
   "checked_at": "2026-08-16T04:35:41.792008+00:00",
-  "deep_scanned_at": "2026-09-11T04:29:31.351989+00:00",
+  "deep_scanned_at": "2026-09-12T16:14:59.573211+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-12T04:59:02.544331+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -563,7 +563,7 @@
  },
  "blue origin": {
   "checked_at": "2026-08-16T04:18:08.865172+00:00",
-  "deep_scanned_at": "2026-09-11T09:05:59.887890+00:00",
+  "deep_scanned_at": "2026-09-12T16:14:59.573211+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -1082,7 +1082,8 @@
  },
  "slack": {
   "checked_at": "2026-08-16T07:39:55.666839+00:00",
-  "deep_scanned_at": "2026-09-11T04:29:31.351989+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-12T16:14:59.573211+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
