@@ -165,7 +165,7 @@
  },
  "HP": {
   "checked_at": "2026-08-16T05:08:16.679241+00:00",
-  "deep_scanned_at": "2026-09-12T00:35:09.867244+00:00",
+  "deep_scanned_at": "2026-09-13T12:41:42.688061+00:00",
   "platform": "workday",
   "slug": "hp|wd5|ExternalCareerSite"
  },
@@ -469,7 +469,7 @@
  },
  "abbott": {
   "checked_at": "2026-08-16T03:55:11.436358+00:00",
-  "deep_scanned_at": "2026-09-12T04:59:25.476155+00:00",
+  "deep_scanned_at": "2026-09-13T12:41:42.688061+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-12T23:15:08.668424+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -547,7 +547,8 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "deep_scanned_at": "2026-09-12T00:35:09.867244+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-13T12:41:42.688061+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -599,7 +600,7 @@
   "slug": "bytedance"
  },
  "c1 data analyst": {
-  "checked_at": "2026-09-06T11:18:28.605232+00:00",
+  "checked_at": "2026-09-13T12:41:06.998304+00:00",
   "platform": null,
   "slug": null
  },
@@ -614,7 +615,7 @@
   "slug": "chime"
  },
  "citadel launch": {
-  "checked_at": "2026-09-06T11:18:40.919813+00:00",
+  "checked_at": "2026-09-13T12:41:19.914591+00:00",
   "platform": null,
   "slug": null
  },
@@ -754,7 +755,6 @@
  },
  "fidelity": {
   "checked_at": "2026-08-16T05:06:43.797789+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-13T06:49:14.878156+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
@@ -904,7 +904,6 @@
  },
  "moelis": {
   "checked_at": "2026-09-07T04:28:26.140870+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-13T06:49:14.878156+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
@@ -997,7 +996,7 @@
  },
  "redhat": {
   "checked_at": "2026-08-31T13:33:56.555128+00:00",
-  "deep_scanned_at": "2026-09-12T00:35:09.867244+00:00",
+  "deep_scanned_at": "2026-09-13T12:41:42.688061+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
