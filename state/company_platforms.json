@@ -103,7 +103,7 @@
   "slug": null
  },
  "Deloitte ai smth": {
-  "checked_at": "2026-09-06T17:20:28.499429+00:00",
+  "checked_at": "2026-09-13T19:23:03.627490+00:00",
   "platform": null,
   "slug": null
  },
@@ -159,7 +159,7 @@
   "slug": null
  },
  "Google ASDI": {
-  "checked_at": "2026-09-06T17:21:30.465277+00:00",
+  "checked_at": "2026-09-13T19:24:01.586270+00:00",
   "platform": null,
   "slug": null
  },
@@ -170,7 +170,7 @@
   "slug": "hp|wd5|ExternalCareerSite"
  },
  "HPR": {
-  "checked_at": "2026-09-06T17:21:45.780867+00:00",
+  "checked_at": "2026-09-13T19:24:32.400131+00:00",
   "platform": null,
   "slug": null
  },
@@ -185,7 +185,7 @@
   "slug": "hermeus"
  },
  "Hubspot": {
-  "checked_at": "2026-09-06T17:22:12.412655+00:00",
+  "checked_at": "2026-09-13T19:24:54.067968+00:00",
   "platform": null,
   "slug": null
  },
@@ -200,17 +200,17 @@
   "slug": null
  },
  "IBM accelerate": {
-  "checked_at": "2026-09-06T17:22:30.281931+00:00",
+  "checked_at": "2026-09-13T19:25:09.474005+00:00",
   "platform": null,
   "slug": null
  },
  "Intuit": {
-  "checked_at": "2026-09-06T17:23:17.030746+00:00",
+  "checked_at": "2026-09-13T19:25:48.574761+00:00",
   "platform": null,
   "slug": null
  },
  "JP morgan chase fellowship": {
-  "checked_at": "2026-09-06T17:24:06.724299+00:00",
+  "checked_at": "2026-09-13T19:26:24.750975+00:00",
   "platform": null,
   "slug": null
  },
@@ -220,7 +220,7 @@
   "slug": null
  },
  "John Deere": {
-  "checked_at": "2026-09-06T17:23:43.517897+00:00",
+  "checked_at": "2026-09-13T19:26:11.790176+00:00",
   "platform": null,
   "slug": null
  },
@@ -231,7 +231,7 @@
   "slug": "kla|wd1|Search"
  },
  "Lockheed Martin": {
-  "checked_at": "2026-09-06T17:24:42.737629+00:00",
+  "checked_at": "2026-09-13T19:26:55.846454+00:00",
   "platform": null,
   "slug": null
  },
@@ -241,13 +241,13 @@
   "slug": "lyft"
  },
  "MLH": {
-  "checked_at": "2026-09-06T17:24:56.897831+00:00",
+  "checked_at": "2026-09-13T19:27:08.694675+00:00",
   "platform": null,
   "slug": null
  },
  "Mastercard": {
   "checked_at": "2026-08-16T05:41:18.740321+00:00",
-  "deep_scanned_at": "2026-09-12T09:13:42.070583+00:00",
+  "deep_scanned_at": "2026-09-13T19:27:48.547080+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|Campus"
  },
@@ -258,7 +258,7 @@
  },
  "NVIDIA": {
   "checked_at": "2026-08-16T04:33:45.341178+00:00",
-  "deep_scanned_at": "2026-09-12T09:13:42.070583+00:00",
+  "deep_scanned_at": "2026-09-13T19:27:48.547080+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
@@ -347,7 +347,6 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-13T17:03:14.225384+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
@@ -476,7 +475,7 @@
  },
  "adobe": {
   "checked_at": "2026-08-16T03:55:45.408718+00:00",
-  "deep_scanned_at": "2026-09-12T13:04:52.386805+00:00",
+  "deep_scanned_at": "2026-09-13T19:27:48.547080+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -514,12 +513,6 @@
   "checked_at": "2026-09-13T06:45:15.779310+00:00",
   "platform": null,
   "slug": null
- },
- "aquatic": {
-  "checked_at": "2026-09-12T23:15:08.668424+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
@@ -785,7 +778,7 @@
   "slug": null
  },
  "general motors": {
-  "checked_at": "2026-09-06T17:21:14.115508+00:00",
+  "checked_at": "2026-09-13T19:23:48.097977+00:00",
   "platform": null,
   "slug": null
  },
@@ -805,7 +798,7 @@
   "slug": "handshake"
  },
  "harmon": {
-  "checked_at": "2026-09-06T17:21:38.513659+00:00",
+  "checked_at": "2026-09-13T19:24:24.961555+00:00",
   "platform": null,
   "slug": null
  },
@@ -826,7 +819,7 @@
   "slug": null
  },
  "infosys": {
-  "checked_at": "2026-09-06T17:22:55.364970+00:00",
+  "checked_at": "2026-09-13T19:25:30.140070+00:00",
   "platform": null,
   "slug": null
  },
@@ -841,7 +834,7 @@
   "slug": "janestreet"
  },
  "jpmorgan": {
-  "checked_at": "2026-09-06T17:24:17.249047+00:00",
+  "checked_at": "2026-09-13T19:26:34.542549+00:00",
   "platform": null,
   "slug": null
  },
@@ -862,7 +855,7 @@
   "slug": "leidos|wd5|External"
  },
  "lenovo": {
-  "checked_at": "2026-09-06T17:24:26.566262+00:00",
+  "checked_at": "2026-09-13T19:26:41.055667+00:00",
   "platform": null,
   "slug": null
  },
@@ -878,7 +871,7 @@
   "slug": "medtronic|wd1|MedtronicCareers"
  },
  "mercedes": {
-  "checked_at": "2026-09-06T17:24:49.984638+00:00",
+  "checked_at": "2026-09-13T19:27:02.195741+00:00",
   "platform": null,
   "slug": null
  },
@@ -914,7 +907,7 @@
   "slug": "mongodb"
  },
  "mongodb NeXt summit": {
-  "checked_at": "2026-09-06T17:25:17.466186+00:00",
+  "checked_at": "2026-09-13T19:27:26.254763+00:00",
   "platform": null,
   "slug": null
  },
@@ -1047,7 +1040,7 @@
  },
  "salesforce": {
   "checked_at": "2026-08-31T13:34:54.291699+00:00",
-  "deep_scanned_at": "2026-09-12T09:13:42.070583+00:00",
+  "deep_scanned_at": "2026-09-13T19:27:48.547080+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
