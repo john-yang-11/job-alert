@@ -139,7 +139,6 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-12T23:16:07.400844+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
@@ -317,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "deep_scanned_at": "2026-09-11T20:01:03.052306+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-13T01:23:33.778084+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -464,7 +464,8 @@
  },
  "Workday": {
   "checked_at": "2026-08-16T08:44:20.491451+00:00",
-  "deep_scanned_at": "2026-09-11T20:01:03.052306+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-13T01:23:33.778084+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -517,7 +518,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-12T23:15:08.668424+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -637,7 +638,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-08-16T04:20:01.498315+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-12T23:16:07.400844+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -659,7 +659,7 @@
  },
  "comcast": {
   "checked_at": "2026-08-27T14:35:18.389179+00:00",
-  "deep_scanned_at": "2026-09-11T20:01:03.052306+00:00",
+  "deep_scanned_at": "2026-09-13T01:23:33.778084+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
@@ -670,7 +670,7 @@
  },
  "crowdstrike": {
   "checked_at": "2026-08-16T05:03:08.938412+00:00",
-  "deep_scanned_at": "2026-09-11T22:29:59.766827+00:00",
+  "deep_scanned_at": "2026-09-13T01:23:33.778084+00:00",
   "platform": "workday",
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
