@@ -1187,7 +1187,6 @@
  },
  "visa": {
   "checked_at": "2026-08-16T03:48:21.272761+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-12T23:16:07.400844+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
