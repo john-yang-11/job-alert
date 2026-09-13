@@ -263,7 +263,7 @@
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
  "Netflix": {
-  "checked_at": "2026-09-06T19:30:48.166211+00:00",
+  "checked_at": "2026-09-13T21:40:01.342024+00:00",
   "platform": null,
   "slug": null
  },
@@ -273,7 +273,7 @@
   "slug": "neuralink"
  },
  "Nokia": {
-  "checked_at": "2026-09-06T19:31:07.057043+00:00",
+  "checked_at": "2026-09-13T21:40:23.714546+00:00",
   "platform": null,
   "slug": null
  },
@@ -294,7 +294,7 @@
  },
  "PNC": {
   "checked_at": "2026-08-16T04:34:22.734492+00:00",
-  "deep_scanned_at": "2026-09-12T13:04:52.386805+00:00",
+  "deep_scanned_at": "2026-09-13T21:40:46.969152+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -310,7 +310,7 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-08-16T06:57:00.755464+00:00",
-  "deep_scanned_at": "2026-09-12T13:04:52.386805+00:00",
+  "deep_scanned_at": "2026-09-13T21:40:46.969152+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
@@ -514,6 +514,12 @@
   "platform": null,
   "slug": null
  },
+ "aquatic": {
+  "checked_at": "2026-09-13T21:37:51.303277+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
+ },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
   "platform": "greenhouse",
@@ -557,7 +563,7 @@
  },
  "blue origin": {
   "checked_at": "2026-08-16T04:18:08.865172+00:00",
-  "deep_scanned_at": "2026-09-12T16:14:59.573211+00:00",
+  "deep_scanned_at": "2026-09-13T21:40:46.969152+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -917,12 +923,12 @@
   "slug": "monogram"
  },
  "morgan stanley": {
-  "checked_at": "2026-09-06T19:30:04.864936+00:00",
+  "checked_at": "2026-09-13T21:39:16.366592+00:00",
   "platform": null,
   "slug": null
  },
  "nasa": {
-  "checked_at": "2026-09-06T19:30:41.072076+00:00",
+  "checked_at": "2026-09-13T21:39:52.686500+00:00",
   "platform": null,
   "slug": null
  },
@@ -983,7 +989,7 @@
  },
  "raytheon": {
   "checked_at": "2026-08-16T06:57:35.321615+00:00",
-  "deep_scanned_at": "2026-09-12T13:04:52.386805+00:00",
+  "deep_scanned_at": "2026-09-13T21:40:46.969152+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
