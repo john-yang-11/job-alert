@@ -32,7 +32,7 @@
  },
  "Accenture": {
   "checked_at": "2026-08-16T03:55:25.716113+00:00",
-  "deep_scanned_at": "2026-09-12T09:13:42.070583+00:00",
+  "deep_scanned_at": "2026-09-13T17:03:14.225384+00:00",
   "platform": "workday",
   "slug": "accenture|wd103|AccentureCareers"
  },
@@ -82,7 +82,7 @@
   "slug": null
  },
  "CNN": {
-  "checked_at": "2026-09-06T14:22:56.653091+00:00",
+  "checked_at": "2026-09-13T16:57:02.156997+00:00",
   "platform": null,
   "slug": null
  },
@@ -98,7 +98,7 @@
   "slug": "cisco|wd5|Cisco_Careers"
  },
  "Deloitte": {
-  "checked_at": "2026-09-06T14:24:20.407372+00:00",
+  "checked_at": "2026-09-13T16:58:13.064314+00:00",
   "platform": null,
   "slug": null
  },
@@ -108,7 +108,7 @@
   "slug": null
  },
  "Delta": {
-  "checked_at": "2026-09-06T14:24:28.142440+00:00",
+  "checked_at": "2026-09-13T16:58:19.432353+00:00",
   "platform": null,
   "slug": null
  },
@@ -123,7 +123,7 @@
   "slug": "https://www.dropbox.jobs/jobs/xml/?rss=true"
  },
  "Electronic Arts": {
-  "checked_at": "2026-09-06T14:26:07.808763+00:00",
+  "checked_at": "2026-09-13T16:59:55.962649+00:00",
   "platform": null,
   "slug": null
  },
@@ -133,7 +133,7 @@
   "slug": "etched"
  },
  "Everpure": {
-  "checked_at": "2026-09-06T14:26:26.907680+00:00",
+  "checked_at": "2026-09-13T17:00:13.016393+00:00",
   "platform": null,
   "slug": null
  },
@@ -226,7 +226,7 @@
  },
  "KLA": {
   "checked_at": "2026-08-16T05:40:43.314484+00:00",
-  "deep_scanned_at": "2026-09-12T04:59:25.476155+00:00",
+  "deep_scanned_at": "2026-09-13T17:03:14.225384+00:00",
   "platform": "workday",
   "slug": "kla|wd1|Search"
  },
@@ -347,7 +347,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "deep_scanned_at": "2026-09-12T04:59:25.476155+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-13T17:03:14.225384+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -516,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-12T23:15:08.668424+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -547,7 +548,6 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-13T12:41:42.688061+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -652,7 +652,7 @@
   "slug": "coinbase"
  },
  "colins aerospace": {
-  "checked_at": "2026-09-06T14:23:09.865055+00:00",
+  "checked_at": "2026-09-13T16:57:14.598942+00:00",
   "platform": null,
   "slug": null
  },
@@ -674,7 +674,7 @@
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
  "cvs health": {
-  "checked_at": "2026-09-06T14:23:59.055433+00:00",
+  "checked_at": "2026-09-13T16:57:54.152357+00:00",
   "platform": null,
   "slug": null
  },
@@ -709,7 +709,7 @@
   "slug": "Deepgram"
  },
  "dell": {
-  "checked_at": "2026-09-06T14:24:10.611352+00:00",
+  "checked_at": "2026-09-13T16:58:04.930801+00:00",
   "platform": null,
   "slug": null
  },
@@ -719,7 +719,7 @@
   "slug": null
  },
  "disney": {
-  "checked_at": "2026-09-06T14:24:45.549526+00:00",
+  "checked_at": "2026-09-13T16:58:35.356908+00:00",
   "platform": null,
   "slug": null
  },
@@ -729,7 +729,7 @@
   "slug": "https://careers.docusign.com"
  },
  "doordash": {
-  "checked_at": "2026-09-06T14:24:52.634042+00:00",
+  "checked_at": "2026-09-13T16:58:41.030318+00:00",
   "platform": null,
   "slug": null
  },
@@ -739,7 +739,7 @@
   "slug": "duolingo"
  },
  "ea pathfinder": {
-  "checked_at": "2026-09-06T14:25:13.565240+00:00",
+  "checked_at": "2026-09-13T16:58:58.169136+00:00",
   "platform": null,
   "slug": null
  },
@@ -749,7 +749,7 @@
   "slug": "elastic"
  },
  "epic": {
-  "checked_at": "2026-09-06T14:26:18.906743+00:00",
+  "checked_at": "2026-09-13T17:00:05.136801+00:00",
   "platform": null,
   "slug": null
  },
@@ -775,12 +775,12 @@
   "slug": null
  },
  "gemnai fall": {
-  "checked_at": "2026-09-06T14:26:39.578420+00:00",
+  "checked_at": "2026-09-13T17:00:26.194186+00:00",
   "platform": null,
   "slug": null
  },
  "general dynamics": {
-  "checked_at": "2026-09-06T14:28:17.771510+00:00",
+  "checked_at": "2026-09-13T17:02:08.747289+00:00",
   "platform": null,
   "slug": null
  },
@@ -857,7 +857,7 @@
  },
  "leidos": {
   "checked_at": "2026-08-16T05:40:48.197454+00:00",
-  "deep_scanned_at": "2026-09-12T04:59:25.476155+00:00",
+  "deep_scanned_at": "2026-09-13T17:03:14.225384+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
  },
