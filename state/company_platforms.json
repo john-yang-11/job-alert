@@ -139,7 +139,6 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-14T16:30:38.765567+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
@@ -317,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "deep_scanned_at": "2026-09-13T01:23:33.778084+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-14T20:29:23.722440+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -464,7 +464,8 @@
  },
  "Workday": {
   "checked_at": "2026-08-16T08:44:20.491451+00:00",
-  "deep_scanned_at": "2026-09-13T01:23:33.778084+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-14T20:29:23.722440+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -515,12 +516,6 @@
   "platform": null,
   "slug": null
  },
- "aquatic": {
-  "checked_at": "2026-09-13T21:37:51.303277+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
- },
  "asana": {
   "checked_at": "2026-08-16T03:57:06.831565+00:00",
   "platform": "greenhouse",
@@ -569,7 +564,7 @@
   "slug": "blueorigin|wd5|BlueOrigin"
  },
  "bny": {
-  "checked_at": "2026-09-07T19:52:27.215223+00:00",
+  "checked_at": "2026-09-14T20:28:48.567278+00:00",
   "platform": null,
   "slug": null
  },
@@ -669,7 +664,7 @@
  },
  "crowdstrike": {
   "checked_at": "2026-08-16T05:03:08.938412+00:00",
-  "deep_scanned_at": "2026-09-13T01:23:33.778084+00:00",
+  "deep_scanned_at": "2026-09-14T20:29:23.722440+00:00",
   "platform": "workday",
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
@@ -755,7 +750,7 @@
  },
  "fidelity": {
   "checked_at": "2026-08-16T05:06:43.797789+00:00",
-  "deep_scanned_at": "2026-09-13T06:49:14.878156+00:00",
+  "deep_scanned_at": "2026-09-14T20:29:23.722440+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
  },
