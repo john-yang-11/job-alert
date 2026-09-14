@@ -139,7 +139,8 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "deep_scanned_at": "2026-09-12T23:16:07.400844+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-14T16:30:38.765567+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -432,7 +433,7 @@
  },
  "US bank": {
   "checked_at": "2026-08-16T04:35:56.428350+00:00",
-  "deep_scanned_at": "2026-09-12T23:16:07.400844+00:00",
+  "deep_scanned_at": "2026-09-14T16:30:38.765567+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -516,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-13T21:37:51.303277+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -636,7 +637,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-08-16T04:20:01.498315+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-14T10:32:31.696845+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -658,7 +658,7 @@
  },
  "comcast": {
   "checked_at": "2026-08-27T14:35:18.389179+00:00",
-  "deep_scanned_at": "2026-09-13T01:23:33.778084+00:00",
+  "deep_scanned_at": "2026-09-14T16:30:38.765567+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
@@ -1186,7 +1186,8 @@
  },
  "visa": {
   "checked_at": "2026-08-16T03:48:21.272761+00:00",
-  "deep_scanned_at": "2026-09-12T23:16:07.400844+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-14T16:30:38.765567+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
