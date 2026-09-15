@@ -93,6 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-09-15T06:46:51.719630+00:00",
+  "deep_scanned_at": "2026-09-15T13:29:31.102050+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -117,7 +118,7 @@
   "slug": "https://careers.draftkings.com/jobs/xml/?rss=true"
  },
  "Dropbox": {
-  "checked_at": "2026-08-16T05:05:03.304737+00:00",
+  "checked_at": "2026-09-15T13:27:46.231245+00:00",
   "platform": "jobfeed",
   "slug": "https://www.dropbox.jobs/jobs/xml/?rss=true"
  },
@@ -148,7 +149,7 @@
   "slug": "https://www.github.careers"
  },
  "Github": {
-  "checked_at": "2026-08-16T05:07:31.319055+00:00",
+  "checked_at": "2026-09-15T13:27:55.044615+00:00",
   "platform": "careersite",
   "slug": "https://www.github.careers"
  },
@@ -163,8 +164,7 @@
   "slug": null
  },
  "HP": {
-  "checked_at": "2026-08-16T05:08:16.679241+00:00",
-  "deep_scanned_at": "2026-09-15T01:52:44.828927+00:00",
+  "checked_at": "2026-09-15T13:28:19.814605+00:00",
   "platform": "workday",
   "slug": "hp|wd5|ExternalCareerSite"
  },
@@ -179,7 +179,7 @@
   "slug": "heliux"
  },
  "Hermeus": {
-  "checked_at": "2026-08-16T05:08:00.892563+00:00",
+  "checked_at": "2026-09-15T13:28:01.161983+00:00",
   "platform": "lever",
   "slug": "hermeus"
  },
@@ -189,7 +189,7 @@
   "slug": null
  },
  "Hudson River Trading": {
-  "checked_at": "2026-08-16T05:38:46.325851+00:00",
+  "checked_at": "2026-09-15T13:28:35.006950+00:00",
   "platform": "greenhouse",
   "slug": "hrttalentcommunity"
  },
@@ -224,8 +224,7 @@
   "slug": null
  },
  "KLA": {
-  "checked_at": "2026-08-16T05:40:43.314484+00:00",
-  "deep_scanned_at": "2026-09-13T17:03:14.225384+00:00",
+  "checked_at": "2026-09-15T13:28:41.193357+00:00",
   "platform": "workday",
   "slug": "kla|wd1|Search"
  },
@@ -235,7 +234,7 @@
   "slug": null
  },
  "Lyft": {
-  "checked_at": "2026-08-16T05:41:16.453679+00:00",
+  "checked_at": "2026-09-15T13:28:51.082157+00:00",
   "platform": "greenhouse",
   "slug": "lyft"
  },
@@ -245,10 +244,9 @@
   "slug": null
  },
  "Mastercard": {
-  "checked_at": "2026-08-16T05:41:18.740321+00:00",
-  "deep_scanned_at": "2026-09-13T19:27:48.547080+00:00",
+  "checked_at": "2026-09-15T13:28:53.119377+00:00",
   "platform": "workday",
-  "slug": "mastercard|wd1|Campus"
+  "slug": "mastercard|wd1|CorporateCareers"
  },
  "Microsoft": {
   "checked_at": "2026-09-13T06:44:05.304986+00:00",
@@ -266,7 +264,7 @@
   "slug": null
  },
  "Neuralink": {
-  "checked_at": "2026-08-16T06:55:57.694775+00:00",
+  "checked_at": "2026-09-15T13:28:55.080630+00:00",
   "platform": "greenhouse",
   "slug": "neuralink"
  },
@@ -306,8 +304,7 @@
   "slug": "palantir"
  },
  "Palo Alto Networks": {
-  "checked_at": "2026-08-16T06:57:00.755464+00:00",
-  "deep_scanned_at": "2026-09-13T21:40:46.969152+00:00",
+  "checked_at": "2026-09-15T13:28:58.477448+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
@@ -318,12 +315,12 @@
   "slug": "paypal|wd1|jobs"
  },
  "Pinterest": {
-  "checked_at": "2026-08-16T06:57:03.182296+00:00",
+  "checked_at": "2026-09-15T13:29:00.459318+00:00",
   "platform": "jobfeed",
   "slug": "https://www.pinterestcareers.com/jobs/xml/?rss=true"
  },
  "Point72": {
-  "checked_at": "2026-08-16T06:57:04.153706+00:00",
+  "checked_at": "2026-09-15T13:29:01.094528+00:00",
   "platform": "greenhouse",
   "slug": "point72"
  },
@@ -333,7 +330,7 @@
   "slug": null
  },
  "Reddit": {
-  "checked_at": "2026-08-16T06:57:35.970483+00:00",
+  "checked_at": "2026-09-15T13:29:05.300703+00:00",
   "platform": "greenhouse",
   "slug": "reddit"
  },
@@ -511,7 +508,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-14T23:23:36.223168+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -569,6 +566,7 @@
  },
  "boeing": {
   "checked_at": "2026-09-15T07:40:33.450549+00:00",
+  "deep_scanned_at": "2026-09-15T13:29:31.102050+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -614,6 +612,7 @@
  },
  "citi": {
   "checked_at": "2026-09-15T07:41:12.367907+00:00",
+  "deep_scanned_at": "2026-09-15T13:29:31.102050+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -629,6 +628,8 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-09-15T07:41:20.140571+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-15T13:29:31.102050+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
@@ -674,7 +675,7 @@
   "slug": "dandy"
  },
  "databricks": {
-  "checked_at": "2026-08-16T05:03:58.351096+00:00",
+  "checked_at": "2026-09-15T13:27:42.856852+00:00",
   "platform": "greenhouse",
   "slug": "databricks"
  },
@@ -684,7 +685,7 @@
   "slug": null
  },
  "datadog": {
-  "checked_at": "2026-08-16T05:04:00.845742+00:00",
+  "checked_at": "2026-09-15T13:27:44.709981+00:00",
   "platform": "greenhouse",
   "slug": "datadog"
  },
@@ -744,13 +745,12 @@
   "slug": null
  },
  "fidelity": {
-  "checked_at": "2026-08-16T05:06:43.797789+00:00",
-  "deep_scanned_at": "2026-09-14T20:29:23.722440+00:00",
+  "checked_at": "2026-09-15T13:27:52.220970+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
  },
  "figma": {
-  "checked_at": "2026-08-16T05:06:44.815485+00:00",
+  "checked_at": "2026-09-15T13:27:52.987320+00:00",
   "platform": "greenhouse",
   "slug": "figma"
  },
@@ -790,8 +790,8 @@
   "slug": null
  },
  "handshake": {
-  "checked_at": "2026-08-16T05:07:51.570912+00:00",
-  "platform": "ashby",
+  "checked_at": "2026-09-15T13:27:57.773369+00:00",
+  "platform": "greenhouse",
   "slug": "handshake"
  },
  "harmon": {
@@ -821,7 +821,7 @@
   "slug": null
  },
  "instacart": {
-  "checked_at": "2026-08-16T05:39:29.158645+00:00",
+  "checked_at": "2026-09-15T13:28:38.942905+00:00",
   "platform": "greenhouse",
   "slug": "instacart"
  },
@@ -836,7 +836,7 @@
   "slug": null
  },
  "kalshi": {
-  "checked_at": "2026-08-16T05:40:40.875110+00:00",
+  "checked_at": "2026-09-15T13:28:39.157397+00:00",
   "platform": "greenhouse",
   "slug": "kalshi"
  },
@@ -846,8 +846,7 @@
   "slug": null
  },
  "leidos": {
-  "checked_at": "2026-08-16T05:40:48.197454+00:00",
-  "deep_scanned_at": "2026-09-13T17:03:14.225384+00:00",
+  "checked_at": "2026-09-15T13:28:50.070469+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
  },
@@ -924,12 +923,12 @@
   "slug": null
  },
  "nintendo": {
-  "checked_at": "2026-08-16T06:56:02.982316+00:00",
+  "checked_at": "2026-09-15T13:28:56.878512+00:00",
   "platform": "greenhouse",
   "slug": "nintendo"
  },
  "notion": {
-  "checked_at": "2026-08-16T06:56:45.683015+00:00",
+  "checked_at": "2026-09-15T13:28:57.147034+00:00",
   "platform": "ashby",
   "slug": "notion"
  },
@@ -954,7 +953,7 @@
   "slug": null
  },
  "patreon": {
-  "checked_at": "2026-08-16T06:57:01.523828+00:00",
+  "checked_at": "2026-09-15T13:28:59.170717+00:00",
   "platform": "ashby",
   "slug": "patreon"
  },
@@ -979,8 +978,7 @@
   "slug": "ramp"
  },
  "raytheon": {
-  "checked_at": "2026-08-16T06:57:35.321615+00:00",
-  "deep_scanned_at": "2026-09-13T21:40:46.969152+00:00",
+  "checked_at": "2026-09-15T13:29:04.403563+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
