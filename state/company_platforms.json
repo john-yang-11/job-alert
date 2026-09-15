@@ -1,6 +1,6 @@
 {
  "AMD": {
-  "checked_at": "2026-08-16T03:56:17.764641+00:00",
+  "checked_at": "2026-09-15T07:38:59.467664+00:00",
   "platform": "careersite",
   "slug": "https://careers.amd.com"
  },
@@ -15,7 +15,7 @@
   "slug": null
  },
  "AWS": {
-  "checked_at": "2026-08-16T03:57:47.054518+00:00",
+  "checked_at": "2026-09-15T07:39:04.450696+00:00",
   "platform": "amazon",
   "slug": "aws"
  },
@@ -31,13 +31,13 @@
   "slug": "abercrombie|wd108|anf"
  },
  "Accenture": {
-  "checked_at": "2026-08-16T03:55:25.716113+00:00",
-  "deep_scanned_at": "2026-09-15T01:52:44.828927+00:00",
+  "checked_at": "2026-09-15T07:38:36.399427+00:00",
+  "deep_scanned_at": "2026-09-15T07:43:01.719015+00:00",
   "platform": "workday",
   "slug": "accenture|wd103|AccentureCareers"
  },
  "Airbnb": {
-  "checked_at": "2026-08-16T03:55:51.275806+00:00",
+  "checked_at": "2026-09-15T07:38:44.521002+00:00",
   "platform": "greenhouse",
   "slug": "airbnb"
  },
@@ -67,7 +67,7 @@
   "slug": null
  },
  "BLOCK": {
-  "checked_at": "2026-08-16T04:17:36.340765+00:00",
+  "checked_at": "2026-09-15T07:39:04.450701+00:00",
   "platform": "greenhouse",
   "slug": "block"
  },
@@ -87,7 +87,7 @@
   "slug": null
  },
  "Caterpillar": {
-  "checked_at": "2026-08-16T04:19:19.091291+00:00",
+  "checked_at": "2026-09-15T07:41:08.461571+00:00",
   "platform": "jobfeed",
   "slug": "https://careers.caterpillar.com/jobs/xml/?rss=true"
  },
@@ -301,7 +301,7 @@
   "slug": "pnc|wd5|External"
  },
  "Palantir": {
-  "checked_at": "2026-08-16T03:55:06.036412+00:00",
+  "checked_at": "2026-09-15T07:38:10.784772+00:00",
   "platform": "lever",
   "slug": "palantir"
  },
@@ -463,23 +463,24 @@
   "slug": "workday|wd5|Workday"
  },
  "abbott": {
-  "checked_at": "2026-08-16T03:55:11.436358+00:00",
-  "deep_scanned_at": "2026-09-14T23:24:00.749335+00:00",
+  "checked_at": "2026-09-15T07:38:19.009493+00:00",
+  "deep_scanned_at": "2026-09-15T07:43:01.719015+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
  "adobe": {
   "checked_at": "2026-09-15T06:45:27.153105+00:00",
+  "deep_scanned_at": "2026-09-15T07:43:01.719015+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
  "affirm": {
-  "checked_at": "2026-08-16T03:55:46.518378+00:00",
+  "checked_at": "2026-09-15T07:38:38.555708+00:00",
   "platform": "greenhouse",
   "slug": "affirm"
  },
  "airtable": {
-  "checked_at": "2026-08-16T03:55:52.304626+00:00",
+  "checked_at": "2026-09-15T07:38:46.379487+00:00",
   "platform": "greenhouse",
   "slug": "airtable"
  },
@@ -510,12 +511,12 @@
  },
  "aquatic": {
   "checked_at": "2026-09-14T23:23:36.223168+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
  "asana": {
-  "checked_at": "2026-08-16T03:57:06.831565+00:00",
+  "checked_at": "2026-09-15T07:39:04.450672+00:00",
   "platform": "greenhouse",
   "slug": "asana"
  },
@@ -541,7 +542,6 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-15T01:52:44.828927+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -557,8 +557,8 @@
   "slug": null
  },
  "blue origin": {
-  "checked_at": "2026-08-16T04:18:08.865172+00:00",
-  "deep_scanned_at": "2026-09-13T21:40:46.969152+00:00",
+  "checked_at": "2026-09-15T07:40:30.028548+00:00",
+  "deep_scanned_at": "2026-09-15T07:43:01.719015+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -568,8 +568,7 @@
   "slug": null
  },
  "boeing": {
-  "checked_at": "2026-08-16T04:18:11.443355+00:00",
-  "deep_scanned_at": "2026-09-14T00:10:51.079757+00:00",
+  "checked_at": "2026-09-15T07:40:33.450549+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -579,17 +578,17 @@
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
  "bosch": {
-  "checked_at": "2026-08-16T04:18:13.940783+00:00",
+  "checked_at": "2026-09-15T07:40:36.539007+00:00",
   "platform": "smartrecruiters",
   "slug": "BoschGroup"
  },
  "brex": {
-  "checked_at": "2026-08-16T04:18:18.271366+00:00",
+  "checked_at": "2026-09-15T07:40:40.663397+00:00",
   "platform": "greenhouse",
   "slug": "brex"
  },
  "bytedance": {
-  "checked_at": "2026-08-16T04:19:03.857473+00:00",
+  "checked_at": "2026-09-15T07:41:05.423004+00:00",
   "platform": "smartrecruiters",
   "slug": "bytedance"
  },
@@ -604,7 +603,7 @@
   "slug": "capitalone"
  },
  "chime": {
-  "checked_at": "2026-08-16T04:19:19.688862+00:00",
+  "checked_at": "2026-09-15T07:41:09.077539+00:00",
   "platform": "greenhouse",
   "slug": "chime"
  },
@@ -614,29 +613,27 @@
   "slug": null
  },
  "citi": {
-  "checked_at": "2026-08-16T04:19:55.335500+00:00",
-  "deep_scanned_at": "2026-09-14T10:32:31.696845+00:00",
+  "checked_at": "2026-09-15T07:41:12.367907+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
  "clay": {
-  "checked_at": "2026-08-16T04:19:55.795565+00:00",
+  "checked_at": "2026-09-15T07:41:12.992751+00:00",
   "platform": "ashby",
   "slug": "claylabs"
  },
  "clear": {
-  "checked_at": "2026-08-16T04:19:59.460389+00:00",
+  "checked_at": "2026-09-15T07:41:17.022993+00:00",
   "platform": "greenhouse",
   "slug": "clear"
  },
  "cloud flare fall": {
-  "checked_at": "2026-08-16T04:20:01.498315+00:00",
-  "deep_scanned_at": "2026-09-14T10:32:31.696845+00:00",
+  "checked_at": "2026-09-15T07:41:20.140571+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
  "cloudflare": {
-  "checked_at": "2026-08-16T04:20:06.785583+00:00",
+  "checked_at": "2026-09-15T07:41:23.552586+00:00",
   "platform": "greenhouse",
   "slug": "cloudflare"
  },
@@ -657,13 +654,12 @@
   "slug": "comcast|wd115|Comcast_Careers"
  },
  "confluent": {
-  "checked_at": "2026-08-16T04:21:03.047183+00:00",
+  "checked_at": "2026-09-15T07:41:44.661777+00:00",
   "platform": "ashby",
   "slug": "confluent"
  },
  "crowdstrike": {
-  "checked_at": "2026-08-16T05:03:08.938412+00:00",
-  "deep_scanned_at": "2026-09-14T20:29:23.722440+00:00",
+  "checked_at": "2026-09-15T07:41:46.274956+00:00",
   "platform": "workday",
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
@@ -830,7 +826,7 @@
   "slug": "instacart"
  },
  "jane street": {
-  "checked_at": "2026-08-16T03:55:03.350806+00:00",
+  "checked_at": "2026-09-15T07:38:09.502987+00:00",
   "platform": "greenhouse",
   "slug": "janestreet"
  },
