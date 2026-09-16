@@ -139,7 +139,7 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "deep_scanned_at": "2026-09-14T16:30:38.765567+00:00",
+  "deep_scanned_at": "2026-09-16T18:51:15.332693+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -316,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "deep_scanned_at": "2026-09-14T20:29:23.722440+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-16T18:51:15.332693+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -347,7 +348,6 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-16T14:52:36.372150+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
@@ -517,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-15T23:39:23.033276+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -658,7 +658,7 @@
  },
  "comcast": {
   "checked_at": "2026-08-27T14:35:18.389179+00:00",
-  "deep_scanned_at": "2026-09-14T16:30:38.765567+00:00",
+  "deep_scanned_at": "2026-09-16T18:51:15.332693+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
@@ -816,7 +816,7 @@
  },
  "humana": {
   "checked_at": "2026-08-19T03:07:05.370006+00:00",
-  "deep_scanned_at": "2026-09-14T23:24:00.749335+00:00",
+  "deep_scanned_at": "2026-09-16T18:51:15.332693+00:00",
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
