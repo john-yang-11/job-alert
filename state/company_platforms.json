@@ -399,7 +399,6 @@
  },
  "T-mobile": {
   "checked_at": "2026-09-15T17:47:37.216283+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-16T04:42:15.772318+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
@@ -411,6 +410,7 @@
  },
  "Tencent": {
   "checked_at": "2026-09-15T17:48:01.468627+00:00",
+  "deep_scanned_at": "2026-09-16T09:52:56.487461+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -431,6 +431,7 @@
  },
  "US bank": {
   "checked_at": "2026-09-15T06:47:30.726419+00:00",
+  "deep_scanned_at": "2026-09-16T09:52:56.487461+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -461,6 +462,8 @@
  },
  "Workday": {
   "checked_at": "2026-09-15T21:14:48.539574+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-16T09:52:56.487461+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -513,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-15T23:39:23.033276+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -695,7 +698,7 @@
   "slug": "datadog"
  },
  "datadog winter 2027": {
-  "checked_at": "2026-09-09T09:09:46.282719+00:00",
+  "checked_at": "2026-09-16T09:52:29.659812+00:00",
   "platform": null,
   "slug": null
  },
@@ -766,7 +769,7 @@
   "slug": null
  },
  "ge aero fall 2027": {
-  "checked_at": "2026-09-09T09:09:31.260732+00:00",
+  "checked_at": "2026-09-16T09:52:16.569951+00:00",
   "platform": null,
   "slug": null
  },
@@ -847,7 +850,7 @@
   "slug": "kalshi"
  },
  "l3 harris": {
-  "checked_at": "2026-09-09T09:09:10.681799+00:00",
+  "checked_at": "2026-09-16T09:51:57.171876+00:00",
   "platform": null,
   "slug": null
  },
@@ -1115,7 +1118,6 @@
  },
  "state street": {
   "checked_at": "2026-09-15T17:47:24.250092+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-16T04:42:15.772318+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
@@ -1183,6 +1185,8 @@
  },
  "visa": {
   "checked_at": "2026-09-15T06:45:54.219016+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-16T09:52:56.487461+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
