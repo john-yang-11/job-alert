@@ -58,6 +58,7 @@
  },
  "Axon": {
   "checked_at": "2026-08-28T21:30:44.727392+00:00",
+  "consecutive_failures": 1,
   "platform": "greenhouse",
   "slug": "axon"
  },
@@ -247,7 +248,7 @@
  },
  "Mastercard": {
   "checked_at": "2026-09-15T13:28:53.119377+00:00",
-  "deep_scanned_at": "2026-09-15T21:15:24.061251+00:00",
+  "deep_scanned_at": "2026-09-17T15:17:39.976551+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|CorporateCareers"
  },
@@ -258,7 +259,7 @@
  },
  "NVIDIA": {
   "checked_at": "2026-09-15T06:45:37.515911+00:00",
-  "deep_scanned_at": "2026-09-15T21:15:24.061251+00:00",
+  "deep_scanned_at": "2026-09-17T15:17:39.976551+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
@@ -284,6 +285,7 @@
  },
  "Nuro": {
   "checked_at": "2026-08-28T21:31:12.190992+00:00",
+  "consecutive_failures": 1,
   "platform": "greenhouse",
   "slug": "nuro"
  },
@@ -294,7 +296,7 @@
  },
  "PNC": {
   "checked_at": "2026-09-15T06:46:23.746473+00:00",
-  "deep_scanned_at": "2026-09-15T23:39:48.180262+00:00",
+  "deep_scanned_at": "2026-09-17T15:17:39.976551+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -310,7 +312,7 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-09-15T13:28:58.477448+00:00",
-  "deep_scanned_at": "2026-09-15T21:15:24.061251+00:00",
+  "deep_scanned_at": "2026-09-17T15:17:39.976551+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
@@ -322,6 +324,7 @@
  },
  "Pinterest": {
   "checked_at": "2026-09-15T13:29:00.459318+00:00",
+  "consecutive_failures": 1,
   "platform": "jobfeed",
   "slug": "https://www.pinterestcareers.com/jobs/xml/?rss=true"
  },
@@ -516,7 +519,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-17T00:24:32.530170+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -964,6 +967,7 @@
  },
  "patreon": {
   "checked_at": "2026-09-15T13:28:59.170717+00:00",
+  "consecutive_failures": 1,
   "platform": "ashby",
   "slug": "patreon"
  },
