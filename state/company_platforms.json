@@ -58,7 +58,6 @@
  },
  "Axon": {
   "checked_at": "2026-08-28T21:30:44.727392+00:00",
-  "consecutive_failures": 1,
   "platform": "greenhouse",
   "slug": "axon"
  },
@@ -285,7 +284,6 @@
  },
  "Nuro": {
   "checked_at": "2026-08-28T21:31:12.190992+00:00",
-  "consecutive_failures": 1,
   "platform": "greenhouse",
   "slug": "nuro"
  },
@@ -324,7 +322,6 @@
  },
  "Pinterest": {
   "checked_at": "2026-09-15T13:29:00.459318+00:00",
-  "consecutive_failures": 1,
   "platform": "jobfeed",
   "slug": "https://www.pinterestcareers.com/jobs/xml/?rss=true"
  },
@@ -361,7 +358,7 @@
  },
  "Samsung": {
   "checked_at": "2026-09-15T17:46:29.192561+00:00",
-  "deep_scanned_at": "2026-09-15T23:39:48.180262+00:00",
+  "deep_scanned_at": "2026-09-17T19:14:11.328061+00:00",
   "platform": "workday",
   "slug": "sec|wd3|Samsung_Careers"
  },
@@ -377,7 +374,7 @@
  },
  "Snap": {
   "checked_at": "2026-09-15T06:47:28.338906+00:00",
-  "deep_scanned_at": "2026-09-16T04:42:15.772318+00:00",
+  "deep_scanned_at": "2026-09-17T19:14:11.328061+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -519,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-17T00:24:32.530170+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -967,7 +964,6 @@
  },
  "patreon": {
   "checked_at": "2026-09-15T13:28:59.170717+00:00",
-  "consecutive_failures": 1,
   "platform": "ashby",
   "slug": "patreon"
  },
@@ -993,7 +989,7 @@
  },
  "raytheon": {
   "checked_at": "2026-09-15T13:29:04.403563+00:00",
-  "deep_scanned_at": "2026-09-15T23:39:48.180262+00:00",
+  "deep_scanned_at": "2026-09-17T19:14:11.328061+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
@@ -1086,7 +1082,8 @@
  },
  "slack": {
   "checked_at": "2026-09-15T17:46:34.794851+00:00",
-  "deep_scanned_at": "2026-09-15T23:39:48.180262+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-17T19:14:11.328061+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
