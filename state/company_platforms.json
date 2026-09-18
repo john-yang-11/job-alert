@@ -139,7 +139,7 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "deep_scanned_at": "2026-09-16T18:51:15.332693+00:00",
+  "deep_scanned_at": "2026-09-18T11:05:27.915670+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -316,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "deep_scanned_at": "2026-09-16T18:51:15.332693+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-18T11:05:27.915670+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -469,7 +470,7 @@
  },
  "abbott": {
   "checked_at": "2026-09-15T07:38:19.009493+00:00",
-  "deep_scanned_at": "2026-09-16T22:04:29.254851+00:00",
+  "deep_scanned_at": "2026-09-18T11:05:27.915670+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -516,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-18T00:44:31.753029+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -657,7 +658,7 @@
  },
  "comcast": {
   "checked_at": "2026-08-27T14:35:18.389179+00:00",
-  "deep_scanned_at": "2026-09-16T18:51:15.332693+00:00",
+  "deep_scanned_at": "2026-09-18T11:05:27.915670+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
