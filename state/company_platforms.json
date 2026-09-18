@@ -26,7 +26,7 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-09-15T21:14:50.087269+00:00",
-  "deep_scanned_at": "2026-09-16T14:52:36.372150+00:00",
+  "deep_scanned_at": "2026-09-18T05:50:46.247300+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -347,7 +347,6 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-18T00:45:01.905387+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
@@ -464,7 +463,6 @@
  },
  "Workday": {
   "checked_at": "2026-09-15T21:14:48.539574+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-18T00:45:01.905387+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
@@ -518,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-18T00:44:31.753029+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -816,8 +814,8 @@
   "slug": null
  },
  "humana": {
-  "checked_at": "2026-08-19T03:07:05.370006+00:00",
-  "deep_scanned_at": "2026-09-16T18:51:15.332693+00:00",
+  "checked_at": "2026-09-18T05:50:22.517609+00:00",
+  "deep_scanned_at": "2026-09-18T05:50:46.247300+00:00",
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
@@ -874,7 +872,7 @@
  },
  "medtronic": {
   "checked_at": "2026-09-03T00:06:04.328063+00:00",
-  "deep_scanned_at": "2026-09-16T14:52:36.372150+00:00",
+  "deep_scanned_at": "2026-09-18T05:50:46.247300+00:00",
   "platform": "workday",
   "slug": "medtronic|wd1|MedtronicCareers"
  },
@@ -1048,7 +1046,7 @@
  },
  "salesforce": {
   "checked_at": "2026-08-31T13:34:54.291699+00:00",
-  "deep_scanned_at": "2026-09-16T14:52:36.372150+00:00",
+  "deep_scanned_at": "2026-09-18T05:50:46.247300+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
