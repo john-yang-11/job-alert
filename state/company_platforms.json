@@ -463,14 +463,13 @@
  },
  "Workday": {
   "checked_at": "2026-09-15T21:14:48.539574+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-19T17:57:55.519433+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
  "abbott": {
   "checked_at": "2026-09-15T07:38:19.009493+00:00",
-  "deep_scanned_at": "2026-09-18T11:05:27.915670+00:00",
+  "deep_scanned_at": "2026-09-19T20:32:44.178400+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -514,6 +513,12 @@
   "checked_at": "2026-09-13T06:45:15.779310+00:00",
   "platform": null,
   "slug": null
+ },
+ "aquatic": {
+  "checked_at": "2026-09-19T20:32:20.102105+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-09-15T07:39:04.450672+00:00",
@@ -652,7 +657,7 @@
  },
  "comcast": {
   "checked_at": "2026-08-27T14:35:18.389179+00:00",
-  "deep_scanned_at": "2026-09-18T11:05:27.915670+00:00",
+  "deep_scanned_at": "2026-09-19T20:32:44.178400+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
@@ -810,7 +815,7 @@
  },
  "humana": {
   "checked_at": "2026-09-18T05:50:22.517609+00:00",
-  "deep_scanned_at": "2026-09-18T05:50:46.247300+00:00",
+  "deep_scanned_at": "2026-09-19T20:32:44.178400+00:00",
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
@@ -867,7 +872,7 @@
  },
  "medtronic": {
   "checked_at": "2026-09-03T00:06:04.328063+00:00",
-  "deep_scanned_at": "2026-09-18T05:50:46.247300+00:00",
+  "deep_scanned_at": "2026-09-19T20:32:44.178400+00:00",
   "platform": "workday",
   "slug": "medtronic|wd1|MedtronicCareers"
  },
