@@ -347,7 +347,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "deep_scanned_at": "2026-09-18T00:45:01.905387+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-19T14:44:20.197564+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -400,7 +401,8 @@
  },
  "T-mobile": {
   "checked_at": "2026-09-15T17:47:37.216283+00:00",
-  "deep_scanned_at": "2026-09-17T22:25:26.355867+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-19T14:44:20.197564+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
@@ -411,7 +413,7 @@
  },
  "Tencent": {
   "checked_at": "2026-09-15T17:48:01.468627+00:00",
-  "deep_scanned_at": "2026-09-17T22:25:26.355867+00:00",
+  "deep_scanned_at": "2026-09-19T14:44:20.197564+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -432,7 +434,7 @@
  },
  "US bank": {
   "checked_at": "2026-09-15T06:47:30.726419+00:00",
-  "deep_scanned_at": "2026-09-18T00:45:01.905387+00:00",
+  "deep_scanned_at": "2026-09-19T14:44:20.197564+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -516,7 +518,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-18T23:32:57.639469+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -1118,7 +1120,6 @@
  },
  "state street": {
   "checked_at": "2026-09-15T17:47:24.250092+00:00",
-  "consecutive_failures": 2,
   "deep_scanned_at": "2026-09-19T11:27:59.963409+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
