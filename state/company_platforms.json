@@ -316,7 +316,6 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-19T22:28:50.143827+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
@@ -476,7 +475,7 @@
  },
  "adobe": {
   "checked_at": "2026-09-15T06:45:27.153105+00:00",
-  "deep_scanned_at": "2026-09-18T18:21:17.368222+00:00",
+  "deep_scanned_at": "2026-09-20T00:21:21.648572+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -517,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-19T20:32:20.102105+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -548,7 +547,8 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "deep_scanned_at": "2026-09-18T14:59:19.212645+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-20T00:21:21.648572+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -564,7 +564,7 @@
  },
  "blue origin": {
   "checked_at": "2026-09-15T07:40:30.028548+00:00",
-  "deep_scanned_at": "2026-09-18T18:21:17.368222+00:00",
+  "deep_scanned_at": "2026-09-20T00:21:21.648572+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -904,7 +904,8 @@
  },
  "moelis": {
   "checked_at": "2026-09-07T04:28:26.140870+00:00",
-  "deep_scanned_at": "2026-09-18T14:59:19.212645+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-20T00:21:21.648572+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
  },
