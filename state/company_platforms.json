@@ -82,7 +82,7 @@
   "slug": null
  },
  "CNN": {
-  "checked_at": "2026-09-13T16:57:02.156997+00:00",
+  "checked_at": "2026-09-20T17:38:35.953615+00:00",
   "platform": null,
   "slug": null
  },
@@ -98,7 +98,7 @@
   "slug": "cisco|wd5|Cisco_Careers"
  },
  "Deloitte": {
-  "checked_at": "2026-09-13T16:58:13.064314+00:00",
+  "checked_at": "2026-09-20T17:40:00.818606+00:00",
   "platform": null,
   "slug": null
  },
@@ -108,7 +108,7 @@
   "slug": null
  },
  "Delta": {
-  "checked_at": "2026-09-13T16:58:19.432353+00:00",
+  "checked_at": "2026-09-20T17:40:09.221802+00:00",
   "platform": null,
   "slug": null
  },
@@ -123,7 +123,7 @@
   "slug": "https://www.dropbox.jobs/jobs/xml/?rss=true"
  },
  "Electronic Arts": {
-  "checked_at": "2026-09-13T16:59:55.962649+00:00",
+  "checked_at": "2026-09-20T17:41:56.502112+00:00",
   "platform": null,
   "slug": null
  },
@@ -133,7 +133,7 @@
   "slug": "etched"
  },
  "Everpure": {
-  "checked_at": "2026-09-13T17:00:13.016393+00:00",
+  "checked_at": "2026-09-20T17:42:16.388733+00:00",
   "platform": null,
   "slug": null
  },
@@ -294,7 +294,7 @@
  },
  "PNC": {
   "checked_at": "2026-09-15T06:46:23.746473+00:00",
-  "deep_scanned_at": "2026-09-19T01:32:11.916849+00:00",
+  "deep_scanned_at": "2026-09-20T17:45:18.540517+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -358,7 +358,7 @@
  },
  "Samsung": {
   "checked_at": "2026-09-15T17:46:29.192561+00:00",
-  "deep_scanned_at": "2026-09-19T11:27:59.963409+00:00",
+  "deep_scanned_at": "2026-09-20T17:45:18.540517+00:00",
   "platform": "workday",
   "slug": "sec|wd3|Samsung_Careers"
  },
@@ -514,6 +514,12 @@
   "platform": null,
   "slug": null
  },
+ "aquatic": {
+  "checked_at": "2026-09-20T17:38:28.697057+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
+ },
  "asana": {
   "checked_at": "2026-09-15T07:39:04.450672+00:00",
   "platform": "greenhouse",
@@ -645,7 +651,7 @@
   "slug": "coinbase"
  },
  "colins aerospace": {
-  "checked_at": "2026-09-13T16:57:14.598942+00:00",
+  "checked_at": "2026-09-20T17:38:57.114624+00:00",
   "platform": null,
   "slug": null
  },
@@ -667,7 +673,7 @@
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
  "cvs health": {
-  "checked_at": "2026-09-13T16:57:54.152357+00:00",
+  "checked_at": "2026-09-20T17:39:40.270247+00:00",
   "platform": null,
   "slug": null
  },
@@ -702,7 +708,7 @@
   "slug": "Deepgram"
  },
  "dell": {
-  "checked_at": "2026-09-13T16:58:04.930801+00:00",
+  "checked_at": "2026-09-20T17:39:51.000655+00:00",
   "platform": null,
   "slug": null
  },
@@ -712,7 +718,7 @@
   "slug": null
  },
  "disney": {
-  "checked_at": "2026-09-13T16:58:35.356908+00:00",
+  "checked_at": "2026-09-20T17:40:30.679873+00:00",
   "platform": null,
   "slug": null
  },
@@ -722,7 +728,7 @@
   "slug": "https://careers.docusign.com"
  },
  "doordash": {
-  "checked_at": "2026-09-13T16:58:41.030318+00:00",
+  "checked_at": "2026-09-20T17:40:37.416302+00:00",
   "platform": null,
   "slug": null
  },
@@ -732,7 +738,7 @@
   "slug": "duolingo"
  },
  "ea pathfinder": {
-  "checked_at": "2026-09-13T16:58:58.169136+00:00",
+  "checked_at": "2026-09-20T17:40:59.908662+00:00",
   "platform": null,
   "slug": null
  },
@@ -742,7 +748,7 @@
   "slug": "elastic"
  },
  "epic": {
-  "checked_at": "2026-09-13T17:00:05.136801+00:00",
+  "checked_at": "2026-09-20T17:42:07.090226+00:00",
   "platform": null,
   "slug": null
  },
@@ -768,12 +774,12 @@
   "slug": null
  },
  "gemnai fall": {
-  "checked_at": "2026-09-13T17:00:26.194186+00:00",
+  "checked_at": "2026-09-20T17:42:29.892055+00:00",
   "platform": null,
   "slug": null
  },
  "general dynamics": {
-  "checked_at": "2026-09-13T17:02:08.747289+00:00",
+  "checked_at": "2026-09-20T17:44:51.815546+00:00",
   "platform": null,
   "slug": null
  },
@@ -983,7 +989,7 @@
  },
  "raytheon": {
   "checked_at": "2026-09-15T13:29:04.403563+00:00",
-  "deep_scanned_at": "2026-09-19T01:32:11.916849+00:00",
+  "deep_scanned_at": "2026-09-20T17:45:18.540517+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
@@ -1076,7 +1082,8 @@
  },
  "slack": {
   "checked_at": "2026-09-15T17:46:34.794851+00:00",
-  "deep_scanned_at": "2026-09-19T06:32:26.484405+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-20T17:45:18.540517+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
