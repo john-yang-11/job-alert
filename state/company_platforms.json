@@ -103,7 +103,7 @@
   "slug": null
  },
  "Deloitte ai smth": {
-  "checked_at": "2026-09-13T19:23:03.627490+00:00",
+  "checked_at": "2026-09-20T20:44:07.747168+00:00",
   "platform": null,
   "slug": null
  },
@@ -159,7 +159,7 @@
   "slug": null
  },
  "Google ASDI": {
-  "checked_at": "2026-09-13T19:24:01.586270+00:00",
+  "checked_at": "2026-09-20T20:45:10.210703+00:00",
   "platform": null,
   "slug": null
  },
@@ -170,7 +170,7 @@
   "slug": "hp|wd5|ExternalCareerSite"
  },
  "HPR": {
-  "checked_at": "2026-09-13T19:24:32.400131+00:00",
+  "checked_at": "2026-09-20T20:45:22.572872+00:00",
   "platform": null,
   "slug": null
  },
@@ -185,7 +185,7 @@
   "slug": "hermeus"
  },
  "Hubspot": {
-  "checked_at": "2026-09-13T19:24:54.067968+00:00",
+  "checked_at": "2026-09-20T20:45:44.531087+00:00",
   "platform": null,
   "slug": null
  },
@@ -200,17 +200,17 @@
   "slug": null
  },
  "IBM accelerate": {
-  "checked_at": "2026-09-13T19:25:09.474005+00:00",
+  "checked_at": "2026-09-20T20:45:59.106070+00:00",
   "platform": null,
   "slug": null
  },
  "Intuit": {
-  "checked_at": "2026-09-13T19:25:48.574761+00:00",
+  "checked_at": "2026-09-20T20:46:39.635378+00:00",
   "platform": null,
   "slug": null
  },
  "JP morgan chase fellowship": {
-  "checked_at": "2026-09-13T19:26:24.750975+00:00",
+  "checked_at": "2026-09-20T20:47:15.233536+00:00",
   "platform": null,
   "slug": null
  },
@@ -220,7 +220,7 @@
   "slug": null
  },
  "John Deere": {
-  "checked_at": "2026-09-13T19:26:11.790176+00:00",
+  "checked_at": "2026-09-20T20:47:02.538540+00:00",
   "platform": null,
   "slug": null
  },
@@ -231,7 +231,7 @@
   "slug": "kla|wd1|Search"
  },
  "Lockheed Martin": {
-  "checked_at": "2026-09-13T19:26:55.846454+00:00",
+  "checked_at": "2026-09-20T20:47:49.895604+00:00",
   "platform": null,
   "slug": null
  },
@@ -241,7 +241,7 @@
   "slug": "lyft"
  },
  "MLH": {
-  "checked_at": "2026-09-13T19:27:08.694675+00:00",
+  "checked_at": "2026-09-20T20:48:02.203088+00:00",
   "platform": null,
   "slug": null
  },
@@ -374,7 +374,7 @@
  },
  "Snap": {
   "checked_at": "2026-09-15T06:47:28.338906+00:00",
-  "deep_scanned_at": "2026-09-19T11:27:59.963409+00:00",
+  "deep_scanned_at": "2026-09-20T20:49:12.642041+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-20T17:38:28.697057+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -546,8 +546,9 @@
   "slug": null
  },
  "blackstone": {
-  "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "deep_scanned_at": "2026-09-20T00:21:21.648572+00:00",
+  "checked_at": "2026-09-20T20:48:47.970384+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-20T20:49:12.642041+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -784,7 +785,7 @@
   "slug": null
  },
  "general motors": {
-  "checked_at": "2026-09-13T19:23:48.097977+00:00",
+  "checked_at": "2026-09-20T20:44:56.851001+00:00",
   "platform": null,
   "slug": null
  },
@@ -804,7 +805,7 @@
   "slug": "handshake"
  },
  "harmon": {
-  "checked_at": "2026-09-13T19:24:24.961555+00:00",
+  "checked_at": "2026-09-20T20:45:16.009109+00:00",
   "platform": null,
   "slug": null
  },
@@ -825,7 +826,7 @@
   "slug": null
  },
  "infosys": {
-  "checked_at": "2026-09-13T19:25:30.140070+00:00",
+  "checked_at": "2026-09-20T20:46:20.674644+00:00",
   "platform": null,
   "slug": null
  },
@@ -840,7 +841,7 @@
   "slug": "janestreet"
  },
  "jpmorgan": {
-  "checked_at": "2026-09-13T19:26:34.542549+00:00",
+  "checked_at": "2026-09-20T20:47:23.366914+00:00",
   "platform": null,
   "slug": null
  },
@@ -861,7 +862,7 @@
   "slug": "leidos|wd5|External"
  },
  "lenovo": {
-  "checked_at": "2026-09-13T19:26:41.055667+00:00",
+  "checked_at": "2026-09-20T20:47:30.578639+00:00",
   "platform": null,
   "slug": null
  },
@@ -877,7 +878,7 @@
   "slug": "medtronic|wd1|MedtronicCareers"
  },
  "mercedes": {
-  "checked_at": "2026-09-13T19:27:02.195741+00:00",
+  "checked_at": "2026-09-20T20:47:56.027508+00:00",
   "platform": null,
   "slug": null
  },
@@ -913,7 +914,7 @@
   "slug": "mongodb"
  },
  "mongodb NeXt summit": {
-  "checked_at": "2026-09-13T19:27:26.254763+00:00",
+  "checked_at": "2026-09-20T20:48:24.337635+00:00",
   "platform": null,
   "slug": null
  },
@@ -1082,7 +1083,6 @@
  },
  "slack": {
   "checked_at": "2026-09-15T17:46:34.794851+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-20T17:45:18.540517+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
@@ -1119,13 +1119,14 @@
  },
  "state street": {
   "checked_at": "2026-09-15T17:47:24.250092+00:00",
-  "deep_scanned_at": "2026-09-19T11:27:59.963409+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-20T20:49:12.642041+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
  "stryker": {
   "checked_at": "2026-09-15T17:47:30.426918+00:00",
-  "deep_scanned_at": "2026-09-19T11:27:59.963409+00:00",
+  "deep_scanned_at": "2026-09-20T20:49:12.642041+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
@@ -1155,7 +1156,7 @@
   "slug": null
  },
  "toast": {
-  "checked_at": "2026-08-21T16:46:47.077939+00:00",
+  "checked_at": "2026-09-20T20:48:43.995613+00:00",
   "platform": "greenhouse",
   "slug": "toast"
  },
