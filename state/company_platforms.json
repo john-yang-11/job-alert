@@ -93,7 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-09-15T06:46:51.719630+00:00",
-  "deep_scanned_at": "2026-09-18T18:21:17.368222+00:00",
+  "deep_scanned_at": "2026-09-20T05:21:08.594286+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-19T20:32:20.102105+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -547,7 +547,6 @@
  },
  "blackstone": {
   "checked_at": "2026-08-21T20:35:15.940228+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-20T00:21:21.648572+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -575,7 +574,7 @@
  },
  "boeing": {
   "checked_at": "2026-09-15T07:40:33.450549+00:00",
-  "deep_scanned_at": "2026-09-18T18:21:17.368222+00:00",
+  "deep_scanned_at": "2026-09-20T05:21:08.594286+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -621,7 +620,7 @@
  },
  "citi": {
   "checked_at": "2026-09-15T07:41:12.367907+00:00",
-  "deep_scanned_at": "2026-09-18T21:11:50.931083+00:00",
+  "deep_scanned_at": "2026-09-20T05:21:08.594286+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -637,7 +636,8 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-09-15T07:41:20.140571+00:00",
-  "deep_scanned_at": "2026-09-18T21:11:50.931083+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-20T05:21:08.594286+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
@@ -904,7 +904,6 @@
  },
  "moelis": {
   "checked_at": "2026-09-07T04:28:26.140870+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-20T00:21:21.648572+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
@@ -1172,7 +1171,6 @@
  },
  "uber": {
   "checked_at": "2026-09-15T06:45:46.754532+00:00",
-  "consecutive_failures": 1,
   "platform": "jobfeed",
   "slug": "https://jobs.uber.com/jobs/xml/?rss=true"
  },
