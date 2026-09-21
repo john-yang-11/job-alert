@@ -26,7 +26,7 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-09-15T21:14:50.087269+00:00",
-  "deep_scanned_at": "2026-09-19T17:57:55.519433+00:00",
+  "deep_scanned_at": "2026-09-21T01:39:13.482659+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -278,7 +278,7 @@
   "slug": null
  },
  "Northrop Grumman": {
-  "checked_at": "2026-09-14T00:05:40.274079+00:00",
+  "checked_at": "2026-09-21T01:34:05.434450+00:00",
   "platform": null,
   "slug": null
  },
@@ -341,19 +341,18 @@
   "slug": "reddit"
  },
  "Rippling winter 27": {
-  "checked_at": "2026-09-14T00:06:57.197398+00:00",
+  "checked_at": "2026-09-21T01:35:14.543077+00:00",
   "platform": null,
   "slug": null
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-20T23:13:30.420773+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
  "SEO tech developer": {
-  "checked_at": "2026-09-14T00:08:07.575440+00:00",
+  "checked_at": "2026-09-21T01:36:17.494690+00:00",
   "platform": null,
   "slug": null
  },
@@ -369,7 +368,7 @@
   "slug": "https://careers.servicenow.com/jobs/xml/?rss=true"
  },
  "Siemens": {
-  "checked_at": "2026-09-14T00:08:25.941769+00:00",
+  "checked_at": "2026-09-21T01:36:33.793674+00:00",
   "platform": null,
   "slug": null
  },
@@ -401,13 +400,12 @@
  },
  "T-mobile": {
   "checked_at": "2026-09-15T17:47:37.216283+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-20T23:13:30.420773+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
  "TSMC": {
-  "checked_at": "2026-09-14T00:10:03.525065+00:00",
+  "checked_at": "2026-09-21T01:38:07.386245+00:00",
   "platform": null,
   "slug": null
  },
@@ -423,12 +421,12 @@
   "slug": null
  },
  "TikTok": {
-  "checked_at": "2026-09-14T00:09:39.716965+00:00",
+  "checked_at": "2026-09-21T01:37:41.525745+00:00",
   "platform": null,
   "slug": null
  },
  "Two Sigma": {
-  "checked_at": "2026-09-14T00:10:26.744437+00:00",
+  "checked_at": "2026-09-21T01:38:30.294369+00:00",
   "platform": null,
   "slug": null
  },
@@ -465,7 +463,8 @@
  },
  "Workday": {
   "checked_at": "2026-09-15T21:14:48.539574+00:00",
-  "deep_scanned_at": "2026-09-19T17:57:55.519433+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-21T01:39:13.482659+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -518,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-20T17:38:28.697057+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -960,7 +959,7 @@
   "slug": "okta"
  },
  "oracle": {
-  "checked_at": "2026-09-14T00:05:52.397900+00:00",
+  "checked_at": "2026-09-21T01:34:17.405394+00:00",
   "platform": null,
   "slug": null
  },
@@ -980,7 +979,7 @@
   "slug": "plaid"
  },
  "pwc": {
-  "checked_at": "2026-09-14T00:06:27.966693+00:00",
+  "checked_at": "2026-09-21T01:34:51.966356+00:00",
   "platform": null,
   "slug": null
  },
@@ -1017,7 +1016,7 @@
   "slug": "riotgames"
  },
  "rippling": {
-  "checked_at": "2026-09-14T00:06:40.652822+00:00",
+  "checked_at": "2026-09-21T01:35:01.681577+00:00",
   "platform": null,
   "slug": null
  },
@@ -1032,7 +1031,7 @@
   "slug": "roblox"
  },
  "roche": {
-  "checked_at": "2026-09-14T00:07:29.113243+00:00",
+  "checked_at": "2026-09-21T01:35:44.521320+00:00",
   "platform": null,
   "slug": null
  },
@@ -1042,13 +1041,13 @@
   "slug": "roku"
  },
  "rtx": {
-  "checked_at": "2026-09-14T00:07:45.470521+00:00",
+  "checked_at": "2026-09-21T01:36:02.104525+00:00",
   "platform": null,
   "slug": null
  },
  "salesforce": {
   "checked_at": "2026-08-31T13:34:54.291699+00:00",
-  "deep_scanned_at": "2026-09-19T17:57:55.519433+00:00",
+  "deep_scanned_at": "2026-09-21T01:39:13.482659+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
@@ -1094,12 +1093,12 @@
   "slug": "sofi"
  },
  "sony": {
-  "checked_at": "2026-09-14T00:08:42.224500+00:00",
+  "checked_at": "2026-09-21T01:36:49.246325+00:00",
   "platform": null,
   "slug": null
  },
  "southwest": {
-  "checked_at": "2026-09-14T00:09:02.240496+00:00",
+  "checked_at": "2026-09-21T01:37:08.902463+00:00",
   "platform": null,
   "slug": null
  },
@@ -1109,7 +1108,7 @@
   "slug": "spacex"
  },
  "splunk": {
-  "checked_at": "2026-09-14T00:09:13.012199+00:00",
+  "checked_at": "2026-09-21T01:37:16.774894+00:00",
   "platform": null,
   "slug": null
  },
@@ -1146,12 +1145,12 @@
   "slug": "thenuclearcompany"
  },
  "thrive by duolingo": {
-  "checked_at": "2026-09-14T00:09:27.128694+00:00",
+  "checked_at": "2026-09-21T01:37:29.641172+00:00",
   "platform": null,
   "slug": null
  },
  "tinder": {
-  "checked_at": "2026-09-14T00:09:47.669234+00:00",
+  "checked_at": "2026-09-21T01:37:49.028945+00:00",
   "platform": null,
   "slug": null
  },
@@ -1187,7 +1186,7 @@
  },
  "visa": {
   "checked_at": "2026-09-15T06:45:54.219016+00:00",
-  "deep_scanned_at": "2026-09-19T17:57:55.519433+00:00",
+  "deep_scanned_at": "2026-09-21T01:39:13.482659+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
