@@ -93,7 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-09-15T06:46:51.719630+00:00",
-  "deep_scanned_at": "2026-09-20T05:21:08.594286+00:00",
+  "deep_scanned_at": "2026-09-21T22:48:48.308606+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-21T19:19:22.685142+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -568,7 +568,7 @@
   "slug": "blueorigin|wd5|BlueOrigin"
  },
  "bny": {
-  "checked_at": "2026-09-14T20:28:48.567278+00:00",
+  "checked_at": "2026-09-21T22:48:06.023373+00:00",
   "platform": null,
   "slug": null
  },
@@ -620,7 +620,7 @@
  },
  "citi": {
   "checked_at": "2026-09-15T07:41:12.367907+00:00",
-  "deep_scanned_at": "2026-09-20T05:21:08.594286+00:00",
+  "deep_scanned_at": "2026-09-21T22:48:48.308606+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -636,7 +636,8 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-09-15T07:41:20.140571+00:00",
-  "deep_scanned_at": "2026-09-20T05:21:08.594286+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-21T22:48:48.308606+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
@@ -668,7 +669,7 @@
  },
  "crowdstrike": {
   "checked_at": "2026-09-15T07:41:46.274956+00:00",
-  "deep_scanned_at": "2026-09-20T10:08:34.283429+00:00",
+  "deep_scanned_at": "2026-09-21T22:48:48.308606+00:00",
   "platform": "workday",
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
@@ -903,7 +904,6 @@
  },
  "moelis": {
   "checked_at": "2026-09-07T04:28:26.140870+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-21T19:19:50.596313+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
