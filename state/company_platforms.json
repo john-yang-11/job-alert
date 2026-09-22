@@ -347,7 +347,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "deep_scanned_at": "2026-09-20T23:13:30.420773+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-22T17:14:42.634092+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -514,12 +515,6 @@
   "platform": null,
   "slug": null
  },
- "aquatic": {
-  "checked_at": "2026-09-21T19:19:22.685142+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
- },
  "asana": {
   "checked_at": "2026-09-15T07:39:04.450672+00:00",
   "platform": "greenhouse",
@@ -547,7 +542,8 @@
  },
  "blackstone": {
   "checked_at": "2026-09-20T20:48:47.970384+00:00",
-  "deep_scanned_at": "2026-09-20T20:49:12.642041+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-22T17:14:42.634092+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -1082,7 +1078,6 @@
  },
  "slack": {
   "checked_at": "2026-09-15T17:46:34.794851+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-22T12:33:03.475154+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
@@ -1119,13 +1114,14 @@
  },
  "state street": {
   "checked_at": "2026-09-15T17:47:24.250092+00:00",
-  "deep_scanned_at": "2026-09-20T20:49:12.642041+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-22T17:14:42.634092+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
  "stryker": {
   "checked_at": "2026-09-15T17:47:30.426918+00:00",
-  "deep_scanned_at": "2026-09-20T20:49:12.642041+00:00",
+  "deep_scanned_at": "2026-09-22T17:14:42.634092+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
