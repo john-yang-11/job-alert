@@ -26,7 +26,7 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-09-15T21:14:50.087269+00:00",
-  "deep_scanned_at": "2026-09-21T01:39:13.482659+00:00",
+  "deep_scanned_at": "2026-09-22T23:14:16.321451+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -400,7 +400,6 @@
  },
  "T-mobile": {
   "checked_at": "2026-09-15T17:47:37.216283+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-22T20:27:59.159030+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
@@ -464,13 +463,14 @@
  },
  "Workday": {
   "checked_at": "2026-09-15T21:14:48.539574+00:00",
-  "deep_scanned_at": "2026-09-21T01:39:13.482659+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-22T23:14:16.321451+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
  "abbott": {
   "checked_at": "2026-09-15T07:38:19.009493+00:00",
-  "deep_scanned_at": "2026-09-21T07:10:00.008430+00:00",
+  "deep_scanned_at": "2026-09-22T23:14:16.321451+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -517,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-22T20:27:21.705346+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -1186,7 +1186,7 @@
  },
  "visa": {
   "checked_at": "2026-09-15T06:45:54.219016+00:00",
-  "deep_scanned_at": "2026-09-21T01:39:13.482659+00:00",
+  "deep_scanned_at": "2026-09-22T23:14:16.321451+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
