@@ -165,7 +165,7 @@
  },
  "HP": {
   "checked_at": "2026-09-15T13:28:19.814605+00:00",
-  "deep_scanned_at": "2026-09-20T10:08:34.283429+00:00",
+  "deep_scanned_at": "2026-09-22T01:35:03.653874+00:00",
   "platform": "workday",
   "slug": "hp|wd5|ExternalCareerSite"
  },
@@ -226,7 +226,7 @@
  },
  "KLA": {
   "checked_at": "2026-09-15T13:28:41.193357+00:00",
-  "deep_scanned_at": "2026-09-20T10:08:34.283429+00:00",
+  "deep_scanned_at": "2026-09-22T01:35:03.653874+00:00",
   "platform": "workday",
   "slug": "kla|wd1|Search"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-21T19:19:22.685142+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -636,7 +636,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-09-15T07:41:20.140571+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-21T22:48:48.308606+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -755,7 +754,7 @@
  },
  "fidelity": {
   "checked_at": "2026-09-15T13:27:52.220970+00:00",
-  "deep_scanned_at": "2026-09-20T10:08:34.283429+00:00",
+  "deep_scanned_at": "2026-09-22T01:35:03.653874+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
  },
@@ -857,7 +856,7 @@
  },
  "leidos": {
   "checked_at": "2026-09-15T13:28:50.070469+00:00",
-  "deep_scanned_at": "2026-09-20T14:10:11.979905+00:00",
+  "deep_scanned_at": "2026-09-22T01:35:03.653874+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
  },
