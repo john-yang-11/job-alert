@@ -139,7 +139,7 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "deep_scanned_at": "2026-09-21T14:02:23.581151+00:00",
+  "deep_scanned_at": "2026-09-23T07:41:26.294068+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -316,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "deep_scanned_at": "2026-09-21T14:02:23.581151+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-23T07:41:26.294068+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -475,7 +476,7 @@
  },
  "adobe": {
   "checked_at": "2026-09-15T06:45:27.153105+00:00",
-  "deep_scanned_at": "2026-09-21T19:19:50.596313+00:00",
+  "deep_scanned_at": "2026-09-23T07:41:26.294068+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -516,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-22T20:27:21.705346+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -995,7 +996,7 @@
  },
  "redhat": {
   "checked_at": "2026-08-31T13:33:56.555128+00:00",
-  "deep_scanned_at": "2026-09-21T14:02:23.581151+00:00",
+  "deep_scanned_at": "2026-09-23T07:41:26.294068+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
