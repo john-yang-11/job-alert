@@ -93,7 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-09-15T06:46:51.719630+00:00",
-  "deep_scanned_at": "2026-09-21T22:48:48.308606+00:00",
+  "deep_scanned_at": "2026-09-23T13:36:10.426682+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -316,7 +316,6 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-23T07:41:26.294068+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
@@ -517,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-22T20:27:21.705346+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -564,7 +563,7 @@
  },
  "blue origin": {
   "checked_at": "2026-09-15T07:40:30.028548+00:00",
-  "deep_scanned_at": "2026-09-21T19:19:50.596313+00:00",
+  "deep_scanned_at": "2026-09-23T13:36:10.426682+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -575,7 +574,7 @@
  },
  "boeing": {
   "checked_at": "2026-09-15T07:40:33.450549+00:00",
-  "deep_scanned_at": "2026-09-21T19:19:50.596313+00:00",
+  "deep_scanned_at": "2026-09-23T13:36:10.426682+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -699,7 +698,7 @@
   "slug": "datadog"
  },
  "datadog winter 2027": {
-  "checked_at": "2026-09-16T09:52:29.659812+00:00",
+  "checked_at": "2026-09-23T13:35:44.027186+00:00",
   "platform": null,
   "slug": null
  },
@@ -770,7 +769,7 @@
   "slug": null
  },
  "ge aero fall 2027": {
-  "checked_at": "2026-09-16T09:52:16.569951+00:00",
+  "checked_at": "2026-09-23T13:35:27.033557+00:00",
   "platform": null,
   "slug": null
  },
@@ -851,7 +850,7 @@
   "slug": "kalshi"
  },
  "l3 harris": {
-  "checked_at": "2026-09-16T09:51:57.171876+00:00",
+  "checked_at": "2026-09-23T13:35:09.138024+00:00",
   "platform": null,
   "slug": null
  },
@@ -904,7 +903,8 @@
  },
  "moelis": {
   "checked_at": "2026-09-07T04:28:26.140870+00:00",
-  "deep_scanned_at": "2026-09-21T19:19:50.596313+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-23T13:36:10.426682+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
  },
