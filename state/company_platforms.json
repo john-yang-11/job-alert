@@ -165,7 +165,7 @@
  },
  "HP": {
   "checked_at": "2026-09-15T13:28:19.814605+00:00",
-  "deep_scanned_at": "2026-09-22T01:35:03.653874+00:00",
+  "deep_scanned_at": "2026-09-23T21:27:01.132890+00:00",
   "platform": "workday",
   "slug": "hp|wd5|ExternalCareerSite"
  },
@@ -226,7 +226,7 @@
  },
  "KLA": {
   "checked_at": "2026-09-15T13:28:41.193357+00:00",
-  "deep_scanned_at": "2026-09-22T01:35:03.653874+00:00",
+  "deep_scanned_at": "2026-09-23T21:27:01.132890+00:00",
   "platform": "workday",
   "slug": "kla|wd1|Search"
  },
@@ -247,7 +247,7 @@
  },
  "Mastercard": {
   "checked_at": "2026-09-15T13:28:53.119377+00:00",
-  "deep_scanned_at": "2026-09-22T06:45:27.107667+00:00",
+  "deep_scanned_at": "2026-09-23T21:27:01.132890+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|CorporateCareers"
  },
@@ -514,6 +514,12 @@
   "platform": null,
   "slug": null
  },
+ "aquatic": {
+  "checked_at": "2026-09-23T21:26:32.259228+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
+ },
  "asana": {
   "checked_at": "2026-09-15T07:39:04.450672+00:00",
   "platform": "greenhouse",
@@ -630,7 +636,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-09-15T07:41:20.140571+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-23T17:58:06.948407+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -851,7 +856,7 @@
  },
  "leidos": {
   "checked_at": "2026-09-15T13:28:50.070469+00:00",
-  "deep_scanned_at": "2026-09-22T01:35:03.653874+00:00",
+  "deep_scanned_at": "2026-09-23T21:27:01.132890+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
  },
