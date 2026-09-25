@@ -226,7 +226,7 @@
  },
  "KLA": {
   "checked_at": "2026-09-15T13:28:41.193357+00:00",
-  "deep_scanned_at": "2026-09-23T21:27:01.132890+00:00",
+  "deep_scanned_at": "2026-09-25T17:05:03.887374+00:00",
   "platform": "workday",
   "slug": "kla|wd1|Search"
  },
@@ -247,7 +247,7 @@
  },
  "Mastercard": {
   "checked_at": "2026-09-15T13:28:53.119377+00:00",
-  "deep_scanned_at": "2026-09-23T21:27:01.132890+00:00",
+  "deep_scanned_at": "2026-09-25T17:05:03.887374+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|CorporateCareers"
  },
@@ -258,7 +258,7 @@
  },
  "NVIDIA": {
   "checked_at": "2026-09-15T06:45:37.515911+00:00",
-  "deep_scanned_at": "2026-09-23T23:56:19.524818+00:00",
+  "deep_scanned_at": "2026-09-25T17:05:03.887374+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
@@ -331,7 +331,7 @@
   "slug": "point72"
  },
  "Qualcomm": {
-  "checked_at": "2026-09-18T14:57:47.332431+00:00",
+  "checked_at": "2026-09-25T17:04:09.340685+00:00",
   "platform": null,
   "slug": null
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-24T22:16:32.815268+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -636,7 +636,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-09-15T07:41:20.140571+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-25T11:45:15.488225+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -689,7 +688,7 @@
   "slug": "databricks"
  },
  "databricks winter": {
-  "checked_at": "2026-09-18T14:58:07.307053+00:00",
+  "checked_at": "2026-09-25T17:04:29.715298+00:00",
   "platform": null,
   "slug": null
  },
@@ -857,7 +856,7 @@
  },
  "leidos": {
   "checked_at": "2026-09-15T13:28:50.070469+00:00",
-  "deep_scanned_at": "2026-09-23T21:27:01.132890+00:00",
+  "deep_scanned_at": "2026-09-25T17:05:03.887374+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
  },
