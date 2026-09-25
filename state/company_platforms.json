@@ -165,7 +165,7 @@
  },
  "HP": {
   "checked_at": "2026-09-15T13:28:19.814605+00:00",
-  "deep_scanned_at": "2026-09-23T21:27:01.132890+00:00",
+  "deep_scanned_at": "2026-09-25T11:45:15.488225+00:00",
   "platform": "workday",
   "slug": "hp|wd5|ExternalCareerSite"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-24T22:16:32.815268+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -636,7 +636,8 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-09-15T07:41:20.140571+00:00",
-  "deep_scanned_at": "2026-09-23T17:58:06.948407+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-25T11:45:15.488225+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
@@ -668,7 +669,7 @@
  },
  "crowdstrike": {
   "checked_at": "2026-09-15T07:41:46.274956+00:00",
-  "deep_scanned_at": "2026-09-23T17:58:06.948407+00:00",
+  "deep_scanned_at": "2026-09-25T11:45:15.488225+00:00",
   "platform": "workday",
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
@@ -754,7 +755,7 @@
  },
  "fidelity": {
   "checked_at": "2026-09-15T13:27:52.220970+00:00",
-  "deep_scanned_at": "2026-09-23T17:58:06.948407+00:00",
+  "deep_scanned_at": "2026-09-25T11:45:15.488225+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
  },
@@ -903,7 +904,6 @@
  },
  "moelis": {
   "checked_at": "2026-09-07T04:28:26.140870+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-25T06:06:26.697102+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
