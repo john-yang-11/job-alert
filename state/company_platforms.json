@@ -294,7 +294,7 @@
  },
  "PNC": {
   "checked_at": "2026-09-15T06:46:23.746473+00:00",
-  "deep_scanned_at": "2026-09-23T23:56:19.524818+00:00",
+  "deep_scanned_at": "2026-09-25T20:25:56.534431+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -310,7 +310,7 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-09-15T13:28:58.477448+00:00",
-  "deep_scanned_at": "2026-09-23T23:56:19.524818+00:00",
+  "deep_scanned_at": "2026-09-25T20:25:56.534431+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
@@ -347,7 +347,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "deep_scanned_at": "2026-09-24T04:36:42.706055+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-25T20:25:56.534431+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -513,12 +514,6 @@
   "checked_at": "2026-09-20T10:04:50.237140+00:00",
   "platform": null,
   "slug": null
- },
- "aquatic": {
-  "checked_at": "2026-09-24T22:16:32.815268+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-09-15T07:39:04.450672+00:00",
@@ -989,7 +984,7 @@
  },
  "raytheon": {
   "checked_at": "2026-09-15T13:29:04.403563+00:00",
-  "deep_scanned_at": "2026-09-23T23:56:19.524818+00:00",
+  "deep_scanned_at": "2026-09-25T20:25:56.534431+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
@@ -1235,7 +1230,7 @@
   "slug": "flyzipline"
  },
  "zoox": {
-  "checked_at": "2026-08-26T18:13:50.940875+00:00",
+  "checked_at": "2026-09-25T20:25:28.336618+00:00",
   "platform": "lever",
   "slug": "zoox"
  }
