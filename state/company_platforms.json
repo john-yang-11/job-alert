@@ -469,7 +469,7 @@
  },
  "abbott": {
   "checked_at": "2026-09-15T07:38:19.009493+00:00",
-  "deep_scanned_at": "2026-09-24T14:24:21.377566+00:00",
+  "deep_scanned_at": "2026-09-26T01:55:42.450889+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-25T23:29:33.354948+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -547,7 +547,8 @@
  },
  "blackstone": {
   "checked_at": "2026-09-20T20:48:47.970384+00:00",
-  "deep_scanned_at": "2026-09-24T09:31:20.204146+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-26T01:55:42.450889+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -1082,7 +1083,6 @@
  },
  "slack": {
   "checked_at": "2026-09-15T17:46:34.794851+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-25T23:29:58.608653+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
@@ -1119,13 +1119,14 @@
  },
  "state street": {
   "checked_at": "2026-09-15T17:47:24.250092+00:00",
-  "deep_scanned_at": "2026-09-24T09:31:20.204146+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-26T01:55:42.450889+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
  "stryker": {
   "checked_at": "2026-09-15T17:47:30.426918+00:00",
-  "deep_scanned_at": "2026-09-24T09:31:20.204146+00:00",
+  "deep_scanned_at": "2026-09-26T01:55:42.450889+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
