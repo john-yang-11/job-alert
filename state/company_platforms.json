@@ -377,7 +377,6 @@
  },
  "Snap": {
   "checked_at": "2026-09-15T06:47:28.338906+00:00",
-  "consecutive_failures": 2,
   "deep_scanned_at": "2026-09-25T23:29:58.608653+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
@@ -438,7 +437,6 @@
  },
  "US bank": {
   "checked_at": "2026-09-15T06:47:30.726419+00:00",
-  "consecutive_failures": 2,
   "deep_scanned_at": "2026-09-24T14:24:21.377566+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
