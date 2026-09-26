@@ -93,7 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-09-15T06:46:51.719630+00:00",
-  "deep_scanned_at": "2026-09-25T06:06:26.697102+00:00",
+  "deep_scanned_at": "2026-09-26T22:41:25.452281+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -316,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "deep_scanned_at": "2026-09-25T00:46:06.652764+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-26T22:41:25.452281+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -514,6 +515,12 @@
   "platform": null,
   "slug": null
  },
+ "aquatic": {
+  "checked_at": "2026-09-26T22:40:59.543007+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
+ },
  "asana": {
   "checked_at": "2026-09-15T07:39:04.450672+00:00",
   "platform": "greenhouse",
@@ -568,7 +575,7 @@
  },
  "boeing": {
   "checked_at": "2026-09-15T07:40:33.450549+00:00",
-  "deep_scanned_at": "2026-09-25T06:06:26.697102+00:00",
+  "deep_scanned_at": "2026-09-26T22:41:25.452281+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -989,7 +996,7 @@
  },
  "redhat": {
   "checked_at": "2026-08-31T13:33:56.555128+00:00",
-  "deep_scanned_at": "2026-09-25T00:46:06.652764+00:00",
+  "deep_scanned_at": "2026-09-26T22:41:25.452281+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
