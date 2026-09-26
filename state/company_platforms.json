@@ -26,7 +26,7 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-09-15T21:14:50.087269+00:00",
-  "deep_scanned_at": "2026-09-24T18:39:00.588261+00:00",
+  "deep_scanned_at": "2026-09-26T16:43:52.341117+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -400,7 +400,6 @@
  },
  "T-mobile": {
   "checked_at": "2026-09-15T17:47:37.216283+00:00",
-  "consecutive_failures": 2,
   "deep_scanned_at": "2026-09-26T12:25:29.519139+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
@@ -464,7 +463,8 @@
  },
  "Workday": {
   "checked_at": "2026-09-15T21:14:48.539574+00:00",
-  "deep_scanned_at": "2026-09-24T18:39:00.588261+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-26T16:43:52.341117+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -476,7 +476,7 @@
  },
  "adobe": {
   "checked_at": "2026-09-15T06:45:27.153105+00:00",
-  "deep_scanned_at": "2026-09-24T22:16:58.075598+00:00",
+  "deep_scanned_at": "2026-09-26T16:43:52.341117+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -517,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-25T23:29:33.354948+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -657,8 +657,8 @@
   "slug": null
  },
  "comcast": {
-  "checked_at": "2026-08-27T14:35:18.389179+00:00",
-  "deep_scanned_at": "2026-09-24T22:16:58.075598+00:00",
+  "checked_at": "2026-09-26T16:43:22.661238+00:00",
+  "deep_scanned_at": "2026-09-26T16:43:52.341117+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
@@ -1221,7 +1221,7 @@
   "slug": null
  },
  "xfinity": {
-  "checked_at": "2026-08-27T14:35:33.803977+00:00",
+  "checked_at": "2026-09-26T16:43:23.883053+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
