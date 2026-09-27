@@ -103,7 +103,7 @@
   "slug": null
  },
  "Deloitte ai smth": {
-  "checked_at": "2026-09-20T20:44:07.747168+00:00",
+  "checked_at": "2026-09-27T21:17:14.357510+00:00",
   "platform": null,
   "slug": null
  },
@@ -123,7 +123,7 @@
   "slug": "https://www.dropbox.jobs/jobs/xml/?rss=true"
  },
  "Electronic Arts": {
-  "checked_at": "2026-09-20T17:41:56.502112+00:00",
+  "checked_at": "2026-09-27T21:18:33.467968+00:00",
   "platform": null,
   "slug": null
  },
@@ -133,7 +133,7 @@
   "slug": "etched"
  },
  "Everpure": {
-  "checked_at": "2026-09-20T17:42:16.388733+00:00",
+  "checked_at": "2026-09-27T21:18:53.021097+00:00",
   "platform": null,
   "slug": null
  },
@@ -159,7 +159,7 @@
   "slug": null
  },
  "Google ASDI": {
-  "checked_at": "2026-09-20T20:45:10.210703+00:00",
+  "checked_at": "2026-09-27T21:21:37.945652+00:00",
   "platform": null,
   "slug": null
  },
@@ -170,7 +170,7 @@
   "slug": "hp|wd5|ExternalCareerSite"
  },
  "HPR": {
-  "checked_at": "2026-09-20T20:45:22.572872+00:00",
+  "checked_at": "2026-09-27T21:21:51.399999+00:00",
   "platform": null,
   "slug": null
  },
@@ -185,7 +185,7 @@
   "slug": "hermeus"
  },
  "Hubspot": {
-  "checked_at": "2026-09-20T20:45:44.531087+00:00",
+  "checked_at": "2026-09-27T21:22:15.882289+00:00",
   "platform": null,
   "slug": null
  },
@@ -347,7 +347,6 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-27T17:43:26.827869+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
@@ -375,7 +374,7 @@
  },
  "Snap": {
   "checked_at": "2026-09-15T06:47:28.338906+00:00",
-  "deep_scanned_at": "2026-09-25T23:29:58.608653+00:00",
+  "deep_scanned_at": "2026-09-27T21:22:41.779637+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -470,7 +469,7 @@
  },
  "abbott": {
   "checked_at": "2026-09-15T07:38:19.009493+00:00",
-  "deep_scanned_at": "2026-09-26T01:55:42.450889+00:00",
+  "deep_scanned_at": "2026-09-27T21:22:41.779637+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -514,12 +513,6 @@
   "checked_at": "2026-09-27T12:57:57.888384+00:00",
   "platform": null,
   "slug": null
- },
- "aquatic": {
-  "checked_at": "2026-09-26T22:40:59.543007+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-09-15T07:39:04.450672+00:00",
@@ -739,7 +732,7 @@
   "slug": "duolingo"
  },
  "ea pathfinder": {
-  "checked_at": "2026-09-20T17:40:59.908662+00:00",
+  "checked_at": "2026-09-27T21:17:38.537955+00:00",
   "platform": null,
   "slug": null
  },
@@ -749,7 +742,7 @@
   "slug": "elastic"
  },
  "epic": {
-  "checked_at": "2026-09-20T17:42:07.090226+00:00",
+  "checked_at": "2026-09-27T21:18:44.210206+00:00",
   "platform": null,
   "slug": null
  },
@@ -775,17 +768,17 @@
   "slug": null
  },
  "gemnai fall": {
-  "checked_at": "2026-09-20T17:42:29.892055+00:00",
+  "checked_at": "2026-09-27T21:19:08.934775+00:00",
   "platform": null,
   "slug": null
  },
  "general dynamics": {
-  "checked_at": "2026-09-20T17:44:51.815546+00:00",
+  "checked_at": "2026-09-27T21:20:36.234380+00:00",
   "platform": null,
   "slug": null
  },
  "general motors": {
-  "checked_at": "2026-09-20T20:44:56.851001+00:00",
+  "checked_at": "2026-09-27T21:21:19.995482+00:00",
   "platform": null,
   "slug": null
  },
@@ -805,7 +798,7 @@
   "slug": "handshake"
  },
  "harmon": {
-  "checked_at": "2026-09-20T20:45:16.009109+00:00",
+  "checked_at": "2026-09-27T21:21:44.372235+00:00",
   "platform": null,
   "slug": null
  },
@@ -1083,7 +1076,8 @@
  },
  "slack": {
   "checked_at": "2026-09-15T17:46:34.794851+00:00",
-  "deep_scanned_at": "2026-09-25T23:29:58.608653+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-27T21:22:41.779637+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
@@ -1119,7 +1113,8 @@
  },
  "state street": {
   "checked_at": "2026-09-15T17:47:24.250092+00:00",
-  "deep_scanned_at": "2026-09-26T01:55:42.450889+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-27T21:22:41.779637+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
