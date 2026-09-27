@@ -316,7 +316,6 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-09-26T22:41:25.452281+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
@@ -517,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-26T22:40:59.543007+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -621,7 +620,7 @@
  },
  "citi": {
   "checked_at": "2026-09-15T07:41:12.367907+00:00",
-  "deep_scanned_at": "2026-09-25T06:06:26.697102+00:00",
+  "deep_scanned_at": "2026-09-27T01:21:36.903495+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -637,7 +636,8 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-09-15T07:41:20.140571+00:00",
-  "deep_scanned_at": "2026-09-25T11:45:15.488225+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-27T01:21:36.903495+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
@@ -669,7 +669,7 @@
  },
  "crowdstrike": {
   "checked_at": "2026-09-15T07:41:46.274956+00:00",
-  "deep_scanned_at": "2026-09-25T11:45:15.488225+00:00",
+  "deep_scanned_at": "2026-09-27T01:21:36.903495+00:00",
   "platform": "workday",
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
@@ -904,7 +904,8 @@
  },
  "moelis": {
   "checked_at": "2026-09-07T04:28:26.140870+00:00",
-  "deep_scanned_at": "2026-09-25T06:06:26.697102+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-27T01:21:36.903495+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
  },
