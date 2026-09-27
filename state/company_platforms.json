@@ -82,7 +82,7 @@
   "slug": null
  },
  "CNN": {
-  "checked_at": "2026-09-20T17:38:35.953615+00:00",
+  "checked_at": "2026-09-27T17:41:13.237296+00:00",
   "platform": null,
   "slug": null
  },
@@ -98,7 +98,7 @@
   "slug": "cisco|wd5|Cisco_Careers"
  },
  "Deloitte": {
-  "checked_at": "2026-09-20T17:40:00.818606+00:00",
+  "checked_at": "2026-09-27T17:42:31.617150+00:00",
   "platform": null,
   "slug": null
  },
@@ -108,7 +108,7 @@
   "slug": null
  },
  "Delta": {
-  "checked_at": "2026-09-20T17:40:09.221802+00:00",
+  "checked_at": "2026-09-27T17:42:38.754361+00:00",
   "platform": null,
   "slug": null
  },
@@ -347,7 +347,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "deep_scanned_at": "2026-09-25T20:25:56.534431+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-27T17:43:26.827869+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -358,7 +359,7 @@
  },
  "Samsung": {
   "checked_at": "2026-09-15T17:46:29.192561+00:00",
-  "deep_scanned_at": "2026-09-25T23:29:58.608653+00:00",
+  "deep_scanned_at": "2026-09-27T17:43:26.827869+00:00",
   "platform": "workday",
   "slug": "sec|wd3|Samsung_Careers"
  },
@@ -516,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-26T22:40:59.543007+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -599,7 +600,7 @@
   "slug": "bytedance"
  },
  "c1 data analyst": {
-  "checked_at": "2026-09-20T14:09:36.227744+00:00",
+  "checked_at": "2026-09-27T17:40:55.012769+00:00",
   "platform": null,
   "slug": null
  },
@@ -614,7 +615,7 @@
   "slug": "chime"
  },
  "citadel launch": {
-  "checked_at": "2026-09-20T14:09:48.493911+00:00",
+  "checked_at": "2026-09-27T17:41:07.042626+00:00",
   "platform": null,
   "slug": null
  },
@@ -651,7 +652,7 @@
   "slug": "coinbase"
  },
  "colins aerospace": {
-  "checked_at": "2026-09-20T17:38:57.114624+00:00",
+  "checked_at": "2026-09-27T17:41:25.284712+00:00",
   "platform": null,
   "slug": null
  },
@@ -673,7 +674,7 @@
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
  "cvs health": {
-  "checked_at": "2026-09-20T17:39:40.270247+00:00",
+  "checked_at": "2026-09-27T17:42:12.015380+00:00",
   "platform": null,
   "slug": null
  },
@@ -708,7 +709,7 @@
   "slug": "Deepgram"
  },
  "dell": {
-  "checked_at": "2026-09-20T17:39:51.000655+00:00",
+  "checked_at": "2026-09-27T17:42:23.421537+00:00",
   "platform": null,
   "slug": null
  },
@@ -718,7 +719,7 @@
   "slug": null
  },
  "disney": {
-  "checked_at": "2026-09-20T17:40:30.679873+00:00",
+  "checked_at": "2026-09-27T17:42:56.320503+00:00",
   "platform": null,
   "slug": null
  },
@@ -728,7 +729,7 @@
   "slug": "https://careers.docusign.com"
  },
  "doordash": {
-  "checked_at": "2026-09-20T17:40:37.416302+00:00",
+  "checked_at": "2026-09-27T17:43:02.153716+00:00",
   "platform": null,
   "slug": null
  },
@@ -948,7 +949,7 @@
   "slug": "notion"
  },
  "nutanix": {
-  "checked_at": "2026-08-28T11:14:53.520600+00:00",
+  "checked_at": "2026-09-27T17:43:03.217663+00:00",
   "platform": "jobfeed",
   "slug": "https://careers.nutanix.com/jobs/xml/?rss=true"
  },
@@ -989,7 +990,7 @@
  },
  "raytheon": {
   "checked_at": "2026-09-15T13:29:04.403563+00:00",
-  "deep_scanned_at": "2026-09-25T20:25:56.534431+00:00",
+  "deep_scanned_at": "2026-09-27T17:43:26.827869+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
@@ -1046,7 +1047,7 @@
  },
  "salesforce": {
   "checked_at": "2026-08-31T13:34:54.291699+00:00",
-  "deep_scanned_at": "2026-09-25T23:29:58.608653+00:00",
+  "deep_scanned_at": "2026-09-27T17:43:26.827869+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
