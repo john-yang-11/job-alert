@@ -93,7 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-09-15T06:46:51.719630+00:00",
-  "deep_scanned_at": "2026-09-26T22:41:25.452281+00:00",
+  "deep_scanned_at": "2026-09-28T23:56:43.266294+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -316,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "deep_scanned_at": "2026-09-26T22:41:25.452281+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-28T23:56:43.266294+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -516,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-09-27T23:56:00.892733+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -568,7 +569,7 @@
   "slug": "blueorigin|wd5|BlueOrigin"
  },
  "bny": {
-  "checked_at": "2026-09-21T22:48:06.023373+00:00",
+  "checked_at": "2026-09-28T23:56:16.368040+00:00",
   "platform": null,
   "slug": null
  },
@@ -620,7 +621,7 @@
  },
  "citi": {
   "checked_at": "2026-09-15T07:41:12.367907+00:00",
-  "deep_scanned_at": "2026-09-27T01:21:36.903495+00:00",
+  "deep_scanned_at": "2026-09-28T23:56:43.266294+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -995,7 +996,7 @@
  },
  "redhat": {
   "checked_at": "2026-08-31T13:33:56.555128+00:00",
-  "deep_scanned_at": "2026-09-26T22:41:25.452281+00:00",
+  "deep_scanned_at": "2026-09-28T23:56:43.266294+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
