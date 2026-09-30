@@ -128,7 +128,7 @@
   "slug": null
  },
  "Etched": {
-  "checked_at": "2026-08-31T13:33:21.150964+00:00",
+  "checked_at": "2026-09-30T18:24:39.980255+00:00",
   "platform": "ashby",
   "slug": "etched"
  },
@@ -138,8 +138,8 @@
   "slug": null
  },
  "GDIT systestems intern": {
-  "checked_at": "2026-08-31T13:33:28.152076+00:00",
-  "deep_scanned_at": "2026-09-28T19:37:26.998169+00:00",
+  "checked_at": "2026-09-30T18:24:46.930459+00:00",
+  "deep_scanned_at": "2026-09-30T18:28:05.021690+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -315,8 +315,9 @@
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
  "Paypal": {
-  "checked_at": "2026-08-31T13:33:42.209634+00:00",
-  "deep_scanned_at": "2026-09-28T23:56:43.266294+00:00",
+  "checked_at": "2026-09-30T18:24:59.787180+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-30T18:28:05.021690+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -346,8 +347,9 @@
   "slug": null
  },
  "Rocket Companies": {
-  "checked_at": "2026-08-31T13:34:20.827579+00:00",
-  "deep_scanned_at": "2026-09-29T21:22:20.844788+00:00",
+  "checked_at": "2026-09-30T18:25:37.344732+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-09-30T18:28:05.021690+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -513,6 +515,12 @@
   "checked_at": "2026-09-27T12:57:57.888384+00:00",
   "platform": null,
   "slug": null
+ },
+ "aquatic": {
+  "checked_at": "2026-09-30T18:24:39.684862+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-09-15T07:39:04.450672+00:00",
@@ -692,7 +700,7 @@
   "slug": "datadog"
  },
  "datadog winter 2027": {
-  "checked_at": "2026-09-23T13:35:44.027186+00:00",
+  "checked_at": "2026-09-30T18:27:18.333560+00:00",
   "platform": null,
   "slug": null
  },
@@ -763,7 +771,7 @@
   "slug": null
  },
  "ge aero fall 2027": {
-  "checked_at": "2026-09-23T13:35:27.033557+00:00",
+  "checked_at": "2026-09-30T18:26:57.937458+00:00",
   "platform": null,
   "slug": null
  },
@@ -783,7 +791,7 @@
   "slug": null
  },
  "go daddy": {
-  "checked_at": "2026-08-31T13:33:32.591129+00:00",
+  "checked_at": "2026-09-30T18:24:50.595791+00:00",
   "platform": "greenhouse",
   "slug": "godaddy"
  },
@@ -844,7 +852,7 @@
   "slug": "kalshi"
  },
  "l3 harris": {
-  "checked_at": "2026-09-23T13:35:09.138024+00:00",
+  "checked_at": "2026-09-30T18:26:39.881162+00:00",
   "platform": null,
   "slug": null
  },
@@ -988,8 +996,8 @@
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
  "redhat": {
-  "checked_at": "2026-08-31T13:33:56.555128+00:00",
-  "deep_scanned_at": "2026-09-28T23:56:43.266294+00:00",
+  "checked_at": "2026-09-30T18:25:13.664224+00:00",
+  "deep_scanned_at": "2026-09-30T18:28:05.021690+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
@@ -1039,8 +1047,7 @@
   "slug": null
  },
  "salesforce": {
-  "checked_at": "2026-08-31T13:34:54.291699+00:00",
-  "deep_scanned_at": "2026-09-29T21:22:20.844788+00:00",
+  "checked_at": "2026-09-30T18:26:10.956794+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
