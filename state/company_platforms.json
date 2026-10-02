@@ -400,7 +400,8 @@
  },
  "T-mobile": {
   "checked_at": "2026-09-15T17:47:37.216283+00:00",
-  "deep_scanned_at": "2026-09-30T06:37:35.980431+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-02T12:27:21.748456+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
@@ -516,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-02T00:08:04.508386+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -547,7 +548,8 @@
  },
  "blackstone": {
   "checked_at": "2026-09-20T20:48:47.970384+00:00",
-  "deep_scanned_at": "2026-09-30T06:37:35.980431+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-02T12:27:21.748456+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -563,7 +565,7 @@
  },
  "blue origin": {
   "checked_at": "2026-09-15T07:40:30.028548+00:00",
-  "deep_scanned_at": "2026-09-30T13:00:33.122928+00:00",
+  "deep_scanned_at": "2026-10-02T12:27:21.748456+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -1082,7 +1084,6 @@
  },
  "slack": {
   "checked_at": "2026-09-15T17:46:34.794851+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-02T06:07:25.794924+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
@@ -1119,14 +1120,13 @@
  },
  "state street": {
   "checked_at": "2026-09-15T17:47:24.250092+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-02T06:07:25.794924+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
  "stryker": {
   "checked_at": "2026-09-15T17:47:30.426918+00:00",
-  "deep_scanned_at": "2026-09-30T06:37:35.980431+00:00",
+  "deep_scanned_at": "2026-10-02T12:27:21.748456+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
