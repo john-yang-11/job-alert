@@ -175,7 +175,7 @@
   "slug": null
  },
  "Heliux": {
-  "checked_at": "2026-09-02T18:56:18.396630+00:00",
+  "checked_at": "2026-10-02T22:06:53.722966+00:00",
   "platform": "ashby",
   "slug": "heliux"
  },
@@ -316,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-09-30T18:24:59.787180+00:00",
-  "deep_scanned_at": "2026-09-30T18:28:05.021690+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-02T22:07:26.378472+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -347,7 +348,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-09-30T18:25:37.344732+00:00",
-  "deep_scanned_at": "2026-09-30T18:28:05.021690+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-02T22:07:26.378472+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -516,7 +518,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-02T00:08:04.508386+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -657,7 +659,7 @@
  },
  "comcast": {
   "checked_at": "2026-09-26T16:43:22.661238+00:00",
-  "deep_scanned_at": "2026-09-30T22:33:47.231531+00:00",
+  "deep_scanned_at": "2026-10-02T22:07:26.378472+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
@@ -995,7 +997,7 @@
  },
  "redhat": {
   "checked_at": "2026-09-30T18:25:13.664224+00:00",
-  "deep_scanned_at": "2026-09-30T18:28:05.021690+00:00",
+  "deep_scanned_at": "2026-10-02T22:07:26.378472+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
@@ -1056,7 +1058,7 @@
   "slug": "salesforce|wd12|External_Career_Site"
  },
  "samsara": {
-  "checked_at": "2026-09-02T21:45:12.351400+00:00",
+  "checked_at": "2026-10-02T22:07:00.302265+00:00",
   "platform": "greenhouse",
   "slug": "samsara"
  },
