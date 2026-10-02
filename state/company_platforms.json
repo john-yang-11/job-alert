@@ -288,7 +288,7 @@
   "slug": "nuro"
  },
  "PDT partners": {
-  "checked_at": "2026-09-02T05:42:02.080956+00:00",
+  "checked_at": "2026-10-02T06:06:41.737026+00:00",
   "platform": "greenhouse",
   "slug": "pdtpartners"
  },
@@ -374,7 +374,7 @@
  },
  "Snap": {
   "checked_at": "2026-09-15T06:47:28.338906+00:00",
-  "deep_scanned_at": "2026-09-30T00:45:03.964617+00:00",
+  "deep_scanned_at": "2026-10-02T06:07:25.794924+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -475,7 +475,7 @@
  },
  "adobe": {
   "checked_at": "2026-09-15T06:45:27.153105+00:00",
-  "deep_scanned_at": "2026-09-30T06:37:35.980431+00:00",
+  "deep_scanned_at": "2026-10-02T06:07:25.794924+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-02T00:08:04.508386+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -820,7 +820,7 @@
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
  "ignite NVIDIA": {
-  "checked_at": "2026-09-25T00:45:18.208636+00:00",
+  "checked_at": "2026-10-02T06:06:41.281601+00:00",
   "platform": null,
   "slug": null
  },
@@ -968,7 +968,7 @@
   "slug": "patreon"
  },
  "paycom": {
-  "checked_at": "2026-09-25T00:45:36.153386+00:00",
+  "checked_at": "2026-10-02T06:07:00.390885+00:00",
   "platform": null,
   "slug": null
  },
@@ -1082,7 +1082,8 @@
  },
  "slack": {
   "checked_at": "2026-09-15T17:46:34.794851+00:00",
-  "deep_scanned_at": "2026-09-30T00:45:03.964617+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-02T06:07:25.794924+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
@@ -1118,7 +1119,8 @@
  },
  "state street": {
   "checked_at": "2026-09-15T17:47:24.250092+00:00",
-  "deep_scanned_at": "2026-09-30T00:45:03.964617+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-02T06:07:25.794924+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
