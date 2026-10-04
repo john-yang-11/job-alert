@@ -103,7 +103,7 @@
   "slug": null
  },
  "Deloitte ai smth": {
-  "checked_at": "2026-09-27T21:17:14.357510+00:00",
+  "checked_at": "2026-10-04T21:55:27.231311+00:00",
   "platform": null,
   "slug": null
  },
@@ -123,7 +123,7 @@
   "slug": "https://www.dropbox.jobs/jobs/xml/?rss=true"
  },
  "Electronic Arts": {
-  "checked_at": "2026-09-27T21:18:33.467968+00:00",
+  "checked_at": "2026-10-04T21:56:39.043879+00:00",
   "platform": null,
   "slug": null
  },
@@ -133,7 +133,7 @@
   "slug": "etched"
  },
  "Everpure": {
-  "checked_at": "2026-09-27T21:18:53.021097+00:00",
+  "checked_at": "2026-10-04T21:56:57.720025+00:00",
   "platform": null,
   "slug": null
  },
@@ -159,7 +159,7 @@
   "slug": null
  },
  "Google ASDI": {
-  "checked_at": "2026-09-27T21:21:37.945652+00:00",
+  "checked_at": "2026-10-04T21:59:11.056232+00:00",
   "platform": null,
   "slug": null
  },
@@ -170,7 +170,7 @@
   "slug": "hp|wd5|ExternalCareerSite"
  },
  "HPR": {
-  "checked_at": "2026-09-27T21:21:51.399999+00:00",
+  "checked_at": "2026-10-04T21:59:23.582076+00:00",
   "platform": null,
   "slug": null
  },
@@ -185,7 +185,7 @@
   "slug": "hermeus"
  },
  "Hubspot": {
-  "checked_at": "2026-09-27T21:22:15.882289+00:00",
+  "checked_at": "2026-10-04T21:59:46.637060+00:00",
   "platform": null,
   "slug": null
  },
@@ -316,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-09-30T18:24:59.787180+00:00",
-  "deep_scanned_at": "2026-10-02T22:07:26.378472+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-04T22:00:11.708258+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -347,7 +348,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-09-30T18:25:37.344732+00:00",
-  "deep_scanned_at": "2026-10-02T22:07:26.378472+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-04T22:00:11.708258+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -495,7 +497,7 @@
   "slug": null
  },
  "anduril": {
-  "checked_at": "2026-09-04T20:55:11.755295+00:00",
+  "checked_at": "2026-10-04T21:55:11.857122+00:00",
   "platform": "greenhouse",
   "slug": "andurilindustries"
  },
@@ -516,7 +518,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-04T08:43:16.413392+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -738,7 +740,7 @@
   "slug": "duolingo"
  },
  "ea pathfinder": {
-  "checked_at": "2026-09-27T21:17:38.537955+00:00",
+  "checked_at": "2026-10-04T21:55:45.778412+00:00",
   "platform": null,
   "slug": null
  },
@@ -748,7 +750,7 @@
   "slug": "elastic"
  },
  "epic": {
-  "checked_at": "2026-09-27T21:18:44.210206+00:00",
+  "checked_at": "2026-10-04T21:56:49.841036+00:00",
   "platform": null,
   "slug": null
  },
@@ -774,17 +776,17 @@
   "slug": null
  },
  "gemnai fall": {
-  "checked_at": "2026-09-27T21:19:08.934775+00:00",
+  "checked_at": "2026-10-04T21:57:10.344336+00:00",
   "platform": null,
   "slug": null
  },
  "general dynamics": {
-  "checked_at": "2026-09-27T21:20:36.234380+00:00",
+  "checked_at": "2026-10-04T21:58:03.502168+00:00",
   "platform": null,
   "slug": null
  },
  "general motors": {
-  "checked_at": "2026-09-27T21:21:19.995482+00:00",
+  "checked_at": "2026-10-04T21:58:49.981339+00:00",
   "platform": null,
   "slug": null
  },
@@ -804,7 +806,7 @@
   "slug": "handshake"
  },
  "harmon": {
-  "checked_at": "2026-09-27T21:21:44.372235+00:00",
+  "checked_at": "2026-10-04T21:59:16.724716+00:00",
   "platform": null,
   "slug": null
  },
@@ -995,7 +997,7 @@
  },
  "redhat": {
   "checked_at": "2026-09-30T18:25:13.664224+00:00",
-  "deep_scanned_at": "2026-10-02T22:07:26.378472+00:00",
+  "deep_scanned_at": "2026-10-04T22:00:11.708258+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
@@ -1046,7 +1048,7 @@
  },
  "salesforce": {
   "checked_at": "2026-09-30T18:26:10.956794+00:00",
-  "deep_scanned_at": "2026-10-03T01:10:16.851472+00:00",
+  "deep_scanned_at": "2026-10-04T22:00:11.708258+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
@@ -1112,7 +1114,7 @@
   "slug": null
  },
  "square": {
-  "checked_at": "2026-09-04T20:55:11.755312+00:00",
+  "checked_at": "2026-10-04T21:59:46.637090+00:00",
   "platform": "greenhouse",
   "slug": "block"
  },
@@ -1230,7 +1232,7 @@
   "slug": null
  },
  "zipline": {
-  "checked_at": "2026-09-04T20:55:11.755319+00:00",
+  "checked_at": "2026-10-04T21:59:46.637099+00:00",
   "platform": "greenhouse",
   "slug": "flyzipline"
  },
