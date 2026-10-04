@@ -82,7 +82,7 @@
   "slug": null
  },
  "CNN": {
-  "checked_at": "2026-09-27T17:41:13.237296+00:00",
+  "checked_at": "2026-10-04T18:37:00.917307+00:00",
   "platform": null,
   "slug": null
  },
@@ -98,7 +98,7 @@
   "slug": "cisco|wd5|Cisco_Careers"
  },
  "Deloitte": {
-  "checked_at": "2026-09-27T17:42:31.617150+00:00",
+  "checked_at": "2026-10-04T18:38:38.128379+00:00",
   "platform": null,
   "slug": null
  },
@@ -108,7 +108,7 @@
   "slug": null
  },
  "Delta": {
-  "checked_at": "2026-09-27T17:42:38.754361+00:00",
+  "checked_at": "2026-10-04T18:38:46.964540+00:00",
   "platform": null,
   "slug": null
  },
@@ -299,7 +299,7 @@
   "slug": "pnc|wd5|External"
  },
  "PNC data analsyt": {
-  "checked_at": "2026-09-04T16:16:19.118842+00:00",
+  "checked_at": "2026-10-04T18:39:38.850642+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -400,7 +400,6 @@
  },
  "T-mobile": {
   "checked_at": "2026-09-15T17:47:37.216283+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-04T14:50:56.028188+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
@@ -412,7 +411,7 @@
  },
  "Tencent": {
   "checked_at": "2026-09-15T17:48:01.468627+00:00",
-  "deep_scanned_at": "2026-10-02T18:01:34.397028+00:00",
+  "deep_scanned_at": "2026-10-04T18:40:03.898677+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -433,7 +432,7 @@
  },
  "US bank": {
   "checked_at": "2026-09-15T06:47:30.726419+00:00",
-  "deep_scanned_at": "2026-10-02T18:01:34.397028+00:00",
+  "deep_scanned_at": "2026-10-04T18:40:03.898677+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -517,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-04T08:43:16.413392+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -548,7 +547,6 @@
  },
  "blackstone": {
   "checked_at": "2026-09-20T20:48:47.970384+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-04T14:50:56.028188+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -601,7 +599,7 @@
   "slug": "bytedance"
  },
  "c1 data analyst": {
-  "checked_at": "2026-09-27T17:40:55.012769+00:00",
+  "checked_at": "2026-10-04T18:36:40.754737+00:00",
   "platform": null,
   "slug": null
  },
@@ -616,7 +614,7 @@
   "slug": "chime"
  },
  "citadel launch": {
-  "checked_at": "2026-09-27T17:41:07.042626+00:00",
+  "checked_at": "2026-10-04T18:36:53.843761+00:00",
   "platform": null,
   "slug": null
  },
@@ -653,13 +651,13 @@
   "slug": "coinbase"
  },
  "colins aerospace": {
-  "checked_at": "2026-09-27T17:41:25.284712+00:00",
+  "checked_at": "2026-10-04T18:37:17.004214+00:00",
   "platform": null,
   "slug": null
  },
  "comcast": {
   "checked_at": "2026-09-26T16:43:22.661238+00:00",
-  "deep_scanned_at": "2026-10-02T22:07:26.378472+00:00",
+  "deep_scanned_at": "2026-10-04T18:40:03.898677+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
@@ -675,7 +673,7 @@
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
  "cvs health": {
-  "checked_at": "2026-09-27T17:42:12.015380+00:00",
+  "checked_at": "2026-10-04T18:38:16.680853+00:00",
   "platform": null,
   "slug": null
  },
@@ -710,7 +708,7 @@
   "slug": "Deepgram"
  },
  "dell": {
-  "checked_at": "2026-09-27T17:42:23.421537+00:00",
+  "checked_at": "2026-10-04T18:38:27.819506+00:00",
   "platform": null,
   "slug": null
  },
@@ -720,7 +718,7 @@
   "slug": null
  },
  "disney": {
-  "checked_at": "2026-09-27T17:42:56.320503+00:00",
+  "checked_at": "2026-10-04T18:39:03.801770+00:00",
   "platform": null,
   "slug": null
  },
@@ -730,7 +728,7 @@
   "slug": "https://careers.docusign.com"
  },
  "doordash": {
-  "checked_at": "2026-09-27T17:43:02.153716+00:00",
+  "checked_at": "2026-10-04T18:39:10.429577+00:00",
   "platform": null,
   "slug": null
  },
@@ -1063,7 +1061,7 @@
   "slug": "samsara"
  },
  "scale": {
-  "checked_at": "2026-09-04T16:57:04.716387+00:00",
+  "checked_at": "2026-10-04T18:39:10.429610+00:00",
   "platform": "greenhouse",
   "slug": "scaleai"
  },
@@ -1187,7 +1185,7 @@
  },
  "visa": {
   "checked_at": "2026-09-15T06:45:54.219016+00:00",
-  "deep_scanned_at": "2026-10-02T18:01:34.397028+00:00",
+  "deep_scanned_at": "2026-10-04T18:40:03.898677+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
