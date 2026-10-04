@@ -5,12 +5,12 @@
   "slug": "https://careers.amd.com"
  },
  "ASML": {
-  "checked_at": "2026-09-27T12:58:22.428706+00:00",
+  "checked_at": "2026-10-04T14:46:53.689007+00:00",
   "platform": null,
   "slug": null
  },
  "AT&T": {
-  "checked_at": "2026-09-27T12:58:34.899490+00:00",
+  "checked_at": "2026-10-04T14:47:08.588343+00:00",
   "platform": null,
   "slug": null
  },
@@ -20,7 +20,7 @@
   "slug": "aws"
  },
  "AWS FALL": {
-  "checked_at": "2026-09-27T12:58:53.717759+00:00",
+  "checked_at": "2026-10-04T14:47:32.775041+00:00",
   "platform": null,
   "slug": null
  },
@@ -42,7 +42,7 @@
   "slug": "airbnb"
  },
  "Alphabet": {
-  "checked_at": "2026-09-27T12:56:54.992718+00:00",
+  "checked_at": "2026-10-04T14:45:06.009643+00:00",
   "platform": null,
   "slug": null
  },
@@ -52,7 +52,7 @@
   "slug": "amazon"
  },
  "Amazon Propel program": {
-  "checked_at": "2026-09-27T12:57:08.931921+00:00",
+  "checked_at": "2026-10-04T14:45:22.853113+00:00",
   "platform": null,
   "slug": null
  },
@@ -62,7 +62,7 @@
   "slug": "axon"
  },
  "BAE systems": {
-  "checked_at": "2026-09-27T12:59:45.118398+00:00",
+  "checked_at": "2026-10-04T14:48:28.574470+00:00",
   "platform": null,
   "slug": null
  },
@@ -77,7 +77,7 @@
   "slug": null
  },
  "Broadcom": {
-  "checked_at": "2026-09-27T13:01:17.810942+00:00",
+  "checked_at": "2026-10-04T14:50:18.816007+00:00",
   "platform": null,
   "slug": null
  },
@@ -139,7 +139,7 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-09-30T18:24:46.930459+00:00",
-  "deep_scanned_at": "2026-10-02T18:01:34.397028+00:00",
+  "deep_scanned_at": "2026-10-04T14:50:56.028188+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -400,7 +400,8 @@
  },
  "T-mobile": {
   "checked_at": "2026-09-15T17:47:37.216283+00:00",
-  "deep_scanned_at": "2026-10-02T12:27:21.748456+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-04T14:50:56.028188+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
@@ -490,7 +491,7 @@
   "slug": "airtable"
  },
  "american express": {
-  "checked_at": "2026-09-27T12:57:35.746777+00:00",
+  "checked_at": "2026-10-04T14:45:55.043425+00:00",
   "platform": null,
   "slug": null
  },
@@ -505,18 +506,18 @@
   "slug": "appian"
  },
  "apple": {
-  "checked_at": "2026-09-27T12:57:44.726547+00:00",
+  "checked_at": "2026-10-04T14:46:07.176861+00:00",
   "platform": null,
   "slug": null
  },
  "apple data thing": {
-  "checked_at": "2026-09-27T12:57:57.888384+00:00",
+  "checked_at": "2026-10-04T14:46:23.599775+00:00",
   "platform": null,
   "slug": null
  },
  "aquatic": {
   "checked_at": "2026-10-04T08:43:16.413392+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -526,7 +527,7 @@
   "slug": "asana"
  },
  "atlassian": {
-  "checked_at": "2026-09-27T12:58:41.338727+00:00",
+  "checked_at": "2026-10-04T14:47:17.387069+00:00",
   "platform": null,
   "slug": null
  },
@@ -536,28 +537,29 @@
   "slug": "atoms"
  },
  "bank of america global technology summit": {
-  "checked_at": "2026-09-27T12:59:57.483199+00:00",
+  "checked_at": "2026-10-04T14:48:43.375325+00:00",
   "platform": null,
   "slug": null
  },
  "blackrock": {
-  "checked_at": "2026-09-27T13:00:26.727754+00:00",
+  "checked_at": "2026-10-04T14:49:10.598709+00:00",
   "platform": null,
   "slug": null
  },
  "blackstone": {
   "checked_at": "2026-09-20T20:48:47.970384+00:00",
-  "deep_scanned_at": "2026-10-02T12:27:21.748456+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-04T14:50:56.028188+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
  "blizzard": {
-  "checked_at": "2026-09-27T13:00:38.473165+00:00",
+  "checked_at": "2026-10-04T14:49:33.808333+00:00",
   "platform": null,
   "slug": null
  },
  "bloomberg": {
-  "checked_at": "2026-09-27T13:00:53.276070+00:00",
+  "checked_at": "2026-10-04T14:49:52.142723+00:00",
   "platform": null,
   "slug": null
  },
@@ -1082,7 +1084,6 @@
  },
  "slack": {
   "checked_at": "2026-09-15T17:46:34.794851+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-04T08:43:40.492202+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
@@ -1119,14 +1120,13 @@
  },
  "state street": {
   "checked_at": "2026-09-15T17:47:24.250092+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-04T08:43:40.492202+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
  "stryker": {
   "checked_at": "2026-09-15T17:47:30.426918+00:00",
-  "deep_scanned_at": "2026-10-02T12:27:21.748456+00:00",
+  "deep_scanned_at": "2026-10-04T14:50:56.028188+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
