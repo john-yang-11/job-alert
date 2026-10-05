@@ -165,7 +165,7 @@
  },
  "HP": {
   "checked_at": "2026-09-15T13:28:19.814605+00:00",
-  "deep_scanned_at": "2026-10-03T16:39:49.551190+00:00",
+  "deep_scanned_at": "2026-10-05T16:00:41.952085+00:00",
   "platform": "workday",
   "slug": "hp|wd5|ExternalCareerSite"
  },
@@ -215,7 +215,7 @@
   "slug": null
  },
  "JP morgan hack4good": {
-  "checked_at": "2026-09-28T12:01:15.669087+00:00",
+  "checked_at": "2026-10-05T15:58:35.796775+00:00",
   "platform": null,
   "slug": null
  },
@@ -226,7 +226,7 @@
  },
  "KLA": {
   "checked_at": "2026-09-15T13:28:41.193357+00:00",
-  "deep_scanned_at": "2026-10-03T19:48:27.598021+00:00",
+  "deep_scanned_at": "2026-10-05T16:00:41.952085+00:00",
   "platform": "workday",
   "slug": "kla|wd1|Search"
  },
@@ -442,12 +442,12 @@
   "slug": "uberfreight"
  },
  "Urline": {
-  "checked_at": "2026-09-28T12:01:32.117686+00:00",
+  "checked_at": "2026-10-05T15:58:49.585811+00:00",
   "platform": null,
   "slug": null
  },
  "VRBO": {
-  "checked_at": "2026-09-28T11:59:52.221249+00:00",
+  "checked_at": "2026-10-05T15:56:49.071968+00:00",
   "platform": null,
   "slug": null
  },
@@ -513,6 +513,12 @@
   "checked_at": "2026-10-04T14:46:23.599775+00:00",
   "platform": null,
   "slug": null
+ },
+ "aquatic": {
+  "checked_at": "2026-10-05T15:54:43.125277+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-09-15T07:39:04.450672+00:00",
@@ -630,7 +636,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-09-15T07:41:20.140571+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-05T06:59:33.355504+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -663,7 +668,7 @@
  },
  "crowdstrike": {
   "checked_at": "2026-09-15T07:41:46.274956+00:00",
-  "deep_scanned_at": "2026-10-03T16:39:49.551190+00:00",
+  "deep_scanned_at": "2026-10-05T16:00:41.952085+00:00",
   "platform": "workday",
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
@@ -708,7 +713,7 @@
   "slug": null
  },
  "delta ai engineering": {
-  "checked_at": "2026-09-28T12:02:19.117028+00:00",
+  "checked_at": "2026-10-05T15:59:39.856288+00:00",
   "platform": null,
   "slug": null
  },
@@ -749,7 +754,7 @@
  },
  "fidelity": {
   "checked_at": "2026-09-15T13:27:52.220970+00:00",
-  "deep_scanned_at": "2026-10-03T16:39:49.551190+00:00",
+  "deep_scanned_at": "2026-10-05T16:00:41.952085+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
  },
@@ -789,7 +794,7 @@
   "slug": "godaddy"
  },
  "goldman": {
-  "checked_at": "2026-09-28T12:02:04.768096+00:00",
+  "checked_at": "2026-10-05T15:59:25.207499+00:00",
   "platform": null,
   "slug": null
  },
@@ -804,7 +809,7 @@
   "slug": null
  },
  "hershy": {
-  "checked_at": "2026-09-28T12:01:57.981517+00:00",
+  "checked_at": "2026-10-05T15:59:18.866768+00:00",
   "platform": null,
   "slug": null
  },
@@ -882,12 +887,12 @@
   "slug": null
  },
  "microsoft core ai": {
-  "checked_at": "2026-09-28T12:00:48.468246+00:00",
+  "checked_at": "2026-10-05T15:58:06.255820+00:00",
   "platform": null,
   "slug": null
  },
  "mileniem applied ai engineer": {
-  "checked_at": "2026-09-28T12:01:01.362884+00:00",
+  "checked_at": "2026-10-05T15:58:20.963128+00:00",
   "platform": null,
   "slug": null
  },
@@ -1066,7 +1071,7 @@
   "slug": "seatgeek"
  },
  "shopfiy winter": {
-  "checked_at": "2026-09-28T12:01:44.542646+00:00",
+  "checked_at": "2026-10-05T15:59:04.197174+00:00",
   "platform": null,
   "slug": null
  },
@@ -1129,7 +1134,7 @@
   "slug": "TensorWave"
  },
  "textql": {
-  "checked_at": "2026-09-28T12:01:52.006413+00:00",
+  "checked_at": "2026-10-05T15:59:11.821747+00:00",
   "platform": null,
   "slug": null
  },
@@ -1174,7 +1179,7 @@
   "slug": "https://jobs.uber.com/jobs/xml/?rss=true"
  },
  "united health group": {
-  "checked_at": "2026-09-28T11:59:18.628990+00:00",
+  "checked_at": "2026-10-05T15:56:14.439665+00:00",
   "platform": null,
   "slug": null
  },
@@ -1185,12 +1190,12 @@
   "slug": "visa|wd5|Visa"
  },
  "vmware": {
-  "checked_at": "2026-09-28T11:59:46.384886+00:00",
+  "checked_at": "2026-10-05T15:56:42.388750+00:00",
   "platform": null,
   "slug": null
  },
  "walmart": {
-  "checked_at": "2026-09-28T11:59:59.740592+00:00",
+  "checked_at": "2026-10-05T15:56:57.274467+00:00",
   "platform": null,
   "slug": null
  },
@@ -1210,7 +1215,7 @@
   "slug": "https://www.wellsfargojobs.com/jobs/xml/?rss=true"
  },
  "whatnot": {
-  "checked_at": "2026-09-28T12:00:19.688521+00:00",
+  "checked_at": "2026-10-05T15:57:34.867717+00:00",
   "platform": null,
   "slug": null
  },
@@ -1220,7 +1225,7 @@
   "slug": "comcast|wd115|Comcast_Careers"
  },
  "yahoo": {
-  "checked_at": "2026-09-28T12:00:30.590499+00:00",
+  "checked_at": "2026-10-05T15:57:47.851167+00:00",
   "platform": null,
   "slug": null
  },
