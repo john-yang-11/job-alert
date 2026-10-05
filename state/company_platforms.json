@@ -247,7 +247,7 @@
  },
  "Mastercard": {
   "checked_at": "2026-09-15T13:28:53.119377+00:00",
-  "deep_scanned_at": "2026-10-03T19:48:27.598021+00:00",
+  "deep_scanned_at": "2026-10-05T22:33:24.592964+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|CorporateCareers"
  },
@@ -469,7 +469,7 @@
  },
  "abbott": {
   "checked_at": "2026-09-15T07:38:19.009493+00:00",
-  "deep_scanned_at": "2026-10-03T22:50:27.760966+00:00",
+  "deep_scanned_at": "2026-10-05T22:33:24.592964+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-05T15:54:43.125277+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -856,7 +856,7 @@
  },
  "leidos": {
   "checked_at": "2026-09-15T13:28:50.070469+00:00",
-  "deep_scanned_at": "2026-10-03T19:48:27.598021+00:00",
+  "deep_scanned_at": "2026-10-05T22:33:24.592964+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
  },
@@ -903,7 +903,8 @@
  },
  "moelis": {
   "checked_at": "2026-09-07T04:28:26.140870+00:00",
-  "deep_scanned_at": "2026-10-03T19:48:27.598021+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-05T22:33:24.592964+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
  },
