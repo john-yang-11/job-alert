@@ -32,7 +32,7 @@
  },
  "Accenture": {
   "checked_at": "2026-09-15T07:38:36.399427+00:00",
-  "deep_scanned_at": "2026-10-04T02:32:36.694912+00:00",
+  "deep_scanned_at": "2026-10-06T02:30:29.210089+00:00",
   "platform": "workday",
   "slug": "accenture|wd103|AccentureCareers"
  },
@@ -258,7 +258,7 @@
  },
  "NVIDIA": {
   "checked_at": "2026-09-15T06:45:37.515911+00:00",
-  "deep_scanned_at": "2026-10-03T22:50:27.760966+00:00",
+  "deep_scanned_at": "2026-10-06T02:30:29.210089+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
@@ -294,7 +294,7 @@
  },
  "PNC": {
   "checked_at": "2026-09-15T06:46:23.746473+00:00",
-  "deep_scanned_at": "2026-10-03T22:50:27.760966+00:00",
+  "deep_scanned_at": "2026-10-06T02:30:29.210089+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -310,7 +310,7 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-09-15T13:28:58.477448+00:00",
-  "deep_scanned_at": "2026-10-03T22:50:27.760966+00:00",
+  "deep_scanned_at": "2026-10-06T02:30:29.210089+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-05T15:54:43.125277+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -568,7 +568,7 @@
   "slug": "blueorigin|wd5|BlueOrigin"
  },
  "bny": {
-  "checked_at": "2026-09-28T23:56:16.368040+00:00",
+  "checked_at": "2026-10-06T02:29:20.374581+00:00",
   "platform": null,
   "slug": null
  },
@@ -903,7 +903,6 @@
  },
  "moelis": {
   "checked_at": "2026-09-07T04:28:26.140870+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-05T22:33:24.592964+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
