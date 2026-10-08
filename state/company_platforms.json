@@ -32,7 +32,7 @@
  },
  "Accenture": {
   "checked_at": "2026-09-15T07:38:36.399427+00:00",
-  "deep_scanned_at": "2026-10-06T02:30:29.210089+00:00",
+  "deep_scanned_at": "2026-10-08T06:36:14.269073+00:00",
   "platform": "workday",
   "slug": "accenture|wd103|AccentureCareers"
  },
@@ -247,7 +247,7 @@
  },
  "Mastercard": {
   "checked_at": "2026-09-15T13:28:53.119377+00:00",
-  "deep_scanned_at": "2026-10-05T22:33:24.592964+00:00",
+  "deep_scanned_at": "2026-10-08T06:36:14.269073+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|CorporateCareers"
  },
@@ -469,7 +469,7 @@
  },
  "abbott": {
   "checked_at": "2026-09-15T07:38:19.009493+00:00",
-  "deep_scanned_at": "2026-10-05T22:33:24.592964+00:00",
+  "deep_scanned_at": "2026-10-08T06:36:14.269073+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -513,12 +513,6 @@
   "checked_at": "2026-10-04T14:46:23.599775+00:00",
   "platform": null,
   "slug": null
- },
- "aquatic": {
-  "checked_at": "2026-10-07T01:00:04.478721+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-09-15T07:39:04.450672+00:00",
@@ -856,7 +850,7 @@
  },
  "leidos": {
   "checked_at": "2026-09-15T13:28:50.070469+00:00",
-  "deep_scanned_at": "2026-10-05T22:33:24.592964+00:00",
+  "deep_scanned_at": "2026-10-08T06:36:14.269073+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
  },
