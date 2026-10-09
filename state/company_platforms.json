@@ -331,7 +331,7 @@
   "slug": "point72"
  },
  "Qualcomm": {
-  "checked_at": "2026-10-02T18:00:52.331393+00:00",
+  "checked_at": "2026-10-09T19:41:39.393298+00:00",
   "platform": null,
   "slug": null
  },
@@ -347,7 +347,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-09-30T18:25:37.344732+00:00",
-  "deep_scanned_at": "2026-10-07T07:09:31.714613+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-09T19:42:42.574597+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -514,12 +515,6 @@
   "platform": null,
   "slug": null
  },
- "aquatic": {
-  "checked_at": "2026-10-08T13:59:10.915519+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
- },
  "asana": {
   "checked_at": "2026-09-15T07:39:04.450672+00:00",
   "platform": "greenhouse",
@@ -574,7 +569,7 @@
  },
  "boeing": {
   "checked_at": "2026-09-15T07:40:33.450549+00:00",
-  "deep_scanned_at": "2026-10-07T14:43:41.156984+00:00",
+  "deep_scanned_at": "2026-10-09T19:42:42.574597+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -688,7 +683,7 @@
   "slug": "databricks"
  },
  "databricks winter": {
-  "checked_at": "2026-10-02T18:01:07.102093+00:00",
+  "checked_at": "2026-10-09T19:41:55.942078+00:00",
   "platform": null,
   "slug": null
  },
@@ -903,7 +898,8 @@
  },
  "moelis": {
   "checked_at": "2026-10-07T07:09:07.310574+00:00",
-  "deep_scanned_at": "2026-10-07T07:09:31.714613+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-09T19:42:42.574597+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
  },
@@ -1046,7 +1042,7 @@
  },
  "salesforce": {
   "checked_at": "2026-09-30T18:26:10.956794+00:00",
-  "deep_scanned_at": "2026-10-07T07:09:31.714613+00:00",
+  "deep_scanned_at": "2026-10-09T19:42:42.574597+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
