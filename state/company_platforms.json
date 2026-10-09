@@ -316,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-09-30T18:24:59.787180+00:00",
-  "deep_scanned_at": "2026-10-07T01:00:32.393712+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-09T06:39:34.685633+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -400,7 +401,8 @@
  },
  "T-mobile": {
   "checked_at": "2026-09-15T17:47:37.216283+00:00",
-  "deep_scanned_at": "2026-10-06T21:12:00.805786+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-09T06:39:34.685633+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
@@ -516,7 +518,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-08T13:59:10.915519+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -547,7 +549,8 @@
  },
  "blackstone": {
   "checked_at": "2026-09-20T20:48:47.970384+00:00",
-  "deep_scanned_at": "2026-10-06T21:12:00.805786+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-09T06:39:34.685633+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -820,7 +823,7 @@
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
  "ignite NVIDIA": {
-  "checked_at": "2026-10-02T06:06:41.281601+00:00",
+  "checked_at": "2026-10-09T06:37:56.090487+00:00",
   "platform": null,
   "slug": null
  },
@@ -968,7 +971,7 @@
   "slug": "patreon"
  },
  "paycom": {
-  "checked_at": "2026-10-02T06:07:00.390885+00:00",
+  "checked_at": "2026-10-09T06:38:50.434771+00:00",
   "platform": null,
   "slug": null
  },
@@ -1082,7 +1085,6 @@
  },
  "slack": {
   "checked_at": "2026-09-15T17:46:34.794851+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-09T00:16:37.135557+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
@@ -1119,14 +1121,13 @@
  },
  "state street": {
   "checked_at": "2026-09-15T17:47:24.250092+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-09T00:16:37.135557+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
  "stryker": {
   "checked_at": "2026-09-15T17:47:30.426918+00:00",
-  "deep_scanned_at": "2026-10-06T21:12:00.805786+00:00",
+  "deep_scanned_at": "2026-10-09T06:39:34.685633+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
@@ -1141,7 +1142,7 @@
   "slug": null
  },
  "the nuclear company": {
-  "checked_at": "2026-09-09T04:34:43.757838+00:00",
+  "checked_at": "2026-10-09T06:38:32.136777+00:00",
   "platform": "greenhouse",
   "slug": "thenuclearcompany"
  },
