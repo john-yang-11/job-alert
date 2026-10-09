@@ -374,7 +374,7 @@
  },
  "Snap": {
   "checked_at": "2026-09-15T06:47:28.338906+00:00",
-  "deep_scanned_at": "2026-10-06T16:14:04.712958+00:00",
+  "deep_scanned_at": "2026-10-09T00:16:37.135557+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-08T13:59:10.915519+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -657,7 +657,7 @@
  },
  "comcast": {
   "checked_at": "2026-09-26T16:43:22.661238+00:00",
-  "deep_scanned_at": "2026-10-06T21:12:00.805786+00:00",
+  "deep_scanned_at": "2026-10-09T00:16:37.135557+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
@@ -1082,7 +1082,8 @@
  },
  "slack": {
   "checked_at": "2026-09-15T17:46:34.794851+00:00",
-  "deep_scanned_at": "2026-10-06T16:14:04.712958+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-09T00:16:37.135557+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
@@ -1118,7 +1119,8 @@
  },
  "state street": {
   "checked_at": "2026-09-15T17:47:24.250092+00:00",
-  "deep_scanned_at": "2026-10-06T16:14:04.712958+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-09T00:16:37.135557+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
