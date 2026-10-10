@@ -165,7 +165,7 @@
  },
  "HP": {
   "checked_at": "2026-09-15T13:28:19.814605+00:00",
-  "deep_scanned_at": "2026-10-08T00:23:41.806963+00:00",
+  "deep_scanned_at": "2026-10-10T12:23:17.562620+00:00",
   "platform": "workday",
   "slug": "hp|wd5|ExternalCareerSite"
  },
@@ -226,7 +226,7 @@
  },
  "KLA": {
   "checked_at": "2026-09-15T13:28:41.193357+00:00",
-  "deep_scanned_at": "2026-10-08T00:23:41.806963+00:00",
+  "deep_scanned_at": "2026-10-10T12:23:17.562620+00:00",
   "platform": "workday",
   "slug": "kla|wd1|Search"
  },
@@ -469,7 +469,7 @@
  },
  "abbott": {
   "checked_at": "2026-09-15T07:38:19.009493+00:00",
-  "deep_scanned_at": "2026-10-08T06:36:14.269073+00:00",
+  "deep_scanned_at": "2026-10-10T12:23:17.562620+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-09T23:59:05.909574+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -579,9 +579,9 @@
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
  "boeing data analytics": {
-  "checked_at": "2026-10-03T07:02:59.896102+00:00",
-  "platform": null,
-  "slug": null
+  "checked_at": "2026-10-10T12:22:52.671872+00:00",
+  "platform": "workday",
+  "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
  "bosch": {
   "checked_at": "2026-09-15T07:40:36.539007+00:00",
@@ -636,7 +636,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-09-15T07:41:20.140571+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-10T05:41:01.309594+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -755,7 +754,7 @@
  },
  "fidelity": {
   "checked_at": "2026-09-15T13:27:52.220970+00:00",
-  "deep_scanned_at": "2026-10-08T00:23:41.806963+00:00",
+  "deep_scanned_at": "2026-10-10T12:23:17.562620+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
  },
