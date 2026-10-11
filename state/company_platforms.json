@@ -72,7 +72,7 @@
   "slug": "block"
  },
  "Bloomberg": {
-  "checked_at": "2026-10-04T17:48:01.713424+00:00",
+  "checked_at": "2026-10-11T19:10:57.623243+00:00",
   "platform": null,
   "slug": null
  },
@@ -416,7 +416,7 @@
   "slug": "tencent|wd1|Tencent_Careers"
  },
  "Tesla": {
-  "checked_at": "2026-10-04T17:48:33.845759+00:00",
+  "checked_at": "2026-10-11T19:11:35.582409+00:00",
   "platform": null,
   "slug": null
  },
@@ -457,7 +457,7 @@
   "slug": "WesternDigital"
  },
  "Walmart": {
-  "checked_at": "2026-10-04T17:48:09.853093+00:00",
+  "checked_at": "2026-10-11T19:11:06.119811+00:00",
   "platform": null,
   "slug": null
  },
@@ -882,7 +882,7 @@
   "slug": null
  },
  "meta": {
-  "checked_at": "2026-10-04T17:48:19.644713+00:00",
+  "checked_at": "2026-10-11T19:11:20.820905+00:00",
   "platform": null,
   "slug": null
  },
@@ -1005,7 +1005,7 @@
   "slug": "replit"
  },
  "resy": {
-  "checked_at": "2026-10-04T17:48:26.901508+00:00",
+  "checked_at": "2026-10-11T19:11:28.777296+00:00",
   "platform": null,
   "slug": null
  },
