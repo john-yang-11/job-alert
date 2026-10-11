@@ -82,7 +82,7 @@
   "slug": null
  },
  "CNN": {
-  "checked_at": "2026-10-04T18:37:00.917307+00:00",
+  "checked_at": "2026-10-11T22:24:59.437981+00:00",
   "platform": null,
   "slug": null
  },
@@ -93,22 +93,22 @@
  },
  "Cisco": {
   "checked_at": "2026-09-15T06:46:51.719630+00:00",
-  "deep_scanned_at": "2026-10-09T23:59:52.598912+00:00",
+  "deep_scanned_at": "2026-10-11T22:30:59.430619+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
  "Deloitte": {
-  "checked_at": "2026-10-04T18:38:38.128379+00:00",
+  "checked_at": "2026-10-11T22:26:20.369975+00:00",
   "platform": null,
   "slug": null
  },
  "Deloitte ai smth": {
-  "checked_at": "2026-10-04T21:55:27.231311+00:00",
+  "checked_at": "2026-10-11T22:26:34.286541+00:00",
   "platform": null,
   "slug": null
  },
  "Delta": {
-  "checked_at": "2026-10-04T18:38:46.964540+00:00",
+  "checked_at": "2026-10-11T22:26:41.899936+00:00",
   "platform": null,
   "slug": null
  },
@@ -123,7 +123,7 @@
   "slug": "https://www.dropbox.jobs/jobs/xml/?rss=true"
  },
  "Electronic Arts": {
-  "checked_at": "2026-10-04T21:56:39.043879+00:00",
+  "checked_at": "2026-10-11T22:28:16.216021+00:00",
   "platform": null,
   "slug": null
  },
@@ -133,7 +133,7 @@
   "slug": "etched"
  },
  "Everpure": {
-  "checked_at": "2026-10-04T21:56:57.720025+00:00",
+  "checked_at": "2026-10-11T22:28:32.606599+00:00",
   "platform": null,
   "slug": null
  },
@@ -347,7 +347,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-09-30T18:25:37.344732+00:00",
-  "deep_scanned_at": "2026-10-09T19:42:42.574597+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-11T22:30:59.430619+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -516,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-11T06:22:01.714757+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -599,7 +600,7 @@
   "slug": "bytedance"
  },
  "c1 data analyst": {
-  "checked_at": "2026-10-04T18:36:40.754737+00:00",
+  "checked_at": "2026-10-11T22:24:39.177333+00:00",
   "platform": null,
   "slug": null
  },
@@ -614,7 +615,7 @@
   "slug": "chime"
  },
  "citadel launch": {
-  "checked_at": "2026-10-04T18:36:53.843761+00:00",
+  "checked_at": "2026-10-11T22:24:52.927411+00:00",
   "platform": null,
   "slug": null
  },
@@ -651,7 +652,7 @@
   "slug": "coinbase"
  },
  "colins aerospace": {
-  "checked_at": "2026-10-04T18:37:17.004214+00:00",
+  "checked_at": "2026-10-11T22:25:12.569766+00:00",
   "platform": null,
   "slug": null
  },
@@ -673,7 +674,7 @@
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
  "cvs health": {
-  "checked_at": "2026-10-04T18:38:16.680853+00:00",
+  "checked_at": "2026-10-11T22:26:01.553380+00:00",
   "platform": null,
   "slug": null
  },
@@ -708,7 +709,7 @@
   "slug": "Deepgram"
  },
  "dell": {
-  "checked_at": "2026-10-04T18:38:27.819506+00:00",
+  "checked_at": "2026-10-11T22:26:11.968212+00:00",
   "platform": null,
   "slug": null
  },
@@ -718,7 +719,7 @@
   "slug": null
  },
  "disney": {
-  "checked_at": "2026-10-04T18:39:03.801770+00:00",
+  "checked_at": "2026-10-11T22:26:58.642706+00:00",
   "platform": null,
   "slug": null
  },
@@ -728,7 +729,7 @@
   "slug": "https://careers.docusign.com"
  },
  "doordash": {
-  "checked_at": "2026-10-04T18:39:10.429577+00:00",
+  "checked_at": "2026-10-11T22:27:04.622307+00:00",
   "platform": null,
   "slug": null
  },
@@ -738,7 +739,7 @@
   "slug": "duolingo"
  },
  "ea pathfinder": {
-  "checked_at": "2026-10-04T21:55:45.778412+00:00",
+  "checked_at": "2026-10-11T22:27:22.807357+00:00",
   "platform": null,
   "slug": null
  },
@@ -748,7 +749,7 @@
   "slug": "elastic"
  },
  "epic": {
-  "checked_at": "2026-10-04T21:56:49.841036+00:00",
+  "checked_at": "2026-10-11T22:28:24.409552+00:00",
   "platform": null,
   "slug": null
  },
@@ -774,12 +775,12 @@
   "slug": null
  },
  "gemnai fall": {
-  "checked_at": "2026-10-04T21:57:10.344336+00:00",
+  "checked_at": "2026-10-11T22:28:45.370803+00:00",
   "platform": null,
   "slug": null
  },
  "general dynamics": {
-  "checked_at": "2026-10-04T21:58:03.502168+00:00",
+  "checked_at": "2026-10-11T22:30:35.282500+00:00",
   "platform": null,
   "slug": null
  },
@@ -903,7 +904,8 @@
  },
  "moelis": {
   "checked_at": "2026-10-07T07:09:07.310574+00:00",
-  "deep_scanned_at": "2026-10-09T19:42:42.574597+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-11T22:30:59.430619+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
  },
@@ -1046,7 +1048,7 @@
  },
  "salesforce": {
   "checked_at": "2026-09-30T18:26:10.956794+00:00",
-  "deep_scanned_at": "2026-10-09T19:42:42.574597+00:00",
+  "deep_scanned_at": "2026-10-11T22:30:59.430619+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
