@@ -316,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-09-30T18:24:59.787180+00:00",
-  "deep_scanned_at": "2026-10-09T06:39:34.685633+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-11T06:22:25.368557+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -374,7 +375,7 @@
  },
  "Snap": {
   "checked_at": "2026-09-15T06:47:28.338906+00:00",
-  "deep_scanned_at": "2026-10-09T00:16:37.135557+00:00",
+  "deep_scanned_at": "2026-10-11T06:22:25.368557+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -513,6 +514,12 @@
   "checked_at": "2026-10-04T14:46:23.599775+00:00",
   "platform": null,
   "slug": null
+ },
+ "aquatic": {
+  "checked_at": "2026-10-11T06:22:01.714757+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-09-15T07:39:04.450672+00:00",
@@ -1076,7 +1083,8 @@
  },
  "slack": {
   "checked_at": "2026-09-15T17:46:34.794851+00:00",
-  "deep_scanned_at": "2026-10-09T00:16:37.135557+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-11T06:22:25.368557+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
@@ -1112,7 +1120,8 @@
  },
  "state street": {
   "checked_at": "2026-09-15T17:47:24.250092+00:00",
-  "deep_scanned_at": "2026-10-09T00:16:37.135557+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-11T06:22:25.368557+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
