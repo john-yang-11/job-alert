@@ -241,7 +241,7 @@
   "slug": "lyft"
  },
  "MLH": {
-  "checked_at": "2026-10-05T00:51:06.838418+00:00",
+  "checked_at": "2026-10-12T09:04:03.866061+00:00",
   "platform": null,
   "slug": null
  },
@@ -263,7 +263,7 @@
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
  "Netflix": {
-  "checked_at": "2026-10-05T06:54:31.583496+00:00",
+  "checked_at": "2026-10-12T09:06:54.649799+00:00",
   "platform": null,
   "slug": null
  },
@@ -273,12 +273,12 @@
   "slug": "neuralink"
  },
  "Nokia": {
-  "checked_at": "2026-10-05T06:54:53.269193+00:00",
+  "checked_at": "2026-10-12T09:07:17.873239+00:00",
   "platform": null,
   "slug": null
  },
  "Northrop Grumman": {
-  "checked_at": "2026-10-05T06:55:08.439632+00:00",
+  "checked_at": "2026-10-12T09:07:36.908601+00:00",
   "platform": null,
   "slug": null
  },
@@ -341,7 +341,7 @@
   "slug": "reddit"
  },
  "Rippling winter 27": {
-  "checked_at": "2026-10-05T06:56:14.722531+00:00",
+  "checked_at": "2026-10-12T09:08:44.885812+00:00",
   "platform": null,
   "slug": null
  },
@@ -469,7 +469,7 @@
  },
  "abbott": {
   "checked_at": "2026-09-15T07:38:19.009493+00:00",
-  "deep_scanned_at": "2026-10-10T12:23:17.562620+00:00",
+  "deep_scanned_at": "2026-10-12T09:09:46.075616+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -513,12 +513,6 @@
   "checked_at": "2026-10-11T18:26:30.742901+00:00",
   "platform": null,
   "slug": null
- },
- "aquatic": {
-  "checked_at": "2026-10-11T06:22:01.714757+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-09-15T07:39:04.450672+00:00",
@@ -636,7 +630,8 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-09-15T07:41:20.140571+00:00",
-  "deep_scanned_at": "2026-10-10T05:41:01.309594+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-12T09:09:46.075616+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
@@ -668,7 +663,7 @@
  },
  "crowdstrike": {
   "checked_at": "2026-09-15T07:41:46.274956+00:00",
-  "deep_scanned_at": "2026-10-10T05:41:01.309594+00:00",
+  "deep_scanned_at": "2026-10-12T09:09:46.075616+00:00",
   "platform": "workday",
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
@@ -815,7 +810,7 @@
  },
  "humana": {
   "checked_at": "2026-09-18T05:50:22.517609+00:00",
-  "deep_scanned_at": "2026-10-10T05:41:01.309594+00:00",
+  "deep_scanned_at": "2026-10-12T09:09:46.075616+00:00",
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
@@ -913,7 +908,7 @@
   "slug": "mongodb"
  },
  "mongodb NeXt summit": {
-  "checked_at": "2026-10-05T00:51:31.478573+00:00",
+  "checked_at": "2026-10-12T09:04:30.131106+00:00",
   "platform": null,
   "slug": null
  },
@@ -923,12 +918,12 @@
   "slug": "monogram"
  },
  "morgan stanley": {
-  "checked_at": "2026-10-05T00:52:55.991438+00:00",
+  "checked_at": "2026-10-12T09:06:10.794972+00:00",
   "platform": null,
   "slug": null
  },
  "nasa": {
-  "checked_at": "2026-10-05T00:53:32.330132+00:00",
+  "checked_at": "2026-10-12T09:06:47.443370+00:00",
   "platform": null,
   "slug": null
  },
@@ -958,7 +953,7 @@
   "slug": "okta"
  },
  "oracle": {
-  "checked_at": "2026-10-05T06:55:19.829876+00:00",
+  "checked_at": "2026-10-12T09:07:48.322476+00:00",
   "platform": null,
   "slug": null
  },
@@ -978,7 +973,7 @@
   "slug": "plaid"
  },
  "pwc": {
-  "checked_at": "2026-10-05T06:55:51.883760+00:00",
+  "checked_at": "2026-10-12T09:08:21.188325+00:00",
   "platform": null,
   "slug": null
  },
@@ -1015,7 +1010,7 @@
   "slug": "riotgames"
  },
  "rippling": {
-  "checked_at": "2026-10-05T06:56:00.994311+00:00",
+  "checked_at": "2026-10-12T09:08:30.868054+00:00",
   "platform": null,
   "slug": null
  },
@@ -1030,7 +1025,7 @@
   "slug": "roblox"
  },
  "roche": {
-  "checked_at": "2026-10-05T06:56:46.456798+00:00",
+  "checked_at": "2026-10-12T09:09:18.380317+00:00",
   "platform": null,
   "slug": null
  },
