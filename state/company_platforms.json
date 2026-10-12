@@ -26,7 +26,7 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-09-15T21:14:50.087269+00:00",
-  "deep_scanned_at": "2026-10-09T23:59:52.598912+00:00",
+  "deep_scanned_at": "2026-10-12T01:47:34.407927+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -159,7 +159,7 @@
   "slug": null
  },
  "Google ASDI": {
-  "checked_at": "2026-10-04T21:59:11.056232+00:00",
+  "checked_at": "2026-10-12T01:43:13.231679+00:00",
   "platform": null,
   "slug": null
  },
@@ -170,7 +170,7 @@
   "slug": "hp|wd5|ExternalCareerSite"
  },
  "HPR": {
-  "checked_at": "2026-10-04T21:59:23.582076+00:00",
+  "checked_at": "2026-10-12T01:43:38.191314+00:00",
   "platform": null,
   "slug": null
  },
@@ -185,7 +185,7 @@
   "slug": "hermeus"
  },
  "Hubspot": {
-  "checked_at": "2026-10-04T21:59:46.637060+00:00",
+  "checked_at": "2026-10-12T01:44:06.045431+00:00",
   "platform": null,
   "slug": null
  },
@@ -200,17 +200,17 @@
   "slug": null
  },
  "IBM accelerate": {
-  "checked_at": "2026-10-05T00:48:44.993158+00:00",
+  "checked_at": "2026-10-12T01:44:34.494767+00:00",
   "platform": null,
   "slug": null
  },
  "Intuit": {
-  "checked_at": "2026-10-05T00:49:32.412904+00:00",
+  "checked_at": "2026-10-12T01:45:26.342946+00:00",
   "platform": null,
   "slug": null
  },
  "JP morgan chase fellowship": {
-  "checked_at": "2026-10-05T00:50:12.572861+00:00",
+  "checked_at": "2026-10-12T01:46:12.516552+00:00",
   "platform": null,
   "slug": null
  },
@@ -220,7 +220,7 @@
   "slug": null
  },
  "John Deere": {
-  "checked_at": "2026-10-05T00:49:57.928362+00:00",
+  "checked_at": "2026-10-12T01:45:55.306501+00:00",
   "platform": null,
   "slug": null
  },
@@ -231,7 +231,7 @@
   "slug": "kla|wd1|Search"
  },
  "Lockheed Martin": {
-  "checked_at": "2026-10-05T00:50:51.676067+00:00",
+  "checked_at": "2026-10-12T01:46:56.473496+00:00",
   "platform": null,
   "slug": null
  },
@@ -347,7 +347,6 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-09-30T18:25:37.344732+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-11T22:30:59.430619+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
@@ -464,7 +463,7 @@
  },
  "Workday": {
   "checked_at": "2026-09-15T21:14:48.539574+00:00",
-  "deep_scanned_at": "2026-10-09T23:59:52.598912+00:00",
+  "deep_scanned_at": "2026-10-12T01:47:34.407927+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -517,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-11T06:22:01.714757+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -621,7 +620,7 @@
  },
  "citi": {
   "checked_at": "2026-09-15T07:41:12.367907+00:00",
-  "deep_scanned_at": "2026-10-10T05:41:01.309594+00:00",
+  "deep_scanned_at": "2026-10-12T01:47:34.407927+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -785,7 +784,7 @@
   "slug": null
  },
  "general motors": {
-  "checked_at": "2026-10-04T21:58:49.981339+00:00",
+  "checked_at": "2026-10-12T01:42:55.277789+00:00",
   "platform": null,
   "slug": null
  },
@@ -805,7 +804,7 @@
   "slug": "handshake"
  },
  "harmon": {
-  "checked_at": "2026-10-04T21:59:16.724716+00:00",
+  "checked_at": "2026-10-12T01:43:21.279997+00:00",
   "platform": null,
   "slug": null
  },
@@ -826,7 +825,7 @@
   "slug": null
  },
  "infosys": {
-  "checked_at": "2026-10-05T00:49:12.665548+00:00",
+  "checked_at": "2026-10-12T01:45:03.494650+00:00",
   "platform": null,
   "slug": null
  },
@@ -841,7 +840,7 @@
   "slug": "janestreet"
  },
  "jpmorgan": {
-  "checked_at": "2026-10-05T00:50:22.379821+00:00",
+  "checked_at": "2026-10-12T01:46:23.914298+00:00",
   "platform": null,
   "slug": null
  },
@@ -862,7 +861,7 @@
   "slug": "leidos|wd5|External"
  },
  "lenovo": {
-  "checked_at": "2026-10-05T00:50:33.778517+00:00",
+  "checked_at": "2026-10-12T01:46:34.428647+00:00",
   "platform": null,
   "slug": null
  },
@@ -873,12 +872,12 @@
  },
  "medtronic": {
   "checked_at": "2026-10-03T01:09:49.970467+00:00",
-  "deep_scanned_at": "2026-10-09T23:59:52.598912+00:00",
+  "deep_scanned_at": "2026-10-12T01:47:34.407927+00:00",
   "platform": "workday",
   "slug": "medtronic|wd1|MedtronicCareers"
  },
  "mercedes": {
-  "checked_at": "2026-10-05T00:50:59.404765+00:00",
+  "checked_at": "2026-10-12T01:47:04.786379+00:00",
   "platform": null,
   "slug": null
  },
@@ -904,7 +903,6 @@
  },
  "moelis": {
   "checked_at": "2026-10-07T07:09:07.310574+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-11T22:30:59.430619+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
