@@ -258,7 +258,7 @@
  },
  "NVIDIA": {
   "checked_at": "2026-09-15T06:45:37.515911+00:00",
-  "deep_scanned_at": "2026-10-10T20:40:30.172933+00:00",
+  "deep_scanned_at": "2026-10-13T08:23:16.176463+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
@@ -294,7 +294,7 @@
  },
  "PNC": {
   "checked_at": "2026-09-15T06:46:23.746473+00:00",
-  "deep_scanned_at": "2026-10-10T20:40:30.172933+00:00",
+  "deep_scanned_at": "2026-10-13T08:23:16.176463+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -310,7 +310,7 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-09-15T13:28:58.477448+00:00",
-  "deep_scanned_at": "2026-10-10T20:40:30.172933+00:00",
+  "deep_scanned_at": "2026-10-13T08:23:16.176463+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-12T18:57:05.501964+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -568,7 +568,7 @@
   "slug": "blueorigin|wd5|BlueOrigin"
  },
  "bny": {
-  "checked_at": "2026-10-06T02:29:20.374581+00:00",
+  "checked_at": "2026-10-13T08:22:51.181214+00:00",
   "platform": null,
   "slug": null
  },
@@ -657,13 +657,13 @@
  },
  "comcast": {
   "checked_at": "2026-09-26T16:43:22.661238+00:00",
-  "deep_scanned_at": "2026-10-11T00:12:02.485898+00:00",
+  "deep_scanned_at": "2026-10-13T08:23:16.176463+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
  "confluent": {
   "checked_at": "2026-09-15T07:41:44.661777+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "confluent"
  },
