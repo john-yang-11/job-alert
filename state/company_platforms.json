@@ -139,7 +139,8 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-09-30T18:24:46.930459+00:00",
-  "deep_scanned_at": "2026-10-11T00:12:02.485898+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-13T16:23:21.886763+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -316,7 +317,8 @@
  },
  "Paypal": {
   "checked_at": "2026-09-30T18:24:59.787180+00:00",
-  "deep_scanned_at": "2026-10-11T06:22:25.368557+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-13T16:23:21.886763+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -358,7 +360,7 @@
  },
  "Samsung": {
   "checked_at": "2026-09-15T17:46:29.192561+00:00",
-  "deep_scanned_at": "2026-10-11T00:12:02.485898+00:00",
+  "deep_scanned_at": "2026-10-13T16:23:21.886763+00:00",
   "platform": "workday",
   "slug": "sec|wd3|Samsung_Careers"
  },
@@ -516,7 +518,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-12T18:57:05.501964+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -663,7 +665,7 @@
  },
  "confluent": {
   "checked_at": "2026-09-15T07:41:44.661777+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -990,7 +992,7 @@
  },
  "raytheon": {
   "checked_at": "2026-09-15T13:29:04.403563+00:00",
-  "deep_scanned_at": "2026-10-11T00:12:02.485898+00:00",
+  "deep_scanned_at": "2026-10-13T16:23:21.886763+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
