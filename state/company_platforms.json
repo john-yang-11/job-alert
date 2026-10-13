@@ -139,7 +139,6 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-09-30T18:24:46.930459+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-13T16:23:21.886763+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
@@ -317,7 +316,6 @@
  },
  "Paypal": {
   "checked_at": "2026-09-30T18:24:59.787180+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-13T16:23:21.886763+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
@@ -376,7 +374,7 @@
  },
  "Snap": {
   "checked_at": "2026-09-15T06:47:28.338906+00:00",
-  "deep_scanned_at": "2026-10-11T06:22:25.368557+00:00",
+  "deep_scanned_at": "2026-10-13T21:31:03.220072+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -518,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-12T18:57:05.501964+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -665,7 +663,7 @@
  },
  "confluent": {
   "checked_at": "2026-09-15T07:41:44.661777+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -998,7 +996,7 @@
  },
  "redhat": {
   "checked_at": "2026-09-30T18:25:13.664224+00:00",
-  "deep_scanned_at": "2026-10-11T13:27:25.509157+00:00",
+  "deep_scanned_at": "2026-10-13T21:31:03.220072+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
@@ -1085,7 +1083,8 @@
  },
  "slack": {
   "checked_at": "2026-09-15T17:46:34.794851+00:00",
-  "deep_scanned_at": "2026-10-11T06:22:25.368557+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-13T21:31:03.220072+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
@@ -1121,7 +1120,8 @@
  },
  "state street": {
   "checked_at": "2026-09-15T17:47:24.250092+00:00",
-  "deep_scanned_at": "2026-10-11T06:22:25.368557+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-13T21:31:03.220072+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
