@@ -215,7 +215,7 @@
   "slug": null
  },
  "JP morgan hack4good": {
-  "checked_at": "2026-10-05T15:58:35.796775+00:00",
+  "checked_at": "2026-10-13T01:16:36.711908+00:00",
   "platform": null,
   "slug": null
  },
@@ -247,7 +247,7 @@
  },
  "Mastercard": {
   "checked_at": "2026-09-15T13:28:53.119377+00:00",
-  "deep_scanned_at": "2026-10-10T17:28:24.103344+00:00",
+  "deep_scanned_at": "2026-10-13T01:18:04.121063+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|CorporateCareers"
  },
@@ -442,7 +442,7 @@
   "slug": "uberfreight"
  },
  "Urline": {
-  "checked_at": "2026-10-05T15:58:49.585811+00:00",
+  "checked_at": "2026-10-13T01:16:48.854712+00:00",
   "platform": null,
   "slug": null
  },
@@ -475,7 +475,7 @@
  },
  "adobe": {
   "checked_at": "2026-09-15T06:45:27.153105+00:00",
-  "deep_scanned_at": "2026-10-10T17:28:24.103344+00:00",
+  "deep_scanned_at": "2026-10-13T01:18:04.121063+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-12T18:57:05.501964+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -563,7 +563,7 @@
  },
  "blue origin": {
   "checked_at": "2026-09-15T07:40:30.028548+00:00",
-  "deep_scanned_at": "2026-10-10T20:40:30.172933+00:00",
+  "deep_scanned_at": "2026-10-13T01:18:04.121063+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -663,7 +663,7 @@
  },
  "confluent": {
   "checked_at": "2026-09-15T07:41:44.661777+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -714,7 +714,7 @@
   "slug": null
  },
  "delta ai engineering": {
-  "checked_at": "2026-10-05T15:59:39.856288+00:00",
+  "checked_at": "2026-10-13T01:17:35.213603+00:00",
   "platform": null,
   "slug": null
  },
@@ -795,7 +795,7 @@
   "slug": "godaddy"
  },
  "goldman": {
-  "checked_at": "2026-10-05T15:59:25.207499+00:00",
+  "checked_at": "2026-10-13T01:17:20.823741+00:00",
   "platform": null,
   "slug": null
  },
@@ -810,7 +810,7 @@
   "slug": null
  },
  "hershy": {
-  "checked_at": "2026-10-05T15:59:18.866768+00:00",
+  "checked_at": "2026-10-13T01:17:14.686740+00:00",
   "platform": null,
   "slug": null
  },
@@ -857,7 +857,7 @@
  },
  "leidos": {
   "checked_at": "2026-09-15T13:28:50.070469+00:00",
-  "deep_scanned_at": "2026-10-10T17:28:24.103344+00:00",
+  "deep_scanned_at": "2026-10-13T01:18:04.121063+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
  },
@@ -888,12 +888,12 @@
   "slug": null
  },
  "microsoft core ai": {
-  "checked_at": "2026-10-05T15:58:06.255820+00:00",
+  "checked_at": "2026-10-13T01:16:10.691895+00:00",
   "platform": null,
   "slug": null
  },
  "mileniem applied ai engineer": {
-  "checked_at": "2026-10-05T15:58:20.963128+00:00",
+  "checked_at": "2026-10-13T01:16:23.364003+00:00",
   "platform": null,
   "slug": null
  },
@@ -1072,7 +1072,7 @@
   "slug": "seatgeek"
  },
  "shopfiy winter": {
-  "checked_at": "2026-10-05T15:59:04.197174+00:00",
+  "checked_at": "2026-10-13T01:17:01.296181+00:00",
   "platform": null,
   "slug": null
  },
@@ -1135,7 +1135,7 @@
   "slug": "TensorWave"
  },
  "textql": {
-  "checked_at": "2026-10-05T15:59:11.821747+00:00",
+  "checked_at": "2026-10-13T01:17:08.355405+00:00",
   "platform": null,
   "slug": null
  },
@@ -1226,7 +1226,7 @@
   "slug": "comcast|wd115|Comcast_Careers"
  },
  "yahoo": {
-  "checked_at": "2026-10-05T15:57:47.851167+00:00",
+  "checked_at": "2026-10-13T01:15:54.544574+00:00",
   "platform": null,
   "slug": null
  },
