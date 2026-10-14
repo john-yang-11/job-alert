@@ -347,7 +347,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-09-30T18:25:37.344732+00:00",
-  "deep_scanned_at": "2026-10-11T22:30:59.430619+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-14T10:33:21.498691+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -516,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-14T05:19:24.002346+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -620,7 +621,7 @@
  },
  "citi": {
   "checked_at": "2026-09-15T07:41:12.367907+00:00",
-  "deep_scanned_at": "2026-10-12T01:47:34.407927+00:00",
+  "deep_scanned_at": "2026-10-14T10:33:21.498691+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -663,7 +664,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-14T05:19:45.254480+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -904,7 +905,8 @@
  },
  "moelis": {
   "checked_at": "2026-10-07T07:09:07.310574+00:00",
-  "deep_scanned_at": "2026-10-11T22:30:59.430619+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-14T10:33:21.498691+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
  },
@@ -1047,7 +1049,7 @@
  },
  "salesforce": {
   "checked_at": "2026-09-30T18:26:10.956794+00:00",
-  "deep_scanned_at": "2026-10-11T22:30:59.430619+00:00",
+  "deep_scanned_at": "2026-10-14T10:33:21.498691+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
