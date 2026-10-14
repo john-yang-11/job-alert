@@ -165,7 +165,7 @@
  },
  "HP": {
   "checked_at": "2026-09-15T13:28:19.814605+00:00",
-  "deep_scanned_at": "2026-10-12T19:04:21.157694+00:00",
+  "deep_scanned_at": "2026-10-14T23:09:57.274840+00:00",
   "platform": "workday",
   "slug": "hp|wd5|ExternalCareerSite"
  },
@@ -226,7 +226,7 @@
  },
  "KLA": {
   "checked_at": "2026-09-15T13:28:41.193357+00:00",
-  "deep_scanned_at": "2026-10-12T19:04:21.157694+00:00",
+  "deep_scanned_at": "2026-10-14T23:09:57.274840+00:00",
   "platform": "workday",
   "slug": "kla|wd1|Search"
  },
@@ -475,7 +475,7 @@
  },
  "adobe": {
   "checked_at": "2026-09-15T06:45:27.153105+00:00",
-  "deep_scanned_at": "2026-10-13T01:18:04.121063+00:00",
+  "deep_scanned_at": "2026-10-14T23:09:57.274840+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-14T05:19:24.002346+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -636,7 +636,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-09-15T07:41:20.140571+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-14T19:40:37.039668+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -664,7 +663,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-14T05:19:45.254480+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -700,7 +699,7 @@
   "slug": "datadog"
  },
  "datadog winter 2027": {
-  "checked_at": "2026-10-07T20:34:21.038579+00:00",
+  "checked_at": "2026-10-14T23:09:27.810100+00:00",
   "platform": null,
   "slug": null
  },
@@ -756,7 +755,7 @@
  },
  "fidelity": {
   "checked_at": "2026-09-15T13:27:52.220970+00:00",
-  "deep_scanned_at": "2026-10-12T19:04:21.157694+00:00",
+  "deep_scanned_at": "2026-10-14T23:09:57.274840+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
  },
@@ -771,7 +770,7 @@
   "slug": null
  },
  "ge aero fall 2027": {
-  "checked_at": "2026-10-07T20:34:06.733850+00:00",
+  "checked_at": "2026-10-14T23:09:12.973523+00:00",
   "platform": null,
   "slug": null
  },
@@ -852,7 +851,7 @@
   "slug": "kalshi"
  },
  "l3 harris": {
-  "checked_at": "2026-10-07T20:33:48.909408+00:00",
+  "checked_at": "2026-10-14T23:08:52.282495+00:00",
   "platform": null,
   "slug": null
  },
