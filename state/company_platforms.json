@@ -225,6 +225,7 @@
  },
  "KLA": {
   "checked_at": "2026-10-15T17:44:32.764334+00:00",
+  "deep_scanned_at": "2026-10-15T21:20:55.129826+00:00",
   "platform": "workday",
   "slug": "kla|wd1|Search"
  },
@@ -245,6 +246,7 @@
  },
  "Mastercard": {
   "checked_at": "2026-10-15T17:44:47.993460+00:00",
+  "deep_scanned_at": "2026-10-15T21:20:55.129826+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|CorporateCareers"
  },
@@ -307,6 +309,7 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-10-15T17:44:55.524947+00:00",
+  "deep_scanned_at": "2026-10-15T21:20:55.129826+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
@@ -353,13 +356,12 @@
   "slug": null
  },
  "Samsung": {
-  "checked_at": "2026-09-15T17:46:29.192561+00:00",
-  "deep_scanned_at": "2026-10-13T16:23:21.886763+00:00",
+  "checked_at": "2026-10-15T21:18:45.234824+00:00",
   "platform": "workday",
   "slug": "sec|wd3|Samsung_Careers"
  },
  "ServiceNow": {
-  "checked_at": "2026-09-15T17:46:31.005319+00:00",
+  "checked_at": "2026-10-15T21:18:47.160784+00:00",
   "platform": "jobfeed",
   "slug": "https://careers.servicenow.com/jobs/xml/?rss=true"
  },
@@ -374,17 +376,17 @@
   "slug": "wd1|snapchat|snap"
  },
  "Snowflake": {
-  "checked_at": "2026-09-15T17:46:47.276888+00:00",
+  "checked_at": "2026-10-15T21:19:10.713840+00:00",
   "platform": "ashby",
   "slug": "snowflake"
  },
  "Spotify": {
-  "checked_at": "2026-09-15T17:47:16.993774+00:00",
+  "checked_at": "2026-10-15T21:19:27.694076+00:00",
   "platform": "lever",
   "slug": "spotify"
  },
  "StockX": {
-  "checked_at": "2026-09-15T17:47:24.474339+00:00",
+  "checked_at": "2026-10-15T21:19:37.402466+00:00",
   "platform": "greenhouse",
   "slug": "stockx"
  },
@@ -394,8 +396,7 @@
   "slug": "stripe"
  },
  "T-mobile": {
-  "checked_at": "2026-09-15T17:47:37.216283+00:00",
-  "deep_scanned_at": "2026-10-14T00:34:22.121012+00:00",
+  "checked_at": "2026-10-15T21:19:50.346251+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
@@ -405,8 +406,7 @@
   "slug": null
  },
  "Tencent": {
-  "checked_at": "2026-09-15T17:48:01.468627+00:00",
-  "deep_scanned_at": "2026-10-14T05:20:10.611526+00:00",
+  "checked_at": "2026-10-15T21:20:14.645501+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -431,7 +431,7 @@
   "slug": "usbank|wd1|US_Bank_Careers"
  },
  "Uber Freight": {
-  "checked_at": "2026-09-15T17:48:13.703787+00:00",
+  "checked_at": "2026-10-15T21:20:25.956106+00:00",
   "platform": "greenhouse",
   "slug": "uberfreight"
  },
@@ -510,7 +510,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-15T07:20:15.380757+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -630,7 +630,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-10-15T12:52:22.508730+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-15T17:45:36.614668+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -658,7 +657,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-15T07:21:00.626583+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -852,6 +851,7 @@
  },
  "leidos": {
   "checked_at": "2026-10-15T17:44:42.686431+00:00",
+  "deep_scanned_at": "2026-10-15T21:20:55.129826+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
  },
@@ -1004,7 +1004,7 @@
   "slug": null
  },
  "riot games": {
-  "checked_at": "2026-09-15T17:45:44.869310+00:00",
+  "checked_at": "2026-10-15T21:18:06.033452+00:00",
   "platform": "greenhouse",
   "slug": "riotgames"
  },
@@ -1014,12 +1014,12 @@
   "slug": null
  },
  "robinhood": {
-  "checked_at": "2026-09-15T17:45:46.964142+00:00",
+  "checked_at": "2026-10-15T21:18:08.368634+00:00",
   "platform": "greenhouse",
   "slug": "robinhood"
  },
  "roblox": {
-  "checked_at": "2026-09-15T17:45:51.950242+00:00",
+  "checked_at": "2026-10-15T21:18:13.323097+00:00",
   "platform": "greenhouse",
   "slug": "roblox"
  },
@@ -1029,7 +1029,7 @@
   "slug": null
  },
  "roku": {
-  "checked_at": "2026-09-15T17:45:52.702051+00:00",
+  "checked_at": "2026-10-15T21:18:14.331628+00:00",
   "platform": "greenhouse",
   "slug": "roku"
  },
@@ -1045,7 +1045,7 @@
   "slug": "salesforce|wd12|External_Career_Site"
  },
  "salesforce future tech launchpad": {
-  "checked_at": "2026-09-15T17:46:24.019721+00:00",
+  "checked_at": "2026-10-15T21:18:41.789278+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
@@ -1060,7 +1060,7 @@
   "slug": "scaleai"
  },
  "seatgeek": {
-  "checked_at": "2026-09-15T17:46:29.785819+00:00",
+  "checked_at": "2026-10-15T21:18:45.863307+00:00",
   "platform": "greenhouse",
   "slug": "seatgeek"
  },
@@ -1070,18 +1070,17 @@
   "slug": null
  },
  "siriusxm": {
-  "checked_at": "2026-09-15T17:46:32.514196+00:00",
+  "checked_at": "2026-10-15T21:18:48.976140+00:00",
   "platform": "careersite",
   "slug": "https://careers.siriusxm.com"
  },
  "slack": {
-  "checked_at": "2026-09-15T17:46:34.794851+00:00",
-  "deep_scanned_at": "2026-10-13T21:31:03.220072+00:00",
+  "checked_at": "2026-10-15T21:18:50.897842+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
  "sofi": {
-  "checked_at": "2026-09-15T17:46:55.500954+00:00",
+  "checked_at": "2026-10-15T21:19:22.880628+00:00",
   "platform": "greenhouse",
   "slug": "sofi"
  },
@@ -1096,7 +1095,7 @@
   "slug": "southwest"
  },
  "spaceX": {
-  "checked_at": "2026-09-15T17:47:14.634316+00:00",
+  "checked_at": "2026-10-15T21:19:24.785223+00:00",
   "platform": "greenhouse",
   "slug": "spacex"
  },
@@ -1111,19 +1110,17 @@
   "slug": "block"
  },
  "state street": {
-  "checked_at": "2026-09-15T17:47:24.250092+00:00",
-  "deep_scanned_at": "2026-10-13T21:31:03.220072+00:00",
+  "checked_at": "2026-10-15T21:19:37.086102+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
  "stryker": {
-  "checked_at": "2026-09-15T17:47:30.426918+00:00",
-  "deep_scanned_at": "2026-10-14T00:34:22.121012+00:00",
+  "checked_at": "2026-10-15T21:19:42.804391+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
  "tensorwave": {
-  "checked_at": "2026-09-15T17:48:02.412959+00:00",
+  "checked_at": "2026-10-15T21:20:15.480386+00:00",
   "platform": "ashby",
   "slug": "TensorWave"
  },
@@ -1153,12 +1150,12 @@
   "slug": "toast"
  },
  "twilio": {
-  "checked_at": "2026-09-15T17:48:08.628749+00:00",
+  "checked_at": "2026-10-15T21:20:20.604668+00:00",
   "platform": "greenhouse",
   "slug": "twilio"
  },
  "twitter": {
-  "checked_at": "2026-09-15T17:48:09.046149+00:00",
+  "checked_at": "2026-10-15T21:20:21.101118+00:00",
   "platform": "greenhouse",
   "slug": "xai"
  },
@@ -1168,7 +1165,7 @@
   "slug": "https://jobs.uber.com/jobs/xml/?rss=true"
  },
  "uber career prep": {
-  "checked_at": "2026-09-15T17:48:12.635696+00:00",
+  "checked_at": "2026-10-15T21:20:25.044500+00:00",
   "platform": "jobfeed",
   "slug": "https://jobs.uber.com/jobs/xml/?rss=true"
  },
@@ -1193,7 +1190,7 @@
   "slug": null
  },
  "waymo": {
-  "checked_at": "2026-09-15T17:48:15.681993+00:00",
+  "checked_at": "2026-10-15T21:20:27.870658+00:00",
   "platform": "greenhouse",
   "slug": "waymo"
  },
