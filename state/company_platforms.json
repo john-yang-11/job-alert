@@ -139,7 +139,8 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-09-30T18:24:46.930459+00:00",
-  "deep_scanned_at": "2026-10-13T16:23:21.886763+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-16T14:11:25.857612+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -315,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-09-30T18:24:59.787180+00:00",
-  "deep_scanned_at": "2026-10-13T16:23:21.886763+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-16T14:11:25.857612+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -515,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-16T09:14:40.910935+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -546,7 +548,8 @@
  },
  "blackstone": {
   "checked_at": "2026-09-20T20:48:47.970384+00:00",
-  "deep_scanned_at": "2026-10-14T00:34:22.121012+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-16T14:11:25.857612+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -662,7 +665,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-16T09:15:02.269488+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -995,7 +998,7 @@
  },
  "redhat": {
   "checked_at": "2026-09-30T18:25:13.664224+00:00",
-  "deep_scanned_at": "2026-10-13T21:31:03.220072+00:00",
+  "deep_scanned_at": "2026-10-16T14:11:25.857612+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
