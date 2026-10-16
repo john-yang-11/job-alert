@@ -93,7 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-10-15T07:20:36.593095+00:00",
-  "deep_scanned_at": "2026-10-15T07:23:15.463903+00:00",
+  "deep_scanned_at": "2026-10-16T21:39:04.452903+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -330,7 +330,7 @@
   "slug": "point72"
  },
  "Qualcomm": {
-  "checked_at": "2026-10-09T19:41:39.393298+00:00",
+  "checked_at": "2026-10-16T21:38:19.423330+00:00",
   "platform": null,
   "slug": null
  },
@@ -346,7 +346,6 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-09-30T18:25:37.344732+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-16T18:18:58.695183+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
@@ -475,7 +474,7 @@
  },
  "adobe": {
   "checked_at": "2026-10-15T07:20:14.183707+00:00",
-  "deep_scanned_at": "2026-10-15T07:23:15.463903+00:00",
+  "deep_scanned_at": "2026-10-16T21:39:04.452903+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -516,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-16T09:14:40.910935+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -657,13 +656,13 @@
  },
  "comcast": {
   "checked_at": "2026-09-26T16:43:22.661238+00:00",
-  "deep_scanned_at": "2026-10-15T01:46:44.827213+00:00",
+  "deep_scanned_at": "2026-10-16T21:39:04.452903+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
  "confluent": {
   "checked_at": "2026-10-16T09:15:02.269488+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -689,7 +688,7 @@
   "slug": "databricks"
  },
  "databricks winter": {
-  "checked_at": "2026-10-09T19:41:55.942078+00:00",
+  "checked_at": "2026-10-16T21:38:36.777947+00:00",
   "platform": null,
   "slug": null
  },
@@ -816,7 +815,7 @@
  },
  "humana": {
   "checked_at": "2026-09-18T05:50:22.517609+00:00",
-  "deep_scanned_at": "2026-10-14T19:40:37.039668+00:00",
+  "deep_scanned_at": "2026-10-16T21:39:04.452903+00:00",
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
@@ -904,7 +903,6 @@
  },
  "moelis": {
   "checked_at": "2026-10-07T07:09:07.310574+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-16T18:18:58.695183+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
