@@ -139,7 +139,6 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-09-30T18:24:46.930459+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-16T14:11:25.857612+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
@@ -316,7 +315,6 @@
  },
  "Paypal": {
   "checked_at": "2026-09-30T18:24:59.787180+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-16T14:11:25.857612+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
@@ -348,7 +346,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-09-30T18:25:37.344732+00:00",
-  "deep_scanned_at": "2026-10-14T10:33:21.498691+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-16T18:18:58.695183+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -517,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-16T09:14:40.910935+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -548,7 +547,6 @@
  },
  "blackstone": {
   "checked_at": "2026-09-20T20:48:47.970384+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-16T14:11:25.857612+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -665,7 +663,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-16T09:15:02.269488+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -875,7 +873,7 @@
  },
  "medtronic": {
   "checked_at": "2026-10-03T01:09:49.970467+00:00",
-  "deep_scanned_at": "2026-10-14T15:26:08.759514+00:00",
+  "deep_scanned_at": "2026-10-16T18:18:58.695183+00:00",
   "platform": "workday",
   "slug": "medtronic|wd1|MedtronicCareers"
  },
@@ -906,7 +904,8 @@
  },
  "moelis": {
   "checked_at": "2026-10-07T07:09:07.310574+00:00",
-  "deep_scanned_at": "2026-10-14T10:33:21.498691+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-16T18:18:58.695183+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
  },
@@ -1049,7 +1048,7 @@
  },
  "salesforce": {
   "checked_at": "2026-09-30T18:26:10.956794+00:00",
-  "deep_scanned_at": "2026-10-14T10:33:21.498691+00:00",
+  "deep_scanned_at": "2026-10-16T18:18:58.695183+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
