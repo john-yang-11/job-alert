@@ -309,7 +309,7 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-10-15T17:44:55.524947+00:00",
-  "deep_scanned_at": "2026-10-15T21:20:55.129826+00:00",
+  "deep_scanned_at": "2026-10-17T16:37:56.045931+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
@@ -357,7 +357,7 @@
  },
  "Samsung": {
   "checked_at": "2026-10-15T21:18:45.234824+00:00",
-  "deep_scanned_at": "2026-10-15T23:49:21.338613+00:00",
+  "deep_scanned_at": "2026-10-17T16:37:56.045931+00:00",
   "platform": "workday",
   "slug": "sec|wd3|Samsung_Careers"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-17T09:12:38.315204+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -635,7 +635,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-10-15T12:52:22.508730+00:00",
-  "consecutive_failures": 2,
   "deep_scanned_at": "2026-10-17T13:08:53.533569+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -663,7 +662,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-17T09:12:59.302819+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -990,7 +989,7 @@
  },
  "raytheon": {
   "checked_at": "2026-10-15T17:45:05.374327+00:00",
-  "deep_scanned_at": "2026-10-15T23:49:21.338613+00:00",
+  "deep_scanned_at": "2026-10-17T16:37:56.045931+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
@@ -1083,7 +1082,8 @@
  },
  "slack": {
   "checked_at": "2026-10-15T21:18:50.897842+00:00",
-  "deep_scanned_at": "2026-10-15T23:49:21.338613+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-17T16:37:56.045931+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
