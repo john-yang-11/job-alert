@@ -26,14 +26,14 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-10-15T23:48:48.682420+00:00",
+  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-16T09:16:04.707924+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
  "Accenture": {
   "checked_at": "2026-10-15T12:50:28.469159+00:00",
-  "consecutive_failures": 1,
-  "deep_scanned_at": "2026-10-15T12:53:55.868135+00:00",
+  "deep_scanned_at": "2026-10-17T04:57:17.022757+00:00",
   "platform": "workday",
   "slug": "accenture|wd103|AccentureCareers"
  },
@@ -514,12 +514,6 @@
   "platform": null,
   "slug": null
  },
- "aquatic": {
-  "checked_at": "2026-10-16T09:14:40.910935+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
- },
  "asana": {
   "checked_at": "2026-10-15T12:51:03.265827+00:00",
   "platform": "greenhouse",
@@ -563,7 +557,7 @@
  },
  "blue origin": {
   "checked_at": "2026-10-15T12:51:35.581749+00:00",
-  "deep_scanned_at": "2026-10-15T12:53:55.868135+00:00",
+  "deep_scanned_at": "2026-10-17T04:57:17.022757+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -574,7 +568,7 @@
  },
  "boeing": {
   "checked_at": "2026-10-15T12:51:39.468768+00:00",
-  "deep_scanned_at": "2026-10-15T12:53:55.868135+00:00",
+  "deep_scanned_at": "2026-10-17T04:57:17.022757+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -620,7 +614,7 @@
  },
  "citi": {
   "checked_at": "2026-10-15T12:52:15.020618+00:00",
-  "deep_scanned_at": "2026-10-15T17:45:36.614668+00:00",
+  "deep_scanned_at": "2026-10-17T04:57:17.022757+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -657,15 +651,10 @@
  },
  "comcast": {
   "checked_at": "2026-09-26T16:43:22.661238+00:00",
+  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-16T21:39:04.452903+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
- },
- "confluent": {
-  "checked_at": "2026-10-16T09:15:02.269488+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "confluent"
  },
  "crowdstrike": {
   "checked_at": "2026-10-15T12:52:26.387943+00:00",
@@ -1047,12 +1036,14 @@
  },
  "salesforce": {
   "checked_at": "2026-09-30T18:26:10.956794+00:00",
+  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-16T18:18:58.695183+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
  "salesforce future tech launchpad": {
   "checked_at": "2026-10-15T21:18:41.789278+00:00",
+  "consecutive_failures": 1,
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
@@ -1083,6 +1074,7 @@
  },
  "slack": {
   "checked_at": "2026-10-15T21:18:50.897842+00:00",
+  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-15T23:49:21.338613+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
@@ -1222,6 +1214,7 @@
  },
  "xfinity": {
   "checked_at": "2026-09-26T16:43:23.883053+00:00",
+  "consecutive_failures": 1,
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
