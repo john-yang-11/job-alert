@@ -410,7 +410,7 @@
  },
  "Tencent": {
   "checked_at": "2026-10-15T21:20:14.645501+00:00",
-  "deep_scanned_at": "2026-10-16T04:21:48.651282+00:00",
+  "deep_scanned_at": "2026-10-17T21:41:31.777374+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -431,7 +431,7 @@
  },
  "US bank": {
   "checked_at": "2026-10-15T07:22:42.291670+00:00",
-  "deep_scanned_at": "2026-10-16T09:16:04.707924+00:00",
+  "deep_scanned_at": "2026-10-17T21:41:31.777374+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -462,7 +462,7 @@
  },
  "Workday": {
   "checked_at": "2026-10-15T23:48:47.146386+00:00",
-  "deep_scanned_at": "2026-10-16T09:16:04.707924+00:00",
+  "deep_scanned_at": "2026-10-17T21:41:31.777374+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-17T09:12:38.315204+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -662,7 +662,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-17T09:12:59.302819+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -1118,7 +1118,6 @@
  },
  "state street": {
   "checked_at": "2026-10-15T21:19:37.086102+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-17T19:16:10.420058+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
@@ -1186,7 +1185,7 @@
  },
  "visa": {
   "checked_at": "2026-10-15T07:22:44.462853+00:00",
-  "deep_scanned_at": "2026-10-16T09:16:04.707924+00:00",
+  "deep_scanned_at": "2026-10-17T21:41:31.777374+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
