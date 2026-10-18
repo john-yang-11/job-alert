@@ -257,7 +257,7 @@
  },
  "NVIDIA": {
   "checked_at": "2026-10-15T07:21:34.831656+00:00",
-  "deep_scanned_at": "2026-10-17T00:22:05.326851+00:00",
+  "deep_scanned_at": "2026-10-18T13:11:18.614357+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
@@ -293,7 +293,7 @@
  },
  "PNC": {
   "checked_at": "2026-10-15T07:22:23.443624+00:00",
-  "deep_scanned_at": "2026-10-17T00:22:05.326851+00:00",
+  "deep_scanned_at": "2026-10-18T13:11:18.614357+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -468,7 +468,7 @@
  },
  "abbott": {
   "checked_at": "2026-10-15T12:50:08.654496+00:00",
-  "deep_scanned_at": "2026-10-17T00:22:05.326851+00:00",
+  "deep_scanned_at": "2026-10-18T13:11:18.614357+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-18T04:20:02.720450+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -656,13 +656,13 @@
  },
  "comcast": {
   "checked_at": "2026-09-26T16:43:22.661238+00:00",
-  "deep_scanned_at": "2026-10-16T21:39:04.452903+00:00",
+  "deep_scanned_at": "2026-10-18T13:11:18.614357+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
  "confluent": {
   "checked_at": "2026-10-18T04:20:23.789827+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -903,7 +903,6 @@
  },
  "moelis": {
   "checked_at": "2026-10-07T07:09:07.310574+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-18T09:02:28.255875+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
