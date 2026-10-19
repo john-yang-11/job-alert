@@ -26,7 +26,7 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-10-15T23:48:48.682420+00:00",
-  "deep_scanned_at": "2026-10-17T23:59:02.061016+00:00",
+  "deep_scanned_at": "2026-10-19T22:23:09.477220+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -139,7 +139,6 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-09-30T18:24:46.930459+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-19T17:44:15.308528+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
@@ -316,7 +315,6 @@
  },
  "Paypal": {
   "checked_at": "2026-09-30T18:24:59.787180+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-19T17:44:15.308528+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
@@ -348,12 +346,13 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-09-30T18:25:37.344732+00:00",
-  "deep_scanned_at": "2026-10-18T04:20:50.764771+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-19T22:23:09.477220+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
  "SEO tech developer": {
-  "checked_at": "2026-10-12T18:57:40.477332+00:00",
+  "checked_at": "2026-10-19T22:17:45.604883+00:00",
   "platform": null,
   "slug": null
  },
@@ -369,7 +368,7 @@
   "slug": "https://careers.servicenow.com/jobs/xml/?rss=true"
  },
  "Siemens": {
-  "checked_at": "2026-10-12T18:57:52.973791+00:00",
+  "checked_at": "2026-10-19T22:18:03.529010+00:00",
   "platform": null,
   "slug": null
  },
@@ -406,7 +405,7 @@
   "slug": "tmobile|wd1|External"
  },
  "TSMC": {
-  "checked_at": "2026-10-12T18:59:05.440280+00:00",
+  "checked_at": "2026-10-19T22:19:45.914609+00:00",
   "platform": null,
   "slug": null
  },
@@ -422,12 +421,12 @@
   "slug": null
  },
  "TikTok": {
-  "checked_at": "2026-10-12T18:58:44.748793+00:00",
+  "checked_at": "2026-10-19T22:19:16.604433+00:00",
   "platform": null,
   "slug": null
  },
  "Two Sigma": {
-  "checked_at": "2026-10-12T18:59:29.585053+00:00",
+  "checked_at": "2026-10-19T22:20:12.994533+00:00",
   "platform": null,
   "slug": null
  },
@@ -517,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-19T00:08:51.798295+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -664,7 +663,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-19T00:09:58.607399+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -874,7 +873,7 @@
  },
  "medtronic": {
   "checked_at": "2026-10-03T01:09:49.970467+00:00",
-  "deep_scanned_at": "2026-10-18T04:20:50.764771+00:00",
+  "deep_scanned_at": "2026-10-19T22:23:09.477220+00:00",
   "platform": "workday",
   "slug": "medtronic|wd1|MedtronicCareers"
  },
@@ -1042,7 +1041,7 @@
   "slug": "roku"
  },
  "rtx": {
-  "checked_at": "2026-10-12T18:57:22.928192+00:00",
+  "checked_at": "2026-10-19T22:17:28.350001+00:00",
   "platform": null,
   "slug": null
  },
@@ -1084,7 +1083,6 @@
  },
  "slack": {
   "checked_at": "2026-10-15T21:18:50.897842+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-19T17:44:15.308528+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
@@ -1095,7 +1093,7 @@
   "slug": "sofi"
  },
  "sony": {
-  "checked_at": "2026-10-12T18:58:08.577748+00:00",
+  "checked_at": "2026-10-19T22:18:26.700250+00:00",
   "platform": null,
   "slug": null
  },
@@ -1110,7 +1108,7 @@
   "slug": "spacex"
  },
  "splunk": {
-  "checked_at": "2026-10-12T18:58:19.232818+00:00",
+  "checked_at": "2026-10-19T22:18:43.344243+00:00",
   "platform": null,
   "slug": null
  },
@@ -1147,12 +1145,12 @@
   "slug": "thenuclearcompany"
  },
  "thrive by duolingo": {
-  "checked_at": "2026-10-12T18:58:32.131367+00:00",
+  "checked_at": "2026-10-19T22:19:01.342257+00:00",
   "platform": null,
   "slug": null
  },
  "tinder": {
-  "checked_at": "2026-10-12T18:58:51.296139+00:00",
+  "checked_at": "2026-10-19T22:19:27.880221+00:00",
   "platform": null,
   "slug": null
  },
@@ -1182,7 +1180,7 @@
   "slug": "https://jobs.uber.com/jobs/xml/?rss=true"
  },
  "united health group": {
-  "checked_at": "2026-10-12T19:01:19.026712+00:00",
+  "checked_at": "2026-10-19T22:21:59.454775+00:00",
   "platform": null,
   "slug": null
  },
@@ -1193,7 +1191,7 @@
   "slug": "visa|wd5|Visa"
  },
  "vmware": {
-  "checked_at": "2026-10-12T19:01:46.666487+00:00",
+  "checked_at": "2026-10-19T22:22:35.159548+00:00",
   "platform": null,
   "slug": null
  },
