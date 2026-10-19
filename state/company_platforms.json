@@ -82,7 +82,7 @@
   "slug": null
  },
  "CNN": {
-  "checked_at": "2026-10-11T22:24:59.437981+00:00",
+  "checked_at": "2026-10-19T00:09:25.105489+00:00",
   "platform": null,
   "slug": null
  },
@@ -98,17 +98,17 @@
   "slug": "cisco|wd5|Cisco_Careers"
  },
  "Deloitte": {
-  "checked_at": "2026-10-11T22:26:20.369975+00:00",
+  "checked_at": "2026-10-19T00:11:04.462881+00:00",
   "platform": null,
   "slug": null
  },
  "Deloitte ai smth": {
-  "checked_at": "2026-10-11T22:26:34.286541+00:00",
+  "checked_at": "2026-10-19T00:11:19.105257+00:00",
   "platform": null,
   "slug": null
  },
  "Delta": {
-  "checked_at": "2026-10-11T22:26:41.899936+00:00",
+  "checked_at": "2026-10-19T00:11:27.335745+00:00",
   "platform": null,
   "slug": null
  },
@@ -123,7 +123,7 @@
   "slug": "https://www.dropbox.jobs/jobs/xml/?rss=true"
  },
  "Electronic Arts": {
-  "checked_at": "2026-10-11T22:28:16.216021+00:00",
+  "checked_at": "2026-10-19T00:13:10.391271+00:00",
   "platform": null,
   "slug": null
  },
@@ -133,7 +133,7 @@
   "slug": "etched"
  },
  "Everpure": {
-  "checked_at": "2026-10-11T22:28:32.606599+00:00",
+  "checked_at": "2026-10-19T00:13:29.371131+00:00",
   "platform": null,
   "slug": null
  },
@@ -357,7 +357,7 @@
  },
  "Samsung": {
   "checked_at": "2026-10-15T21:18:45.234824+00:00",
-  "deep_scanned_at": "2026-10-17T16:37:56.045931+00:00",
+  "deep_scanned_at": "2026-10-19T00:14:45.359641+00:00",
   "platform": "workday",
   "slug": "sec|wd3|Samsung_Careers"
  },
@@ -373,7 +373,7 @@
  },
  "Snap": {
   "checked_at": "2026-10-15T07:22:30.938496+00:00",
-  "deep_scanned_at": "2026-10-17T19:16:10.420058+00:00",
+  "deep_scanned_at": "2026-10-19T00:14:45.359641+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -513,6 +513,12 @@
   "platform": null,
   "slug": null
  },
+ "aquatic": {
+  "checked_at": "2026-10-19T00:08:51.798295+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
+ },
  "asana": {
   "checked_at": "2026-10-15T12:51:03.265827+00:00",
   "platform": "greenhouse",
@@ -592,7 +598,7 @@
   "slug": "bytedance"
  },
  "c1 data analyst": {
-  "checked_at": "2026-10-11T22:24:39.177333+00:00",
+  "checked_at": "2026-10-19T00:09:05.256923+00:00",
   "platform": null,
   "slug": null
  },
@@ -607,7 +613,7 @@
   "slug": "chime"
  },
  "citadel launch": {
-  "checked_at": "2026-10-11T22:24:52.927411+00:00",
+  "checked_at": "2026-10-19T00:09:18.427807+00:00",
   "platform": null,
   "slug": null
  },
@@ -644,7 +650,7 @@
   "slug": "coinbase"
  },
  "colins aerospace": {
-  "checked_at": "2026-10-11T22:25:12.569766+00:00",
+  "checked_at": "2026-10-19T00:09:37.859058+00:00",
   "platform": null,
   "slug": null
  },
@@ -654,6 +660,12 @@
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
+ "confluent": {
+  "checked_at": "2026-10-19T00:09:58.607399+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "confluent"
+ },
  "crowdstrike": {
   "checked_at": "2026-10-15T12:52:26.387943+00:00",
   "deep_scanned_at": "2026-10-18T19:29:39.318492+00:00",
@@ -661,7 +673,7 @@
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
  "cvs health": {
-  "checked_at": "2026-10-11T22:26:01.553380+00:00",
+  "checked_at": "2026-10-19T00:10:47.090444+00:00",
   "platform": null,
   "slug": null
  },
@@ -696,7 +708,7 @@
   "slug": "Deepgram"
  },
  "dell": {
-  "checked_at": "2026-10-11T22:26:11.968212+00:00",
+  "checked_at": "2026-10-19T00:10:55.434849+00:00",
   "platform": null,
   "slug": null
  },
@@ -706,7 +718,7 @@
   "slug": null
  },
  "disney": {
-  "checked_at": "2026-10-11T22:26:58.642706+00:00",
+  "checked_at": "2026-10-19T00:11:43.531518+00:00",
   "platform": null,
   "slug": null
  },
@@ -716,7 +728,7 @@
   "slug": "https://careers.docusign.com"
  },
  "doordash": {
-  "checked_at": "2026-10-11T22:27:04.622307+00:00",
+  "checked_at": "2026-10-19T00:11:55.147012+00:00",
   "platform": null,
   "slug": null
  },
@@ -726,7 +738,7 @@
   "slug": "duolingo"
  },
  "ea pathfinder": {
-  "checked_at": "2026-10-11T22:27:22.807357+00:00",
+  "checked_at": "2026-10-19T00:12:16.579275+00:00",
   "platform": null,
   "slug": null
  },
@@ -736,7 +748,7 @@
   "slug": "elastic"
  },
  "epic": {
-  "checked_at": "2026-10-11T22:28:24.409552+00:00",
+  "checked_at": "2026-10-19T00:13:20.601230+00:00",
   "platform": null,
   "slug": null
  },
@@ -762,12 +774,12 @@
   "slug": null
  },
  "gemnai fall": {
-  "checked_at": "2026-10-11T22:28:45.370803+00:00",
+  "checked_at": "2026-10-19T00:13:41.545187+00:00",
   "platform": null,
   "slug": null
  },
  "general dynamics": {
-  "checked_at": "2026-10-11T22:30:35.282500+00:00",
+  "checked_at": "2026-10-19T00:14:17.021139+00:00",
   "platform": null,
   "slug": null
  },
@@ -1106,7 +1118,8 @@
  },
  "state street": {
   "checked_at": "2026-10-15T21:19:37.086102+00:00",
-  "deep_scanned_at": "2026-10-17T19:16:10.420058+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-19T00:14:45.359641+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
