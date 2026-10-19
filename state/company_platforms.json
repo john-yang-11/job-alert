@@ -240,7 +240,7 @@
   "slug": "lyft"
  },
  "MLH": {
-  "checked_at": "2026-10-12T09:04:03.866061+00:00",
+  "checked_at": "2026-10-19T11:10:42.534784+00:00",
   "platform": null,
   "slug": null
  },
@@ -262,7 +262,7 @@
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
  "Netflix": {
-  "checked_at": "2026-10-12T09:06:54.649799+00:00",
+  "checked_at": "2026-10-19T11:13:10.297056+00:00",
   "platform": null,
   "slug": null
  },
@@ -272,12 +272,12 @@
   "slug": "neuralink"
  },
  "Nokia": {
-  "checked_at": "2026-10-12T09:07:17.873239+00:00",
+  "checked_at": "2026-10-19T11:13:30.442073+00:00",
   "platform": null,
   "slug": null
  },
  "Northrop Grumman": {
-  "checked_at": "2026-10-12T09:07:36.908601+00:00",
+  "checked_at": "2026-10-19T11:13:49.023458+00:00",
   "platform": null,
   "slug": null
  },
@@ -340,7 +340,7 @@
   "slug": "reddit"
  },
  "Rippling winter 27": {
-  "checked_at": "2026-10-12T09:08:44.885812+00:00",
+  "checked_at": "2026-10-19T11:14:48.420200+00:00",
   "platform": null,
   "slug": null
  },
@@ -431,7 +431,7 @@
  },
  "US bank": {
   "checked_at": "2026-10-15T07:22:42.291670+00:00",
-  "deep_scanned_at": "2026-10-17T21:41:31.777374+00:00",
+  "deep_scanned_at": "2026-10-19T11:15:49.765021+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -462,7 +462,7 @@
  },
  "Workday": {
   "checked_at": "2026-10-15T23:48:47.146386+00:00",
-  "deep_scanned_at": "2026-10-17T21:41:31.777374+00:00",
+  "deep_scanned_at": "2026-10-19T11:15:49.765021+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-19T00:08:51.798295+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -662,7 +662,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-19T00:09:58.607399+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -913,7 +913,7 @@
   "slug": "mongodb"
  },
  "mongodb NeXt summit": {
-  "checked_at": "2026-10-12T09:04:30.131106+00:00",
+  "checked_at": "2026-10-19T11:11:03.123653+00:00",
   "platform": null,
   "slug": null
  },
@@ -923,12 +923,12 @@
   "slug": "monogram"
  },
  "morgan stanley": {
-  "checked_at": "2026-10-12T09:06:10.794972+00:00",
+  "checked_at": "2026-10-19T11:12:26.445658+00:00",
   "platform": null,
   "slug": null
  },
  "nasa": {
-  "checked_at": "2026-10-12T09:06:47.443370+00:00",
+  "checked_at": "2026-10-19T11:13:01.986890+00:00",
   "platform": null,
   "slug": null
  },
@@ -958,7 +958,7 @@
   "slug": "okta"
  },
  "oracle": {
-  "checked_at": "2026-10-12T09:07:48.322476+00:00",
+  "checked_at": "2026-10-19T11:13:59.536922+00:00",
   "platform": null,
   "slug": null
  },
@@ -978,7 +978,7 @@
   "slug": "plaid"
  },
  "pwc": {
-  "checked_at": "2026-10-12T09:08:21.188325+00:00",
+  "checked_at": "2026-10-19T11:14:25.597151+00:00",
   "platform": null,
   "slug": null
  },
@@ -1015,7 +1015,7 @@
   "slug": "riotgames"
  },
  "rippling": {
-  "checked_at": "2026-10-12T09:08:30.868054+00:00",
+  "checked_at": "2026-10-19T11:14:35.701605+00:00",
   "platform": null,
   "slug": null
  },
@@ -1030,7 +1030,7 @@
   "slug": "roblox"
  },
  "roche": {
-  "checked_at": "2026-10-12T09:09:18.380317+00:00",
+  "checked_at": "2026-10-19T11:15:18.426641+00:00",
   "platform": null,
   "slug": null
  },
@@ -1185,7 +1185,7 @@
  },
  "visa": {
   "checked_at": "2026-10-15T07:22:44.462853+00:00",
-  "deep_scanned_at": "2026-10-17T21:41:31.777374+00:00",
+  "deep_scanned_at": "2026-10-19T11:15:49.765021+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
