@@ -159,7 +159,7 @@
   "slug": null
  },
  "Google ASDI": {
-  "checked_at": "2026-10-12T01:43:13.231679+00:00",
+  "checked_at": "2026-10-19T05:14:16.248488+00:00",
   "platform": null,
   "slug": null
  },
@@ -169,7 +169,7 @@
   "slug": "hp"
  },
  "HPR": {
-  "checked_at": "2026-10-12T01:43:38.191314+00:00",
+  "checked_at": "2026-10-19T05:14:30.692278+00:00",
   "platform": null,
   "slug": null
  },
@@ -184,7 +184,7 @@
   "slug": "hermeus"
  },
  "Hubspot": {
-  "checked_at": "2026-10-12T01:44:06.045431+00:00",
+  "checked_at": "2026-10-19T05:14:54.297970+00:00",
   "platform": null,
   "slug": null
  },
@@ -199,17 +199,17 @@
   "slug": null
  },
  "IBM accelerate": {
-  "checked_at": "2026-10-12T01:44:34.494767+00:00",
+  "checked_at": "2026-10-19T05:15:24.719479+00:00",
   "platform": null,
   "slug": null
  },
  "Intuit": {
-  "checked_at": "2026-10-12T01:45:26.342946+00:00",
+  "checked_at": "2026-10-19T05:16:13.601835+00:00",
   "platform": null,
   "slug": null
  },
  "JP morgan chase fellowship": {
-  "checked_at": "2026-10-12T01:46:12.516552+00:00",
+  "checked_at": "2026-10-19T05:16:55.078956+00:00",
   "platform": null,
   "slug": null
  },
@@ -219,7 +219,7 @@
   "slug": null
  },
  "John Deere": {
-  "checked_at": "2026-10-12T01:45:55.306501+00:00",
+  "checked_at": "2026-10-19T05:16:41.074799+00:00",
   "platform": null,
   "slug": null
  },
@@ -230,7 +230,7 @@
   "slug": "kla|wd1|Search"
  },
  "Lockheed Martin": {
-  "checked_at": "2026-10-12T01:46:56.473496+00:00",
+  "checked_at": "2026-10-19T05:17:34.876254+00:00",
   "platform": null,
   "slug": null
  },
@@ -399,7 +399,7 @@
  },
  "T-mobile": {
   "checked_at": "2026-10-15T21:19:50.346251+00:00",
-  "deep_scanned_at": "2026-10-17T19:16:10.420058+00:00",
+  "deep_scanned_at": "2026-10-19T05:18:08.504628+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
@@ -410,7 +410,7 @@
  },
  "Tencent": {
   "checked_at": "2026-10-15T21:20:14.645501+00:00",
-  "deep_scanned_at": "2026-10-17T21:41:31.777374+00:00",
+  "deep_scanned_at": "2026-10-19T05:18:08.504628+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-19T00:08:51.798295+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -662,7 +662,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-19T00:09:58.607399+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -784,7 +784,7 @@
   "slug": null
  },
  "general motors": {
-  "checked_at": "2026-10-12T01:42:55.277789+00:00",
+  "checked_at": "2026-10-19T05:14:01.208750+00:00",
   "platform": null,
   "slug": null
  },
@@ -804,7 +804,7 @@
   "slug": "handshake"
  },
  "harmon": {
-  "checked_at": "2026-10-12T01:43:21.279997+00:00",
+  "checked_at": "2026-10-19T05:14:22.722599+00:00",
   "platform": null,
   "slug": null
  },
@@ -825,7 +825,7 @@
   "slug": null
  },
  "infosys": {
-  "checked_at": "2026-10-12T01:45:03.494650+00:00",
+  "checked_at": "2026-10-19T05:15:52.030252+00:00",
   "platform": null,
   "slug": null
  },
@@ -840,7 +840,7 @@
   "slug": "janestreet"
  },
  "jpmorgan": {
-  "checked_at": "2026-10-12T01:46:23.914298+00:00",
+  "checked_at": "2026-10-19T05:17:04.480538+00:00",
   "platform": null,
   "slug": null
  },
@@ -861,7 +861,7 @@
   "slug": "leidos|wd5|External"
  },
  "lenovo": {
-  "checked_at": "2026-10-12T01:46:34.428647+00:00",
+  "checked_at": "2026-10-19T05:17:14.072535+00:00",
   "platform": null,
   "slug": null
  },
@@ -877,7 +877,7 @@
   "slug": "medtronic|wd1|MedtronicCareers"
  },
  "mercedes": {
-  "checked_at": "2026-10-12T01:47:04.786379+00:00",
+  "checked_at": "2026-10-19T05:17:41.438677+00:00",
   "platform": null,
   "slug": null
  },
@@ -1118,14 +1118,13 @@
  },
  "state street": {
   "checked_at": "2026-10-15T21:19:37.086102+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-19T00:14:45.359641+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
  "stryker": {
   "checked_at": "2026-10-15T21:19:42.804391+00:00",
-  "deep_scanned_at": "2026-10-17T19:16:10.420058+00:00",
+  "deep_scanned_at": "2026-10-19T05:18:08.504628+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
