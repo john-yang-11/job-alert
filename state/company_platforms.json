@@ -246,7 +246,7 @@
  },
  "Mastercard": {
   "checked_at": "2026-10-15T17:44:47.993460+00:00",
-  "deep_scanned_at": "2026-10-18T21:48:20.609846+00:00",
+  "deep_scanned_at": "2026-10-20T23:22:26.364607+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|CorporateCareers"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-20T06:31:26.458279+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -545,8 +545,9 @@
   "slug": null
  },
  "blackstone": {
-  "checked_at": "2026-09-20T20:48:47.970384+00:00",
-  "deep_scanned_at": "2026-10-20T01:13:57.794457+00:00",
+  "checked_at": "2026-10-20T23:21:58.700945+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-20T23:22:26.364607+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -662,7 +663,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-20T06:31:47.308139+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -856,7 +857,7 @@
  },
  "leidos": {
   "checked_at": "2026-10-15T17:44:42.686431+00:00",
-  "deep_scanned_at": "2026-10-18T21:48:20.609846+00:00",
+  "deep_scanned_at": "2026-10-20T23:22:26.364607+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
  },
@@ -1154,7 +1155,7 @@
   "slug": null
  },
  "toast": {
-  "checked_at": "2026-09-20T20:48:43.995613+00:00",
+  "checked_at": "2026-10-20T23:21:53.196941+00:00",
   "platform": "greenhouse",
   "slug": "toast"
  },
