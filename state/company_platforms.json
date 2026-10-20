@@ -93,7 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-10-15T07:20:36.593095+00:00",
-  "deep_scanned_at": "2026-10-18T09:02:28.255875+00:00",
+  "deep_scanned_at": "2026-10-20T01:13:57.794457+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -346,7 +346,6 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-09-30T18:25:37.344732+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-19T22:23:09.477220+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
@@ -447,7 +446,7 @@
   "slug": null
  },
  "VRBO": {
-  "checked_at": "2026-10-12T19:01:53.065584+00:00",
+  "checked_at": "2026-10-20T01:12:46.471729+00:00",
   "platform": null,
   "slug": null
  },
@@ -475,7 +474,7 @@
  },
  "adobe": {
   "checked_at": "2026-10-15T07:20:14.183707+00:00",
-  "deep_scanned_at": "2026-10-18T09:02:28.255875+00:00",
+  "deep_scanned_at": "2026-10-20T01:13:57.794457+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -514,12 +513,6 @@
   "platform": null,
   "slug": null
  },
- "aquatic": {
-  "checked_at": "2026-10-19T00:08:51.798295+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
- },
  "asana": {
   "checked_at": "2026-10-15T12:51:03.265827+00:00",
   "platform": "greenhouse",
@@ -547,7 +540,8 @@
  },
  "blackstone": {
   "checked_at": "2026-09-20T20:48:47.970384+00:00",
-  "deep_scanned_at": "2026-10-18T04:20:50.764771+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-20T01:13:57.794457+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -660,12 +654,6 @@
   "deep_scanned_at": "2026-10-18T13:11:18.614357+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
- },
- "confluent": {
-  "checked_at": "2026-10-19T00:09:58.607399+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "confluent"
  },
  "crowdstrike": {
   "checked_at": "2026-10-15T12:52:26.387943+00:00",
@@ -1047,7 +1035,7 @@
  },
  "salesforce": {
   "checked_at": "2026-09-30T18:26:10.956794+00:00",
-  "deep_scanned_at": "2026-10-18T04:20:50.764771+00:00",
+  "deep_scanned_at": "2026-10-20T01:13:57.794457+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
@@ -1196,7 +1184,7 @@
   "slug": null
  },
  "walmart": {
-  "checked_at": "2026-10-12T19:02:00.283695+00:00",
+  "checked_at": "2026-10-20T01:12:54.888869+00:00",
   "platform": null,
   "slug": null
  },
@@ -1216,7 +1204,7 @@
   "slug": "https://www.wellsfargojobs.com/jobs/xml/?rss=true"
  },
  "whatnot": {
-  "checked_at": "2026-10-12T19:03:15.654272+00:00",
+  "checked_at": "2026-10-20T01:13:31.234188+00:00",
   "platform": null,
   "slug": null
  },
