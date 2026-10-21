@@ -399,7 +399,7 @@
  },
  "T-mobile": {
   "checked_at": "2026-10-15T21:19:50.346251+00:00",
-  "deep_scanned_at": "2026-10-19T05:18:08.504628+00:00",
+  "deep_scanned_at": "2026-10-21T13:10:33.090747+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
@@ -410,7 +410,7 @@
  },
  "Tencent": {
   "checked_at": "2026-10-15T21:20:14.645501+00:00",
-  "deep_scanned_at": "2026-10-19T05:18:08.504628+00:00",
+  "deep_scanned_at": "2026-10-21T13:10:33.090747+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -431,7 +431,7 @@
  },
  "US bank": {
   "checked_at": "2026-10-15T07:22:42.291670+00:00",
-  "deep_scanned_at": "2026-10-19T11:15:49.765021+00:00",
+  "deep_scanned_at": "2026-10-21T13:10:33.090747+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-21T07:29:22.731718+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -662,7 +662,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-21T07:29:43.426059+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -1118,7 +1118,6 @@
  },
  "state street": {
   "checked_at": "2026-10-15T21:19:37.086102+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-21T07:30:12.085457+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
