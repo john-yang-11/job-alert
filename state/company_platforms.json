@@ -139,7 +139,6 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-09-30T18:24:46.930459+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-21T18:14:21.944714+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
@@ -316,7 +315,8 @@
  },
  "Paypal": {
   "checked_at": "2026-09-30T18:24:59.787180+00:00",
-  "deep_scanned_at": "2026-10-19T17:44:15.308528+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-21T21:58:19.246223+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-21T07:29:22.731718+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -663,7 +663,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-21T07:29:43.426059+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -996,7 +996,7 @@
  },
  "redhat": {
   "checked_at": "2026-09-30T18:25:13.664224+00:00",
-  "deep_scanned_at": "2026-10-19T17:44:15.308528+00:00",
+  "deep_scanned_at": "2026-10-21T21:58:19.246223+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
@@ -1083,7 +1083,8 @@
  },
  "slack": {
   "checked_at": "2026-10-15T21:18:50.897842+00:00",
-  "deep_scanned_at": "2026-10-19T17:44:15.308528+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-21T21:58:19.246223+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
