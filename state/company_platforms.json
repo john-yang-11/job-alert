@@ -1171,7 +1171,7 @@
  },
  "uber": {
   "checked_at": "2026-10-15T07:22:39.329058+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "jobfeed",
   "slug": "https://jobs.uber.com/jobs/xml/?rss=true"
  },
