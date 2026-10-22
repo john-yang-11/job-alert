@@ -26,7 +26,7 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-10-15T23:48:48.682420+00:00",
-  "deep_scanned_at": "2026-10-19T22:23:09.477220+00:00",
+  "deep_scanned_at": "2026-10-22T00:38:45.521756+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -315,7 +315,6 @@
  },
  "Paypal": {
   "checked_at": "2026-09-30T18:24:59.787180+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-21T21:58:19.246223+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
@@ -347,7 +346,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-09-30T18:25:37.344732+00:00",
-  "deep_scanned_at": "2026-10-19T22:23:09.477220+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-22T00:38:45.521756+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-21T07:29:22.731718+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -663,7 +663,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-21T07:29:43.426059+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -699,7 +699,7 @@
   "slug": "datadog"
  },
  "datadog winter 2027": {
-  "checked_at": "2026-10-14T23:09:27.810100+00:00",
+  "checked_at": "2026-10-22T00:37:59.482139+00:00",
   "platform": null,
   "slug": null
  },
@@ -770,7 +770,7 @@
   "slug": null
  },
  "ge aero fall 2027": {
-  "checked_at": "2026-10-14T23:09:12.973523+00:00",
+  "checked_at": "2026-10-22T00:37:41.836106+00:00",
   "platform": null,
   "slug": null
  },
@@ -851,7 +851,7 @@
   "slug": "kalshi"
  },
  "l3 harris": {
-  "checked_at": "2026-10-14T23:08:52.282495+00:00",
+  "checked_at": "2026-10-22T00:37:29.568243+00:00",
   "platform": null,
   "slug": null
  },
@@ -873,7 +873,7 @@
  },
  "medtronic": {
   "checked_at": "2026-10-03T01:09:49.970467+00:00",
-  "deep_scanned_at": "2026-10-19T22:23:09.477220+00:00",
+  "deep_scanned_at": "2026-10-22T00:38:45.521756+00:00",
   "platform": "workday",
   "slug": "medtronic|wd1|MedtronicCareers"
  },
@@ -1083,7 +1083,6 @@
  },
  "slack": {
   "checked_at": "2026-10-15T21:18:50.897842+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-21T21:58:19.246223+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
