@@ -293,7 +293,7 @@
  },
  "PNC": {
   "checked_at": "2026-10-15T07:22:23.443624+00:00",
-  "deep_scanned_at": "2026-10-20T12:03:32.673438+00:00",
+  "deep_scanned_at": "2026-10-22T19:28:43.512933+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-22T10:34:46.521979+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -573,7 +573,7 @@
  },
  "boeing": {
   "checked_at": "2026-10-15T12:51:39.468768+00:00",
-  "deep_scanned_at": "2026-10-20T16:51:35.269507+00:00",
+  "deep_scanned_at": "2026-10-22T19:28:43.512933+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -619,7 +619,7 @@
  },
  "citi": {
   "checked_at": "2026-10-15T12:52:15.020618+00:00",
-  "deep_scanned_at": "2026-10-20T16:51:35.269507+00:00",
+  "deep_scanned_at": "2026-10-22T19:28:43.512933+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -662,7 +662,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-22T10:35:07.671900+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -903,7 +903,6 @@
  },
  "moelis": {
   "checked_at": "2026-10-07T07:09:07.310574+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-22T15:37:01.390189+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
@@ -1176,7 +1175,7 @@
  },
  "uber career prep": {
   "checked_at": "2026-10-15T21:20:25.044500+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "jobfeed",
   "slug": "https://jobs.uber.com/jobs/xml/?rss=true"
  },
