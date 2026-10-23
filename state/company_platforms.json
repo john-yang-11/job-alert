@@ -32,7 +32,7 @@
  },
  "Accenture": {
   "checked_at": "2026-10-15T12:50:28.469159+00:00",
-  "deep_scanned_at": "2026-10-18T16:50:38.337495+00:00",
+  "deep_scanned_at": "2026-10-23T23:28:21.996807+00:00",
   "platform": "workday",
   "slug": "accenture|wd103|AccentureCareers"
  },
@@ -139,7 +139,6 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-09-30T18:24:46.930459+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-23T20:21:19.437331+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
@@ -316,7 +315,8 @@
  },
  "Paypal": {
   "checked_at": "2026-09-30T18:24:59.787180+00:00",
-  "deep_scanned_at": "2026-10-21T21:58:19.246223+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-23T23:28:21.996807+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -331,7 +331,7 @@
   "slug": "point72"
  },
  "Qualcomm": {
-  "checked_at": "2026-10-16T21:38:19.423330+00:00",
+  "checked_at": "2026-10-23T23:26:51.868406+00:00",
   "platform": null,
   "slug": null
  },
@@ -463,7 +463,7 @@
  },
  "Workday": {
   "checked_at": "2026-10-15T23:48:47.146386+00:00",
-  "deep_scanned_at": "2026-10-21T18:14:21.944714+00:00",
+  "deep_scanned_at": "2026-10-23T23:28:21.996807+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-23T12:01:19.321232+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -663,7 +663,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-23T12:01:45.469428+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -689,7 +689,7 @@
   "slug": "databricks"
  },
  "databricks winter": {
-  "checked_at": "2026-10-16T21:38:36.777947+00:00",
+  "checked_at": "2026-10-23T23:27:11.967658+00:00",
   "platform": null,
   "slug": null
  },
@@ -996,7 +996,7 @@
  },
  "redhat": {
   "checked_at": "2026-09-30T18:25:13.664224+00:00",
-  "deep_scanned_at": "2026-10-21T21:58:19.246223+00:00",
+  "deep_scanned_at": "2026-10-23T23:28:21.996807+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
