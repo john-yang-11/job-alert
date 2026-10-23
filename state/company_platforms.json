@@ -309,7 +309,7 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-10-15T17:44:55.524947+00:00",
-  "deep_scanned_at": "2026-10-21T01:58:23.775212+00:00",
+  "deep_scanned_at": "2026-10-23T06:28:01.641533+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
@@ -513,12 +513,6 @@
   "platform": null,
   "slug": null
  },
- "aquatic": {
-  "checked_at": "2026-10-22T10:34:46.521979+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
- },
  "asana": {
   "checked_at": "2026-10-15T12:51:03.265827+00:00",
   "platform": "greenhouse",
@@ -546,7 +540,8 @@
  },
  "blackstone": {
   "checked_at": "2026-10-20T23:21:58.700945+00:00",
-  "deep_scanned_at": "2026-10-20T23:22:26.364607+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-23T06:28:01.641533+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -659,12 +654,6 @@
   "deep_scanned_at": "2026-10-22T10:35:35.716294+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
- },
- "confluent": {
-  "checked_at": "2026-10-22T10:35:07.671900+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "confluent"
  },
  "crowdstrike": {
   "checked_at": "2026-10-15T12:52:26.387943+00:00",
@@ -989,7 +978,7 @@
  },
  "raytheon": {
   "checked_at": "2026-10-15T17:45:05.374327+00:00",
-  "deep_scanned_at": "2026-10-21T01:58:23.775212+00:00",
+  "deep_scanned_at": "2026-10-23T06:28:01.641533+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
@@ -1170,6 +1159,11 @@
  },
  "uber": {
   "checked_at": "2026-10-22T19:22:51.464089+00:00",
+  "platform": null,
+  "slug": null
+ },
+ "uber career prep": {
+  "checked_at": "2026-10-23T06:27:35.079220+00:00",
   "platform": null,
   "slug": null
  },
