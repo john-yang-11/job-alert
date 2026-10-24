@@ -94,7 +94,6 @@
  },
  "Cisco": {
   "checked_at": "2026-10-15T07:20:36.593095+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-22T05:21:29.807939+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
@@ -262,7 +261,6 @@
  },
  "NVIDIA": {
   "checked_at": "2026-10-15T07:21:34.831656+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-22T15:37:01.390189+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
@@ -299,7 +297,6 @@
  },
  "PNC": {
   "checked_at": "2026-10-15T07:22:23.443624+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-22T19:28:43.512933+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
@@ -385,7 +382,6 @@
  },
  "Snap": {
   "checked_at": "2026-10-15T07:22:30.938496+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-23T12:03:00.374753+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
@@ -446,7 +442,6 @@
  },
  "US bank": {
   "checked_at": "2026-10-15T07:22:42.291670+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-23T20:21:19.437331+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
@@ -492,7 +487,6 @@
  },
  "adobe": {
   "checked_at": "2026-10-15T07:20:14.183707+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-22T05:21:29.807939+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
@@ -1208,7 +1202,6 @@
  },
  "visa": {
   "checked_at": "2026-10-15T07:22:44.462853+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-23T20:21:19.437331+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
