@@ -293,7 +293,7 @@
  },
  "PNC": {
   "checked_at": "2026-10-15T07:22:23.443624+00:00",
-  "deep_scanned_at": "2026-10-22T19:28:43.512933+00:00",
+  "deep_scanned_at": "2026-10-24T18:58:32.866951+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-24T12:12:00.427633+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -573,7 +573,7 @@
  },
  "boeing": {
   "checked_at": "2026-10-15T12:51:39.468768+00:00",
-  "deep_scanned_at": "2026-10-22T19:28:43.512933+00:00",
+  "deep_scanned_at": "2026-10-24T18:58:32.866951+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -619,7 +619,7 @@
  },
  "citi": {
   "checked_at": "2026-10-15T12:52:15.020618+00:00",
-  "deep_scanned_at": "2026-10-22T19:28:43.512933+00:00",
+  "deep_scanned_at": "2026-10-24T18:58:32.866951+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -635,7 +635,8 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-10-15T12:52:22.508730+00:00",
-  "deep_scanned_at": "2026-10-22T22:42:31.223102+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-24T18:58:32.866951+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
@@ -662,7 +663,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-24T12:12:21.520835+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -903,7 +904,6 @@
  },
  "moelis": {
   "checked_at": "2026-10-07T07:09:07.310574+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-24T16:12:33.504672+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
