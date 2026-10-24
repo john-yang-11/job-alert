@@ -257,7 +257,7 @@
  },
  "NVIDIA": {
   "checked_at": "2026-10-15T07:21:34.831656+00:00",
-  "deep_scanned_at": "2026-10-22T15:37:01.390189+00:00",
+  "deep_scanned_at": "2026-10-24T16:12:33.504672+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-24T12:12:00.427633+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -562,7 +562,7 @@
  },
  "blue origin": {
   "checked_at": "2026-10-15T12:51:35.581749+00:00",
-  "deep_scanned_at": "2026-10-22T15:37:01.390189+00:00",
+  "deep_scanned_at": "2026-10-24T16:12:33.504672+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -656,14 +656,13 @@
  },
  "comcast": {
   "checked_at": "2026-09-26T16:43:22.661238+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-24T12:12:47.897353+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
  "confluent": {
   "checked_at": "2026-10-24T12:12:21.520835+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -816,7 +815,7 @@
  },
  "humana": {
   "checked_at": "2026-10-18T09:02:02.151880+00:00",
-  "deep_scanned_at": "2026-10-22T10:35:35.716294+00:00",
+  "deep_scanned_at": "2026-10-24T16:12:33.504672+00:00",
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
@@ -904,7 +903,8 @@
  },
  "moelis": {
   "checked_at": "2026-10-07T07:09:07.310574+00:00",
-  "deep_scanned_at": "2026-10-22T15:37:01.390189+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-24T16:12:33.504672+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
  },
@@ -1222,7 +1222,6 @@
  },
  "xfinity": {
   "checked_at": "2026-09-26T16:43:23.883053+00:00",
-  "consecutive_failures": 1,
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
