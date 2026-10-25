@@ -93,7 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-10-15T07:20:36.593095+00:00",
-  "deep_scanned_at": "2026-10-24T12:12:47.897353+00:00",
+  "deep_scanned_at": "2026-10-25T22:29:31.201718+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -257,7 +257,7 @@
  },
  "NVIDIA": {
   "checked_at": "2026-10-15T07:21:34.831656+00:00",
-  "deep_scanned_at": "2026-10-24T16:12:33.504672+00:00",
+  "deep_scanned_at": "2026-10-25T22:29:31.201718+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-25T09:20:52.295143+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -562,7 +562,7 @@
  },
  "blue origin": {
   "checked_at": "2026-10-15T12:51:35.581749+00:00",
-  "deep_scanned_at": "2026-10-24T16:12:33.504672+00:00",
+  "deep_scanned_at": "2026-10-25T22:29:31.201718+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -656,13 +656,14 @@
  },
  "comcast": {
   "checked_at": "2026-09-26T16:43:22.661238+00:00",
-  "deep_scanned_at": "2026-10-24T12:12:47.897353+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-25T22:29:31.201718+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
  "confluent": {
   "checked_at": "2026-10-25T09:21:13.387648+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -1221,6 +1222,7 @@
  },
  "xfinity": {
   "checked_at": "2026-09-26T16:43:23.883053+00:00",
+  "consecutive_failures": 1,
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
@@ -1235,7 +1237,7 @@
   "slug": "flyzipline"
  },
  "zoox": {
-  "checked_at": "2026-09-25T20:25:28.336618+00:00",
+  "checked_at": "2026-10-25T22:28:58.464240+00:00",
   "platform": "lever",
   "slug": "zoox"
  }
