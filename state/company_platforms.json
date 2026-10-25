@@ -26,7 +26,7 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-10-15T23:48:48.682420+00:00",
-  "deep_scanned_at": "2026-10-24T01:56:05.851999+00:00",
+  "deep_scanned_at": "2026-10-25T17:36:37.300437+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -315,7 +315,6 @@
  },
  "Paypal": {
   "checked_at": "2026-09-30T18:24:59.787180+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-25T13:54:18.901736+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
@@ -347,7 +346,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-09-30T18:25:37.344732+00:00",
-  "deep_scanned_at": "2026-10-24T01:56:05.851999+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-25T17:36:37.300437+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -463,7 +463,7 @@
  },
  "Workday": {
   "checked_at": "2026-10-15T23:48:47.146386+00:00",
-  "deep_scanned_at": "2026-10-23T23:28:21.996807+00:00",
+  "deep_scanned_at": "2026-10-25T17:36:37.300437+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -516,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-25T09:20:52.295143+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -663,7 +663,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-25T09:21:13.387648+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -1083,7 +1083,8 @@
  },
  "slack": {
   "checked_at": "2026-10-15T21:18:50.897842+00:00",
-  "deep_scanned_at": "2026-10-24T01:56:05.851999+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-25T17:36:37.300437+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
