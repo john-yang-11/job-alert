@@ -139,7 +139,8 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-09-30T18:24:46.930459+00:00",
-  "deep_scanned_at": "2026-10-25T09:21:39.708360+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-26T23:23:12.982040+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -351,7 +352,7 @@
   "slug": "rocket|wd5|Rocket_Careers"
  },
  "SEO tech developer": {
-  "checked_at": "2026-10-19T22:17:45.604883+00:00",
+  "checked_at": "2026-10-26T23:18:50.875559+00:00",
   "platform": null,
   "slug": null
  },
@@ -367,13 +368,13 @@
   "slug": "https://careers.servicenow.com/jobs/xml/?rss=true"
  },
  "Siemens": {
-  "checked_at": "2026-10-19T22:18:03.529010+00:00",
+  "checked_at": "2026-10-26T23:19:06.542750+00:00",
   "platform": null,
   "slug": null
  },
  "Snap": {
   "checked_at": "2026-10-15T07:22:30.938496+00:00",
-  "deep_scanned_at": "2026-10-25T04:30:19.061002+00:00",
+  "deep_scanned_at": "2026-10-26T23:23:12.982040+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -404,7 +405,7 @@
   "slug": "tmobile|wd1|External"
  },
  "TSMC": {
-  "checked_at": "2026-10-19T22:19:45.914609+00:00",
+  "checked_at": "2026-10-26T23:20:18.691557+00:00",
   "platform": null,
   "slug": null
  },
@@ -420,12 +421,12 @@
   "slug": null
  },
  "TikTok": {
-  "checked_at": "2026-10-19T22:19:16.604433+00:00",
+  "checked_at": "2026-10-26T23:19:55.973317+00:00",
   "platform": null,
   "slug": null
  },
  "Two Sigma": {
-  "checked_at": "2026-10-19T22:20:12.994533+00:00",
+  "checked_at": "2026-10-26T23:20:43.257802+00:00",
   "platform": null,
   "slug": null
  },
@@ -515,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-26T06:01:23.654831+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -546,7 +547,6 @@
  },
  "blackstone": {
   "checked_at": "2026-10-20T23:21:58.700945+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-26T19:14:40.903493+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -657,14 +657,13 @@
  },
  "comcast": {
   "checked_at": "2026-10-26T19:11:12.896731+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-26T19:14:40.903493+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
  "confluent": {
   "checked_at": "2026-10-26T06:01:44.948934+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -1042,7 +1041,7 @@
   "slug": "roku"
  },
  "rtx": {
-  "checked_at": "2026-10-19T22:17:28.350001+00:00",
+  "checked_at": "2026-10-26T23:18:32.151098+00:00",
   "platform": null,
   "slug": null
  },
@@ -1094,7 +1093,7 @@
   "slug": "sofi"
  },
  "sony": {
-  "checked_at": "2026-10-19T22:18:26.700250+00:00",
+  "checked_at": "2026-10-26T23:19:22.381251+00:00",
   "platform": null,
   "slug": null
  },
@@ -1109,7 +1108,7 @@
   "slug": "spacex"
  },
  "splunk": {
-  "checked_at": "2026-10-19T22:18:43.344243+00:00",
+  "checked_at": "2026-10-26T23:19:32.992260+00:00",
   "platform": null,
   "slug": null
  },
@@ -1120,13 +1119,13 @@
  },
  "state street": {
   "checked_at": "2026-10-15T21:19:37.086102+00:00",
-  "deep_scanned_at": "2026-10-25T04:30:19.061002+00:00",
+  "deep_scanned_at": "2026-10-26T23:23:12.982040+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
  "stryker": {
   "checked_at": "2026-10-15T21:19:42.804391+00:00",
-  "deep_scanned_at": "2026-10-25T04:30:19.061002+00:00",
+  "deep_scanned_at": "2026-10-26T23:23:12.982040+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
@@ -1146,12 +1145,12 @@
   "slug": "thenuclearcompany"
  },
  "thrive by duolingo": {
-  "checked_at": "2026-10-19T22:19:01.342257+00:00",
+  "checked_at": "2026-10-26T23:19:45.622954+00:00",
   "platform": null,
   "slug": null
  },
  "tinder": {
-  "checked_at": "2026-10-19T22:19:27.880221+00:00",
+  "checked_at": "2026-10-26T23:20:03.805159+00:00",
   "platform": null,
   "slug": null
  },
@@ -1181,7 +1180,7 @@
   "slug": null
  },
  "united health group": {
-  "checked_at": "2026-10-19T22:21:59.454775+00:00",
+  "checked_at": "2026-10-26T23:22:16.925801+00:00",
   "platform": null,
   "slug": null
  },
@@ -1192,7 +1191,7 @@
   "slug": "visa|wd5|Visa"
  },
  "vmware": {
-  "checked_at": "2026-10-19T22:22:35.159548+00:00",
+  "checked_at": "2026-10-26T23:22:43.504306+00:00",
   "platform": null,
   "slug": null
  },
@@ -1223,7 +1222,6 @@
  },
  "xfinity": {
   "checked_at": "2026-10-26T19:14:09.645789+00:00",
-  "consecutive_failures": 1,
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
