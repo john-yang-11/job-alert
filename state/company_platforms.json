@@ -93,7 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-10-15T07:20:36.593095+00:00",
-  "deep_scanned_at": "2026-10-25T22:29:31.201718+00:00",
+  "deep_scanned_at": "2026-10-27T23:43:40.808338+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -257,7 +257,7 @@
  },
  "NVIDIA": {
   "checked_at": "2026-10-15T07:21:34.831656+00:00",
-  "deep_scanned_at": "2026-10-25T22:29:31.201718+00:00",
+  "deep_scanned_at": "2026-10-27T23:43:40.808338+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-27T14:52:57.456045+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -573,7 +573,7 @@
  },
  "boeing": {
   "checked_at": "2026-10-15T12:51:39.468768+00:00",
-  "deep_scanned_at": "2026-10-26T00:46:01.781599+00:00",
+  "deep_scanned_at": "2026-10-27T23:43:40.808338+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -619,7 +619,7 @@
  },
  "citi": {
   "checked_at": "2026-10-15T12:52:15.020618+00:00",
-  "deep_scanned_at": "2026-10-26T00:46:01.781599+00:00",
+  "deep_scanned_at": "2026-10-27T23:43:40.808338+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -662,7 +662,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-27T14:53:18.467207+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "confluent"
  },
