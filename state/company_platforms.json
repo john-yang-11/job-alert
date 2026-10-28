@@ -57,7 +57,7 @@
   "slug": null
  },
  "Axon": {
-  "checked_at": "2026-09-27T23:56:04.192926+00:00",
+  "checked_at": "2026-10-28T05:27:30.552598+00:00",
   "platform": "greenhouse",
   "slug": "axon"
  },
@@ -282,7 +282,7 @@
   "slug": null
  },
  "Nuro": {
-  "checked_at": "2026-09-28T05:14:13.320459+00:00",
+  "checked_at": "2026-10-28T05:27:45.311611+00:00",
   "platform": "greenhouse",
   "slug": "nuro"
  },
@@ -499,7 +499,7 @@
   "slug": "andurilindustries"
  },
  "appian": {
-  "checked_at": "2026-09-27T23:55:59.419503+00:00",
+  "checked_at": "2026-10-28T05:27:29.570033+00:00",
   "platform": "greenhouse",
   "slug": "appian"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-27T14:52:57.456045+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -635,7 +635,8 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-10-15T12:52:22.508730+00:00",
-  "deep_scanned_at": "2026-10-26T06:07:07.792118+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-28T05:28:23.183066+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
@@ -662,13 +663,13 @@
  },
  "confluent": {
   "checked_at": "2026-10-27T14:53:18.467207+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "confluent"
  },
  "crowdstrike": {
   "checked_at": "2026-10-15T12:52:26.387943+00:00",
-  "deep_scanned_at": "2026-10-26T06:07:07.792118+00:00",
+  "deep_scanned_at": "2026-10-28T05:28:23.183066+00:00",
   "platform": "workday",
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
@@ -703,7 +704,7 @@
   "slug": null
  },
  "deepgram": {
-  "checked_at": "2026-09-27T23:56:25.901254+00:00",
+  "checked_at": "2026-10-28T05:27:41.780222+00:00",
   "platform": "ashby",
   "slug": "Deepgram"
  },
@@ -815,7 +816,7 @@
  },
  "humana": {
   "checked_at": "2026-10-18T09:02:02.151880+00:00",
-  "deep_scanned_at": "2026-10-26T00:46:01.781599+00:00",
+  "deep_scanned_at": "2026-10-28T05:28:23.183066+00:00",
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
@@ -897,13 +898,14 @@
   "slug": null
  },
  "modus": {
-  "checked_at": "2026-09-27T23:58:46.481193+00:00",
+  "checked_at": "2026-10-28T05:27:42.639662+00:00",
   "platform": "ashby",
   "slug": "modus"
  },
  "moelis": {
   "checked_at": "2026-10-07T07:09:07.310574+00:00",
-  "deep_scanned_at": "2026-10-26T00:46:01.781599+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-28T05:28:23.183066+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
  },
@@ -918,7 +920,7 @@
   "slug": null
  },
  "monogram": {
-  "checked_at": "2026-09-27T23:59:09.223930+00:00",
+  "checked_at": "2026-10-28T05:27:43.945618+00:00",
   "platform": "ashby",
   "slug": "monogram"
  },
@@ -1097,7 +1099,7 @@
   "slug": null
  },
  "southwest": {
-  "checked_at": "2026-09-28T05:17:22.270976+00:00",
+  "checked_at": "2026-10-28T05:27:57.484709+00:00",
   "platform": "smartrecruiters",
   "slug": "southwest"
  },
