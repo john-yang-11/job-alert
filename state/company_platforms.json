@@ -315,7 +315,8 @@
  },
  "Paypal": {
   "checked_at": "2026-09-30T18:24:59.787180+00:00",
-  "deep_scanned_at": "2026-10-27T08:23:22.330255+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-29T08:23:18.831878+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -410,7 +411,7 @@
  },
  "Tencent": {
   "checked_at": "2026-10-15T21:20:14.645501+00:00",
-  "deep_scanned_at": "2026-10-27T02:25:19.353276+00:00",
+  "deep_scanned_at": "2026-10-29T08:23:18.831878+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -431,7 +432,7 @@
  },
  "US bank": {
   "checked_at": "2026-10-15T07:22:42.291670+00:00",
-  "deep_scanned_at": "2026-10-27T02:25:19.353276+00:00",
+  "deep_scanned_at": "2026-10-29T08:23:18.831878+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -515,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-28T21:53:25.525446+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -662,7 +663,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-28T21:53:46.338703+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -995,7 +996,7 @@
  },
  "redhat": {
   "checked_at": "2026-09-30T18:25:13.664224+00:00",
-  "deep_scanned_at": "2026-10-27T08:23:22.330255+00:00",
+  "deep_scanned_at": "2026-10-29T08:23:18.831878+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
