@@ -128,7 +128,7 @@
   "slug": null
  },
  "Etched": {
-  "checked_at": "2026-09-30T18:24:39.980255+00:00",
+  "checked_at": "2026-10-30T18:48:53.562555+00:00",
   "platform": "ashby",
   "slug": "etched"
  },
@@ -138,8 +138,8 @@
   "slug": null
  },
  "GDIT systestems intern": {
-  "checked_at": "2026-09-30T18:24:46.930459+00:00",
-  "deep_scanned_at": "2026-10-28T21:54:16.630887+00:00",
+  "checked_at": "2026-10-30T18:49:00.982831+00:00",
+  "deep_scanned_at": "2026-10-30T18:50:52.522318+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -314,8 +314,9 @@
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
  "Paypal": {
-  "checked_at": "2026-09-30T18:24:59.787180+00:00",
-  "deep_scanned_at": "2026-10-29T08:23:18.831878+00:00",
+  "checked_at": "2026-10-30T18:49:16.670658+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-30T18:50:52.522318+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -345,8 +346,9 @@
   "slug": null
  },
  "Rocket Companies": {
-  "checked_at": "2026-09-30T18:25:37.344732+00:00",
-  "deep_scanned_at": "2026-10-29T15:30:49.557637+00:00",
+  "checked_at": "2026-10-30T18:49:51.079711+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-30T18:50:52.522318+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -515,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-30T06:22:14.376066+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -662,7 +664,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-30T06:22:35.213191+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -789,7 +791,7 @@
   "slug": null
  },
  "go daddy": {
-  "checked_at": "2026-09-30T18:24:50.595791+00:00",
+  "checked_at": "2026-10-30T18:49:06.320234+00:00",
   "platform": "greenhouse",
   "slug": "godaddy"
  },
@@ -903,7 +905,6 @@
  },
  "moelis": {
   "checked_at": "2026-10-07T07:09:07.310574+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-30T13:29:51.577909+00:00",
   "platform": "workday",
   "slug": "moelis|wd1|Experienced-Hires"
@@ -995,8 +996,8 @@
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
  "redhat": {
-  "checked_at": "2026-09-30T18:25:13.664224+00:00",
-  "deep_scanned_at": "2026-10-29T08:23:18.831878+00:00",
+  "checked_at": "2026-10-30T18:49:29.331753+00:00",
+  "deep_scanned_at": "2026-10-30T18:50:52.522318+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
@@ -1046,8 +1047,7 @@
   "slug": null
  },
  "salesforce": {
-  "checked_at": "2026-09-30T18:26:10.956794+00:00",
-  "deep_scanned_at": "2026-10-30T00:15:22.493457+00:00",
+  "checked_at": "2026-10-30T18:50:22.539022+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
