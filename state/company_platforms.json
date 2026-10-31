@@ -468,13 +468,13 @@
  },
  "abbott": {
   "checked_at": "2026-10-15T12:50:08.654496+00:00",
-  "deep_scanned_at": "2026-10-29T15:30:49.557637+00:00",
+  "deep_scanned_at": "2026-10-31T19:31:21.267458+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
  "adobe": {
   "checked_at": "2026-10-15T07:20:14.183707+00:00",
-  "deep_scanned_at": "2026-10-29T20:32:17.253277+00:00",
+  "deep_scanned_at": "2026-10-31T19:31:21.267458+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-31T15:16:49.685466+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -662,7 +662,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-31T15:17:12.158242+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -1082,7 +1082,8 @@
  },
  "slack": {
   "checked_at": "2026-10-15T21:18:50.897842+00:00",
-  "deep_scanned_at": "2026-10-29T15:30:49.557637+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-31T19:31:21.267458+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
@@ -1185,7 +1186,7 @@
  },
  "visa": {
   "checked_at": "2026-10-15T07:22:44.462853+00:00",
-  "deep_scanned_at": "2026-10-29T15:30:49.557637+00:00",
+  "deep_scanned_at": "2026-10-31T19:31:21.267458+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
