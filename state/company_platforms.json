@@ -246,7 +246,7 @@
  },
  "Mastercard": {
   "checked_at": "2026-10-15T17:44:47.993460+00:00",
-  "deep_scanned_at": "2026-10-28T17:21:28.086561+00:00",
+  "deep_scanned_at": "2026-10-31T02:16:47.299999+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|CorporateCareers"
  },
@@ -309,7 +309,7 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-10-15T17:44:55.524947+00:00",
-  "deep_scanned_at": "2026-10-28T17:21:28.086561+00:00",
+  "deep_scanned_at": "2026-10-31T02:16:47.299999+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
@@ -330,7 +330,7 @@
   "slug": "point72"
  },
  "Qualcomm": {
-  "checked_at": "2026-10-23T23:26:51.868406+00:00",
+  "checked_at": "2026-10-31T02:16:01.140039+00:00",
   "platform": null,
   "slug": null
  },
@@ -357,7 +357,7 @@
  },
  "Samsung": {
   "checked_at": "2026-10-15T21:18:45.234824+00:00",
-  "deep_scanned_at": "2026-10-28T21:54:16.630887+00:00",
+  "deep_scanned_at": "2026-10-31T02:16:47.299999+00:00",
   "platform": "workday",
   "slug": "sec|wd3|Samsung_Careers"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-30T06:22:14.376066+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -656,14 +656,13 @@
  },
  "comcast": {
   "checked_at": "2026-10-26T19:11:12.896731+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-30T22:56:32.797141+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
  "confluent": {
   "checked_at": "2026-10-30T06:22:35.213191+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -689,7 +688,7 @@
   "slug": "databricks"
  },
  "databricks winter": {
-  "checked_at": "2026-10-23T23:27:11.967658+00:00",
+  "checked_at": "2026-10-31T02:16:20.839712+00:00",
   "platform": null,
   "slug": null
  },
@@ -990,7 +989,7 @@
  },
  "raytheon": {
   "checked_at": "2026-10-15T17:45:05.374327+00:00",
-  "deep_scanned_at": "2026-10-28T17:21:28.086561+00:00",
+  "deep_scanned_at": "2026-10-31T02:16:47.299999+00:00",
   "platform": "workday",
   "slug": "globalhr|wd5|REC_RTX_Ext_Gateway"
  },
@@ -1222,7 +1221,6 @@
  },
  "xfinity": {
   "checked_at": "2026-10-26T19:14:09.645789+00:00",
-  "consecutive_failures": 1,
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
