@@ -26,7 +26,7 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-10-15T23:48:48.682420+00:00",
-  "deep_scanned_at": "2026-10-29T20:32:17.253277+00:00",
+  "deep_scanned_at": "2026-10-31T22:47:13.095839+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -462,7 +462,7 @@
  },
  "Workday": {
   "checked_at": "2026-10-15T23:48:47.146386+00:00",
-  "deep_scanned_at": "2026-10-29T20:32:17.253277+00:00",
+  "deep_scanned_at": "2026-10-31T22:47:13.095839+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-10-31T15:16:49.685466+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -562,7 +562,7 @@
  },
  "blue origin": {
   "checked_at": "2026-10-15T12:51:35.581749+00:00",
-  "deep_scanned_at": "2026-10-29T20:32:17.253277+00:00",
+  "deep_scanned_at": "2026-10-31T22:47:13.095839+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -573,7 +573,7 @@
  },
  "boeing": {
   "checked_at": "2026-10-15T12:51:39.468768+00:00",
-  "deep_scanned_at": "2026-10-30T00:15:22.493457+00:00",
+  "deep_scanned_at": "2026-10-31T22:47:13.095839+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -662,7 +662,7 @@
  },
  "confluent": {
   "checked_at": "2026-10-31T15:17:12.158242+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -1082,7 +1082,6 @@
  },
  "slack": {
   "checked_at": "2026-10-15T21:18:50.897842+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-10-31T19:31:21.267458+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
