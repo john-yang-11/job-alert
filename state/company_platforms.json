@@ -32,7 +32,7 @@
  },
  "Accenture": {
   "checked_at": "2026-10-15T12:50:28.469159+00:00",
-  "deep_scanned_at": "2026-10-29T01:46:16.116235+00:00",
+  "deep_scanned_at": "2026-10-31T08:49:38.621025+00:00",
   "platform": "workday",
   "slug": "accenture|wd103|AccentureCareers"
  },
@@ -373,7 +373,7 @@
  },
  "Snap": {
   "checked_at": "2026-10-15T07:22:30.938496+00:00",
-  "deep_scanned_at": "2026-10-28T21:54:16.630887+00:00",
+  "deep_scanned_at": "2026-10-31T08:49:38.621025+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -513,12 +513,6 @@
   "platform": null,
   "slug": null
  },
- "aquatic": {
-  "checked_at": "2026-10-30T06:22:14.376066+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
- },
  "asana": {
   "checked_at": "2026-10-15T12:51:03.265827+00:00",
   "platform": "greenhouse",
@@ -546,7 +540,8 @@
  },
  "blackstone": {
   "checked_at": "2026-10-20T23:21:58.700945+00:00",
-  "deep_scanned_at": "2026-10-28T21:54:16.630887+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-10-31T08:49:38.621025+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -659,12 +654,6 @@
   "deep_scanned_at": "2026-10-30T22:56:32.797141+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
- },
- "confluent": {
-  "checked_at": "2026-10-30T06:22:35.213191+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "confluent"
  },
  "crowdstrike": {
   "checked_at": "2026-10-15T12:52:26.387943+00:00",
@@ -1118,7 +1107,7 @@
  },
  "state street": {
   "checked_at": "2026-10-15T21:19:37.086102+00:00",
-  "deep_scanned_at": "2026-10-29T01:46:16.116235+00:00",
+  "deep_scanned_at": "2026-10-31T08:49:38.621025+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
