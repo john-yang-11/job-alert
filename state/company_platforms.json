@@ -209,7 +209,7 @@
   "slug": null
  },
  "JP morgan chase fellowship": {
-  "checked_at": "2026-10-26T12:50:56.801357+00:00",
+  "checked_at": "2026-11-02T23:51:54.997489+00:00",
   "platform": null,
   "slug": null
  },
@@ -230,7 +230,7 @@
   "slug": "kla|wd1|Search"
  },
  "Lockheed Martin": {
-  "checked_at": "2026-10-26T12:51:33.052871+00:00",
+  "checked_at": "2026-11-02T23:52:32.645869+00:00",
   "platform": null,
   "slug": null
  },
@@ -240,7 +240,7 @@
   "slug": "lyft"
  },
  "MLH": {
-  "checked_at": "2026-10-26T12:51:47.972380+00:00",
+  "checked_at": "2026-11-02T23:52:47.078476+00:00",
   "platform": null,
   "slug": null
  },
@@ -262,7 +262,7 @@
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
  "Netflix": {
-  "checked_at": "2026-10-26T19:11:40.397462+00:00",
+  "checked_at": "2026-11-02T23:55:21.662930+00:00",
   "platform": null,
   "slug": null
  },
@@ -272,12 +272,12 @@
   "slug": "neuralink"
  },
  "Nokia": {
-  "checked_at": "2026-10-26T19:12:01.641471+00:00",
+  "checked_at": "2026-11-02T23:55:41.583213+00:00",
   "platform": null,
   "slug": null
  },
  "Northrop Grumman": {
-  "checked_at": "2026-10-26T19:12:19.929464+00:00",
+  "checked_at": "2026-11-02T23:56:01.837340+00:00",
   "platform": null,
   "slug": null
  },
@@ -384,7 +384,6 @@
  },
  "Spotify": {
   "checked_at": "2026-10-15T21:19:27.694076+00:00",
-  "consecutive_failures": 1,
   "platform": "lever",
   "slug": "spotify"
  },
@@ -411,7 +410,7 @@
  },
  "Tencent": {
   "checked_at": "2026-10-15T21:20:14.645501+00:00",
-  "deep_scanned_at": "2026-10-31T15:17:36.275881+00:00",
+  "deep_scanned_at": "2026-11-02T23:57:09.702195+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -432,7 +431,7 @@
  },
  "US bank": {
   "checked_at": "2026-10-15T07:22:42.291670+00:00",
-  "deep_scanned_at": "2026-10-31T15:17:36.275881+00:00",
+  "deep_scanned_at": "2026-11-02T23:57:09.702195+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -469,13 +468,13 @@
  },
  "abbott": {
   "checked_at": "2026-10-15T12:50:08.654496+00:00",
-  "deep_scanned_at": "2026-10-31T19:31:21.267458+00:00",
+  "deep_scanned_at": "2026-11-02T23:57:09.702195+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
  "adobe": {
   "checked_at": "2026-10-15T07:20:14.183707+00:00",
-  "deep_scanned_at": "2026-10-31T19:31:21.267458+00:00",
+  "deep_scanned_at": "2026-11-02T23:57:09.702195+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -516,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-01T20:48:52.337372+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -547,7 +546,6 @@
  },
  "blackstone": {
   "checked_at": "2026-10-20T23:21:58.700945+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-02T17:05:29.509121+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -664,7 +662,7 @@
  },
  "confluent": {
   "checked_at": "2026-11-02T00:36:28.535790+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -842,7 +840,7 @@
   "slug": "janestreet"
  },
  "jpmorgan": {
-  "checked_at": "2026-10-26T12:51:06.441690+00:00",
+  "checked_at": "2026-11-02T23:52:05.096064+00:00",
   "platform": null,
   "slug": null
  },
@@ -863,7 +861,7 @@
   "slug": "leidos|wd5|External"
  },
  "lenovo": {
-  "checked_at": "2026-10-26T12:51:15.431563+00:00",
+  "checked_at": "2026-11-02T23:52:13.646938+00:00",
   "platform": null,
   "slug": null
  },
@@ -879,7 +877,7 @@
   "slug": "medtronic|wd1|MedtronicCareers"
  },
  "mercedes": {
-  "checked_at": "2026-10-26T12:51:40.118714+00:00",
+  "checked_at": "2026-11-02T23:52:39.532195+00:00",
   "platform": null,
   "slug": null
  },
@@ -915,7 +913,7 @@
   "slug": "mongodb"
  },
  "mongodb NeXt summit": {
-  "checked_at": "2026-10-26T12:52:20.069752+00:00",
+  "checked_at": "2026-11-02T23:53:12.605678+00:00",
   "platform": null,
   "slug": null
  },
@@ -925,12 +923,12 @@
   "slug": "monogram"
  },
  "morgan stanley": {
-  "checked_at": "2026-10-26T12:53:47.094291+00:00",
+  "checked_at": "2026-11-02T23:54:37.217277+00:00",
   "platform": null,
   "slug": null
  },
  "nasa": {
-  "checked_at": "2026-10-26T12:54:27.063184+00:00",
+  "checked_at": "2026-11-02T23:55:13.585145+00:00",
   "platform": null,
   "slug": null
  },
@@ -960,7 +958,7 @@
   "slug": "okta"
  },
  "oracle": {
-  "checked_at": "2026-10-26T19:12:33.481400+00:00",
+  "checked_at": "2026-11-02T23:56:15.590926+00:00",
   "platform": null,
   "slug": null
  },
@@ -980,7 +978,7 @@
   "slug": "plaid"
  },
  "pwc": {
-  "checked_at": "2026-10-26T19:13:02.884360+00:00",
+  "checked_at": "2026-11-02T23:56:43.424756+00:00",
   "platform": null,
   "slug": null
  },
