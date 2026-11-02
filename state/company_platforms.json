@@ -133,7 +133,7 @@
   "slug": "etched"
  },
  "Everpure": {
-  "checked_at": "2026-10-26T06:02:04.985770+00:00",
+  "checked_at": "2026-11-02T16:59:42.784815+00:00",
   "platform": null,
   "slug": null
  },
@@ -159,7 +159,7 @@
   "slug": null
  },
  "Google ASDI": {
-  "checked_at": "2026-10-26T06:05:32.582878+00:00",
+  "checked_at": "2026-11-02T17:02:19.194256+00:00",
   "platform": null,
   "slug": null
  },
@@ -169,7 +169,7 @@
   "slug": "hp"
  },
  "HPR": {
-  "checked_at": "2026-10-26T06:05:46.780571+00:00",
+  "checked_at": "2026-11-02T17:02:35.903581+00:00",
   "platform": null,
   "slug": null
  },
@@ -184,7 +184,7 @@
   "slug": "hermeus"
  },
  "Hubspot": {
-  "checked_at": "2026-10-26T06:06:10.435310+00:00",
+  "checked_at": "2026-11-02T17:03:02.006216+00:00",
   "platform": null,
   "slug": null
  },
@@ -199,12 +199,12 @@
   "slug": null
  },
  "IBM accelerate": {
-  "checked_at": "2026-10-26T06:06:30.667019+00:00",
+  "checked_at": "2026-11-02T17:03:23.749134+00:00",
   "platform": null,
   "slug": null
  },
  "Intuit": {
-  "checked_at": "2026-10-26T12:49:59.602454+00:00",
+  "checked_at": "2026-11-02T17:04:14.527642+00:00",
   "platform": null,
   "slug": null
  },
@@ -219,7 +219,7 @@
   "slug": null
  },
  "John Deere": {
-  "checked_at": "2026-10-26T12:50:42.089558+00:00",
+  "checked_at": "2026-11-02T17:04:45.209766+00:00",
   "platform": null,
   "slug": null
  },
@@ -384,6 +384,7 @@
  },
  "Spotify": {
   "checked_at": "2026-10-15T21:19:27.694076+00:00",
+  "consecutive_failures": 1,
   "platform": "lever",
   "slug": "spotify"
  },
@@ -399,7 +400,7 @@
  },
  "T-mobile": {
   "checked_at": "2026-10-15T21:19:50.346251+00:00",
-  "deep_scanned_at": "2026-10-31T15:17:36.275881+00:00",
+  "deep_scanned_at": "2026-11-02T17:05:29.509121+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
@@ -515,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-01T20:48:52.337372+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -546,7 +547,8 @@
  },
  "blackstone": {
   "checked_at": "2026-10-20T23:21:58.700945+00:00",
-  "deep_scanned_at": "2026-10-31T08:49:38.621025+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-11-02T17:05:29.509121+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -662,7 +664,7 @@
  },
  "confluent": {
   "checked_at": "2026-11-02T00:36:28.535790+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -748,7 +750,7 @@
   "slug": "elastic"
  },
  "epic": {
-  "checked_at": "2026-10-26T06:01:56.289407+00:00",
+  "checked_at": "2026-11-02T16:59:34.107520+00:00",
   "platform": null,
   "slug": null
  },
@@ -774,17 +776,17 @@
   "slug": null
  },
  "gemnai fall": {
-  "checked_at": "2026-10-26T06:02:18.488206+00:00",
+  "checked_at": "2026-11-02T17:00:01.831479+00:00",
   "platform": null,
   "slug": null
  },
  "general dynamics": {
-  "checked_at": "2026-10-26T06:04:31.884013+00:00",
+  "checked_at": "2026-11-02T17:00:53.212454+00:00",
   "platform": null,
   "slug": null
  },
  "general motors": {
-  "checked_at": "2026-10-26T06:05:17.205369+00:00",
+  "checked_at": "2026-11-02T17:02:01.443119+00:00",
   "platform": null,
   "slug": null
  },
@@ -804,7 +806,7 @@
   "slug": "handshake"
  },
  "harmon": {
-  "checked_at": "2026-10-26T06:05:39.394087+00:00",
+  "checked_at": "2026-11-02T17:02:27.059962+00:00",
   "platform": null,
   "slug": null
  },
@@ -825,7 +827,7 @@
   "slug": null
  },
  "infosys": {
-  "checked_at": "2026-10-26T12:49:30.826703+00:00",
+  "checked_at": "2026-11-02T17:03:52.971312+00:00",
   "platform": null,
   "slug": null
  },
@@ -1118,13 +1120,13 @@
  },
  "state street": {
   "checked_at": "2026-10-15T21:19:37.086102+00:00",
-  "deep_scanned_at": "2026-10-31T08:49:38.621025+00:00",
+  "deep_scanned_at": "2026-11-02T17:05:29.509121+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
  "stryker": {
   "checked_at": "2026-10-15T21:19:42.804391+00:00",
-  "deep_scanned_at": "2026-10-31T15:17:36.275881+00:00",
+  "deep_scanned_at": "2026-11-02T17:05:29.509121+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
