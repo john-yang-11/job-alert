@@ -340,7 +340,7 @@
   "slug": "reddit"
  },
  "Rippling winter 27": {
-  "checked_at": "2026-10-26T19:13:31.403047+00:00",
+  "checked_at": "2026-11-03T06:35:02.474604+00:00",
   "platform": null,
   "slug": null
  },
@@ -351,7 +351,7 @@
   "slug": "rocket|wd5|Rocket_Careers"
  },
  "SEO tech developer": {
-  "checked_at": "2026-10-26T23:18:50.875559+00:00",
+  "checked_at": "2026-11-03T06:35:46.570220+00:00",
   "platform": null,
   "slug": null
  },
@@ -367,7 +367,7 @@
   "slug": "https://careers.servicenow.com/jobs/xml/?rss=true"
  },
  "Siemens": {
-  "checked_at": "2026-10-26T23:19:06.542750+00:00",
+  "checked_at": "2026-11-03T06:36:06.951696+00:00",
   "platform": null,
   "slug": null
  },
@@ -404,7 +404,7 @@
   "slug": "tmobile|wd1|External"
  },
  "TSMC": {
-  "checked_at": "2026-10-26T23:20:18.691557+00:00",
+  "checked_at": "2026-11-03T06:37:10.425942+00:00",
   "platform": null,
   "slug": null
  },
@@ -420,12 +420,12 @@
   "slug": null
  },
  "TikTok": {
-  "checked_at": "2026-10-26T23:19:55.973317+00:00",
+  "checked_at": "2026-11-03T06:36:55.042454+00:00",
   "platform": null,
   "slug": null
  },
  "Two Sigma": {
-  "checked_at": "2026-10-26T23:20:43.257802+00:00",
+  "checked_at": "2026-11-03T06:37:29.264390+00:00",
   "platform": null,
   "slug": null
  },
@@ -446,7 +446,7 @@
   "slug": null
  },
  "VRBO": {
-  "checked_at": "2026-10-27T02:23:16.803928+00:00",
+  "checked_at": "2026-11-03T06:39:28.577588+00:00",
   "platform": null,
   "slug": null
  },
@@ -513,12 +513,6 @@
   "platform": null,
   "slug": null
  },
- "aquatic": {
-  "checked_at": "2026-11-01T20:48:52.337372+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
- },
  "asana": {
   "checked_at": "2026-10-15T12:51:03.265827+00:00",
   "platform": "greenhouse",
@@ -562,7 +556,7 @@
  },
  "blue origin": {
   "checked_at": "2026-10-15T12:51:35.581749+00:00",
-  "deep_scanned_at": "2026-10-31T22:47:13.095839+00:00",
+  "deep_scanned_at": "2026-11-03T06:40:01.107186+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -573,7 +567,7 @@
  },
  "boeing": {
   "checked_at": "2026-10-15T12:51:39.468768+00:00",
-  "deep_scanned_at": "2026-10-31T22:47:13.095839+00:00",
+  "deep_scanned_at": "2026-11-03T06:40:01.107186+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -662,7 +656,7 @@
  },
  "confluent": {
   "checked_at": "2026-11-02T00:36:28.535790+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -1015,7 +1009,7 @@
   "slug": "riotgames"
  },
  "rippling": {
-  "checked_at": "2026-10-26T19:13:14.730780+00:00",
+  "checked_at": "2026-11-03T06:34:48.017674+00:00",
   "platform": null,
   "slug": null
  },
@@ -1030,7 +1024,7 @@
   "slug": "roblox"
  },
  "roche": {
-  "checked_at": "2026-10-26T19:14:05.787833+00:00",
+  "checked_at": "2026-11-03T06:35:27.386010+00:00",
   "platform": null,
   "slug": null
  },
@@ -1040,7 +1034,7 @@
   "slug": "roku"
  },
  "rtx": {
-  "checked_at": "2026-10-26T23:18:32.151098+00:00",
+  "checked_at": "2026-11-03T06:35:32.881534+00:00",
   "platform": null,
   "slug": null
  },
@@ -1082,7 +1076,8 @@
  },
  "slack": {
   "checked_at": "2026-10-15T21:18:50.897842+00:00",
-  "deep_scanned_at": "2026-10-31T19:31:21.267458+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-11-03T06:40:01.107186+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
@@ -1092,7 +1087,7 @@
   "slug": "sofi"
  },
  "sony": {
-  "checked_at": "2026-10-26T23:19:22.381251+00:00",
+  "checked_at": "2026-11-03T06:36:22.762874+00:00",
   "platform": null,
   "slug": null
  },
@@ -1107,7 +1102,7 @@
   "slug": "spacex"
  },
  "splunk": {
-  "checked_at": "2026-10-26T23:19:32.992260+00:00",
+  "checked_at": "2026-11-03T06:36:30.313871+00:00",
   "platform": null,
   "slug": null
  },
@@ -1144,12 +1139,12 @@
   "slug": "thenuclearcompany"
  },
  "thrive by duolingo": {
-  "checked_at": "2026-10-26T23:19:45.622954+00:00",
+  "checked_at": "2026-11-03T06:36:42.894935+00:00",
   "platform": null,
   "slug": null
  },
  "tinder": {
-  "checked_at": "2026-10-26T23:20:03.805159+00:00",
+  "checked_at": "2026-11-03T06:37:01.217310+00:00",
   "platform": null,
   "slug": null
  },
@@ -1179,23 +1174,23 @@
   "slug": null
  },
  "united health group": {
-  "checked_at": "2026-10-26T23:22:16.925801+00:00",
+  "checked_at": "2026-11-03T06:38:55.292665+00:00",
   "platform": null,
   "slug": null
  },
  "visa": {
   "checked_at": "2026-10-15T07:22:44.462853+00:00",
-  "deep_scanned_at": "2026-10-31T19:31:21.267458+00:00",
+  "deep_scanned_at": "2026-11-03T06:40:01.107186+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
  "vmware": {
-  "checked_at": "2026-10-26T23:22:43.504306+00:00",
+  "checked_at": "2026-11-03T06:39:22.983833+00:00",
   "platform": null,
   "slug": null
  },
  "walmart": {
-  "checked_at": "2026-10-27T02:23:26.900640+00:00",
+  "checked_at": "2026-11-03T06:39:35.589083+00:00",
   "platform": null,
   "slug": null
  },
