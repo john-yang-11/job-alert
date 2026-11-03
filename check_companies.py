@@ -18,7 +18,8 @@ from datetime import datetime, timedelta, timezone
 
 from check import (
     STATE_DIR, load_watchlist, send_discord, send_poke, send_all, clean_keyword,
-    is_us_location, TARGET_YEAR, ALERT_FILE, PRIORITY_ALERT_FILE,
+    is_us_location, is_swe_intern, log_found, TARGET_YEAR, ALERT_FILE,
+    PRIORITY_ALERT_FILE,
 )
 from platforms import PLATFORMS, PlatformThrottled
 from resolve_companies import resolve_new, record_board_results, save_cache
@@ -66,29 +67,6 @@ def load_priority() -> list[str]:
     lines = PRIORITY_FILE.read_text(encoding="utf-8").splitlines()
     cleaned = (clean_keyword(l) for l in lines if l.strip() and not l.strip().startswith("#"))
     return [k for k in cleaned if k]
-
-SWE_RE = re.compile(
-    r"\b(software engineer(ing)?|swe|sde|"
-    # Bare "software development" / "software dev" count too. The old form was
-    # "software dev(elopment)? engineer", which required the word "engineer" and
-    # so missed Intel's "Software Development Graduate Intern" outright.
-    r"software dev(eloper|elopment)?|"
-    r"full[- ]?stack|back[- ]?end engineer|front[- ]?end engineer|"
-    r"site reliability engineer|platform engineer|"
-    # Adjacent roles worth hearing about, nearly all at companies already on the
-    # watchlist: AMD firmware, TikTok/ByteDance ML, IBM data engineering. Kept
-    # tight on purpose -- a bare "embedded" or "data" would drag in the hardware
-    # and analytics reqs these boards are full of.
-    r"machine learning|ml engineer|ai engineer|applied ai|"
-    r"data engineer|firmware|embedded (software|systems|engineer))\b",
-    re.IGNORECASE,
-)
-INTERN_RE = re.compile(r"\bintern(ship)?\b", re.IGNORECASE)
-
-
-def is_swe_intern(title: str) -> bool:
-    return bool(INTERN_RE.search(title) and SWE_RE.search(title))
-
 
 STALE_YEAR_RE = re.compile(r"\b(?:19|20)\d{2}\b")
 
@@ -268,6 +246,13 @@ def main() -> None:
         send_discord(msg)
         send_poke(msg)
     elif matched:
+        # Logged before alerting, same reason record_board_results is: a match
+        # should still reach the daily sheet sync on a run where a sink is down.
+        log_found([
+            {"company": name, "title": j["title"], "url": j.get("url", ""),
+             "source": "priority" if priority else "board"}
+            for name, j in matched
+        ])
         d_lines = "\n".join(f"**{name}** — [{j['title']}]({j['url']})" for name, j in matched)
         p_lines = "\n".join(f"{name} — {j['title']}" for name, j in matched)
         plural = "s" if len(matched) != 1 else ""

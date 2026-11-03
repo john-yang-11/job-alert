@@ -47,8 +47,17 @@ ETAGS_FILE = STATE_DIR / "etags.json"   # {source_name: etag}
 ALERT_FILE = STATE_DIR / "latest_alert.json"
 PRIORITY_ALERT_FILE = STATE_DIR / "latest_alert_priority.json"
 WATCHLIST_FILE = ROOT / "watchlist.txt"
+# Every match, kept long enough for the once-a-day sheet sync to read it. The
+# alert path is fire-and-forget -- a listing is announced and then only its id
+# survives, in the seen-file -- so sheet_sync.py had no way to learn what was
+# found between its runs. Both lanes append here; sheet_sync.py only reads.
+FOUND_LOG = STATE_DIR / "found_log.json"
+FOUND_LOG_MAX = 2000         # newest-last ring buffer; ~a month of matches
 
 DISCORD_MSG_LIMIT = 2000     # Discord hard limit per message
+# Alert on every new Summer 2027 US listing, not just watchlist companies.
+# Set ALERT_ALL=0 to go back to watchlist-only.
+ALERT_ALL = os.environ.get("ALERT_ALL", "1") != "0"
 
 # local runs: load KEY=VALUE lines from a git-ignored .env (GitHub Actions uses secrets)
 _env_file = ROOT / ".env"
@@ -338,6 +347,56 @@ def write_alert_file(text: str, path: Path = ALERT_FILE) -> None:
     path.write_text(json.dumps(alert_payload(text), indent=1), encoding="utf-8")
 
 
+# Whether a title is a software-engineering internship. Lives here rather than in
+# check_companies.py because both lanes need it now: the board lane to decide what
+# to alert on, and log_found's callers to keep non-software roles (marketing, PM,
+# electrical) out of the spreadsheet. check_companies.py imports it back from here.
+SWE_RE = re.compile(
+    r"\b(software engineer(ing)?|swe|sde|"
+    # Bare "software development" / "software dev" count too. The old form was
+    # "software dev(elopment)? engineer", which required the word "engineer" and
+    # so missed Intel's "Software Development Graduate Intern" outright.
+    r"software dev(eloper|elopment)?|"
+    r"full[- ]?stack|back[- ]?end engineer|front[- ]?end engineer|"
+    r"site reliability engineer|platform engineer|"
+    # Adjacent roles worth hearing about, nearly all at companies already on the
+    # watchlist: AMD firmware, TikTok/ByteDance ML, IBM data engineering. Kept
+    # tight on purpose -- a bare "embedded" or "data" would drag in the hardware
+    # and analytics reqs these boards are full of.
+    r"machine learning|ml engineer|ai engineer|applied ai|"
+    r"data engineer|firmware|embedded (software|systems|engineer))\b",
+    re.IGNORECASE,
+)
+INTERN_RE = re.compile(r"\bintern(ship)?\b", re.IGNORECASE)
+
+
+def is_swe_intern(title: str) -> bool:
+    return bool(INTERN_RE.search(title) and SWE_RE.search(title))
+
+
+def log_found(entries: list[dict]) -> None:
+    """Append matched listings to FOUND_LOG for the daily sheet sync to drain.
+
+    Called on every alerting run of either lane. Deliberately not deduped here:
+    both lanes can legitimately find the same role, and sheet_sync.py already
+    has to dedup against the spreadsheet itself -- one dedup in one place beats
+    two that can disagree.
+    """
+    if not entries:
+        return
+    STATE_DIR.mkdir(exist_ok=True)
+    log: list[dict] = []
+    if FOUND_LOG.exists():
+        try:
+            log = json.loads(FOUND_LOG.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, ValueError):
+            print("found_log.json unreadable, starting a fresh one", file=sys.stderr)
+    stamp = datetime.now(timezone.utc).isoformat()
+    log.extend({**e, "found_at": stamp} for e in entries)
+    FOUND_LOG.write_text(json.dumps(log[-FOUND_LOG_MAX:], indent=1), encoding="utf-8")
+    print(f"logged {len(entries)} match(es) for the sheet sync")
+
+
 def send_buffer(text: str) -> None:
     # push the latest alert to the buffer MCP server so Poke can poll it.
     # best-effort: a buffer outage must not fail the run or block Discord/Poke.
@@ -486,36 +545,54 @@ def main() -> None:
         print("state seeded")
         return
 
+    # Every new Summer 2027 US listing is alerted on, watchlist or not (ALERT_ALL).
+    # The watchlist now only decides which ones get a star in Discord and which go
+    # to the found-log for the sheet sync. ~50 such listings land on a weekday.
     keywords = load_watchlist()
-    matched: list[dict] = []
-    if not keywords:
+    if not keywords and not ALERT_ALL:
         print("WARNING: watchlist is empty — no alerts will be sent", file=sys.stderr)
-    else:
-        batch_keys: set = set()
-        for l in fetched:
-            if l.get("id") in seen_ids:
-                continue
-            if not (l.get("active") and l.get("is_visible", True)):
-                continue
-            key = content_key(l)
-            if key in seen_keys or key in batch_keys:   # same job from either repo
-                continue
-            if not matches(l, keywords):
-                continue
-            if not is_target_season(l):
-                continue
-            if not is_us_location(l.get("locations") or []):
-                continue
-            matched.append(l)
-            batch_keys.add(key)
-    print(f"{len(matched)} new matches across sources")
+    matched: list[dict] = []
+    starred: set[int] = set()     # id() of listings that are also watchlist matches
+    batch_keys: set = set()
+    for l in fetched:
+        if l.get("id") in seen_ids:
+            continue
+        if not (l.get("active") and l.get("is_visible", True)):
+            continue
+        key = content_key(l)
+        if key in seen_keys or key in batch_keys:   # same job from either repo
+            continue
+        on_list = bool(keywords) and matches(l, keywords)
+        if not (ALERT_ALL or on_list):
+            continue
+        if not is_target_season(l):
+            continue
+        if not is_us_location(l.get("locations") or []):
+            continue
+        matched.append(l)
+        batch_keys.add(key)
+        if on_list:
+            starred.add(id(l))
+    print(f"{len(matched)} new listings across sources ({len(starred)} on watchlist)")
 
     if matched:
-        matched.sort(key=lambda l: season(l)[0])  # summer first
-        plural = "es" if len(matched) != 1 else ""
-        header = f"🔔 {len(matched)} new internship match{plural}:"
-        plain = header + "\n" + "\n".join(format_listing_plain(l) for l in matched)
-        send_all(header + "\n" + "\n".join(format_listing(l) for l in matched), plain)
+        # watchlist companies first, then summer-first within each group
+        matched.sort(key=lambda l: (id(l) not in starred, season(l)[0]))
+        plural = "s" if len(matched) != 1 else ""
+        header = f"🔔 {len(matched)} new internship{plural} on Simplify ({len(starred)} ⭐ watchlist):"
+        plain = header + "\n" + "\n".join(
+            ("⭐ " if id(l) in starred else "") + format_listing_plain(l) for l in matched)
+        discord = header + "\n" + "\n".join(
+            ("⭐ " if id(l) in starred else "") + format_listing(l) for l in matched)
+        # Log before alerting: send_all raises if a sink is down, and a match
+        # should still reach the sheet on a run where Discord was flaky. Only
+        # watchlist software roles go to the sheet, as before ALERT_ALL.
+        log_found([
+            {"company": l.get("company_name", ""), "title": l.get("title", ""),
+             "url": l.get("url", ""), "source": "repo"}
+            for l in matched if id(l) in starred and is_swe_intern(l.get("title", ""))
+        ])
+        send_all(discord, plain)
 
     # persist every id and content-key we've now seen (across both sources)
     for l in fetched:

@@ -3,3 +3,10 @@ __pycache__/
 
 # buffer server local state
 buffer_state.json
+
+# Google service-account key for sheet_sync.py. This repo is PUBLIC -- the key
+# must never be committed. On Actions it comes from the
+# GOOGLE_SERVICE_ACCOUNT_JSON secret instead of a file.
+service-account.json
+*-*.json.key
+gcp-key*.json
