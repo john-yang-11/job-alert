@@ -139,7 +139,8 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-10-30T18:49:00.982831+00:00",
-  "deep_scanned_at": "2026-11-01T16:18:30.552827+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-11-04T01:14:39.251863+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -225,7 +226,7 @@
  },
  "KLA": {
   "checked_at": "2026-10-15T17:44:32.764334+00:00",
-  "deep_scanned_at": "2026-11-01T09:09:54.626518+00:00",
+  "deep_scanned_at": "2026-11-04T01:14:39.251863+00:00",
   "platform": "workday",
   "slug": "kla|wd1|Search"
  },
@@ -257,7 +258,7 @@
  },
  "NVIDIA": {
   "checked_at": "2026-10-15T07:21:34.831656+00:00",
-  "deep_scanned_at": "2026-11-01T09:09:54.626518+00:00",
+  "deep_scanned_at": "2026-11-04T01:14:39.251863+00:00",
   "platform": "workday",
   "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
@@ -315,7 +316,8 @@
  },
  "Paypal": {
   "checked_at": "2026-10-30T18:49:16.670658+00:00",
-  "deep_scanned_at": "2026-11-01T16:18:30.552827+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-11-04T01:14:39.251863+00:00",
   "platform": "workday",
   "slug": "paypal|wd1|jobs"
  },
@@ -494,7 +496,7 @@
   "slug": null
  },
  "anduril": {
-  "checked_at": "2026-10-04T21:55:11.857122+00:00",
+  "checked_at": "2026-11-04T01:14:09.091607+00:00",
   "platform": "greenhouse",
   "slug": "andurilindustries"
  },
@@ -515,7 +517,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-03T14:37:24.236451+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -635,7 +637,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-10-15T12:52:22.508730+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-03T20:57:29.989904+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -663,7 +664,7 @@
  },
  "confluent": {
   "checked_at": "2026-11-03T20:56:16.835021+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -1113,7 +1114,7 @@
   "slug": null
  },
  "square": {
-  "checked_at": "2026-10-04T21:59:46.637090+00:00",
+  "checked_at": "2026-11-04T01:14:09.091626+00:00",
   "platform": "greenhouse",
   "slug": "block"
  },
@@ -1231,7 +1232,7 @@
   "slug": null
  },
  "zipline": {
-  "checked_at": "2026-10-04T21:59:46.637099+00:00",
+  "checked_at": "2026-11-04T01:14:09.091633+00:00",
   "platform": "greenhouse",
   "slug": "flyzipline"
  },
