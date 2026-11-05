@@ -410,7 +410,7 @@
  },
  "Tencent": {
   "checked_at": "2026-10-15T21:20:14.645501+00:00",
-  "deep_scanned_at": "2026-11-02T23:57:09.702195+00:00",
+  "deep_scanned_at": "2026-11-05T18:40:35.555408+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -431,7 +431,7 @@
  },
  "US bank": {
   "checked_at": "2026-10-15T07:22:42.291670+00:00",
-  "deep_scanned_at": "2026-11-02T23:57:09.702195+00:00",
+  "deep_scanned_at": "2026-11-05T18:40:35.555408+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-05T02:43:41.075707+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -546,7 +546,6 @@
  },
  "blackstone": {
   "checked_at": "2026-10-20T23:21:58.700945+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-05T10:44:24.301951+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -563,7 +562,7 @@
  },
  "blue origin": {
   "checked_at": "2026-10-15T12:51:35.581749+00:00",
-  "deep_scanned_at": "2026-11-03T06:40:01.107186+00:00",
+  "deep_scanned_at": "2026-11-05T18:40:35.555408+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -574,7 +573,7 @@
  },
  "boeing": {
   "checked_at": "2026-10-15T12:51:39.468768+00:00",
-  "deep_scanned_at": "2026-11-03T06:40:01.107186+00:00",
+  "deep_scanned_at": "2026-11-05T18:40:35.555408+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -663,7 +662,7 @@
  },
  "confluent": {
   "checked_at": "2026-11-05T10:43:59.856806+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "confluent"
  },
