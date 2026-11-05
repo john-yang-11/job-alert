@@ -399,7 +399,7 @@
  },
  "T-mobile": {
   "checked_at": "2026-10-15T21:19:50.346251+00:00",
-  "deep_scanned_at": "2026-11-02T17:05:29.509121+00:00",
+  "deep_scanned_at": "2026-11-05T10:44:24.301951+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
@@ -468,13 +468,13 @@
  },
  "abbott": {
   "checked_at": "2026-10-15T12:50:08.654496+00:00",
-  "deep_scanned_at": "2026-11-02T23:57:09.702195+00:00",
+  "deep_scanned_at": "2026-11-05T10:44:24.301951+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
  "adobe": {
   "checked_at": "2026-10-15T07:20:14.183707+00:00",
-  "deep_scanned_at": "2026-11-02T23:57:09.702195+00:00",
+  "deep_scanned_at": "2026-11-05T10:44:24.301951+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-05T02:43:41.075707+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -546,7 +546,8 @@
  },
  "blackstone": {
   "checked_at": "2026-10-20T23:21:58.700945+00:00",
-  "deep_scanned_at": "2026-11-02T17:05:29.509121+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-11-05T10:44:24.301951+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -659,6 +660,12 @@
   "deep_scanned_at": "2026-11-04T07:58:21.486926+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
+ },
+ "confluent": {
+  "checked_at": "2026-11-05T10:43:59.856806+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "confluent"
  },
  "crowdstrike": {
   "checked_at": "2026-10-15T12:52:26.387943+00:00",
