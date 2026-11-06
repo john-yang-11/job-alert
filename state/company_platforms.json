@@ -93,7 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-10-15T07:20:36.593095+00:00",
-  "deep_scanned_at": "2026-11-03T14:41:59.172975+00:00",
+  "deep_scanned_at": "2026-11-06T00:07:00.788120+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -462,7 +462,7 @@
  },
  "Workday": {
   "checked_at": "2026-10-15T23:48:47.146386+00:00",
-  "deep_scanned_at": "2026-11-03T14:41:59.172975+00:00",
+  "deep_scanned_at": "2026-11-06T00:07:00.788120+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-05T02:43:41.075707+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -662,7 +662,7 @@
  },
  "confluent": {
   "checked_at": "2026-11-05T10:43:59.856806+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -1082,7 +1082,8 @@
  },
  "slack": {
   "checked_at": "2026-10-15T21:18:50.897842+00:00",
-  "deep_scanned_at": "2026-11-03T06:40:01.107186+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-11-06T00:07:00.788120+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
  },
@@ -1185,7 +1186,7 @@
  },
  "visa": {
   "checked_at": "2026-10-15T07:22:44.462853+00:00",
-  "deep_scanned_at": "2026-11-03T06:40:01.107186+00:00",
+  "deep_scanned_at": "2026-11-06T00:07:00.788120+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
