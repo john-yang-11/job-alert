@@ -468,13 +468,13 @@
  },
  "abbott": {
   "checked_at": "2026-10-15T12:50:08.654496+00:00",
-  "deep_scanned_at": "2026-11-05T10:44:24.301951+00:00",
+  "deep_scanned_at": "2026-11-07T18:15:29.879158+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
  "adobe": {
   "checked_at": "2026-10-15T07:20:14.183707+00:00",
-  "deep_scanned_at": "2026-11-05T10:44:24.301951+00:00",
+  "deep_scanned_at": "2026-11-07T18:15:29.879158+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-06T20:31:52.297466+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -662,7 +662,7 @@
  },
  "confluent": {
   "checked_at": "2026-11-07T00:16:56.100625+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -1118,13 +1118,13 @@
  },
  "state street": {
   "checked_at": "2026-10-15T21:19:37.086102+00:00",
-  "deep_scanned_at": "2026-11-05T02:45:31.631128+00:00",
+  "deep_scanned_at": "2026-11-07T18:15:29.879158+00:00",
   "platform": "workday",
   "slug": "statestreet|wd1|Global"
  },
  "stryker": {
   "checked_at": "2026-10-15T21:19:42.804391+00:00",
-  "deep_scanned_at": "2026-11-05T02:45:31.631128+00:00",
+  "deep_scanned_at": "2026-11-07T18:15:29.879158+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
