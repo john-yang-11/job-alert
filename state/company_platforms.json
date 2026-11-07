@@ -32,7 +32,7 @@
  },
  "Accenture": {
   "checked_at": "2026-10-15T12:50:28.469159+00:00",
-  "deep_scanned_at": "2026-11-04T22:08:47.758079+00:00",
+  "deep_scanned_at": "2026-11-07T06:32:20.876579+00:00",
   "platform": "workday",
   "slug": "accenture|wd103|AccentureCareers"
  },
@@ -293,7 +293,7 @@
  },
  "PNC": {
   "checked_at": "2026-10-15T07:22:23.443624+00:00",
-  "deep_scanned_at": "2026-11-04T22:08:47.758079+00:00",
+  "deep_scanned_at": "2026-11-07T06:32:20.876579+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -330,7 +330,7 @@
   "slug": "point72"
  },
  "Qualcomm": {
-  "checked_at": "2026-10-31T02:16:01.140039+00:00",
+  "checked_at": "2026-11-07T06:30:59.076617+00:00",
   "platform": null,
   "slug": null
  },
@@ -346,7 +346,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-10-30T18:49:51.079711+00:00",
-  "deep_scanned_at": "2026-11-04T16:12:03.002918+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-11-07T06:32:20.876579+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -515,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-06T20:31:52.297466+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -662,7 +663,7 @@
  },
  "confluent": {
   "checked_at": "2026-11-07T00:16:56.100625+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -688,7 +689,7 @@
   "slug": "databricks"
  },
  "databricks winter": {
-  "checked_at": "2026-10-31T02:16:20.839712+00:00",
+  "checked_at": "2026-11-07T06:31:14.566156+00:00",
   "platform": null,
   "slug": null
  },
@@ -995,7 +996,7 @@
  },
  "redhat": {
   "checked_at": "2026-10-30T18:49:29.331753+00:00",
-  "deep_scanned_at": "2026-11-04T16:12:03.002918+00:00",
+  "deep_scanned_at": "2026-11-07T06:32:20.876579+00:00",
   "platform": "workday",
   "slug": "redhat|wd5|jobs"
  },
