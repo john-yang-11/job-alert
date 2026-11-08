@@ -462,7 +462,7 @@
  },
  "Workday": {
   "checked_at": "2026-10-15T23:48:47.146386+00:00",
-  "deep_scanned_at": "2026-11-06T00:07:00.788120+00:00",
+  "deep_scanned_at": "2026-11-08T08:54:38.585035+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-08T01:46:01.194001+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -619,7 +619,7 @@
  },
  "citi": {
   "checked_at": "2026-10-15T12:52:15.020618+00:00",
-  "deep_scanned_at": "2026-11-06T06:32:22.524120+00:00",
+  "deep_scanned_at": "2026-11-08T08:54:38.585035+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -635,7 +635,8 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-10-15T12:52:22.508730+00:00",
-  "deep_scanned_at": "2026-11-06T06:32:22.524120+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-11-08T08:54:38.585035+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
@@ -659,6 +660,12 @@
   "deep_scanned_at": "2026-11-06T20:32:18.627726+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
+ },
+ "confluent": {
+  "checked_at": "2026-11-08T08:53:39.274982+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "confluent"
  },
  "crowdstrike": {
   "checked_at": "2026-10-15T12:52:26.387943+00:00",
@@ -1076,7 +1083,6 @@
  },
  "slack": {
   "checked_at": "2026-10-15T21:18:50.897842+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-08T01:46:25.174095+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
@@ -1134,7 +1140,7 @@
   "slug": null
  },
  "the nuclear company": {
-  "checked_at": "2026-10-09T06:38:32.136777+00:00",
+  "checked_at": "2026-11-08T08:54:09.759137+00:00",
   "platform": "greenhouse",
   "slug": "thenuclearcompany"
  },
@@ -1180,7 +1186,7 @@
  },
  "visa": {
   "checked_at": "2026-10-15T07:22:44.462853+00:00",
-  "deep_scanned_at": "2026-11-06T00:07:00.788120+00:00",
+  "deep_scanned_at": "2026-11-08T08:54:38.585035+00:00",
   "platform": "workday",
   "slug": "visa|wd5|Visa"
  },
