@@ -32,7 +32,7 @@
  },
  "Accenture": {
   "checked_at": "2026-10-15T12:50:28.469159+00:00",
-  "deep_scanned_at": "2026-11-07T06:32:20.876579+00:00",
+  "deep_scanned_at": "2026-11-09T06:07:22.235659+00:00",
   "platform": "workday",
   "slug": "accenture|wd103|AccentureCareers"
  },
@@ -77,7 +77,7 @@
   "slug": null
  },
  "Broadcom": {
-  "checked_at": "2026-11-02T00:36:07.665345+00:00",
+  "checked_at": "2026-11-09T06:06:13.668855+00:00",
   "platform": null,
   "slug": null
  },
@@ -293,7 +293,7 @@
  },
  "PNC": {
   "checked_at": "2026-10-15T07:22:23.443624+00:00",
-  "deep_scanned_at": "2026-11-07T06:32:20.876579+00:00",
+  "deep_scanned_at": "2026-11-09T06:07:22.235659+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -309,7 +309,7 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-10-15T17:44:55.524947+00:00",
-  "deep_scanned_at": "2026-11-07T00:17:21.580146+00:00",
+  "deep_scanned_at": "2026-11-09T06:07:22.235659+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
  },
@@ -513,12 +513,6 @@
   "platform": null,
   "slug": null
  },
- "aquatic": {
-  "checked_at": "2026-11-08T01:46:01.194001+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
- },
  "asana": {
   "checked_at": "2026-10-15T12:51:03.265827+00:00",
   "platform": "greenhouse",
@@ -546,7 +540,7 @@
  },
  "blackstone": {
   "checked_at": "2026-10-20T23:21:58.700945+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "deep_scanned_at": "2026-11-07T22:15:03.260797+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -557,7 +551,7 @@
   "slug": null
  },
  "bloomberg": {
-  "checked_at": "2026-11-01T20:53:01.901557+00:00",
+  "checked_at": "2026-11-09T06:05:47.206954+00:00",
   "platform": null,
   "slug": null
  },
@@ -663,7 +657,7 @@
  },
  "confluent": {
   "checked_at": "2026-11-08T08:53:39.274982+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -816,7 +810,7 @@
  },
  "humana": {
   "checked_at": "2026-10-18T09:02:02.151880+00:00",
-  "deep_scanned_at": "2026-11-07T00:17:21.580146+00:00",
+  "deep_scanned_at": "2026-11-09T06:07:22.235659+00:00",
   "platform": "workday",
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
