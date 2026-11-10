@@ -214,7 +214,7 @@
   "slug": null
  },
  "JP morgan hack4good": {
-  "checked_at": "2026-11-03T14:39:40.797664+00:00",
+  "checked_at": "2026-11-10T21:57:16.495013+00:00",
   "platform": null,
   "slug": null
  },
@@ -410,7 +410,7 @@
  },
  "Tencent": {
   "checked_at": "2026-10-15T21:20:14.645501+00:00",
-  "deep_scanned_at": "2026-11-08T01:46:25.174095+00:00",
+  "deep_scanned_at": "2026-11-10T21:58:57.203015+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -431,7 +431,7 @@
  },
  "US bank": {
   "checked_at": "2026-10-15T07:22:42.291670+00:00",
-  "deep_scanned_at": "2026-11-08T01:46:25.174095+00:00",
+  "deep_scanned_at": "2026-11-10T21:58:57.203015+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -441,7 +441,7 @@
   "slug": "uberfreight"
  },
  "Urline": {
-  "checked_at": "2026-11-03T14:40:31.883319+00:00",
+  "checked_at": "2026-11-10T21:57:34.964220+00:00",
   "platform": null,
   "slug": null
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-09T16:05:04.507620+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -546,7 +546,6 @@
  },
  "blackstone": {
   "checked_at": "2026-10-20T23:21:58.700945+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-10T16:28:36.872361+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -568,7 +567,7 @@
   "slug": "blueorigin|wd5|BlueOrigin"
  },
  "bny": {
-  "checked_at": "2026-11-03T20:56:57.516374+00:00",
+  "checked_at": "2026-11-10T21:58:32.477957+00:00",
   "platform": null,
   "slug": null
  },
@@ -579,7 +578,7 @@
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
  "boeing data analytics": {
-  "checked_at": "2026-10-10T12:22:52.671872+00:00",
+  "checked_at": "2026-11-10T21:57:22.788269+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -620,7 +619,7 @@
  },
  "citi": {
   "checked_at": "2026-10-15T12:52:15.020618+00:00",
-  "deep_scanned_at": "2026-11-08T08:54:38.585035+00:00",
+  "deep_scanned_at": "2026-11-10T21:58:57.203015+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -636,7 +635,8 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-10-15T12:52:22.508730+00:00",
-  "deep_scanned_at": "2026-11-08T08:54:38.585035+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-11-10T21:58:57.203015+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
@@ -663,7 +663,7 @@
  },
  "confluent": {
   "checked_at": "2026-11-10T00:12:27.365983+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -714,7 +714,7 @@
   "slug": null
  },
  "delta ai engineering": {
-  "checked_at": "2026-11-03T14:41:25.605741+00:00",
+  "checked_at": "2026-11-10T21:58:22.092372+00:00",
   "platform": null,
   "slug": null
  },
@@ -795,7 +795,7 @@
   "slug": "godaddy"
  },
  "goldman": {
-  "checked_at": "2026-11-03T14:41:11.536099+00:00",
+  "checked_at": "2026-11-10T21:58:08.851302+00:00",
   "platform": null,
   "slug": null
  },
@@ -810,7 +810,7 @@
   "slug": null
  },
  "hershy": {
-  "checked_at": "2026-11-03T14:41:05.060130+00:00",
+  "checked_at": "2026-11-10T21:58:02.637563+00:00",
   "platform": null,
   "slug": null
  },
@@ -888,12 +888,12 @@
   "slug": null
  },
  "microsoft core ai": {
-  "checked_at": "2026-11-03T14:39:02.675616+00:00",
+  "checked_at": "2026-11-10T21:56:48.604920+00:00",
   "platform": null,
   "slug": null
  },
  "mileniem applied ai engineer": {
-  "checked_at": "2026-11-03T14:39:15.854853+00:00",
+  "checked_at": "2026-11-10T21:57:02.259591+00:00",
   "platform": null,
   "slug": null
  },
@@ -1072,7 +1072,7 @@
   "slug": "seatgeek"
  },
  "shopfiy winter": {
-  "checked_at": "2026-11-03T14:40:47.792305+00:00",
+  "checked_at": "2026-11-10T21:57:48.877171+00:00",
   "platform": null,
   "slug": null
  },
@@ -1083,7 +1083,6 @@
  },
  "slack": {
   "checked_at": "2026-10-15T21:18:50.897842+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-10T16:28:36.872361+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
@@ -1136,7 +1135,7 @@
   "slug": "TensorWave"
  },
  "textql": {
-  "checked_at": "2026-11-03T14:40:56.196847+00:00",
+  "checked_at": "2026-11-10T21:57:56.208168+00:00",
   "platform": null,
   "slug": null
  },
@@ -1197,7 +1196,7 @@
   "slug": null
  },
  "walmart": {
-  "checked_at": "2026-11-03T06:39:35.589083+00:00",
+  "checked_at": "2026-11-10T21:55:59.006916+00:00",
   "platform": null,
   "slug": null
  },
@@ -1217,7 +1216,7 @@
   "slug": "https://www.wellsfargojobs.com/jobs/xml/?rss=true"
  },
  "whatnot": {
-  "checked_at": "2026-11-03T14:38:17.741449+00:00",
+  "checked_at": "2026-11-10T21:56:10.848239+00:00",
   "platform": null,
   "slug": null
  },
@@ -1227,7 +1226,7 @@
   "slug": "comcast|wd115|Comcast_Careers"
  },
  "yahoo": {
-  "checked_at": "2026-11-03T14:38:31.621202+00:00",
+  "checked_at": "2026-11-10T21:56:25.124605+00:00",
   "platform": null,
   "slug": null
  },
