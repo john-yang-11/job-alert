@@ -133,7 +133,7 @@
   "slug": "etched"
  },
  "Everpure": {
-  "checked_at": "2026-11-02T16:59:42.784815+00:00",
+  "checked_at": "2026-11-10T00:12:45.349265+00:00",
   "platform": null,
   "slug": null
  },
@@ -159,7 +159,7 @@
   "slug": null
  },
  "Google ASDI": {
-  "checked_at": "2026-11-02T17:02:19.194256+00:00",
+  "checked_at": "2026-11-10T00:15:16.395487+00:00",
   "platform": null,
   "slug": null
  },
@@ -169,7 +169,7 @@
   "slug": "hp"
  },
  "HPR": {
-  "checked_at": "2026-11-02T17:02:35.903581+00:00",
+  "checked_at": "2026-11-10T00:15:31.226355+00:00",
   "platform": null,
   "slug": null
  },
@@ -184,7 +184,7 @@
   "slug": "hermeus"
  },
  "Hubspot": {
-  "checked_at": "2026-11-02T17:03:02.006216+00:00",
+  "checked_at": "2026-11-10T00:15:56.273762+00:00",
   "platform": null,
   "slug": null
  },
@@ -199,12 +199,12 @@
   "slug": null
  },
  "IBM accelerate": {
-  "checked_at": "2026-11-02T17:03:23.749134+00:00",
+  "checked_at": "2026-11-10T00:16:29.314392+00:00",
   "platform": null,
   "slug": null
  },
  "Intuit": {
-  "checked_at": "2026-11-02T17:04:14.527642+00:00",
+  "checked_at": "2026-11-10T00:17:19.244399+00:00",
   "platform": null,
   "slug": null
  },
@@ -219,7 +219,7 @@
   "slug": null
  },
  "John Deere": {
-  "checked_at": "2026-11-02T17:04:45.209766+00:00",
+  "checked_at": "2026-11-10T00:17:47.913609+00:00",
   "platform": null,
   "slug": null
  },
@@ -346,7 +346,6 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-10-30T18:49:51.079711+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-09T16:10:50.830998+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
@@ -358,7 +357,7 @@
  },
  "Samsung": {
   "checked_at": "2026-10-15T21:18:45.234824+00:00",
-  "deep_scanned_at": "2026-11-07T13:29:54.242686+00:00",
+  "deep_scanned_at": "2026-11-10T00:18:21.161496+00:00",
   "platform": "workday",
   "slug": "sec|wd3|Samsung_Careers"
  },
@@ -374,7 +373,7 @@
  },
  "Snap": {
   "checked_at": "2026-10-15T07:22:30.938496+00:00",
-  "deep_scanned_at": "2026-11-07T13:29:54.242686+00:00",
+  "deep_scanned_at": "2026-11-10T00:18:21.161496+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -469,13 +468,13 @@
  },
  "abbott": {
   "checked_at": "2026-10-15T12:50:08.654496+00:00",
-  "deep_scanned_at": "2026-11-07T18:15:29.879158+00:00",
+  "deep_scanned_at": "2026-11-10T00:18:21.161496+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
  "adobe": {
   "checked_at": "2026-10-15T07:20:14.183707+00:00",
-  "deep_scanned_at": "2026-11-07T18:15:29.879158+00:00",
+  "deep_scanned_at": "2026-11-10T00:18:21.161496+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -516,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-09T16:05:04.507620+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -661,6 +660,12 @@
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
+ "confluent": {
+  "checked_at": "2026-11-10T00:12:27.365983+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "confluent"
+ },
  "crowdstrike": {
   "checked_at": "2026-10-15T12:52:26.387943+00:00",
   "deep_scanned_at": "2026-11-08T15:55:48.289154+00:00",
@@ -743,7 +748,7 @@
   "slug": "elastic"
  },
  "epic": {
-  "checked_at": "2026-11-02T16:59:34.107520+00:00",
+  "checked_at": "2026-11-10T00:12:37.649080+00:00",
   "platform": null,
   "slug": null
  },
@@ -769,17 +774,17 @@
   "slug": null
  },
  "gemnai fall": {
-  "checked_at": "2026-11-02T17:00:01.831479+00:00",
+  "checked_at": "2026-11-10T00:13:21.246228+00:00",
   "platform": null,
   "slug": null
  },
  "general dynamics": {
-  "checked_at": "2026-11-02T17:00:53.212454+00:00",
+  "checked_at": "2026-11-10T00:14:09.088366+00:00",
   "platform": null,
   "slug": null
  },
  "general motors": {
-  "checked_at": "2026-11-02T17:02:01.443119+00:00",
+  "checked_at": "2026-11-10T00:14:58.797143+00:00",
   "platform": null,
   "slug": null
  },
@@ -799,7 +804,7 @@
   "slug": "handshake"
  },
  "harmon": {
-  "checked_at": "2026-11-02T17:02:27.059962+00:00",
+  "checked_at": "2026-11-10T00:15:23.612861+00:00",
   "platform": null,
   "slug": null
  },
@@ -820,7 +825,7 @@
   "slug": null
  },
  "infosys": {
-  "checked_at": "2026-11-02T17:03:52.971312+00:00",
+  "checked_at": "2026-11-10T00:16:57.886272+00:00",
   "platform": null,
   "slug": null
  },
