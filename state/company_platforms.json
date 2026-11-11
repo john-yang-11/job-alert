@@ -26,7 +26,7 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-10-15T23:48:48.682420+00:00",
-  "deep_scanned_at": "2026-11-08T15:55:48.289154+00:00",
+  "deep_scanned_at": "2026-11-11T09:14:31.527102+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -139,7 +139,8 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-10-30T18:49:00.982831+00:00",
-  "deep_scanned_at": "2026-11-08T20:25:48.827176+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-11-11T09:14:31.527102+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -513,6 +514,12 @@
   "platform": null,
   "slug": null
  },
+ "aquatic": {
+  "checked_at": "2026-11-11T09:14:02.396891+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
+ },
  "asana": {
   "checked_at": "2026-10-15T12:51:03.265827+00:00",
   "platform": "greenhouse",
@@ -650,15 +657,10 @@
  },
  "comcast": {
   "checked_at": "2026-10-26T19:11:12.896731+00:00",
-  "deep_scanned_at": "2026-11-08T20:25:48.827176+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-11-11T09:14:31.527102+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
- },
- "confluent": {
-  "checked_at": "2026-11-10T00:12:27.365983+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "confluent"
  },
  "crowdstrike": {
   "checked_at": "2026-10-15T12:52:26.387943+00:00",
@@ -866,7 +868,7 @@
  },
  "medtronic": {
   "checked_at": "2026-11-03T14:39:55.779874+00:00",
-  "deep_scanned_at": "2026-11-08T15:55:48.289154+00:00",
+  "deep_scanned_at": "2026-11-11T09:14:31.527102+00:00",
   "platform": "workday",
   "slug": "medtronic|wd1|MedtronicCareers"
  },
@@ -1215,6 +1217,7 @@
  },
  "xfinity": {
   "checked_at": "2026-10-26T19:14:09.645789+00:00",
+  "consecutive_failures": 1,
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
