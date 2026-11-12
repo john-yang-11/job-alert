@@ -346,7 +346,8 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-10-30T18:49:51.079711+00:00",
-  "deep_scanned_at": "2026-11-09T16:10:50.830998+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-11-12T15:56:43.140649+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
  },
@@ -468,13 +469,13 @@
  },
  "abbott": {
   "checked_at": "2026-10-15T12:50:08.654496+00:00",
-  "deep_scanned_at": "2026-11-10T00:18:21.161496+00:00",
+  "deep_scanned_at": "2026-11-12T15:56:43.140649+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
  "adobe": {
   "checked_at": "2026-10-15T07:20:14.183707+00:00",
-  "deep_scanned_at": "2026-11-10T00:18:21.161496+00:00",
+  "deep_scanned_at": "2026-11-12T15:56:43.140649+00:00",
   "platform": "workday",
   "slug": "adobe|wd5|external_experienced"
  },
@@ -515,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-11T09:14:02.396891+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -662,7 +663,7 @@
  },
  "confluent": {
   "checked_at": "2026-11-11T17:24:47.135357+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -1046,7 +1047,7 @@
  },
  "salesforce": {
   "checked_at": "2026-10-30T18:50:22.539022+00:00",
-  "deep_scanned_at": "2026-11-09T16:10:50.830998+00:00",
+  "deep_scanned_at": "2026-11-12T15:56:43.140649+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|External_Career_Site"
  },
