@@ -346,7 +346,6 @@
  },
  "Rocket Companies": {
   "checked_at": "2026-10-30T18:49:51.079711+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-12T15:56:43.140649+00:00",
   "platform": "workday",
   "slug": "rocket|wd5|Rocket_Careers"
@@ -358,7 +357,7 @@
  },
  "Samsung": {
   "checked_at": "2026-10-15T21:18:45.234824+00:00",
-  "deep_scanned_at": "2026-11-10T00:18:21.161496+00:00",
+  "deep_scanned_at": "2026-11-12T22:11:58.626089+00:00",
   "platform": "workday",
   "slug": "sec|wd3|Samsung_Careers"
  },
@@ -374,7 +373,7 @@
  },
  "Snap": {
   "checked_at": "2026-10-15T07:22:30.938496+00:00",
-  "deep_scanned_at": "2026-11-10T00:18:21.161496+00:00",
+  "deep_scanned_at": "2026-11-12T22:11:58.626089+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
  },
@@ -514,12 +513,6 @@
   "platform": null,
   "slug": null
  },
- "aquatic": {
-  "checked_at": "2026-11-11T09:14:02.396891+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
- },
  "asana": {
   "checked_at": "2026-10-15T12:51:03.265827+00:00",
   "platform": "greenhouse",
@@ -563,7 +556,7 @@
  },
  "blue origin": {
   "checked_at": "2026-10-15T12:51:35.581749+00:00",
-  "deep_scanned_at": "2026-11-10T07:46:47.123994+00:00",
+  "deep_scanned_at": "2026-11-12T22:11:58.626089+00:00",
   "platform": "workday",
   "slug": "blueorigin|wd5|BlueOrigin"
  },
@@ -574,7 +567,7 @@
  },
  "boeing": {
   "checked_at": "2026-10-15T12:51:39.468768+00:00",
-  "deep_scanned_at": "2026-11-10T07:46:47.123994+00:00",
+  "deep_scanned_at": "2026-11-12T22:11:58.626089+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -663,7 +656,7 @@
  },
  "confluent": {
   "checked_at": "2026-11-11T17:24:47.135357+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "confluent"
  },
