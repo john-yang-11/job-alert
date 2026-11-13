@@ -410,7 +410,7 @@
  },
  "Tencent": {
   "checked_at": "2026-10-15T21:20:14.645501+00:00",
-  "deep_scanned_at": "2026-11-10T21:58:57.203015+00:00",
+  "deep_scanned_at": "2026-11-13T18:31:10.278264+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -431,7 +431,8 @@
  },
  "US bank": {
   "checked_at": "2026-10-15T07:22:42.291670+00:00",
-  "deep_scanned_at": "2026-11-10T21:58:57.203015+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-11-13T18:31:10.278264+00:00",
   "platform": "workday",
   "slug": "usbank|wd1|US_Bank_Careers"
  },
@@ -515,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-13T02:51:59.800762+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -546,7 +547,6 @@
  },
  "blackstone": {
   "checked_at": "2026-10-20T23:21:58.700945+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-13T10:51:06.769049+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
@@ -636,7 +636,6 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-10-15T12:52:22.508730+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-13T10:51:06.769049+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
@@ -664,13 +663,13 @@
  },
  "confluent": {
   "checked_at": "2026-11-13T10:50:40.456642+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "confluent"
  },
  "crowdstrike": {
   "checked_at": "2026-10-15T12:52:26.387943+00:00",
-  "deep_scanned_at": "2026-11-11T01:52:58.793168+00:00",
+  "deep_scanned_at": "2026-11-13T18:31:10.278264+00:00",
   "platform": "workday",
   "slug": "crowdstrike|wd5|crowdstrikecareers"
  },
@@ -756,7 +755,7 @@
  },
  "fidelity": {
   "checked_at": "2026-10-15T17:43:32.801766+00:00",
-  "deep_scanned_at": "2026-11-11T01:52:58.793168+00:00",
+  "deep_scanned_at": "2026-11-13T18:31:10.278264+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
  },
@@ -822,7 +821,7 @@
   "slug": "humana|wd5|Humana_External_Career_Site"
  },
  "ignite NVIDIA": {
-  "checked_at": "2026-11-06T14:33:24.659751+00:00",
+  "checked_at": "2026-11-13T18:29:39.671033+00:00",
   "platform": null,
   "slug": null
  },
@@ -970,7 +969,7 @@
   "slug": "patreon"
  },
  "paycom": {
-  "checked_at": "2026-11-06T14:34:01.590503+00:00",
+  "checked_at": "2026-11-13T18:30:18.534555+00:00",
   "platform": null,
   "slug": null
  },
@@ -1176,7 +1175,7 @@
   "slug": null
  },
  "uber career prep": {
-  "checked_at": "2026-11-06T14:33:42.050036+00:00",
+  "checked_at": "2026-11-13T18:29:55.547063+00:00",
   "platform": null,
   "slug": null
  },
