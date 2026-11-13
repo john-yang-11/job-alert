@@ -399,7 +399,7 @@
  },
  "T-mobile": {
   "checked_at": "2026-10-15T21:19:50.346251+00:00",
-  "deep_scanned_at": "2026-11-10T16:28:36.872361+00:00",
+  "deep_scanned_at": "2026-11-13T10:51:06.769049+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
@@ -515,7 +515,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-13T02:51:59.800762+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -546,7 +546,8 @@
  },
  "blackstone": {
   "checked_at": "2026-10-20T23:21:58.700945+00:00",
-  "deep_scanned_at": "2026-11-10T16:28:36.872361+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-11-13T10:51:06.769049+00:00",
   "platform": "workday",
   "slug": "blackstone|wd1|Blackstone_Careers"
  },
@@ -619,7 +620,7 @@
  },
  "citi": {
   "checked_at": "2026-10-15T12:52:15.020618+00:00",
-  "deep_scanned_at": "2026-11-10T21:58:57.203015+00:00",
+  "deep_scanned_at": "2026-11-13T10:51:06.769049+00:00",
   "platform": "workday",
   "slug": "citi|wd5|2"
  },
@@ -635,7 +636,8 @@
  },
  "cloud flare fall": {
   "checked_at": "2026-10-15T12:52:22.508730+00:00",
-  "deep_scanned_at": "2026-11-10T21:58:57.203015+00:00",
+  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-11-13T10:51:06.769049+00:00",
   "platform": "workday",
   "slug": "tibco|wd5|Cloud_Software_Group"
  },
@@ -659,6 +661,12 @@
   "deep_scanned_at": "2026-11-11T09:14:31.527102+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
+ },
+ "confluent": {
+  "checked_at": "2026-11-13T10:50:40.456642+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "confluent"
  },
  "crowdstrike": {
   "checked_at": "2026-10-15T12:52:26.387943+00:00",
@@ -1076,7 +1084,6 @@
  },
  "slack": {
   "checked_at": "2026-10-15T21:18:50.897842+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-13T02:52:25.085911+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
