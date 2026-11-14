@@ -48,7 +48,7 @@
   "slug": null
  },
  "Amazon": {
-  "checked_at": "2026-10-15T07:20:14.183750+00:00",
+  "checked_at": "2026-11-14T10:56:57.725434+00:00",
   "platform": "amazon",
   "slug": "amazon"
  },
@@ -93,11 +93,9 @@
   "slug": "https://careers.caterpillar.com/jobs/xml/?rss=true"
  },
  "Cisco": {
-  "checked_at": "2026-10-15T07:20:36.593095+00:00",
-  "consecutive_failures": 4,
-  "deep_scanned_at": "2026-11-13T02:52:25.085911+00:00",
-  "platform": "workday",
-  "slug": "cisco|wd5|Cisco_Careers"
+  "checked_at": "2026-11-14T10:58:22.839644+00:00",
+  "platform": null,
+  "slug": null
  },
  "Deloitte": {
   "checked_at": "2026-11-09T16:07:21.069143+00:00",
@@ -115,7 +113,7 @@
   "slug": null
  },
  "DraftKings": {
-  "checked_at": "2026-10-15T07:21:09.351290+00:00",
+  "checked_at": "2026-11-14T10:58:23.215424+00:00",
   "platform": "jobfeed",
   "slug": "https://careers.draftkings.com/jobs/xml/?rss=true"
  },
@@ -147,7 +145,7 @@
   "slug": "gdit|wd5|External_Career_Site"
  },
  "GitHub": {
-  "checked_at": "2026-10-15T10:18:51.241286+00:00",
+  "checked_at": "2026-11-14T10:58:26.223545+00:00",
   "platform": "careersite",
   "slug": "https://www.github.careers"
  },
@@ -261,11 +259,9 @@
   "slug": null
  },
  "NVIDIA": {
-  "checked_at": "2026-10-15T07:21:34.831656+00:00",
-  "consecutive_failures": 4,
-  "deep_scanned_at": "2026-11-11T23:41:29.145441+00:00",
-  "platform": "workday",
-  "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
+  "checked_at": "2026-11-14T10:57:28.411786+00:00",
+  "platform": null,
+  "slug": null
  },
  "Netflix": {
   "checked_at": "2026-11-10T07:44:53.762222+00:00",
@@ -298,11 +294,9 @@
   "slug": "pdtpartners"
  },
  "PNC": {
-  "checked_at": "2026-10-15T07:22:23.443624+00:00",
-  "consecutive_failures": 4,
-  "deep_scanned_at": "2026-11-12T07:02:09.198205+00:00",
-  "platform": "workday",
-  "slug": "pnc|wd5|External"
+  "checked_at": "2026-11-14T10:58:02.848588+00:00",
+  "platform": null,
+  "slug": null
  },
  "PNC data analsyt": {
   "checked_at": "2026-11-03T20:56:49.542148+00:00",
@@ -383,10 +377,9 @@
   "slug": null
  },
  "Snap": {
-  "checked_at": "2026-10-15T07:22:30.938496+00:00",
-  "deep_scanned_at": "2026-11-12T22:11:58.626089+00:00",
-  "platform": "workdaysite",
-  "slug": "wd1|snapchat|snap"
+  "checked_at": "2026-11-14T10:59:02.056190+00:00",
+  "platform": null,
+  "slug": null
  },
  "Snowflake": {
   "checked_at": "2026-10-15T21:19:10.713840+00:00",
@@ -404,7 +397,7 @@
   "slug": "stockx"
  },
  "Stripe": {
-  "checked_at": "2026-10-15T07:22:35.645196+00:00",
+  "checked_at": "2026-11-14T10:57:34.197895+00:00",
   "platform": "greenhouse",
   "slug": "stripe"
  },
@@ -443,11 +436,9 @@
   "slug": null
  },
  "US bank": {
-  "checked_at": "2026-10-15T07:22:42.291670+00:00",
-  "consecutive_failures": 2,
-  "deep_scanned_at": "2026-11-13T18:31:10.278264+00:00",
-  "platform": "workday",
-  "slug": "usbank|wd1|US_Bank_Careers"
+  "checked_at": "2026-11-14T10:59:37.306397+00:00",
+  "platform": null,
+  "slug": null
  },
  "Uber Freight": {
   "checked_at": "2026-10-15T21:20:25.956106+00:00",
@@ -489,11 +480,9 @@
   "slug": "abbott|wd5|abbottcareers"
  },
  "adobe": {
-  "checked_at": "2026-10-15T07:20:14.183707+00:00",
-  "consecutive_failures": 4,
-  "deep_scanned_at": "2026-11-12T15:56:43.140649+00:00",
-  "platform": "workday",
-  "slug": "adobe|wd5|external_experienced"
+  "checked_at": "2026-11-14T10:57:09.494281+00:00",
+  "platform": null,
+  "slug": null
  },
  "affirm": {
   "checked_at": "2026-10-15T12:50:30.755672+00:00",
@@ -624,7 +613,7 @@
   "slug": null
  },
  "capital one": {
-  "checked_at": "2026-10-15T07:20:15.381013+00:00",
+  "checked_at": "2026-11-14T10:58:07.934509+00:00",
   "platform": "capitalone",
   "slug": "capitalone"
  },
@@ -668,7 +657,7 @@
   "slug": "cloudflare"
  },
  "coinbase": {
-  "checked_at": "2026-10-15T07:20:39.715741+00:00",
+  "checked_at": "2026-11-14T10:58:07.934461+00:00",
   "platform": "greenhouse",
   "slug": "coinbase"
  },
@@ -702,7 +691,7 @@
   "slug": null
  },
  "dandy": {
-  "checked_at": "2026-10-15T07:21:07.812576+00:00",
+  "checked_at": "2026-11-14T10:57:15.014515+00:00",
   "platform": "ashby",
   "slug": "dandy"
  },
@@ -757,7 +746,7 @@
   "slug": null
  },
  "duolingo": {
-  "checked_at": "2026-10-15T07:21:12.972898+00:00",
+  "checked_at": "2026-11-14T10:58:05.455507+00:00",
   "platform": "greenhouse",
   "slug": "duolingo"
  },
@@ -936,7 +925,7 @@
   "slug": "moelis|wd1|Experienced-Hires"
  },
  "mongoDB": {
-  "checked_at": "2026-10-15T07:21:26.163117+00:00",
+  "checked_at": "2026-11-14T10:58:37.495380+00:00",
   "platform": "greenhouse",
   "slug": "mongodb"
  },
@@ -981,7 +970,7 @@
   "slug": "https://careers.nutanix.com/jobs/xml/?rss=true"
  },
  "okta": {
-  "checked_at": "2026-10-15T07:21:51.607714+00:00",
+  "checked_at": "2026-11-14T10:58:53.038468+00:00",
   "platform": "greenhouse",
   "slug": "okta"
  },
@@ -1001,7 +990,7 @@
   "slug": null
  },
  "plaid": {
-  "checked_at": "2026-10-15T07:21:54.534039+00:00",
+  "checked_at": "2026-11-14T10:58:55.095424+00:00",
   "platform": "ashby",
   "slug": "plaid"
  },
@@ -1011,7 +1000,7 @@
   "slug": null
  },
  "ramp": {
-  "checked_at": "2026-10-15T07:22:24.946240+00:00",
+  "checked_at": "2026-11-14T10:57:29.638350+00:00",
   "platform": "ashby",
   "slug": "ramp"
  },
@@ -1216,11 +1205,9 @@
   "slug": null
  },
  "visa": {
-  "checked_at": "2026-10-15T07:22:44.462853+00:00",
-  "consecutive_failures": 4,
-  "deep_scanned_at": "2026-11-11T01:52:58.793168+00:00",
-  "platform": "workday",
-  "slug": "visa|wd5|Visa"
+  "checked_at": "2026-11-14T10:57:41.140704+00:00",
+  "platform": null,
+  "slug": null
  },
  "vmware": {
   "checked_at": "2026-11-10T16:27:40.983964+00:00",
@@ -1238,7 +1225,7 @@
   "slug": "waymo"
  },
  "wells fargo": {
-  "checked_at": "2026-10-15T07:22:48.159083+00:00",
+  "checked_at": "2026-11-14T10:57:43.194724+00:00",
   "platform": "jobfeed",
   "slug": "https://www.wellsfargojobs.com/jobs/xml/?rss=true"
  },
