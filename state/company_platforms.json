@@ -25,8 +25,7 @@
   "slug": null
  },
  "Abercrombie & Fitch Co": {
-  "checked_at": "2026-10-15T23:48:48.682420+00:00",
-  "deep_scanned_at": "2026-11-11T09:14:31.527102+00:00",
+  "checked_at": "2026-11-15T02:32:59.083777+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -395,6 +394,7 @@
  },
  "T-mobile": {
   "checked_at": "2026-11-14T22:58:31.780418+00:00",
+  "deep_scanned_at": "2026-11-15T02:33:46.044320+00:00",
   "platform": "workday",
   "slug": "tmobile|wd1|External"
  },
@@ -405,6 +405,7 @@
  },
  "Tencent": {
   "checked_at": "2026-11-14T22:58:53.711644+00:00",
+  "deep_scanned_at": "2026-11-15T02:33:46.044320+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
  },
@@ -444,7 +445,7 @@
   "slug": null
  },
  "WD": {
-  "checked_at": "2026-10-15T23:48:25.513052+00:00",
+  "checked_at": "2026-11-15T02:32:40.197783+00:00",
   "platform": "smartrecruiters",
   "slug": "WesternDigital"
  },
@@ -454,8 +455,8 @@
   "slug": null
  },
  "Workday": {
-  "checked_at": "2026-10-15T23:48:47.146386+00:00",
-  "deep_scanned_at": "2026-11-11T01:52:58.793168+00:00",
+  "checked_at": "2026-11-15T02:32:57.945557+00:00",
+  "deep_scanned_at": "2026-11-15T02:33:46.044320+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
@@ -506,7 +507,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-14T18:50:22.487521+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -649,7 +650,7 @@
  },
  "confluent": {
   "checked_at": "2026-11-14T22:56:27.579279+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "confluent"
  },
@@ -674,7 +675,7 @@
   "slug": "databricks"
  },
  "databricks winter": {
-  "checked_at": "2026-11-07T06:31:14.566156+00:00",
+  "checked_at": "2026-11-15T02:33:23.731247+00:00",
   "platform": null,
   "slug": null
  },
@@ -709,7 +710,7 @@
   "slug": null
  },
  "docusign": {
-  "checked_at": "2026-10-15T23:48:53.711702+00:00",
+  "checked_at": "2026-11-15T02:33:02.725483+00:00",
   "platform": "careersite",
   "slug": "https://careers.docusign.com"
  },
@@ -929,7 +930,7 @@
   "slug": "notion"
  },
  "notion winter": {
-  "checked_at": "2026-10-15T23:48:54.461450+00:00",
+  "checked_at": "2026-11-15T02:33:03.262730+00:00",
   "platform": "ashby",
   "slug": "notion"
  },
@@ -986,7 +987,7 @@
   "slug": "redhat|wd5|jobs"
  },
  "replit": {
-  "checked_at": "2026-10-15T23:48:55.168654+00:00",
+  "checked_at": "2026-11-15T02:33:03.670303+00:00",
   "platform": "ashby",
   "slug": "replit"
  },
@@ -1068,7 +1069,6 @@
  },
  "slack": {
   "checked_at": "2026-11-14T22:57:44.210905+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-14T22:59:21.252087+00:00",
   "platform": "workday",
   "slug": "salesforce|wd12|Slack"
@@ -1111,6 +1111,7 @@
  },
  "stryker": {
   "checked_at": "2026-11-14T22:58:29.487076+00:00",
+  "deep_scanned_at": "2026-11-15T02:33:46.044320+00:00",
   "platform": "workday",
   "slug": "stryker|wd1|StrykerCareers"
  },
@@ -1185,7 +1186,7 @@
   "slug": null
  },
  "waymo": {
-  "checked_at": "2026-10-15T21:20:27.870658+00:00",
+  "checked_at": "2026-11-15T02:32:39.339379+00:00",
   "platform": "greenhouse",
   "slug": "waymo"
  },
@@ -1195,7 +1196,7 @@
   "slug": "https://www.wellsfargojobs.com/jobs/xml/?rss=true"
  },
  "wellsfargo sophomore discovery fellowship": {
-  "checked_at": "2026-10-15T23:48:32.112244+00:00",
+  "checked_at": "2026-11-15T02:32:42.678189+00:00",
   "platform": "jobfeed",
   "slug": "https://www.wellsfargojobs.com/jobs/xml/?rss=true"
  },
