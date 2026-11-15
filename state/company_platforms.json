@@ -26,6 +26,7 @@
  },
  "Abercrombie & Fitch Co": {
   "checked_at": "2026-11-15T02:32:59.083777+00:00",
+  "deep_scanned_at": "2026-11-15T09:51:53.362870+00:00",
   "platform": "workday",
   "slug": "abercrombie|wd108|anf"
  },
@@ -137,7 +138,7 @@
  },
  "GDIT systestems intern": {
   "checked_at": "2026-10-30T18:49:00.982831+00:00",
-  "deep_scanned_at": "2026-11-11T09:14:31.527102+00:00",
+  "deep_scanned_at": "2026-11-15T09:51:53.362870+00:00",
   "platform": "workday",
   "slug": "gdit|wd5|External_Career_Site"
  },
@@ -295,6 +296,7 @@
  },
  "PNC data analsyt": {
   "checked_at": "2026-11-03T20:56:49.542148+00:00",
+  "deep_scanned_at": "2026-11-15T09:51:53.362870+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
  },
@@ -507,7 +509,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-14T18:50:22.487521+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -569,6 +571,7 @@
  },
  "boeing data analytics": {
   "checked_at": "2026-11-10T21:57:22.788269+00:00",
+  "deep_scanned_at": "2026-11-15T09:51:53.362870+00:00",
   "platform": "workday",
   "slug": "boeing|wd1|EXTERNAL_CAREERS"
  },
@@ -650,7 +653,7 @@
  },
  "confluent": {
   "checked_at": "2026-11-14T22:56:27.579279+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "confluent"
  },
