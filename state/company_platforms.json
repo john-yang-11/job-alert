@@ -509,7 +509,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-16T01:56:29.856040+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -648,7 +648,7 @@
  },
  "comcast": {
   "checked_at": "2026-10-26T19:11:12.896731+00:00",
-  "deep_scanned_at": "2026-11-13T23:50:11.587108+00:00",
+  "deep_scanned_at": "2026-11-16T19:54:08.117239+00:00",
   "platform": "workday",
   "slug": "comcast|wd115|Comcast_Careers"
  },
