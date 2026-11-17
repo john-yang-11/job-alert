@@ -179,7 +179,6 @@
  },
  "Hermeus": {
   "checked_at": "2026-11-14T18:50:41.463327+00:00",
-  "consecutive_failures": 1,
   "platform": "lever",
   "slug": "hermeus"
  },
@@ -303,7 +302,6 @@
  },
  "Palantir": {
   "checked_at": "2026-11-14T13:26:15.589671+00:00",
-  "consecutive_failures": 1,
   "platform": "lever",
   "slug": "palantir"
  },
@@ -383,7 +381,6 @@
  },
  "Spotify": {
   "checked_at": "2026-11-14T22:58:16.427538+00:00",
-  "consecutive_failures": 1,
   "platform": "lever",
   "slug": "spotify"
  },
@@ -509,12 +506,6 @@
   "checked_at": "2026-11-09T00:00:04.081424+00:00",
   "platform": null,
   "slug": null
- },
- "aquatic": {
-  "checked_at": "2026-11-16T01:56:29.856040+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-11-14T13:27:07.827175+00:00",
@@ -1223,7 +1214,6 @@
  },
  "zoox": {
   "checked_at": "2026-10-25T22:28:58.464240+00:00",
-  "consecutive_failures": 1,
   "platform": "lever",
   "slug": "zoox"
  }
