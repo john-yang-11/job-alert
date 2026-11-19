@@ -507,12 +507,6 @@
   "platform": null,
   "slug": null
  },
- "aquatic": {
-  "checked_at": "2026-11-18T02:54:51.754107+00:00",
-  "consecutive_failures": 5,
-  "platform": "ashby",
-  "slug": "aquatic"
- },
  "asana": {
   "checked_at": "2026-11-14T13:27:07.827175+00:00",
   "platform": "greenhouse",
@@ -841,7 +835,7 @@
  },
  "leidos": {
   "checked_at": "2026-11-14T18:52:02.640197+00:00",
-  "deep_scanned_at": "2026-11-14T18:52:54.162156+00:00",
+  "deep_scanned_at": "2026-11-19T18:41:53.869164+00:00",
   "platform": "workday",
   "slug": "leidos|wd5|External"
  },
