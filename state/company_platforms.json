@@ -509,7 +509,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-20T00:58:14.916530+00:00",
-  "consecutive_failures": 3,
+  "consecutive_failures": 4,
   "platform": "ashby",
   "slug": "aquatic"
  },
