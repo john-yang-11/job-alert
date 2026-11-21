@@ -245,7 +245,7 @@
  },
  "Mastercard": {
   "checked_at": "2026-11-14T18:52:07.812853+00:00",
-  "deep_scanned_at": "2026-11-14T18:52:54.162156+00:00",
+  "deep_scanned_at": "2026-11-21T04:19:47.949924+00:00",
   "platform": "workday",
   "slug": "mastercard|wd1|CorporateCareers"
  },
@@ -509,7 +509,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-20T00:58:14.916530+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
