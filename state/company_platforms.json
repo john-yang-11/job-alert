@@ -255,9 +255,9 @@
   "slug": null
  },
  "NVIDIA": {
-  "checked_at": "2026-11-14T10:57:28.411786+00:00",
-  "platform": null,
-  "slug": null
+  "checked_at": "2026-11-22T22:04:11.974908+00:00",
+  "platform": "workday",
+  "slug": "nvidia|wd5|NVIDIAExternalCareerSite"
  },
  "Netflix": {
   "checked_at": "2026-11-10T07:44:53.762222+00:00",
@@ -1170,9 +1170,9 @@
   "slug": null
  },
  "visa": {
-  "checked_at": "2026-11-14T10:57:41.140704+00:00",
-  "platform": null,
-  "slug": null
+  "checked_at": "2026-11-22T22:04:34.161210+00:00",
+  "platform": "workday",
+  "slug": "visa|wd5|Visa"
  },
  "vmware": {
   "checked_at": "2026-11-10T16:27:40.983964+00:00",
