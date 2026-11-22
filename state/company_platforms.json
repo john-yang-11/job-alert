@@ -428,9 +428,9 @@
   "slug": null
  },
  "US bank": {
-  "checked_at": "2026-11-14T10:59:37.306397+00:00",
-  "platform": null,
-  "slug": null
+  "checked_at": "2026-11-22T08:33:52.638372+00:00",
+  "platform": "workday",
+  "slug": "usbank|wd1|US_Bank_Careers"
  },
  "Uber Freight": {
   "checked_at": "2026-11-14T22:59:00.744738+00:00",
