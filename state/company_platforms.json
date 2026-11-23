@@ -508,6 +508,12 @@
   "platform": null,
   "slug": null
  },
+ "aquatic": {
+  "checked_at": "2026-11-23T11:15:18.127551+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
+ },
  "asana": {
   "checked_at": "2026-11-14T13:27:07.827175+00:00",
   "platform": "greenhouse",
