@@ -464,9 +464,9 @@
   "slug": "workday|wd5|Workday"
  },
  "abbott": {
-  "checked_at": "2026-11-14T13:26:25.382186+00:00",
-  "platform": null,
-  "slug": null
+  "checked_at": "2026-11-24T06:54:34.861404+00:00",
+  "platform": "workday",
+  "slug": "abbott|wd5|abbottcareers"
  },
  "adobe": {
   "checked_at": "2026-11-14T10:57:09.494281+00:00",
@@ -510,7 +510,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-23T11:15:18.127551+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
