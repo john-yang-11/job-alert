@@ -494,7 +494,7 @@
   "slug": "andurilindustries"
  },
  "appian": {
-  "checked_at": "2026-10-28T05:27:29.570033+00:00",
+  "checked_at": "2026-11-27T15:33:17.052288+00:00",
   "platform": "greenhouse",
   "slug": "appian"
  },
@@ -510,7 +510,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-26T04:24:00.970221+00:00",
-  "consecutive_failures": 4,
+  "consecutive_failures": 5,
   "platform": "ashby",
   "slug": "aquatic"
  },
