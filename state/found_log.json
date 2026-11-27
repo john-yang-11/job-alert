@@ -985,5 +985,26 @@
   "url": "https://job-boards.greenhouse.io/atoms/jobs/8356100002",
   "source": "board",
   "found_at": "2026-11-26T23:20:26.939200+00:00"
+ },
+ {
+  "company": "ASML",
+  "title": "Software Engineer Intern",
+  "url": "https://go.vansh.nyc/1KQ",
+  "source": "repo",
+  "found_at": "2026-11-27T05:18:08.751720+00:00"
+ },
+ {
+  "company": "Samsung",
+  "title": "Data Engineer Intern",
+  "url": "https://go.vansh.nyc/1L3",
+  "source": "repo",
+  "found_at": "2026-11-27T05:18:08.751720+00:00"
+ },
+ {
+  "company": "PricewaterhouseCoopers (PwC)",
+  "title": "Software Engineering Intern, Tax Innovation Delivery Experience (TIDE)",
+  "url": "https://go.vansh.nyc/1L7",
+  "source": "repo",
+  "found_at": "2026-11-27T05:18:08.751720+00:00"
  }
 ]
