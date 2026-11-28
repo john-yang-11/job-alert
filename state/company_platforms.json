@@ -93,6 +93,7 @@
  },
  "Cisco": {
   "checked_at": "2026-11-27T13:37:52.524951+00:00",
+  "deep_scanned_at": "2026-11-28T16:28:10.977161+00:00",
   "platform": "workday",
   "slug": "cisco|wd5|Cisco_Careers"
  },
@@ -469,7 +470,7 @@
  },
  "abbott": {
   "checked_at": "2026-11-24T06:54:34.861404+00:00",
-  "consecutive_failures": 1,
+  "deep_scanned_at": "2026-11-28T16:28:10.977161+00:00",
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -515,7 +516,7 @@
  },
  "aquatic": {
   "checked_at": "2026-11-28T07:38:14.314119+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "platform": "ashby",
   "slug": "aquatic"
  },
@@ -745,7 +746,6 @@
  },
  "fidelity": {
   "checked_at": "2026-11-14T18:50:32.316871+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-16T01:59:57.398146+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
