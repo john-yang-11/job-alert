@@ -373,7 +373,6 @@
  },
  "Snap": {
   "checked_at": "2026-11-21T21:15:17.360804+00:00",
-  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-22T00:22:55.464488+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
