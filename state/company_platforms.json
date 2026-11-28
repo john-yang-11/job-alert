@@ -296,6 +296,7 @@
  },
  "PNC data analsyt": {
   "checked_at": "2026-11-03T20:56:49.542148+00:00",
+  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-15T09:51:53.362870+00:00",
   "platform": "workday",
   "slug": "pnc|wd5|External"
@@ -307,6 +308,7 @@
  },
  "Palo Alto Networks": {
   "checked_at": "2026-11-14T18:52:13.554683+00:00",
+  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-14T18:52:54.162156+00:00",
   "platform": "workday",
   "slug": "paloaltonetworks|wd5|panwexternalcareers"
@@ -371,6 +373,7 @@
  },
  "Snap": {
   "checked_at": "2026-11-21T21:15:17.360804+00:00",
+  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-22T00:22:55.464488+00:00",
   "platform": "workdaysite",
   "slug": "wd1|snapchat|snap"
@@ -408,6 +411,7 @@
  },
  "Tencent": {
   "checked_at": "2026-11-14T22:58:53.711644+00:00",
+  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-15T02:33:46.044320+00:00",
   "platform": "workday",
   "slug": "tencent|wd1|Tencent_Careers"
@@ -459,12 +463,14 @@
  },
  "Workday": {
   "checked_at": "2026-11-15T02:32:57.945557+00:00",
+  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-15T02:33:46.044320+00:00",
   "platform": "workday",
   "slug": "workday|wd5|Workday"
  },
  "abbott": {
   "checked_at": "2026-11-24T06:54:34.861404+00:00",
+  "consecutive_failures": 1,
   "platform": "workday",
   "slug": "abbott|wd5|abbottcareers"
  },
@@ -507,6 +513,12 @@
   "checked_at": "2026-11-09T00:00:04.081424+00:00",
   "platform": null,
   "slug": null
+ },
+ "aquatic": {
+  "checked_at": "2026-11-28T07:38:14.314119+00:00",
+  "consecutive_failures": 1,
+  "platform": "ashby",
+  "slug": "aquatic"
  },
  "asana": {
   "checked_at": "2026-11-14T13:27:07.827175+00:00",
@@ -734,6 +746,7 @@
  },
  "fidelity": {
   "checked_at": "2026-11-14T18:50:32.316871+00:00",
+  "consecutive_failures": 1,
   "deep_scanned_at": "2026-11-16T01:59:57.398146+00:00",
   "platform": "workdaysite",
   "slug": "wd1|fmr|FidelityCareers"
